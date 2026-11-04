@@ -47,3 +47,7 @@
   background-color: #841618;
   color: #FFFFFF;
 }
+#netlify-badge, 
+.netlify-badge {
+  display: none !important;
+}
