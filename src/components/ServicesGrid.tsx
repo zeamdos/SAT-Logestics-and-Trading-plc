@@ -65,7 +65,7 @@ export const ServicesGrid: React.FC<ServicesGridProps> = ({
               <div
                 key={service.id}
                 data-cursor-label={`SERVICE ${num}`}
-                className="group border border-neutral-200 hover:border-[#841618] transition-colors bg-white flex flex-col justify-between"
+                className="group border border-neutral-200 hover:border-[#841618] transition-colors bg-white flex flex-col justify-between rounded-2xl overflow-hidden"
               >
                 <div>
                   {/* Photo Frame */}
@@ -77,7 +77,7 @@ export const ServicesGrid: React.FC<ServicesGridProps> = ({
                       sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute top-3 left-3 bg-white/95 border-l-2 border-[#841618] px-2.5 py-0.5 text-xs font-mono font-medium text-black">
+                    <div className="absolute top-3 left-3 bg-white/95 border-l-2 border-[#841618] px-2.5 py-0.5 text-xs font-mono font-medium text-black rounded-md">
                       {num}
                     </div>
                   </div>
@@ -98,7 +98,7 @@ export const ServicesGrid: React.FC<ServicesGridProps> = ({
                     <div className="space-y-1.5 pt-3 border-t border-neutral-100">
                       {service.specs.map((spec, sIdx) => (
                         <div key={sIdx} className="text-xs text-neutral-600 flex items-center gap-2">
-                          <span className="w-1 h-1 bg-[#841618] shrink-0" />
+                          <span className="w-1 h-1 bg-[#841618] shrink-0 rounded-full" />
                           <span className="font-light">{spec}</span>
                         </div>
                       ))}

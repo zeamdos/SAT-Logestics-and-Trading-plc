@@ -21,7 +21,7 @@ export const CorridorSection: React.FC<CorridorSectionProps> = ({
         {/* Section Header */}
         <div className="mb-10 max-w-3xl">
           <div className="flex items-center gap-2 mb-2">
-            <span className="w-1.5 h-1.5 bg-[#841618] inline-block" />
+            <span className="w-1.5 h-1.5 bg-[#841618] inline-block rounded-full" />
             <span className="text-[11px] font-mono uppercase tracking-widest text-neutral-500 font-medium">
               {t.corridor.sectionTag}
             </span>
@@ -35,7 +35,7 @@ export const CorridorSection: React.FC<CorridorSectionProps> = ({
         </div>
 
         {/* Featured Corridor Visual */}
-        <div className="relative w-full h-64 sm:h-80 lg:h-[400px] overflow-hidden border border-neutral-200 mb-8">
+        <div className="relative w-full h-64 sm:h-80 lg:h-[400px] overflow-hidden border border-neutral-200 mb-8 rounded-2xl">
           <Image
             src="/images/railway-corridor.jpg"
             alt="Ethio-Djibouti Railway Multimodal Freight Corridor"
@@ -66,7 +66,7 @@ export const CorridorSection: React.FC<CorridorSectionProps> = ({
             return (
               <div
                 key={stop.code}
-                className="p-5 border border-neutral-200 hover:border-[#841618] transition-colors bg-neutral-50/40 flex flex-col justify-between"
+                className="p-5 border border-neutral-200 hover:border-[#841618] transition-colors bg-neutral-50/40 flex flex-col justify-between rounded-xl"
               >
                 <div>
                   <div className="flex items-center justify-between text-xs font-mono text-neutral-400 mb-3 pb-2 border-b border-neutral-200">

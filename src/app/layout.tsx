@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     "machinery import trading Ethiopia"
   ],
   icons: {
-    icon: "/favicon.ico",
+    icon: "/images/sat-icon.png",
   },
 };
 

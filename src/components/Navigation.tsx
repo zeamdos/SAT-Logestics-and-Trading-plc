@@ -79,7 +79,7 @@ export const Navigation: React.FC<NavigationProps> = ({
   };
 
   return (
-    <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-neutral-200">
+    <header className="sticky top-0 z-40 bg-white/10 backdrop-blur-[2px] border-b border-white/30">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 flex items-center justify-between h-20">
         {/* Exact Original Company Logo (With Corrected Spelling) */}
         <div 
@@ -89,7 +89,7 @@ export const Navigation: React.FC<NavigationProps> = ({
         >
           <div className="relative w-44 sm:w-52 h-14 flex items-center">
             <Image
-              src="/images/logo.png"
+              src="/images/logo-transparent.png"
               alt="SAT Logistics & Trading PLC"
               fill
               priority
