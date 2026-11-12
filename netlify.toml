@@ -1,0 +1,4 @@
+[build]
+  # Static export (no server). Use 'out' as the publish directory.
+  publish = "out"
+  command = "next build"
