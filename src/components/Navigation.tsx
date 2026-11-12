@@ -26,7 +26,6 @@ export const Navigation: React.FC<NavigationProps> = ({
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  // Close dropdown on click outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
@@ -47,11 +46,12 @@ export const Navigation: React.FC<NavigationProps> = ({
   const currentLangObj = languages.find((l) => l.code === currentLang) || languages[0];
 
   const navItems: { id: NavItem; label: string; path: string }[] = [
-    { id: 'home', label: t.nav.home, path: '/' },
-    { id: 'services', label: t.nav.services, path: '/services' },
-    { id: 'executive', label: t.nav.executive, path: '/executive' },
-    { id: 'corridor', label: t.nav.corridor, path: '/corridor' },
-    { id: 'contact', label: t.nav.contact, path: '/contact' },
+    { id: 'home',      label: t.nav.home,      path: '/' },
+    { id: 'about',     label: t.nav.about,     path: '/#about' },
+    { id: 'services',  label: t.nav.services,  path: '/#services' },
+    { id: 'executive', label: t.nav.executive, path: '/#executive' },
+    { id: 'corridor',  label: t.nav.corridor,  path: '/#corridor' },
+    { id: 'contact',   label: t.nav.contact,   path: '/#contact' },
   ];
 
   const currentActive = propActiveSection || (
@@ -68,7 +68,7 @@ export const Navigation: React.FC<NavigationProps> = ({
       return;
     }
 
-    if (pathname === item.path) {
+    if (pathname === '/' || pathname === item.path) {
       window.scrollTo({ top: 0, behavior: 'smooth' });
       return;
     }
@@ -81,8 +81,8 @@ export const Navigation: React.FC<NavigationProps> = ({
   return (
     <header className="sticky top-0 z-40 bg-white/10 backdrop-blur-[2px] border-b border-white/30">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 flex items-center justify-between h-20">
-        {/* Exact Original Company Logo (With Corrected Spelling) */}
-        <div 
+        {/* Logo */}
+        <div
           onClick={() => handleNavClick(navItems[0])}
           className="cursor-pointer group flex items-center py-2"
           data-cursor-label="HOME"
@@ -98,7 +98,7 @@ export const Navigation: React.FC<NavigationProps> = ({
           </div>
         </div>
 
-        {/* Clean Desktop Navigation Links */}
+        {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center space-x-1 sm:space-x-2">
           {navItems.map((item) => {
             const isActive = currentActive === item.id;
@@ -122,9 +122,9 @@ export const Navigation: React.FC<NavigationProps> = ({
           })}
         </nav>
 
-        {/* Right Actions: Language Dropdown + Brand Crimson CTA */}
+        {/* Right: Language + CTA */}
         <div className="flex items-center gap-3 sm:gap-4">
-          {/* Custom Clean Language Dropdown */}
+          {/* Language Dropdown */}
           <div className="relative" ref={dropdownRef}>
             <button
               onClick={() => setLangDropdownOpen(!langDropdownOpen)}
@@ -137,7 +137,6 @@ export const Navigation: React.FC<NavigationProps> = ({
               <ChevronDown className={`w-3.5 h-3.5 text-neutral-500 transition-transform ${langDropdownOpen ? 'rotate-180' : ''}`} />
             </button>
 
-            {/* Dropdown Menu */}
             {langDropdownOpen && (
               <div className="absolute right-0 mt-1.5 w-44 bg-white border border-neutral-300 shadow-xl py-1 z-50 animate-in fade-in slide-in-from-top-1 duration-150">
                 <div className="px-3 py-1.5 text-[10px] font-mono uppercase tracking-wider text-neutral-400 border-b border-neutral-100">
@@ -168,9 +167,9 @@ export const Navigation: React.FC<NavigationProps> = ({
             )}
           </div>
 
-          {/* Brand Crimson Dispatch Button */}
+          {/* CTA Button */}
           <button
-            onClick={() => handleNavClick(navItems[4])}
+            onClick={() => handleNavClick(navItems[5])}
             data-cursor-label="DISPATCH"
             className="hidden sm:flex items-center gap-2 bg-[#841618] hover:bg-[#6D1113] text-white transition-colors px-4 py-2 text-xs font-mono uppercase tracking-wider shadow-sm"
           >
@@ -189,7 +188,7 @@ export const Navigation: React.FC<NavigationProps> = ({
         </div>
       </div>
 
-      {/* Mobile Menu Dropdown */}
+      {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="lg:hidden border-t border-neutral-200 bg-white px-6 py-5 space-y-3">
           {navItems.map((item) => (
@@ -206,7 +205,7 @@ export const Navigation: React.FC<NavigationProps> = ({
           ))}
           <button
             onClick={() => {
-              handleNavClick(navItems[4]);
+              handleNavClick(navItems[5]);
               setMobileMenuOpen(false);
             }}
             className="w-full mt-3 py-3 bg-[#841618] hover:bg-[#6D1113] text-white text-xs font-mono uppercase tracking-widest text-center flex items-center justify-center gap-2"

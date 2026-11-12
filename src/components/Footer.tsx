@@ -11,10 +11,7 @@ interface FooterProps {
   onNavigate: (section: NavItem) => void;
 }
 
-export const Footer: React.FC<FooterProps> = ({
-  currentLang,
-  onNavigate,
-}) => {
+export const Footer: React.FC<FooterProps> = ({ currentLang, onNavigate }) => {
   const t = translations[currentLang];
 
   const scrollToTop = () => {
@@ -25,7 +22,7 @@ export const Footer: React.FC<FooterProps> = ({
     <footer className="bg-white text-black border-t border-neutral-200">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 border-b border-neutral-200 pb-10">
-          {/* Brand with Exact Original Logo (Corrected Spelling) */}
+          {/* Brand */}
           <div className="md:col-span-5 space-y-3">
             <div className="relative w-48 sm:w-56 h-16 flex items-center">
               <Image
@@ -35,7 +32,6 @@ export const Footer: React.FC<FooterProps> = ({
                 className="object-contain object-left"
               />
             </div>
-
             <p className="text-xs text-neutral-500 font-light leading-relaxed max-w-sm">
               {t.footer.tagline}
             </p>
@@ -47,58 +43,44 @@ export const Footer: React.FC<FooterProps> = ({
 
           {/* Navigation */}
           <div className="md:col-span-3 space-y-2">
-            <span className="text-[11px] font-mono uppercase tracking-wider text-neutral-400 block mb-2">
-              Menu
-            </span>
+            <span className="text-[11px] font-mono uppercase tracking-wider text-neutral-400 block mb-2">Menu</span>
             <ul className="space-y-1.5 text-xs text-neutral-600">
               <li>
-                <button 
-                  onClick={() => onNavigate('home')} 
-                  className="hover:text-[#841618] transition-colors"
-                >
-                  Overview
+                <button onClick={() => onNavigate('home')} className="hover:text-[#841618] transition-colors">
+                  {t.nav.home}
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => onNavigate('services')} 
-                  className="hover:text-[#841618] transition-colors"
-                >
-                  Services
+                <button onClick={() => onNavigate('about')} className="hover:text-[#841618] transition-colors">
+                  {t.nav.about}
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => onNavigate('executive')} 
-                  className="hover:text-[#841618] transition-colors"
-                >
-                  Leadership
+                <button onClick={() => onNavigate('services')} className="hover:text-[#841618] transition-colors">
+                  {t.nav.services}
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => onNavigate('corridor')} 
-                  className="hover:text-[#841618] transition-colors"
-                >
-                  Djibouti Corridor
+                <button onClick={() => onNavigate('executive')} className="hover:text-[#841618] transition-colors">
+                  {t.nav.executive}
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => onNavigate('contact')} 
-                  className="hover:text-[#841618] transition-colors"
-                >
-                  Contact
+                <button onClick={() => onNavigate('corridor')} className="hover:text-[#841618] transition-colors">
+                  {t.nav.corridor}
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onNavigate('contact')} className="hover:text-[#841618] transition-colors">
+                  {t.nav.contact}
                 </button>
               </li>
             </ul>
           </div>
 
-          {/* Key Stations */}
+          {/* Operations */}
           <div className="md:col-span-4 space-y-2">
-            <span className="text-[11px] font-mono uppercase tracking-wider text-neutral-400 block mb-2">
-              Operations
-            </span>
+            <span className="text-[11px] font-mono uppercase tracking-wider text-neutral-400 block mb-2">Operations</span>
             <div className="text-xs text-neutral-600 space-y-2">
               <div className="border-l-2 border-[#841618] pl-2.5">
                 <span className="font-medium text-black block text-[11px]">ADDIS ABABA HQ</span>
@@ -112,14 +94,18 @@ export const Footer: React.FC<FooterProps> = ({
                 <span className="font-medium text-black block text-[11px]">MOJO DRY PORT</span>
                 <span className="text-neutral-400 text-[10px]">Customs Stacking Depot</span>
               </div>
+              <div className="border-l-2 border-neutral-200 pl-2.5">
+                <span className="font-medium text-black block text-[11px]">CONTACT</span>
+                <span className="text-neutral-400 text-[10px]">satlogistics0001@gmail.com</span>
+                <span className="text-neutral-400 text-[10px] block">+251 93 299 9977</span>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Bottom Legal & Back to Top */}
+        {/* Bottom */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-400 font-mono">
           <div>{t.footer.copyright}</div>
-
           <button
             onClick={scrollToTop}
             data-cursor-label="TOP"

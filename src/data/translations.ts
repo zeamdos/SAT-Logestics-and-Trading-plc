@@ -4,6 +4,7 @@ export const translations: Record<Language, TranslationSchema> = {
   en: {
     nav: {
       home: 'Overview',
+      about: 'About Us',
       services: 'Services',
       executive: 'Leadership',
       corridor: 'Corridor',
@@ -28,16 +29,90 @@ export const translations: Record<Language, TranslationSchema> = {
       corridorStatus: 'Djibouti-Addis Axis: Operational',
       hubBadge: 'HQ: Addis Ababa // Reg: ETH-LOG-4482'
     },
+    about: {
+      sectionTag: 'ABOUT US',
+      headline: 'Who We Are.',
+      overview: 'SAT Logistics and Trading PLC is a transportation and logistics provider in Ethiopia and beyond. Our company provides services including international freight forwarding, customs clearance, and project cargo transport.',
+      missionTag: 'OUR MISSION',
+      missionHeadline: 'Core Mission & Target Industries.',
+      missionItems: [
+        'SAT Logistics and Trading PLC offers comprehensive solutions for a wide range of industries, including but not limited to manufacturing, energy production, data mining cargo, industry parks, solar companies, wing energy farms, retail, garment industry, and special heavy project cargo handling.',
+        'In addition to freight forwarding we give logistics consultancy services to streamline supply chains and enhance our customer\'s satisfaction.',
+        'Our purpose is to effectively support the goals of private companies, manufacturers and governmental institutions in improving logistics capacity access, lower freight tariffs and improving service quality.'
+      ],
+      purposeTag: 'OUR PURPOSE',
+      purposeHeadline: 'Purpose & Capacity.',
+      purposeFoundedNote: 'Founded in 2023, SAT Logistics and Trading PLC is dedicated to providing specialized transportation and customs clearance services to ensure seamless movement of goods, from point of origin to final destination.',
+      purposeMission: 'Our mission is to provide comprehensive logistics solutions that meet the diverse international logistics needs of our clients.',
+      principlesTag: 'OPERATING PRINCIPALS',
+      principlesHeadline: 'Our Principles.',
+      principles: [
+        {
+          title: 'Partnering with Stakeholders',
+          desc: 'We position ourselves as trusted allies, prioritizing simplicity, dependability, and a client-first mindset in every collaboration.'
+        },
+        {
+          title: 'Empowering Our Workforce',
+          desc: 'Success is built on unity. We foster teamwork, encourage cooperation, and provide strong support systems for our employees.'
+        },
+        {
+          title: 'Driven by Excellence',
+          desc: 'Our operations are anchored to national and world-class standards, ensuring efficiency, consistency, and speed across all services.'
+        },
+        {
+          title: 'Future-Oriented',
+          desc: 'Progressive attitudes and growth-focused strategies allow us to continuously evolve and serve our clients better.'
+        },
+        {
+          title: 'Commitment to Sustainability',
+          desc: 'We uphold ethical practices and compliance, integrating advanced environmental safeguards into our operations.'
+        }
+      ],
+      capabilityTag: 'TEAM CAPABILITY',
+      capabilityHeadline: 'Our Team\'s Capability.',
+      capabilities: [
+        {
+          title: 'Local Expertise',
+          desc: 'Profound understanding of Ethiopia\'s transport regulations, policies, and infrastructure.'
+        },
+        {
+          title: 'Seamless Coordination',
+          desc: 'Experience in pre-forwarding processes, ensuring efficient customs clearance and document handling.'
+        },
+        {
+          title: 'Strong Partnerships',
+          desc: 'Collaborations with Ethiopian customs authorities, shipping lines, and freight forwarders.'
+        },
+        {
+          title: 'Client-Centric Approach',
+          desc: 'Customized solutions to meet your logistics needs — from first mile to last mile.'
+        }
+      ],
+      projectsTag: 'DELIVERED PROJECTS',
+      projectsHeadline: 'Proven Track Record.',
+      projectsDesc: 'Our company has played a significant role in the transportation of capital goods for some of Ethiopia\'s most notable infrastructure projects.',
+      projectsList: [
+        'Grand Ethiopian Renaissance Dam (GERD)',
+        'Ethiopian Airlines — Aircraft Ground Support Cargo',
+        'Power Generation — Gilgel Gibe Complex',
+        'Industry Parks: Hawassa, Dukem, Adama, Arerti, Tulufa, Debrebirhan',
+        'Ethiopian Electric Power & Ethiopian Electric Utility',
+        'Ministry of Finance — Capital Equipment Logistics'
+      ],
+      customersTag: 'OUR CUSTOMERS',
+      customersHeadline: 'International Partners.',
+      customersSubheadline: 'We have worked with leading global companies across energy, construction, steel, and infrastructure.'
+    },
     executive: {
       sectionTag: 'LEADERSHIP',
       headline: 'Executive Leadership.',
-      subheadline: 'Led by international supply chain expertise and proven multimodal field execution.',
+      subheadline: 'Founded in 2023, dedicated to providing specialized transportation and customs clearance services.',
       name: 'Samuel Ayalew',
-      title: 'Co-Founder & CEO',
-      credentialBadge: 'MA in Logistics & Supply Chain Management',
-      quote: '“Precision logistics is the economic conduit of the Horn of Africa.”',
-      bioParagraph1: 'Holding a Master’s degree in Logistics & Supply Chain Management, Samuel Ayalew brings over a decade of high-level freight coordination and corridor management.',
-      bioParagraph2: 'He directs SAT’s integrated customs clearance and multimodal haulage connecting the Port of Djibouti directly to Mojo Dry Port and Addis Ababa.',
+      title: 'General Manager',
+      credentialBadge: 'Leading Logistics Professional',
+      quote: '"We make your cargo transport simple."',
+      bioParagraph1: 'Holding a Master\'s degree in Logistics & Supply Chain Management, Samuel Ayalew brings over a decade of high-level freight coordination and corridor management.',
+      bioParagraph2: 'He directs SAT\'s integrated customs clearance and multimodal haulage connecting the Port of Djibouti directly to Mojo Dry Port and Addis Ababa.',
       metricTitle1: 'Supply Chain Strategy',
       metricDesc1: 'Specialized in dry port integration and corridor optimization.',
       metricTitle2: 'Corridor Delivery',
@@ -148,21 +223,21 @@ export const translations: Record<Language, TranslationSchema> = {
         companyLabel: 'Company Name',
         companyPlaceholder: 'e.g., Ethiopian Manufacturing Group',
         phoneLabel: 'Phone Number',
-        phonePlaceholder: '+251 91 234 5678',
+        phonePlaceholder: '+251 93 299 9977',
         emailLabel: 'Email Address',
         emailPlaceholder: 'logistics@company.com',
         cargoTypeLabel: 'Service Category',
         cargoTypes: [
-          'Freight Forwarding (Djibouti to Addis)',
-          'Customs Clearance & Declaration',
-          'Heavy Machinery Transport (Lowbed)',
-          'Tooling & Equipment Import Trading',
-          'Cross-Border Fleet Charter'
+          'Freight Transportation',
+          'Customs Clearance',
+          'Last-Mile Delivery',
+          'Heavy Machinery Transport',
+          'Project Cargo Handling'
         ],
         volumeLabel: 'Estimated Volume / Weight',
         volumePlaceholder: 'e.g., 2 x 40ft HC or 30 Tons',
         originDestLabel: 'Origin & Inland Destination',
-        originDestPlaceholder: 'e.g., Shanghai ➔ Djibouti ➔ Mojo',
+        originDestPlaceholder: 'e.g., Shanghai ➔ Djibouti ➔ Addis Ababa',
         messageLabel: 'Cargo Notes',
         messagePlaceholder: 'Special handling requirements or schedule...',
         submitBtn: 'Submit Request',
@@ -172,16 +247,16 @@ export const translations: Record<Language, TranslationSchema> = {
       location: {
         buildingTitle: 'Headquarters',
         buildingName: 'Fetele Building',
-        addressLine1: 'Wolo Sefer, Kirkos Sub-City',
+        addressLine1: 'Gorgorios Square, 3rd Floor',
         addressLine2: 'Addis Ababa, Ethiopia',
         coordinates: '09°00′05″N 38°46′02″E',
         hoursTitle: 'Operating Hours',
         hours: 'Mon – Sat: 08:00 – 18:30 (EAT) // Operations: 24/7',
         phoneTitle: 'Direct Desk',
-        phone: '+251 11 667 4421 / +251 91 123 4567',
+        phone: '+251 93 299 9977 / +251 93 237 3839',
         emailTitle: 'Email',
-        email: 'operations@satlogistics-et.com',
-        mapNotice: 'Fetele Building, Wolo Sefer, Addis Ababa'
+        email: 'satlogistics0001@gmail.com',
+        mapNotice: 'Fetele Building, Gorgorios Square, Addis Ababa'
       }
     },
     footer: {
@@ -196,6 +271,7 @@ export const translations: Record<Language, TranslationSchema> = {
   am: {
     nav: {
       home: 'አጠቃላይ',
+      about: 'ስለ እኛ',
       services: 'አገልግሎቶች',
       executive: 'አመራር',
       corridor: 'ኮሪደር',
@@ -220,166 +296,121 @@ export const translations: Record<Language, TranslationSchema> = {
       corridorStatus: 'የጅቡቲ-አዲስ አበባ መስመር: በተሟላ ዝግጁነት ላይ',
       hubBadge: 'ዋና መ/ቤት: አዲስ አበባ // ምዝገባ: ETH-LOG-4482'
     },
+    about: {
+      sectionTag: 'ስለ እኛ',
+      headline: 'እነማን ነን።',
+      overview: 'ኤስኤቲ ሎጂስቲክስ እና ንግድ ኃ/የተ/የግ/ማ በኢትዮጵያ እና ከዚያ ባሻገር የጭነት ትራንስፖርት እና ሎጂስቲክስ አገልግሎት ሰጪ ድርጅት ነው።',
+      missionTag: 'ተልዕኮ',
+      missionHeadline: 'ዋና ተልዕኮ እና ኢላማ ኢንዱስትሪዎች።',
+      missionItems: [
+        'ኤስኤቲ ለሰፊ ኢንዱስትሪዎች ሁሉን አቀፍ መፍትሄ ይሰጣል — ምርት፣ ኃይል ማምረት፣ ፀሐይ ኃይል፣ ቀላል ኢንዱስትሪ፣ የልብስ ኢንዱስትሪ እና ልዩ ፕሮጀክት ጭነቶችን ጨምሮ።',
+        'ከጭነት አስተላላፊነት ባሻገር የሎጂስቲክስ ምክር አገልግሎት ሰጥተን የደንበኞቻችንን አቅርቦት ሰንሰለት እናሻሽላለን።',
+        'ዓላማችን የግሉን ዘርፍ፣ አምራቾችን እና የመንግስት ተቋማትን የሎጂስቲክስ አቅም ማሳደግ ነው።'
+      ],
+      purposeTag: 'ዓላማ',
+      purposeHeadline: 'ዓላማ እና አቅም።',
+      purposeFoundedNote: 'ኤስኤቲ ሎጂስቲክስ እና ንግድ ኃ/የተ/የግ/ማ በ2023 ዓ.ም ተመስርቶ ለተሸቀጣሸቀጣ ዕቃዎች ያልተቋረጠ እንቅስቃሴ ሲሰጥ ቆይቷል።',
+      purposeMission: 'ተልዕኮአችን ለደንበኞቻችን ዓለም አቀፍ ሎጂስቲክስ ፍላጎቶችን ሁሉ የሚያሟሉ ሁሉን አቀፍ አገልግሎቶችን መስጠት ነው።',
+      principlesTag: 'ዋና ደንቦቻችን',
+      principlesHeadline: 'መርሆዎቻችን።',
+      principles: [
+        { title: 'ከባለድርሻዎች ጋር መተባበር', desc: 'ታማኝ አጋሮች ሆነን፣ ቀላልነትን፣ አስተማማኝነትን እና ደንበኛ ማዕከል አስተሳሰብን ቅድሚያ እንሰጣለን።' },
+        { title: 'ሰራተኞቻችንን ማብቃት', desc: 'ስኬት የሚገነባው በአንድነት ነው። ቡድን ስራን እናበረታታለን፣ ትብብርን እናሳድጋለን።' },
+        { title: 'በብቃት መሰረት ስራ', desc: 'ስራዎቻችን ብሔራዊ እና ዓለም አቀፍ ደረጃዎችን መሰረት ያደርጋሉ።' },
+        { title: 'ወደፊት ማየት', desc: 'ወደፊት ተኮር አስተሳሰብ እና ዕድገት ተኮር ስልቶች አገልግሎቶቻችንን ያሻሽላሉ።' },
+        { title: 'ዘለቄታዊ ቁርጠኝነት', desc: 'ሥነ-ምግባራዊ ተግባር እና ህጋዊ ተገዢነትን አንቀበልም፣ የአካባቢ ጥበቃ ደህንነትን እናዋህዳለን።' }
+      ],
+      capabilityTag: 'የቡድን አቅም',
+      capabilityHeadline: 'የቡድናችን አቅም።',
+      capabilities: [
+        { title: 'የአካባቢ እውቀት', desc: 'የኢትዮጵያ የትራንስፖርት ደንቦች፣ ፖሊሲዎች እና መሠረተ ልማት ጥልቅ ግንዛቤ።' },
+        { title: 'ያልተቋረጠ ቅንጅት', desc: 'ቅድሚያ-ጭነት ሂደቶች ልምድ፣ ፈጣን ጉምሩክ ሰነዶች ማስተናገድ።' },
+        { title: 'ጠንካራ አጋርነት', desc: 'ከጉምሩክ ባለስልጣናት፣ የጭነት ወኪሎች እና አጓጓዦች ጋር ትብብር።' },
+        { title: 'ደንበኛ ማዕከል አቀራረብ', desc: 'ለእያንዳንዱ ደንበኛ ፍላጎት የሚስማማ ሎጂስቲክስ መፍትሄ።' }
+      ],
+      projectsTag: 'ያስረከብናቸው ፕሮጀክቶች',
+      projectsHeadline: 'ተፈጻሚ ፕሮጀክቶች።',
+      projectsDesc: 'ኩባንያችን የኢትዮጵያ ታላላቅ መሠረተ ልማት ፕሮጀክቶች ካፒታል እቃዎች ትራንስፖርት ላይ ትልቅ ሚና ተጫውቷል።',
+      projectsList: [
+        'ታላቁ የኢትዮጵያ ሬኔሳንስ ግድብ (ጉባ GERD)',
+        'የኢትዮጵያ አየር መንገድ — ካርጎ',
+        'ኃይል ማምረቻ — ጊልጌ ጊቤ',
+        'የኢንዱስትሪ ፓርኮች: ሀዋሳ፣ ዱከም፣ አዳማ',
+        'የኢትዮጵያ ኤሌክትሪክ ኃይልና አገልግሎት',
+        'የፋይናንስ ሚኒስቴር — ካፒታል ዕቃዎች'
+      ],
+      customersTag: 'ደንበኞቻችን',
+      customersHeadline: 'ዓለም አቀፍ አጋሮቻችን።',
+      customersSubheadline: 'በኃይል፣ ግንባታ፣ ብረት እና ኢንፍራስትራክቸር ዘርፍ ከሚሰሩ ታዋቂ ዓለም አቀፍ ኩባንያዎች ጋር ሰርተናል።'
+    },
     executive: {
       sectionTag: 'አመራር',
       headline: 'የስራ አመራር።',
       subheadline: 'በአለም አቀፍ የአቅርቦት ሰንሰለት ጥልቅ እውቀት እና በምስራቅ አፍሪካ መልቲሞዳል ትራንስፖርት ልምድ የተመሰረተ።',
       name: 'ሳሙኤል አያሌው',
-      title: 'ተባባሪ መስራች እና ዋና ስራ አስፈፃሚ (CEO)',
-      credentialBadge: 'MA in Logistics & Supply Chain Management',
-      quote: '“በአፍሪካ ቀንድ ሎጂስቲክስ ማለት አስተማማኝ ፍጥነትና ሙሉ ግልፅነትን የሚጠይቅ የኢኮኖሚ ደምስር ነው።”',
-      bioParagraph1: 'በሎጂስቲክስ እና አቅርቦት ሰንሰለት አስተዳደር የማስተርስ ዲግሪ (MA) ያላቸው ሲሆን፣ በከፍተኛ የጭነት አስተባባሪነት ከአስር ዓመታት በላይ ሰርተዋል።',
-      bioParagraph2: 'ኤስኤቲ የጅቡቲ ወደብን ከሞጆ ደረቅ ወደብ እና አዲስ አበባ ተርሚናሎች ጋር የሚያገናኝ የተቀናጀ የጉምሩክና የመልቲሞዳል ትራንስፖርት ስራዎችን ይመራሉ።',
+      title: 'ዋና ስራ አስፈፃሚ',
+      credentialBadge: 'Leading Logistics Professional',
+      quote: '"የጭነት ትራንስፖርትዎን ቀላል እናደርጋለን።"',
+      bioParagraph1: 'በሎጂስቲክስ እና አቅርቦት ሰንሰለት አስተዳደር የማስተርስ ዲግሪ ያላቸው ሲሆን፣ ከአስር ዓመታት በላይ ሰርተዋል።',
+      bioParagraph2: 'ኤስኤቲ የጅቡቲ ወደብን ከሞጆ ደረቅ ወደብ እና አዲስ አበባ ጋር የሚያገናኝ የተቀናጀ ስራዎችን ይመራሉ።',
       metricTitle1: 'የአቅርቦት ሰንሰለት ስትራቴጂ',
-      metricDesc1: 'በደረቅ ወደብ ትስስር እና የኮሪደር ማቀላጠፍ ላይ ያተኮረ።',
+      metricDesc1: 'በደረቅ ወደብ ትስስር እና ኮሪደር ማቀላጠፍ ላይ ያተኮረ።',
       metricTitle2: 'የኮሪደር ቅልጥፍና',
-      metricDesc2: 'ከ48 ሰዓት በታች የሆነ የጉምሩክ ክሊራንስ እና የሳተላይት ክትትል።',
-      governanceBadge: 'ፈቃድ ያለው ኦፕሬተር // የኢትዮጵያ ባህር ትራንስፖርትና ሎጂስቲክስ'
+      metricDesc2: 'ከ48 ሰዓት በታች የሆነ ጉምሩክ ክሊራንስ።',
+      governanceBadge: 'ፈቃድ ያለው ኦፕሬተር // የኢትዮጵያ ባህር ትራንስፖርት'
     },
     services: {
       sectionTag: 'አገልግሎቶች',
       headline: 'ዋና ዋና አገልግሎቶች።',
-      subheadline: 'ለፍጥነትና ለህግ ተገዢነት የተዘጋጁ አራት መሰረታዊ የሎጂስቲክስ ዘርፎች።',
+      subheadline: 'ለፍጥነትና ለህግ ተገዢነት የተዘጋጁ አራት መሰረታዊ ዘርፎች።',
       items: [
-        {
-          id: 'customs-clearance',
-          code: '01',
-          title: 'የጉምሩክ ክሊራንስ',
-          subtitle: 'ፈጣን የኤሲኩዳ (ASYCUDA) ዲክላራሲዮን',
-          description: 'በአዲስ አበባ ኤርፖርት ካርጎ፣ በሞጆ ደረቅ ወደብ እና በጅቡቲ ድንበር ጣቢያዎች ፈጣን የጉምሩክ ሂደቶች።',
-          specs: [
-            'የቅድመ-መምጫ ASYCUDA World ዲክላራሲዮን',
-            'ትክክለኛ የታሪፍ እና የጉምሩክ ቀረጥ ምደባ',
-            'የትራንዚት ዋስትና ቦንድ እና የኤልሲ (LC) ሰነዶች ማሟላት'
-          ],
-          kpi: 'አማካይ 24-36 ሰዓታት'
-        },
-        {
-          id: 'freight-forwarding',
-          code: '02',
-          title: 'የጭነት አስተላላፊነት',
-          subtitle: 'የጅቡቲ - አዲስ አበባ መልቲሞዳል መስመር',
-          description: 'የጅቡቲ ወደብን (ዶራሌ ተርሚናል) ከሞጆ ደረቅ ወደብ እና አዲስ አበባ ቃሊቲ ተርሚናል ጋር የሚያገናኝ የተቀናጀ የጭነት አገልግሎት።',
-          specs: [
-            'በዶራሌ ተርሚናሎች ቋሚ ተወካዮች',
-            'ከኢትዮ-ጅቡቲ ምድር ባቡር (EDR) ጋር የተቀናጀ ስራ',
-            'ሙሉ ኮንቴይነር (FCL) እና የጋራ ኮንቴይነር (LCL)'
-          ],
-          kpi: '99.4% በሰዓቱ የማድረስ ምጣኔ'
-        },
-        {
-          id: 'fleet-coordination',
-          code: '03',
-          title: 'አገር አቋራጭ ተሽከርካሪዎች',
-          subtitle: 'ከባድ ማሽነሪ ጫኝ እና ፍላትቤድ',
-          description: 'በ24/7 የሳተላይት ጂፒኤስ የታገዙ ከባድ ጫኝ ተሽከርካሪዎች፣ ፍላትቤድ እና እስከ 120 ቶን የሚጭኑ ሎውቤዶች።',
-          specs: [
-            'በጂፒኤስ የታገዘ የቅጽበት ጭነት ክትትል',
-            'እስከ 120 ቶን የሚጭኑ ልዩ የሎውቤድ ተሽከርካሪዎች',
-            'አስተማማኝ የድንበር ማቋረጫ ፕሮቶኮል'
-          ],
-          kpi: '100% የሳተላይት ክትትል'
-        },
-        {
-          id: 'machinery-trading',
-          code: '04',
-          title: 'የማሽነሪዎች ንግድ',
-          subtitle: 'የኢንዱስትሪ እቃዎች ግዥ እና አስመጪነት',
-          description: 'የፋብሪካ ማሽነሪዎችን፣ የኮንስትራክሽን እቃዎችን እና መለዋወጫዎችን ከአለም አቀፍ አምራቾች በቀጥታ ማስመጣት።',
-          specs: [
-            'ቀጥታ ከአምራች ፋብሪካዎች ግዥ መፈፀም',
-            'የውጭ ምንዛሬ እና የንግድ ፈቃድ ማመቻቸት',
-            'እስከ ፋብሪካ ደጃፍ ድረስ የማድረስ ስራ'
-          ],
-          kpi: 'የተሟላ የማስረከብ ዋስትና'
-        }
+        { id: 'customs-clearance', code: '01', title: 'የጉምሩክ ክሊራንስ', subtitle: 'ፈጣን ASYCUDA ዲክላራሲዮን', description: 'በሞጆ ደረቅ ወደብ እና ጅቡቲ ድንበር ፈጣን ጉምሩክ ሂደቶች።', specs: ['ASYCUDA World ዲክላራሲዮን', 'ታሪፍ ምደባ', 'ትራንዚት ቦንድ'], kpi: '24-36 ሰዓታት' },
+        { id: 'freight-forwarding', code: '02', title: 'የጭነት አስተላላፊነት', subtitle: 'ጅቡቲ - አዲስ አበባ', description: 'ከዶራሌ ተርሚናል እስከ ማዕከላዊ ደረቅ ወደቦች።', specs: ['DCT & DMP ተወካዮች', 'EDR ምድር ባቡር', 'FCL & LCL'], kpi: '99.4% ምጣኔ' },
+        { id: 'fleet-coordination', code: '03', title: 'አገር አቋራጭ ተሽከርካሪዎች', subtitle: 'ከባድ ማሽነሪ ጫኝ', description: 'GPS የታገዘ ፍላትቤድ እና ሎውቤድ ተሽከርካሪዎች።', specs: ['24/7 ጂፒኤስ ክትትል', 'እስከ 120T ሎውቤድ', 'ድንበር ፕሮቶኮል'], kpi: '100% ክትትል' },
+        { id: 'machinery-trading', code: '04', title: 'የማሽነሪዎች ንግድ', subtitle: 'ኢንዱስትሪ እቃዎች አስመጪነት', description: 'ከዓለም አቀፍ አምራቾች ቀጥታ ማስመጣት።', specs: ['ፋብሪካ ቀጥታ ግዥ', 'የውጭ ምንዛሬ ማቀናጀት', 'እስከ ፋብሪካ ደጃፍ'], kpi: 'የተሟላ ዋስትና' }
       ]
     },
     corridor: {
       sectionTag: 'ኮሪደር',
       headline: 'የጅቡቲ - አዲስ አበባ መስመር።',
-      subheadline: 'የቀይ ባህርን የባህር መስመር ከማዕከላዊ ኢትዮጵያ ጋር የሚያገናኘው ከ900 ኪ.ሜ በላይ ርዝመት ያለው የትራንስፖርት መስመር።',
+      subheadline: 'ከ900 ኪ.ሜ በላይ ርዝመት ያለው የትራንስፖርት መስመር።',
       stops: [
-        {
-          code: '01',
-          name: 'የጅቡቲ ወደብ (ዶራሌ)',
-          type: 'የባህር በር',
-          transitTime: 'ቀን 00',
-          desc: 'ከመርከብ ማውረድ እና የትራንዚት ሰነዶች ማስተናገድ።'
-        },
-        {
-          code: '02',
-          name: 'የገላፊ / ደወሌ ድንበር',
-          type: 'የጉምሩክ ፍተሻ',
-          transitTime: 'ቀን 01',
-          desc: 'የተሽከርካሪዎች ርክክብ እና የኤሌክትሮኒክስ ማህተም ፍተሻ።'
-        },
-        {
-          code: '03',
-          name: 'የሞጆ ደረቅ ወደብ',
-          type: 'የጭነት ማዕከል',
-          transitTime: 'ቀን 02',
-          desc: 'የኮንቴይነር ክምችት እና ከባቡር ወደ መኪና ማዛወር።'
-        },
-        {
-          code: '04',
-          name: 'አዲስ አበባ (ቃሊቲ)',
-          type: 'የመጨረሻ መዳረሻ',
-          transitTime: 'ቀን 02-03',
-          desc: 'የመጨረሻ የጉምሩክ ክሊራንስ እና ጭነቱን ለፋብሪካዎች ማስረከብ።'
-        }
+        { code: '01', name: 'የጅቡቲ ወደብ (ዶራሌ)', type: 'የባህር በር', transitTime: 'ቀን 00', desc: 'ከመርከብ ማውረድ እና ሰነዶች ማስተናገድ።' },
+        { code: '02', name: 'የገላፊ / ደወሌ ድንበር', type: 'የጉምሩክ ፍተሻ', transitTime: 'ቀን 01', desc: 'የተሽከርካሪዎች ርክክብ እና ፍተሻ።' },
+        { code: '03', name: 'የሞጆ ደረቅ ወደብ', type: 'የጭነት ማዕከል', transitTime: 'ቀን 02', desc: 'ኮንቴይነር ክምችት እና ማዛወር።' },
+        { code: '04', name: 'አዲስ አበባ (ቃሊቲ)', type: 'የመጨረሻ መዳረሻ', transitTime: 'ቀን 02-03', desc: 'የመጨረሻ ጉምሩክ እና ማስረከብ።' }
       ]
     },
     contact: {
       sectionTag: 'ግንኙነት',
-      headline: 'የጭነት ጥያቄ እና ግንኙነት።',
-      subheadline: 'በአዲስ አበባ ከሚገኘው የሎጂስቲክስ ቡድናችን ጋር ይገናኙ። ጥያቄዎ በ2 ሰዓታት ውስጥ ምላሽ ያገኛል።',
+      headline: 'የጭነት ጥያቄ።',
+      subheadline: 'በ2 ሰዓታት ውስጥ ምላሽ ያገኛሉ።',
       form: {
-        nameLabel: 'ሙሉ ስም',
-        namePlaceholder: 'ምሳሌ፡ ዳንኤል ኃይሌ',
-        companyLabel: 'የድርጅት ስም',
-        companyPlaceholder: 'ምሳሌ፡ የኢትዮጵያ ማኑፋክቸሪንግ',
-        phoneLabel: 'ስልክ ቁጥር',
-        phonePlaceholder: '+251 91 234 5678',
-        emailLabel: 'ኢሜይል',
-        emailPlaceholder: 'logistics@company.com',
+        nameLabel: 'ሙሉ ስም', namePlaceholder: 'ምሳሌ፡ ዳንኤል ኃይሌ',
+        companyLabel: 'የድርጅት ስም', companyPlaceholder: 'ምሳሌ፡ ኢትዮጵያ ማኑፋክቸሪንግ',
+        phoneLabel: 'ስልክ ቁጥር', phonePlaceholder: '+251 91 234 5678',
+        emailLabel: 'ኢሜይል', emailPlaceholder: 'logistics@company.com',
         cargoTypeLabel: 'የአገልግሎት አይነት',
-        cargoTypes: [
-          'የጅቡቲ - አዲስ አበባ የጭነት አስተላላፊነት',
-          'የጉምሩክ ክሊራንስ',
-          'የከባድ ማሽነሪዎች ማጓጓዝ (ሎውቤድ)',
-          'የኢንዱስትሪ ማሽነሪዎች ንግድ',
-          'የአገር አቋራጭ ተሽከርካሪ ኪራይ'
-        ],
-        volumeLabel: 'የጭነቱ መጠን / ቶን',
-        volumePlaceholder: 'ምሳሌ፡ 2 ባለ 40ft ኮንቴይነሮች',
-        originDestLabel: 'መነሻ እና መድረሻ',
-        originDestPlaceholder: 'ምሳሌ፡ ሻንጋይ ➔ ጅቡቲ ➔ ሞጆ',
-        messageLabel: 'ተጨማሪ ማብራሪያ',
-        messagePlaceholder: 'ስለ ጭነቱ ሁኔታ ይጥቀሱ...',
-        submitBtn: 'ጥያቄውን ይላኩ',
-        submittingBtn: 'በመላክ ላይ...',
-        successMsg: 'ጥያቄዎ ተመዝግቧል! የመለያ ቁጥር፡ SAT-'
+        cargoTypes: ['ፍሬይት ትራንስፖርቴሽን', 'ጉምሩክ ክሊራንስ', 'ሎጂስቲክስ ማድረስ', 'ከባድ ማሽነሪ ማጓጓዝ', 'ፕሮጀክት ጭነት'],
+        volumeLabel: 'የጭነቱ መጠን', volumePlaceholder: 'ምሳሌ፡ 2 x 40ft',
+        originDestLabel: 'መነሻ እና መድረሻ', originDestPlaceholder: 'ምሳሌ፡ ሻንጋይ ➔ ጅቡቲ ➔ ሞጆ',
+        messageLabel: 'ተጨማሪ ማብራሪያ', messagePlaceholder: 'ስለ ጭነቱ ሁኔታ ይጥቀሱ...',
+        submitBtn: 'ጥያቄውን ይላኩ', submittingBtn: 'በመላክ ላይ...', successMsg: 'ጥያቄዎ ተመዝግቧል! SAT-'
       },
       location: {
-        buildingTitle: 'ዋና ቢሮ',
-        buildingName: 'ፈተለ ህንፃ (Fetele Building)',
-        addressLine1: 'ወሎ ሰፈር፣ ቂርቆስ ክፍለ ከተማ',
-        addressLine2: 'አዲስ አበባ፣ ኢትዮጵያ',
+        buildingTitle: 'ዋና ቢሮ', buildingName: 'ፈተለ ህንፃ',
+        addressLine1: 'ወሎ ሰፈር', addressLine2: 'አዲስ አበባ፣ ኢትዮጵያ',
         coordinates: '09°00′05″N 38°46′02″E',
-        hoursTitle: 'የስራ ሰዓታት',
-        hours: 'ሰኞ – ቅዳሜ: 08:00 – 18:30 (EAT) // ኦፕሬሽን: 24/7',
-        phoneTitle: 'ስልክ',
-        phone: '+251 11 667 4421 / +251 91 123 4567',
-        emailTitle: 'ኢሜይል',
-        email: 'operations@satlogistics-et.com',
-        mapNotice: 'ፈተለ ህንፃ፣ ወሎ ሰፈር፣ አዲስ አበባ'
+        hoursTitle: 'የስራ ሰዓታት', hours: 'ሰኞ – ቅዳሜ: 08:00 – 18:30',
+        phoneTitle: 'ስልክ', phone: '+251 93 299 9977',
+        emailTitle: 'ኢሜይል', email: 'satlogistics0001@gmail.com',
+        mapNotice: 'ፈተለ ህንፃ፣ ወሎ ሰፈር'
       }
     },
     footer: {
-      tagline: 'አስተማማኝ የጭነት አስተላላፊነት፣ የጉምሩክ ክሊራንስ እና የማሽነሪዎች ንግድ።',
-      registration: 'ኤስኤቲ ሎጂስቲክስ እና ንግድ ኃ/የተ/የግ/ማ — ምዝገባ: ETH-LOG-4482',
-      licensing: 'በኢትዮጵያ ባህር ትራንስፖርትና ሎጂስቲክስ እውቅና የተሰጠው።',
+      tagline: 'አስተማማኝ የጭነት አስተላላፊነት እና የጉምሩክ ክሊራንስ።',
+      registration: 'ኤስኤቲ ሎጂስቲክስ — ምዝገባ: ETH-LOG-4482',
+      licensing: 'በኢትዮጵያ ባህር ትራንስፖርት እውቅና የተሰጠው።',
       copyright: '© 2026 ኤስኤቲ ሎጂስቲክስ እና ንግድ ኃ/የተ/የግ/ማ።',
       backToTop: 'ወደ ላይ'
     }
@@ -388,6 +419,7 @@ export const translations: Record<Language, TranslationSchema> = {
   ar: {
     nav: {
       home: 'الرئيسية',
+      about: 'من نحن',
       services: 'الخدمات',
       executive: 'الإدارة',
       corridor: 'الممر',
@@ -396,183 +428,138 @@ export const translations: Record<Language, TranslationSchema> = {
     },
     hero: {
       badge: 'اللوجستيات المتعددة الوسائط في القرن الأفريقي',
-      headlinePart1: 'شركة إس إيه تي',
-      headlinePart2: 'للخدمات اللوجستية والتجارة ش.ذ.م.م',
-      tagline: 'حلول سلاسل التوريد المتكاملة وتجارة المعدات الصناعية التي تربط ميناء جيبوتي بوسط إثيوبيا.',
-      ctaPrimary: 'طلب شحن فوري',
-      ctaSecondary: 'استعراض الخدمات',
-      stat1Label: 'مدة العبور',
+      headlinePart1: 'شركة SAT',
+      headlinePart2: 'للخدمات اللوجستية والتجارة',
+      tagline: 'حلول متكاملة لسلسلة التوريد تربط ميناء جيبوتي بوسط إثيوبيا.',
+      ctaPrimary: 'طلب شحن',
+      ctaSecondary: 'عرض الخدمات',
+      stat1Label: 'وقت العبور',
       stat1Value: '36-48 ساعة',
-      stat2Label: 'التخليص الجمركي',
+      stat2Label: 'الجمارك',
       stat2Value: '99.4%',
-      stat3Label: 'سعة الأسطول',
-      stat3Value: '+120 شاحنة',
+      stat3Label: 'الأسطول',
+      stat3Value: '120+',
       stat4Label: 'الممر الرئيسي',
-      stat4Value: 'جيبوتي ➔ أديس أبابا',
-      corridorStatus: 'محور جيبوتي - أديس أبابا: يعمل بكفاءة',
-      hubBadge: 'المقر: أديس أبابا // سجل: ETH-LOG-4482'
+      stat4Value: 'جيبوتي ➔ أديس',
+      corridorStatus: 'محور جيبوتي-أديس أبابا: تشغيلي',
+      hubBadge: 'المقر: أديس أبابا // رقم التسجيل: ETH-LOG-4482'
+    },
+    about: {
+      sectionTag: 'من نحن',
+      headline: 'هويتنا.',
+      overview: 'شركة SAT للخدمات اللوجستية والتجارة هي مزود لخدمات النقل واللوجستيات في إثيوبيا وما وراءها.',
+      missionTag: 'مهمتنا',
+      missionHeadline: 'المهمة الأساسية والصناعات المستهدفة.',
+      missionItems: [
+        'تقدم SAT حلولاً شاملة لطيف واسع من الصناعات بما فيها التصنيع، والطاقة، والمناطق الصناعية، والطاقة الشمسية، والبضائع الثقيلة.',
+        'بالإضافة إلى الشحن، نقدم خدمات استشارية لوجستية لتحسين سلاسل التوريد.',
+        'هدفنا دعم الشركات الخاصة والمؤسسات الحكومية في تحسين الوصول اللوجستي وخفض التعريفات.'
+      ],
+      purposeTag: 'غرضنا',
+      purposeHeadline: 'الغرض والطاقة.',
+      purposeFoundedNote: 'تأسست عام 2023، وتلتزم بتقديم خدمات نقل وتخليص جمركي متخصصة.',
+      purposeMission: 'مهمتنا تقديم حلول لوجستية شاملة تلبي الاحتياجات الدولية المتنوعة لعملائنا.',
+      principlesTag: 'مبادئ التشغيل',
+      principlesHeadline: 'مبادئنا.',
+      principles: [
+        { title: 'الشراكة مع أصحاب المصلحة', desc: 'نضع أنفسنا كحلفاء موثوقين نولي البساطة والاعتمادية أولوية قصوى.' },
+        { title: 'تمكين موظفينا', desc: 'النجاح مبني على الوحدة، نعزز العمل الجماعي والتعاون.' },
+        { title: 'الدافع نحو التميز', desc: 'عملياتنا مرتكزة على المعايير الوطنية والدولية.' },
+        { title: 'التوجه نحو المستقبل', desc: 'مواقف تقدمية وتركيز على النمو المستمر.' },
+        { title: 'الالتزام بالاستدامة', desc: 'نمارس العمل الأخلاقي وندمج ضمانات بيئية متقدمة.' }
+      ],
+      capabilityTag: 'قدرات الفريق',
+      capabilityHeadline: 'قدرات فريقنا.',
+      capabilities: [
+        { title: 'الخبرة المحلية', desc: 'فهم عميق للوائح النقل والسياسات والبنية التحتية الإثيوبية.' },
+        { title: 'التنسيق السلس', desc: 'خبرة في عمليات ما قبل الشحن وإدارة الوثائق الجمركية.' },
+        { title: 'شراكات قوية', desc: 'تعاون مع سلطات الجمارك وخطوط الشحن والوكلاء.' },
+        { title: 'نهج يركز على العميل', desc: 'حلول مخصصة لتلبية احتياجاتك اللوجستية.' }
+      ],
+      projectsTag: 'المشاريع المنجزة',
+      projectsHeadline: 'سجل حافل.',
+      projectsDesc: 'أدّت شركتنا دوراً محورياً في نقل البضائع الرأسمالية لبعض أبرز مشاريع البنية التحتية في إثيوبيا.',
+      projectsList: [
+        'سد النهضة الإثيوبي الكبير (GERD)',
+        'الخطوط الجوية الإثيوبية — شحن البضائع',
+        'توليد الطاقة — مجمع جيلجيل جيبي',
+        'المناطق الصناعية: هاواسا، دوكيم، أداما',
+        'الطاقة الكهربائية الإثيوبية',
+        'وزارة المالية — لوجستيات المعدات الرأسمالية'
+      ],
+      customersTag: 'عملاؤنا',
+      customersHeadline: 'الشركاء الدوليون.',
+      customersSubheadline: 'عملنا مع كبرى الشركات العالمية في قطاعات الطاقة والبناء والصلب والبنية التحتية.'
     },
     executive: {
       sectionTag: 'الإدارة',
-      headline: 'القيادة التنفيذية.',
-      subheadline: 'بقيادة تستند إلى خبرة أكاديمية وميدانية في سلاسل الإمداد والنقل متعدد الوسائط.',
-      name: 'صامويل أياليو',
-      title: 'الشريك المؤسس والرئيس التنفيذي',
-      credentialBadge: 'ماجستير في إدارة الخدمات اللوجستية وسلاسل الإمداد (MA)',
-      quote: '«الخدمات اللوجستية الدقيقة هي الشريان الاقتصادي للقرن الأفريقي.»',
-      bioParagraph1: 'حائز على ماجستير في إدارة الخدمات اللوجستية وسلاسل الإمداد، ويمتلك أكثر من عقد من الخبرة في إدارة الممرات التجارية.',
-      bioParagraph2: 'يدير منظومة النقل المتعدد الوسائط والتخليص الجمركي التي تربط ميناء جيبوتي بميناء موجو الجاف وأديس أبابا.',
-      metricTitle1: 'استراتيجية الإمداد',
-      metricDesc1: 'تكامل الموانئ الجافة وتحسين مسارات الشحن.',
-      metricTitle2: 'كفاءة الممر',
-      metricDesc2: 'تخليص جمركي في أقل من 48 ساعة وتتبع مباشر.',
-      governanceBadge: 'مشغل مرخص // هيئة النقل البحري الإثيوبية'
+      headline: 'قيادة تنفيذية.',
+      subheadline: 'تأسست عام 2023 لتقديم خدمات نقل وتخليص جمركي متخصصة.',
+      name: 'صموئيل أيالو',
+      title: 'المدير العام',
+      credentialBadge: 'متخصص لوجستي رائد',
+      quote: '"نجعل شحن بضائعك أمراً بسيطاً."',
+      bioParagraph1: 'يحمل درجة الماجستير في اللوجستيات وإدارة سلاسل التوريد مع خبرة تزيد عن عقد.',
+      bioParagraph2: 'يقود عمليات التخليص الجمركي المتكامل والنقل المتعدد الوسائط من ميناء جيبوتي.',
+      metricTitle1: 'استراتيجية سلسلة التوريد',
+      metricDesc1: 'متخصص في تكامل الموانئ الجافة وتحسين الممرات.',
+      metricTitle2: 'تسليم الممر',
+      metricDesc2: 'بروتوكول تخليص جمركي في أقل من 48 ساعة.',
+      governanceBadge: 'مشغل مرخص // هيئة الملاحة الإثيوبية'
     },
     services: {
       sectionTag: 'الخدمات',
-      headline: 'الخدمات الرئيسية.',
-      subheadline: 'أربعة قطاعات تشغيلية مصممة للسرعة والامتثال الكامل.',
+      headline: 'الخدمات الأساسية.',
+      subheadline: 'أربعة قطاعات متخصصة مصممة للسرعة والامتثال.',
       items: [
-        {
-          id: 'customs-clearance',
-          code: '01',
-          title: 'التخليص الجمركي',
-          subtitle: 'تصريح إلكتروني معتمد وفق أسيكودا',
-          description: 'إفراج جمركي سريع عبر مطار أديس أبابا، وميناء موجو الجاف، ومحطات الحدود في جيبوتي.',
-          specs: [
-            'إقرارات مسبقة عبر ASYCUDA World',
-            'تصنيف التعريفة الجمركية والرسوم',
-            'إدارة خطابات الضمان والاعتمادات'
-          ],
-          kpi: '24-36 ساعة متوسط الإفراج'
-        },
-        {
-          id: 'freight-forwarding',
-          code: '02',
-          title: 'شحن وتوجيه البضائع',
-          subtitle: 'ممر جيبوتي إلى أديس أبابا',
-          description: 'خدمات متكاملة تربط محطات ميناء جيبوتي (دوراليه) بالموانئ الجافة في موجو وأديس أبابا.',
-          specs: [
-            'تمثيل دائم في موانئ دوراليه (DCT & DMP)',
-            'تكامل كامل مع قطار إثيوبيا - جيبوتي السريع',
-            'شحن الحاويات الكاملة (FCL) والجزئية (LCL)'
-          ],
-          kpi: '99.4% التزام بالمواعيد'
-        },
-        {
-          id: 'fleet-coordination',
-          code: '03',
-          title: 'الأسطول العابر للحدود',
-          subtitle: 'نقل ثقيل وشاحنات منخفضة',
-          description: 'أسطول شاحنات مجهزة بتتبع GPS يشمل الشاحنات المسطحة والمنخفضة حتى 120 طناً والمبردة.',
-          specs: [
-            'تتبع ومراقبة مباشرة بالأقمار الصناعية 24/7',
-            'ناقلات منخفضة للمعدات الثقيلة حتى 120 طناً',
-            'بروتوكول أمني وإشراف حدودي متكامل'
-          ],
-          kpi: '100% شحن مراقب'
-        },
-        {
-          id: 'machinery-trading',
-          code: '04',
-          title: 'تجارة الآلات والمعدات',
-          subtitle: 'توريد مباشر للآلات الصناعية',
-          description: 'توريد الآلات الصناعية وخطوط الإنتاج ومعدات البناء مباشرة من المصانع العالمية.',
-          specs: [
-            'توريد مباشر من كبرى المصانع العالمية',
-            'تسهيلات تمويل الاستيراد والتراخيص',
-            'تسليم موقعي مع الإشراف اللوجستي'
-          ],
-          kpi: 'حلول استيراد متكاملة'
-        }
+        { id: 'customs-clearance', code: '01', title: 'التخليص الجمركي', subtitle: 'إقرارات ASYCUDA المعتمدة', description: 'إفراج جمركي إلكتروني سريع عبر محطات الحدود.', specs: ['إقرارات ASYCUDA World', 'تصنيف التعريفة والتقييم', 'سندات ضمان العبور'], kpi: 'متوسط 24-36 ساعة' },
+        { id: 'freight-forwarding', code: '02', title: 'الشحن والتخليص', subtitle: 'ممر جيبوتي-أديس أبابا', description: 'توجيه شحن متزامن بحراً وسكة حديداً وطريقاً.', specs: ['تمثيل في دورالية (DCT & DMP)', 'تكامل سكة حديد إثيو-جيبوتي', 'تجميع حاويات FCL & LCL'], kpi: '99.4% تسليم في الوقت' },
+        { id: 'fleet-coordination', code: '03', title: 'أسطول عابر للحدود', subtitle: 'نقل بضائع ثقيلة', description: 'أسطول مراقب بالـGPS من منصات وناقلات ثقيلة.', specs: ['تتبع فوري 24/7', 'ناقلات حتى 120 طن', 'بروتوكول قافلة الحدود'], kpi: '100% نقل مراقب' },
+        { id: 'machinery-trading', code: '04', title: 'استيراد الآلات', subtitle: 'مصدر المعدات التجارية', description: 'شراء متكامل واستيراد الآلات الصناعية والأجزاء.', specs: ['مصادر مباشرة من المصنع', 'تنسيق تراخيص الاستيراد والعملة', 'تسليم حتى باب المصنع'], kpi: 'تسليم متكامل' }
       ]
     },
     corridor: {
       sectionTag: 'الممر التجاري',
-      headline: 'محور جيبوتي – أديس أبابا.',
-      subheadline: 'الشريان الحيوي بطول يتجاوز 900 كم يربط البحر الأحمر بوسط إثيوبيا.',
+      headline: 'محور جيبوتي - أديس.',
+      subheadline: 'الشريان اللوجستي الممتد 900+ كم الذي يربط الشحن البحري في البحر الأحمر بوسط إثيوبيا.',
       stops: [
-        {
-          code: '01',
-          name: 'ميناء جيبوتي (دوراليه)',
-          type: 'البوابة البحرية',
-          transitTime: 'اليوم 00',
-          desc: 'تفريغ السفن وتصديق بوالص الشحن وإصدار بيانات الترانزيت.'
-        },
-        {
-          code: '02',
-          name: 'منفذ جلافي / ديويلي',
-          type: 'التفتيش الجمركي',
-          transitTime: 'اليوم 01',
-          desc: 'تسليم الشحنات وفحص الأختام الإلكترونية وتدقيق الضمانات.'
-        },
-        {
-          code: '03',
-          name: 'ميناء موجو الجاف',
-          type: 'المحطة الداخلية',
-          transitTime: 'اليوم 02',
-          desc: 'ترتيب الحاويات والنقل بين القطارات والشاحنات والتخزين.'
-        },
-        {
-          code: '04',
-          name: 'أديس أبابا (كاليتي)',
-          type: 'وجهة التسليم',
-          transitTime: 'اليوم 02-03',
-          desc: 'التخليص النهائي وسداد الرسوم والتسليم للمصانع مباشرة.'
-        }
+        { code: '01', name: 'ميناء جيبوتي (دورالية)', type: 'محطة بحرية', transitTime: 'اليوم 00', desc: 'تفريغ السفن ومعالجة بوالص الشحن.' },
+        { code: '02', name: 'حدود غالافي / ديويلي', type: 'تفتيش جمركي', transitTime: 'اليوم 01', desc: 'تسليم الحراسة والتحقق الإلكتروني.' },
+        { code: '03', name: 'ميناء موجو الجاف', type: 'مستودع تبادل', transitTime: 'اليوم 02', desc: 'تكديس الحاويات والشحن من سكة حديد إلى شاحنات.' },
+        { code: '04', name: 'أديس أبابا (قاليتي)', type: 'تسليم للمستلم', transitTime: 'اليوم 02-03', desc: 'الإفراج الجمركي النهائي والتسليم للمصنع.' }
       ]
     },
     contact: {
       sectionTag: 'اتصل بنا',
-      headline: 'طلب الشحن والاستفسار.',
-      subheadline: 'قناة مباشرة مع مكتب العمليات في أديس أبابا. نرد خلال ساعتين.',
+      headline: 'استفسارات الشحن.',
+      subheadline: 'قناة مباشرة لفريقنا في أديس أبابا. ردود خلال ساعتين.',
       form: {
-        nameLabel: 'الاسم الكامل',
-        namePlaceholder: 'مثال: أحمد حسن',
-        companyLabel: 'اسم الشركة',
-        companyPlaceholder: 'مثال: المجموعة الإثيوبية للصناعات',
-        phoneLabel: 'رقم الهاتف',
-        phonePlaceholder: '+251 91 234 5678',
-        emailLabel: 'البريد الإلكتروني',
-        emailPlaceholder: 'logistics@company.com',
-        cargoTypeLabel: 'نوع الخدمة',
-        cargoTypes: [
-          'شحن جيبوتي - أديس أبابا',
-          'تخليص جمركي شامل',
-          'نقل معدات ثقيلة (Lowbed)',
-          'استيراد الآلات الصناعية',
-          'استئجار أسطول شاحنات'
-        ],
-        volumeLabel: 'حجم الشحنة / الوزن',
-        volumePlaceholder: 'مثال: حاويتان 40 قدم أو 30 طناً',
-        originDestLabel: 'المنشأ والوجهة',
-        originDestPlaceholder: 'مثال: شنغهاي ➔ جيبوتي ➔ موجو',
-        messageLabel: 'ملاحظات إضافية',
-        messagePlaceholder: 'أي متطلبات مناولة خاصة...',
-        submitBtn: 'إرسال الطلب',
-        submittingBtn: 'جاري الإرسال...',
-        successMsg: 'تم تسجيل الطلب بنجاح! رقم المرجع: SAT-'
+        nameLabel: 'الاسم الكامل', namePlaceholder: 'مثال: أحمد محمد',
+        companyLabel: 'اسم الشركة', companyPlaceholder: 'مثال: مجموعة التصنيع الإثيوبية',
+        phoneLabel: 'رقم الهاتف', phonePlaceholder: '+251 93 299 9977',
+        emailLabel: 'البريد الإلكتروني', emailPlaceholder: 'logistics@company.com',
+        cargoTypeLabel: 'فئة الخدمة',
+        cargoTypes: ['نقل البضائع', 'التخليص الجمركي', 'التسليم للمنزل', 'نقل الآلات الثقيلة', 'مناولة البضائع الخاصة'],
+        volumeLabel: 'الحجم / الوزن المقدر', volumePlaceholder: 'مثال: حاويتان 40 قدم',
+        originDestLabel: 'المصدر والوجهة', originDestPlaceholder: 'مثال: شنغهاي ➔ جيبوتي ➔ أديس أبابا',
+        messageLabel: 'ملاحظات الشحن', messagePlaceholder: 'متطلبات خاصة...',
+        submitBtn: 'إرسال الطلب', submittingBtn: 'جارٍ الإرسال...', successMsg: 'تم تسجيل طلبك. رقم المرجع: SAT-'
       },
       location: {
-        buildingTitle: 'المقر الرئيسي',
-        buildingName: 'مبنى فيتيلي (Fetele Building)',
-        addressLine1: 'وولو سيفر، كيركوس',
-        addressLine2: 'أديس أبابا، إثيوبيا',
+        buildingTitle: 'المقر الرئيسي', buildingName: 'مبنى فيتيلي',
+        addressLine1: 'ميدان غورغوريوس، الطابق الثالث', addressLine2: 'أديس أبابا، إثيوبيا',
         coordinates: '09°00′05″N 38°46′02″E',
-        hoursTitle: 'ساعات العمل',
-        hours: 'الإثنين – السبت: 08:00 – 18:30 (EAT) // العمليات: 24/7',
-        phoneTitle: 'الهاتف',
-        phone: '+251 11 667 4421 / +251 91 123 4567',
-        emailTitle: 'البريد',
-        email: 'operations@satlogistics-et.com',
-        mapNotice: 'مبنى فيتيلي، وولو سيفر، أديس أبابا'
+        hoursTitle: 'ساعات العمل', hours: 'الاثنين – السبت: 08:00 – 18:30',
+        phoneTitle: 'الهاتف المباشر', phone: '+251 93 299 9977',
+        emailTitle: 'البريد الإلكتروني', email: 'satlogistics0001@gmail.com',
+        mapNotice: 'مبنى فيتيلي، ميدان غورغوريوس، أديس أبابا'
       }
     },
     footer: {
-      tagline: 'شحن بضائع فائق الدقة، امتثال جمركي كامل، وتجارة آلات صناعية.',
-      registration: 'شركة إس إيه تي للخدمات اللوجستية والتجارة — سجل: ETH-LOG-4482',
-      licensing: 'مرخصة من هيئة النقل البحري الإثيوبية.',
-      copyright: '© 2026 شركة إس إيه تي للخدمات اللوجستية والتجارة ش.ذ.م.م.',
+      tagline: 'شحن متعدد الوسائط وتخليص جمركي وتداول معدات صناعية عبر شرق أفريقيا.',
+      registration: 'شركة SAT للخدمات اللوجستية والتجارة — رقم التسجيل: ETH-LOG-4482',
+      licensing: 'مرخصة من هيئة الملاحة الإثيوبية.',
+      copyright: '© 2026 شركة SAT للخدمات اللوجستية والتجارة.',
       backToTop: 'العودة للأعلى'
     }
   },
@@ -580,191 +567,147 @@ export const translations: Record<Language, TranslationSchema> = {
   zh: {
     nav: {
       home: '概览',
+      about: '关于我们',
       services: '服务',
       executive: '领导层',
       corridor: '走廊',
-      contact: '联络',
+      contact: '联系我们',
       quoteBtn: '获取报价'
     },
     hero: {
-      badge: '非洲之角多式联运物流运营商',
+      badge: '非洲之角多式联运物流',
       headlinePart1: 'SAT 物流',
-      headlinePart2: '& 贸易有限公司',
-      tagline: '连接吉布提深水港至埃塞俄比亚腹地的端到端供应链与成套工业设备贸易。',
-      ctaPrimary: '提交调度需求',
-      ctaSecondary: '查看核心业务',
-      stat1Label: '全程时效',
-      stat1Value: '36-48h',
-      stat2Label: '清关达标率',
+      headlinePart2: '贸易有限公司',
+      tagline: '连接吉布提港与埃塞俄比亚中部的端到端供应链解决方案。',
+      ctaPrimary: '申请调度',
+      ctaSecondary: '查看服务',
+      stat1Label: '运输时间',
+      stat1Value: '36-48小时',
+      stat2Label: '清关成功率',
       stat2Value: '99.4%',
       stat3Label: '车队规模',
       stat3Value: '120+',
-      stat4Label: '核心走廊',
-      stat4Value: '吉布提 ➔ 亚的斯',
-      corridorStatus: '吉布提—亚的斯走廊：高效运营中',
-      hubBadge: '总部：亚的斯亚贝巴 // 注册号：ETH-LOG-4482'
+      stat4Label: '主要走廊',
+      stat4Value: '吉布提 ➔ 亚的',
+      corridorStatus: '吉布提-亚的斯轴线：运营中',
+      hubBadge: '总部：亚的斯亚贝巴 // 注册: ETH-LOG-4482'
+    },
+    about: {
+      sectionTag: '关于我们',
+      headline: '我们是谁。',
+      overview: 'SAT物流贸易有限公司是埃塞俄比亚及周边地区的运输和物流服务提供商，提供国际货运代理、清关和项目货物运输服务。',
+      missionTag: '我们的使命',
+      missionHeadline: '核心使命与目标行业。',
+      missionItems: [
+        'SAT为制造业、能源生产、工业园区、太阳能、零售、服装行业和特殊重型项目货物提供全面解决方案。',
+        '除货运代理外，我们还提供物流咨询服务，以优化客户的供应链。',
+        '我们的目标是有效支持私营企业、制造商和政府机构改善物流能力、降低运费并提高服务质量。'
+      ],
+      purposeTag: '我们的宗旨',
+      purposeHeadline: '宗旨与能力。',
+      purposeFoundedNote: 'SAT物流贸易有限公司成立于2023年，致力于提供专业的运输和清关服务，确保货物从起点到终点的无缝移动。',
+      purposeMission: '我们的使命是提供全面的物流解决方案，满足客户多样化的国际物流需求。',
+      principlesTag: '运营原则',
+      principlesHeadline: '我们的原则。',
+      principles: [
+        { title: '与利益相关者合作', desc: '我们以值得信赖的盟友定位自己，优先考虑简单性、可靠性和以客户为中心的理念。' },
+        { title: '赋能我们的员工', desc: '成功建立在团结之上，我们促进团队合作并提供强大的员工支持体系。' },
+        { title: '以卓越为驱动', desc: '我们的运营以国内外标准为基准，确保所有服务的效率、一致性和速度。' },
+        { title: '面向未来', desc: '积极进取的态度和以增长为导向的战略使我们不断进化，更好地服务客户。' },
+        { title: '对可持续性的承诺', desc: '我们坚持道德实践和合规，将先进的环境保障措施融入运营。' }
+      ],
+      capabilityTag: '团队能力',
+      capabilityHeadline: '我们团队的能力。',
+      capabilities: [
+        { title: '本地专业知识', desc: '对埃塞俄比亚运输法规、政策和基础设施的深刻理解。' },
+        { title: '无缝协调', desc: '丰富的前期运输流程经验，确保高效的清关和文件处理。' },
+        { title: '强大的合作伙伴关系', desc: '与埃塞俄比亚海关当局、航运公司和货运代理的合作。' },
+        { title: '以客户为中心的方式', desc: '量身定制的解决方案，满足您的物流需求。' }
+      ],
+      projectsTag: '已交付项目',
+      projectsHeadline: '成熟的业绩记录。',
+      projectsDesc: '我们公司在埃塞俄比亚最重要的基础设施项目货物运输中发挥了重要作用。',
+      projectsList: [
+        '埃塞俄比亚复兴大坝 (GERD)',
+        '埃塞俄比亚航空 — 货运',
+        '发电 — 吉尔吉尔基贝综合体',
+        '工业园区：哈瓦萨、杜肯、阿达玛',
+        '埃塞俄比亚电力',
+        '财政部 — 资本设备物流'
+      ],
+      customersTag: '我们的客户',
+      customersHeadline: '国际合作伙伴。',
+      customersSubheadline: '我们与能源、建设、钢铁和基础设施领域的全球领先企业合作。'
     },
     executive: {
-      sectionTag: '管理层',
-      headline: '领导团队。',
-      subheadline: '由国际供应链管理学术造诣与东非多式联运实战经验引领。',
-      name: 'Samuel Ayalew (萨缪尔·阿亚勒)',
-      title: '联合创始人兼首席执行官 (CEO)',
-      credentialBadge: '物流与供应链管理专业文学硕士 (MA in Logistics & Supply Chain Management)',
-      quote: '“高精度物流是非洲之角经济繁荣的生命线。”',
-      bioParagraph1: '拥有物流与供应链管理文学硕士学位，在东非跨境贸易走廊与货运调度领域深耕逾十年。',
-      bioParagraph2: '统筹 SAT 覆盖吉布提港、莫乔无水港及亚的斯亚贝巴的全程报关与海铁公多式联运。',
+      sectionTag: '领导层',
+      headline: '执行领导层。',
+      subheadline: '成立于2023年，致力于提供专业的运输和清关服务。',
+      name: '萨穆埃尔·阿亚列夫',
+      title: '总经理',
+      credentialBadge: '领先物流专业人士',
+      quote: '"我们让您的货物运输变得简单。"',
+      bioParagraph1: '拥有物流与供应链管理硕士学位，具有十年以上高级货运协调和走廊管理经验。',
+      bioParagraph2: '他负责SAT的综合清关和多式联运业务，连接吉布提港与莫约干港和亚的斯亚贝巴。',
       metricTitle1: '供应链战略',
-      metricDesc1: '专注内陆无水港集成与全程货运优化。',
-      metricTitle2: '时效管控',
-      metricDesc2: '48小时内通关放行与全程北斗/GPS卫星监控。',
-      governanceBadge: '埃塞俄比亚海事局认证一级物流商'
+      metricDesc1: '专注于干港一体化和走廊优化。',
+      metricTitle2: '走廊交付',
+      metricDesc2: '48小时内清关协议和实时车队跟踪。',
+      governanceBadge: '持牌运营商 // 埃塞俄比亚海事局'
     },
     services: {
-      sectionTag: '服务矩阵',
-      headline: '核心业务。',
-      subheadline: '四大专业垂直业务，保障高效通关与快速交付。',
+      sectionTag: '服务',
+      headline: '核心服务。',
+      subheadline: '四个专业垂直领域，专为速度和合规性而设计。',
       items: [
-        {
-          id: 'customs-clearance',
-          code: '01',
-          title: '海关清关与报关',
-          subtitle: 'AEO 认证与 ASYCUDA 极速申报',
-          description: '覆盖亚的斯亚贝巴机场货站、莫乔无水港及吉布提边境口岸的快速通关网络。',
-          specs: [
-            'ASYCUDA World 到港前电子申报',
-            '税则归类与关税估价合规优化',
-            '转关保证金与信用证单证合规'
-          ],
-          kpi: '平均 24-36h 放行'
-        },
-        {
-          id: 'freight-forwarding',
-          code: '02',
-          title: '多式联运货运代理',
-          subtitle: '吉布提至亚的斯亚贝巴核心走廊',
-          description: '从吉布提港多拉莱集装箱码头直达内陆核心无水港的海、铁、公一体化运输。',
-          specs: [
-            '多拉莱码头常驻专业驻港团队',
-            '亚吉电气化铁路 (EDR) 海铁联运集成',
-            '整箱 (FCL) 与拼箱 (LCL) 保税转运'
-          ],
-          kpi: '99.4% 准时送达'
-        },
-        {
-          id: 'fleet-coordination',
-          code: '03',
-          title: '跨境重卡车队调度',
-          subtitle: '重特大件特种车与卫星监控',
-          description: '专业调度平板车、承重可达120吨的低平板特种车及冷藏车，全天候在途监控。',
-          specs: [
-            '24/7 全天候 GPS/北斗卫星定位',
-            '120吨承重级大件设备低平板车',
-            '边境口岸快速过境调度保障'
-          ],
-          kpi: '100% 全程监控'
-        },
-        {
-          id: 'machinery-trading',
-          code: '04',
-          title: '工业机械贸易代理',
-          subtitle: '生产设备全球源头直采',
-          description: '为工业园区提供生产线机械、工程建筑设备及关键模具的直采与交钥匙进口。',
-          specs: [
-            '全球源头制造厂家直供渠道',
-            '进出口许可证代办与外汇清算协助',
-            '现场点对点交付就位保障'
-          ],
-          kpi: '交钥匙交付'
-        }
+        { id: 'customs-clearance', code: '01', title: '清关服务', subtitle: 'AEO认证 & ASYCUDA申报', description: '快速电子清关，覆盖亚的斯亚贝巴机场货运站、莫约干港和吉布提边境。', specs: ['ASYCUDA World电子申报', '关税分类与估价', '过境担保债券与信用证合规'], kpi: '平均24-36小时放行' },
+        { id: 'freight-forwarding', code: '02', title: '货运代理', subtitle: '吉布提至亚的斯亚贝巴走廊', description: '从多哈莱集装箱码头到中部干港的海陆铁协同货运。', specs: ['多哈莱港口代理(DCT & DMP)', '埃吉铁路(EDR)整合', 'FCL & LCL集装箱拼箱'], kpi: '99.4%准时交货率' },
+        { id: 'fleet-coordination', code: '03', title: '跨境车队', subtitle: '重型运输与低床运输', description: 'GPS监控的平板车、低床车（最高120吨）和冷藏车车队。', specs: ['24/7实时远程信息处理', '重型机械低床(最高120吨)', '专用边境护送协议'], kpi: '100%全程监控' },
+        { id: 'machinery-trading', code: '04', title: '机械进口贸易', subtitle: '商业设备采购', description: '工业设备的一站式商业采购和进口便利化。', specs: ['工厂直接全球采购', '进口许可证和外汇协调', '工厂门到门交货'], kpi: '一站式进口交货' }
       ]
     },
     corridor: {
-      sectionTag: '物流走廊',
-      headline: '吉布提 – 亚的斯大动脉。',
-      subheadline: '全长900余公里、连接红海海运与埃塞俄比亚腹地的核心走廊。',
+      sectionTag: '贸易走廊',
+      headline: '吉布提 – 亚的斯轴线。',
+      subheadline: '连接红海海运与埃塞俄比亚中部的900+公里多式联运生命线。',
       stops: [
-        {
-          code: '01',
-          name: '吉布提港 (多拉莱)',
-          type: '深水海运大门',
-          transitTime: '第 00 天',
-          desc: '船舶卸载、提单换单与过境舱单录入。'
-        },
-        {
-          code: '02',
-          name: '加拉菲 / 德韦莱口岸',
-          type: '双边边境查验',
-          transitTime: '第 01 天',
-          desc: '车队边境交接、电子封条核验与转关查验。'
-        },
-        {
-          code: '03',
-          name: '莫乔 (Mojo) 无水港',
-          type: '内陆铁公联运枢纽',
-          transitTime: '第 02 天',
-          desc: '集装箱堆垛、火车到卡车换装与保税仓储。'
-        },
-        {
-          code: '04',
-          name: '亚的斯亚贝巴 (卡利蒂)',
-          type: '终端交付中心',
-          transitTime: '第 02-03 天',
-          desc: '海关放行、税费结算并送达工厂车间。'
-        }
+        { code: '01', name: '吉布提港（多哈莱）', type: '深水码头', transitTime: '第0天', desc: '船舶卸货、提单验证和过境舱单处理。' },
+        { code: '02', name: '加拉菲/德韦勒边境', type: '海关检查', transitTime: '第1天', desc: '护送交接、电子封签验证和过境清关。' },
+        { code: '03', name: '莫约干港枢纽', type: '联运仓库', transitTime: '第2天', desc: '集装箱堆放、铁路转卡车和保税仓储。' },
+        { code: '04', name: '亚的斯亚贝巴（卡利提）', type: '收货人交付', transitTime: '第2-3天', desc: '最终清关、缴税和工厂直送。' }
       ]
     },
     contact: {
-      sectionTag: '业务联络',
-      headline: '业务咨询与调度需求。',
-      subheadline: '直接对接亚的斯亚贝巴调度团队，所有咨询在2小时内响应。',
+      sectionTag: '联系我们',
+      headline: '货物调度与查询。',
+      subheadline: '直接联系我们在亚的斯亚贝巴的物流团队。查询将在2小时内答复。',
       form: {
-        nameLabel: '联系人姓名',
-        namePlaceholder: '例如：王经理',
-        companyLabel: '公司名称',
-        companyPlaceholder: '例如：中埃工业投资集团',
-        phoneLabel: '电话号码',
-        phonePlaceholder: '+251 91 234 5678',
-        emailLabel: '电子邮箱',
-        emailPlaceholder: 'logistics@company.com',
-        cargoTypeLabel: '业务类型',
-        cargoTypes: [
-          '吉布提至亚的斯货运代理',
-          '海关报关与清关服务',
-          '重型工程机械运输 (低平板)',
-          '工业成套模具及设备贸易代理',
-          '跨境重卡专线包车'
-        ],
-        volumeLabel: '预估货量 / 吨数',
-        volumePlaceholder: '例如：2 x 40尺高柜 或 30吨',
-        originDestLabel: '始发地与目的地',
-        originDestPlaceholder: '例如：上海 ➔ 吉布提 ➔ 莫乔',
-        messageLabel: '货运备注',
-        messagePlaceholder: '特殊装卸要求或交运期限...',
-        submitBtn: '提交需求',
-        submittingBtn: '提交中...',
-        successMsg: '需求已受理！追踪编号：SAT-'
+        nameLabel: '全名', namePlaceholder: '例：张伟',
+        companyLabel: '公司名称', companyPlaceholder: '例：埃塞俄比亚制造集团',
+        phoneLabel: '电话号码', phonePlaceholder: '+251 93 299 9977',
+        emailLabel: '电子邮件', emailPlaceholder: 'logistics@company.com',
+        cargoTypeLabel: '服务类别',
+        cargoTypes: ['货运运输', '清关服务', '最后一公里配送', '重型机械运输', '项目货物处理'],
+        volumeLabel: '预计体积/重量', volumePlaceholder: '例：2个40英尺高柜或30吨',
+        originDestLabel: '起运地和目的地', originDestPlaceholder: '例：上海 ➔ 吉布提 ➔ 亚的斯亚贝巴',
+        messageLabel: '货物备注', messagePlaceholder: '特殊处理要求或时间表...',
+        submitBtn: '提交请求', submittingBtn: '提交中...', successMsg: '请求已登记。参考编号：SAT-'
       },
       location: {
-        buildingTitle: '公司总部',
-        buildingName: 'Fetele Building (费特勒大厦)',
-        addressLine1: 'Wolo Sefer, Kirkos Sub-City',
-        addressLine2: 'Addis Ababa, Ethiopia (亚的斯亚贝巴)',
+        buildingTitle: '总部', buildingName: '费特莱大厦',
+        addressLine1: '戈尔戈里奥斯广场，3楼', addressLine2: '亚的斯亚贝巴，埃塞俄比亚',
         coordinates: '09°00′05″N 38°46′02″E',
-        hoursTitle: '工作时间',
-        hours: '周一至周六：08:00 – 18:30 (东三区) // 车队监控：24/7',
-        phoneTitle: '电话',
-        phone: '+251 11 667 4421 / +251 91 123 4567',
-        emailTitle: '邮箱',
-        email: 'operations@satlogistics-et.com',
-        mapNotice: 'Fetele Building, Wolo Sefer, Addis Ababa'
+        hoursTitle: '营业时间', hours: '周一至周六：08:00 – 18:30 (EAT) // 运营：24/7',
+        phoneTitle: '直线电话', phone: '+251 93 299 9977',
+        emailTitle: '电子邮件', email: 'satlogistics0001@gmail.com',
+        mapNotice: '费特莱大厦，戈尔戈里奥斯广场，亚的斯亚贝巴'
       }
     },
     footer: {
-      tagline: '深耕东非的国际多式联运货代、海关清关与重型工业设备贸易服务商。',
-      registration: 'SAT 物流与贸易有限公司 — 注册号：ETH-LOG-4482',
-      licensing: '经埃塞俄比亚海事局正式核准设立。',
-      copyright: '© 2026 SAT Logistics and Trading PLC.',
+      tagline: '覆盖东非的多式联运货运代理、清关和工业设备贸易。',
+      registration: 'SAT物流贸易有限公司 — 注册号: ETH-LOG-4482',
+      licensing: '经埃塞俄比亚海事局授权。',
+      copyright: '© 2026 SAT物流贸易有限公司。',
       backToTop: '返回顶部'
     }
   }

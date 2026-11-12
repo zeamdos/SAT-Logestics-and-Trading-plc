@@ -1,10 +1,11 @@
 export type Language = 'en' | 'am' | 'ar' | 'zh';
 
-export type NavItem = 'home' | 'services' | 'executive' | 'corridor' | 'contact';
+export type NavItem = 'home' | 'about' | 'services' | 'executive' | 'corridor' | 'contact';
 
 export interface TranslationSchema {
   nav: {
     home: string;
+    about: string;
     services: string;
     executive: string;
     corridor: string;
@@ -28,6 +29,31 @@ export interface TranslationSchema {
     stat4Value: string;
     corridorStatus: string;
     hubBadge: string;
+  };
+  about: {
+    sectionTag: string;
+    headline: string;
+    overview: string;
+    missionTag: string;
+    missionHeadline: string;
+    missionItems: string[];
+    purposeTag: string;
+    purposeHeadline: string;
+    purposeFoundedNote: string;
+    purposeMission: string;
+    principlesTag: string;
+    principlesHeadline: string;
+    principles: { title: string; desc: string }[];
+    capabilityTag: string;
+    capabilityHeadline: string;
+    capabilities: { title: string; desc: string }[];
+    projectsTag: string;
+    projectsHeadline: string;
+    projectsDesc: string;
+    projectsList: string[];
+    customersTag: string;
+    customersHeadline: string;
+    customersSubheadline: string;
   };
   executive: {
     sectionTag: string;

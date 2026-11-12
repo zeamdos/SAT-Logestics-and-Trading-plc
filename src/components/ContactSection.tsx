@@ -3,30 +3,55 @@
 import React, { useState } from 'react';
 import { Language } from '@/types';
 import { translations } from '@/data/translations';
-import { MapPin, Phone, Mail, Clock, Send, CheckCircle2, ExternalLink } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Send, CheckCircle2, ExternalLink, AlertCircle } from 'lucide-react';
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 🔑 Web3Forms access key — swap this string once you receive it from your
+//    client's Gmail account (goes to: https://web3forms.com/).
+//    It looks like: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+// ─────────────────────────────────────────────────────────────────────────────
+const WEB3FORMS_ACCESS_KEY = 'YOUR_WEB3FORMS_ACCESS_KEY';
 
 interface ContactSectionProps {
   currentLang: Language;
 }
 
-export const ContactSection: React.FC<ContactSectionProps> = ({
-  currentLang,
-}) => {
+export const ContactSection: React.FC<ContactSectionProps> = ({ currentLang }) => {
   const t = translations[currentLang];
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState('');
   const [dispatchRef, setDispatchRef] = useState('');
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitting(true);
+    setError('');
 
-    setTimeout(() => {
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    // Generate a local reference id
+    const refId = `SAT-ET-${Math.floor(100000 + Math.random() * 900000)}`;
+    data.append('dispatch_ref', refId);
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: data,
+      });
+      const json = await res.json();
+      if (json.success) {
+        setDispatchRef(refId);
+        setSubmitted(true);
+      } else {
+        setError('Submission failed. Please try again or email us directly.');
+      }
+    } catch {
+      setError('Network error. Please check your connection and try again.');
+    } finally {
       setSubmitting(false);
-      setSubmitted(true);
-      const randomId = Math.floor(100000 + Math.random() * 900000);
-      setDispatchRef(`SAT-ET-${randomId}`);
-    }, 800);
+    }
   };
 
   return (
@@ -48,29 +73,23 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
           </p>
         </div>
 
-        {/* Split Block Layout */}
+        {/* Split Layout */}
         <div className="border border-neutral-200 grid grid-cols-1 lg:grid-cols-12 bg-white">
-          {/* Left Column: Clean Cargo Dispatch Form */}
+          {/* Left: Form */}
           <div className="lg:col-span-6 p-6 sm:p-10 border-b lg:border-b-0 lg:border-r border-neutral-200">
-            <h3 className="text-xl font-light text-black uppercase mb-1">
-              Dispatch Request
-            </h3>
-            <p className="text-xs text-neutral-400 mb-6">
-              Inquiries reviewed within 2 operational hours.
-            </p>
+            <h3 className="text-xl font-light text-black uppercase mb-1">Dispatch Request</h3>
+            <p className="text-xs text-neutral-400 mb-6">Inquiries reviewed within 2 operational hours.</p>
 
             {submitted ? (
               <div className="p-6 border border-neutral-200 bg-neutral-50 text-center space-y-3">
                 <CheckCircle2 className="w-9 h-9 text-[#841618] mx-auto" />
-                <h4 className="text-lg font-light text-black uppercase">
-                  Inquiry Registered
-                </h4>
+                <h4 className="text-lg font-light text-black uppercase">Inquiry Registered</h4>
                 <p className="text-xs text-neutral-600 font-mono">
                   {t.contact.form.successMsg}
                   <span className="font-bold text-[#841618] ml-1">{dispatchRef}</span>
                 </p>
                 <button
-                  onClick={() => setSubmitted(false)}
+                  onClick={() => { setSubmitted(false); setError(''); }}
                   className="mt-3 px-5 py-2 bg-[#841618] hover:bg-[#6D1113] text-white text-xs font-mono uppercase tracking-wider"
                 >
                   New Inquiry
@@ -78,13 +97,16 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
-                {/* Name & Enterprise */}
+                {/* Web3Forms required hidden fields */}
+                <input type="hidden" name="access_key" value={WEB3FORMS_ACCESS_KEY} />
+                <input type="hidden" name="subject" value="New Dispatch Inquiry — SAT Logistics & Trading PLC" />
+                <input type="hidden" name="from_name" value="SAT Logistics Website" />
+                <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
+
+                {/* Name & Company */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                   <div>
-                    <label 
-                      htmlFor="full_name"
-                      className="block text-xs font-medium text-neutral-600 mb-1"
-                    >
+                    <label htmlFor="full_name" className="block text-xs font-medium text-neutral-600 mb-1">
                       {t.contact.form.nameLabel} *
                     </label>
                     <input
@@ -96,12 +118,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                       className="w-full px-3 py-2 bg-white border border-neutral-300 text-sm focus:outline-none focus:border-[#841618] transition-colors"
                     />
                   </div>
-
                   <div>
-                    <label 
-                      htmlFor="company_name"
-                      className="block text-xs font-medium text-neutral-600 mb-1"
-                    >
+                    <label htmlFor="company_name" className="block text-xs font-medium text-neutral-600 mb-1">
                       {t.contact.form.companyLabel} *
                     </label>
                     <input
@@ -118,10 +136,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                 {/* Phone & Email */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                   <div>
-                    <label 
-                      htmlFor="phone_number"
-                      className="block text-xs font-medium text-neutral-600 mb-1"
-                    >
+                    <label htmlFor="phone_number" className="block text-xs font-medium text-neutral-600 mb-1">
                       {t.contact.form.phoneLabel} *
                     </label>
                     <input
@@ -133,12 +148,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                       className="w-full px-3 py-2 bg-white border border-neutral-300 text-sm font-mono focus:outline-none focus:border-[#841618] transition-colors"
                     />
                   </div>
-
                   <div>
-                    <label 
-                      htmlFor="email"
-                      className="block text-xs font-medium text-neutral-600 mb-1"
-                    >
+                    <label htmlFor="email" className="block text-xs font-medium text-neutral-600 mb-1">
                       {t.contact.form.emailLabel} *
                     </label>
                     <input
@@ -154,10 +165,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
                 {/* Cargo Type */}
                 <div>
-                  <label 
-                    htmlFor="cargo_type"
-                    className="block text-xs font-medium text-neutral-600 mb-1"
-                  >
+                  <label htmlFor="cargo_type" className="block text-xs font-medium text-neutral-600 mb-1">
                     {t.contact.form.cargoTypeLabel} *
                   </label>
                   <select
@@ -167,20 +175,15 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     className="w-full px-3 py-2 bg-white border border-neutral-300 text-sm focus:outline-none focus:border-[#841618] transition-colors"
                   >
                     {t.contact.form.cargoTypes.map((type, idx) => (
-                      <option key={idx} value={type}>
-                        {type}
-                      </option>
+                      <option key={idx} value={type}>{type}</option>
                     ))}
                   </select>
                 </div>
 
-                {/* Volume & Trade Origin/Destination */}
+                {/* Volume & Origin/Dest */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                   <div>
-                    <label 
-                      htmlFor="cargo_volume"
-                      className="block text-xs font-medium text-neutral-600 mb-1"
-                    >
+                    <label htmlFor="cargo_volume" className="block text-xs font-medium text-neutral-600 mb-1">
                       {t.contact.form.volumeLabel}
                     </label>
                     <input
@@ -191,12 +194,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                       className="w-full px-3 py-2 bg-white border border-neutral-300 text-sm focus:outline-none focus:border-[#841618] transition-colors"
                     />
                   </div>
-
                   <div>
-                    <label 
-                      htmlFor="origin_destination"
-                      className="block text-xs font-medium text-neutral-600 mb-1"
-                    >
+                    <label htmlFor="origin_destination" className="block text-xs font-medium text-neutral-600 mb-1">
                       {t.contact.form.originDestLabel}
                     </label>
                     <input
@@ -209,12 +208,9 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                   </div>
                 </div>
 
-                {/* Details */}
+                {/* Message */}
                 <div>
-                  <label 
-                    htmlFor="cargo_details"
-                    className="block text-xs font-medium text-neutral-600 mb-1"
-                  >
+                  <label htmlFor="cargo_details" className="block text-xs font-medium text-neutral-600 mb-1">
                     {t.contact.form.messageLabel}
                   </label>
                   <textarea
@@ -226,7 +222,15 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                   />
                 </div>
 
-                {/* Submit Button */}
+                {/* Error message */}
+                {error && (
+                  <div className="flex items-start gap-2 p-3 border border-red-200 bg-red-50 text-xs text-red-700">
+                    <AlertCircle className="w-4 h-4 shrink-0 mt-0.5" />
+                    <span>{error}</span>
+                  </div>
+                )}
+
+                {/* Submit */}
                 <button
                   type="submit"
                   disabled={submitting}
@@ -242,13 +246,17 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     </>
                   )}
                 </button>
+
+                <p className="text-[10px] text-neutral-400 font-mono text-center">
+                  Powered by Web3Forms — no server required
+                </p>
               </form>
             )}
           </div>
 
-          {/* Right Column: Google Maps & Office Details */}
+          {/* Right: Map & Office Info */}
           <div className="lg:col-span-6 flex flex-col justify-between bg-neutral-50/40">
-            {/* Top Office Information */}
+            {/* Office Info */}
             <div className="p-6 sm:p-8 border-b border-neutral-200 bg-white">
               <span className="text-[11px] font-mono uppercase tracking-widest text-[#841618] block mb-1 font-medium">
                 {t.contact.location.buildingTitle}
@@ -261,10 +269,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
               </p>
             </div>
 
-            {/* Embedded Google Maps Pinpoint */}
+            {/* Google Map */}
             <div className="relative w-full h-[300px] border-b border-neutral-200 overflow-hidden bg-neutral-100">
               <iframe
-                title="Google Maps Pinpoint - Fetele Building, Wolo Sefer, Addis Ababa"
+                title="Google Maps — Fetele Building, Wolo Sefer, Addis Ababa"
                 src="https://maps.google.com/maps?q=Wolo%20Sefer,%20Kirkos,%20Addis%20Ababa,%20Ethiopia&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
@@ -274,14 +282,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                 referrerPolicy="no-referrer-when-downgrade"
                 className="w-full h-full"
               />
-
-              {/* Clean Map Floating Badge */}
               <div className="absolute top-3 left-3 bg-white/95 px-2.5 py-1 text-[10px] font-mono text-black uppercase border border-neutral-300 shadow-sm flex items-center gap-1.5 border-l-2 border-l-[#841618]">
                 <MapPin className="w-3 h-3 text-[#841618]" />
                 <span>Fetele Building // Wolo Sefer</span>
               </div>
-
-              {/* Direct Maps Link */}
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Wolo+Sefer+Addis+Ababa+Ethiopia"
                 target="_blank"
@@ -293,7 +297,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
               </a>
             </div>
 
-            {/* Bottom Contact Hotlines */}
+            {/* Contact Details */}
             <div className="p-6 sm:p-8 bg-white grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
               <div>
                 <div className="flex items-center gap-1.5 text-neutral-400 uppercase tracking-wider font-mono text-[10px] mb-0.5">
@@ -302,7 +306,6 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                 </div>
                 <div className="text-black font-medium">{t.contact.location.phone}</div>
               </div>
-
               <div>
                 <div className="flex items-center gap-1.5 text-neutral-400 uppercase tracking-wider font-mono text-[10px] mb-0.5">
                   <Mail className="w-3 h-3 text-[#841618]" />
@@ -310,7 +313,6 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                 </div>
                 <div className="text-black font-medium break-all">{t.contact.location.email}</div>
               </div>
-
               <div className="sm:col-span-2">
                 <div className="flex items-center gap-1.5 text-neutral-400 uppercase tracking-wider font-mono text-[10px] mb-0.5">
                   <Clock className="w-3 h-3 text-[#841618]" />

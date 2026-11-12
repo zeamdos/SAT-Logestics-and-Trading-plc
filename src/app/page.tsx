@@ -5,6 +5,7 @@ import { NavItem } from '@/types';
 import { useLanguage } from '@/context/LanguageContext';
 import { Navigation } from '@/components/Navigation';
 import { HeroSection } from '@/components/HeroSection';
+import { AboutSection } from '@/components/AboutSection';
 import { ServicesGrid } from '@/components/ServicesGrid';
 import { ExecutiveSection } from '@/components/ExecutiveSection';
 import { CorridorSection } from '@/components/CorridorSection';
@@ -17,16 +18,18 @@ export default function Home() {
 
   const handleNavigate = (section: NavItem) => {
     const viewLabels: Record<NavItem, string> = {
-      home: 'OVERVIEW',
-      services: 'SERVICES GRID',
+      home:      'OVERVIEW',
+      about:     'ABOUT US',
+      services:  'SERVICES GRID',
       executive: 'EXECUTIVE LEADERSHIP',
-      corridor: 'DJIBOUTI CORRIDOR',
-      contact: 'CONTACT & DISPATCH',
+      corridor:  'DJIBOUTI CORRIDOR',
+      contact:   'CONTACT & DISPATCH',
     };
 
     triggerTransition(viewLabels[section] || 'LOGISTICS SEGMENT', () => {
       setActiveSection(section);
-      const targetElement = document.getElementById(section === 'home' ? 'top' : section);
+      const targetId = section === 'home' ? 'top' : section;
+      const targetElement = document.getElementById(targetId);
       if (targetElement) {
         targetElement.scrollIntoView({ behavior: 'smooth' });
       }
@@ -35,43 +38,45 @@ export default function Home() {
 
   return (
     <div id="top" className="min-h-screen bg-white">
-      {/* Structural Header Navigation */}
       <Navigation
         activeSection={activeSection}
         onNavigate={handleNavigate}
       />
 
-      {/* Main Single-Page App with Architectural Sections */}
       <main className="relative z-10">
-        <HeroSection 
-          currentLang={currentLang} 
-          onNavigate={handleNavigate} 
+        <HeroSection
+          currentLang={currentLang}
+          onNavigate={handleNavigate}
         />
 
-        <ServicesGrid 
-          currentLang={currentLang} 
-          onNavigate={handleNavigate} 
+        <AboutSection
+          currentLang={currentLang}
+          onNavigate={handleNavigate}
         />
 
-        <ExecutiveSection 
-          currentLang={currentLang} 
-          onNavigate={handleNavigate} 
+        <ServicesGrid
+          currentLang={currentLang}
+          onNavigate={handleNavigate}
         />
 
-        <CorridorSection 
-          currentLang={currentLang} 
-          onNavigate={handleNavigate} 
+        <ExecutiveSection
+          currentLang={currentLang}
+          onNavigate={handleNavigate}
         />
 
-        <ContactSection 
-          currentLang={currentLang} 
+        <CorridorSection
+          currentLang={currentLang}
+          onNavigate={handleNavigate}
+        />
+
+        <ContactSection
+          currentLang={currentLang}
         />
       </main>
 
-      {/* Structural Minimalist Grid Footer */}
-      <Footer 
-        currentLang={currentLang} 
-        onNavigate={handleNavigate} 
+      <Footer
+        currentLang={currentLang}
+        onNavigate={handleNavigate}
       />
     </div>
   );
