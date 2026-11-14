@@ -1,4 +1,4 @@
-import { TranslationSchema, Language } from '@/types';
+﻿import { TranslationSchema, Language } from '@/types';
 
 export const translations: Record<Language, TranslationSchema> = {
   en: {
@@ -7,27 +7,24 @@ export const translations: Record<Language, TranslationSchema> = {
       about: 'About Us',
       services: 'Services',
       executive: 'Leadership',
-      corridor: 'Corridor',
       contact: 'Contact',
       quoteBtn: 'Get a Quote'
     },
     hero: {
-      badge: 'Horn of Africa Multimodal Logistics',
+      badge: 'Your Gateway to Seamless Logistics Solutions',
       headlinePart1: 'SAT LOGISTICS',
       headlinePart2: '& TRADING PLC',
-      tagline: 'End-to-end supply chain solutions and commercial equipment trading connecting the Port of Djibouti to central Ethiopia.',
+      tagline: 'Dedicated to specialized transportation, international freight forwarding, and customs clearance ensuring the seamless movement of goods from point of origin to final destination.',
       ctaPrimary: 'Request Dispatch',
       ctaSecondary: 'View Services',
-      stat1Label: 'Transit Time',
-      stat1Value: '36-48h',
-      stat2Label: 'Customs SLA',
-      stat2Value: '99.4%',
-      stat3Label: 'Fleet Capacity',
-      stat3Value: '120+',
-      stat4Label: 'Primary Corridor',
-      stat4Value: 'DJI ➔ ADD',
-      corridorStatus: 'Djibouti-Addis Axis: Operational',
-      hubBadge: 'HQ: Addis Ababa // Reg: ETH-LOG-4482'
+      stat1Label: 'Founded',
+      stat1Value: '2023',
+      stat2Label: 'Cities Served',
+      stat2Value: '13+',
+      stat3Label: 'International Partners',
+      stat3Value: '12',
+      stat4Label: 'Industry Parks',
+      stat4Value: '6',
     },
     about: {
       sectionTag: 'ABOUT US',
@@ -178,41 +175,6 @@ export const translations: Record<Language, TranslationSchema> = {
         }
       ]
     },
-    corridor: {
-      sectionTag: 'TRADE CORRIDOR',
-      headline: 'Djibouti – Addis Axis.',
-      subheadline: 'The 900+ km multimodal lifeline connecting Red Sea maritime shipping to central Ethiopia.',
-      stops: [
-        {
-          code: '01',
-          name: 'Port of Djibouti (Doraleh)',
-          type: 'Deep-Sea Terminal',
-          transitTime: 'Day 00',
-          desc: 'Vessel discharge, bill of lading validation, and transit manifest processing.'
-        },
-        {
-          code: '02',
-          name: 'Galafi / Dewele Border',
-          type: 'Customs Inspection',
-          transitTime: 'Day 01',
-          desc: 'Escort handover, electronic seal verification, and transit clearance.'
-        },
-        {
-          code: '03',
-          name: 'Mojo Dry Port Hub',
-          type: 'Intermodal Depot',
-          transitTime: 'Day 02',
-          desc: 'Container stacking, rail-to-truck transshipment, and bonded storage.'
-        },
-        {
-          code: '04',
-          name: 'Addis Ababa (Kality)',
-          type: 'Consignee Delivery',
-          transitTime: 'Day 02-03',
-          desc: 'Final customs release, duty settlement, and direct factory delivery.'
-        }
-      ]
-    },
     contact: {
       sectionTag: 'CONTACT',
       headline: 'Cargo Dispatch & Inquiries.',
@@ -274,7 +236,6 @@ export const translations: Record<Language, TranslationSchema> = {
       about: 'ስለ እኛ',
       services: 'አገልግሎቶች',
       executive: 'አመራር',
-      corridor: 'ኮሪደር',
       contact: 'ግንኙነት',
       quoteBtn: 'ጥያቄ ያቅርቡ'
     },
@@ -285,16 +246,14 @@ export const translations: Record<Language, TranslationSchema> = {
       tagline: 'የጅቡቲ ወደብን ከማዕከላዊ ኢትዮጵያ ጋር የሚያገናኝ አስተማማኝ የአቅርቦት ሰንሰለት እና የኢንዱስትሪ ማሽነሪዎች ንግድ።',
       ctaPrimary: 'የጭነት አገልግሎት ይጠይቁ',
       ctaSecondary: 'አገልግሎቶችን ይመልከቱ',
-      stat1Label: 'የኮሪደር ጊዜ',
-      stat1Value: '36-48 ሰዓት',
-      stat2Label: 'የጉምሩክ ክሊራንስ',
-      stat2Value: '99.4%',
-      stat3Label: 'የተሽከርካሪ ብዛት',
-      stat3Value: '120+',
-      stat4Label: 'ዋናው መስመር',
-      stat4Value: 'ጅቡቲ ➔ አዲስ አበባ',
-      corridorStatus: 'የጅቡቲ-አዲስ አበባ መስመር: በተሟላ ዝግጁነት ላይ',
-      hubBadge: 'ዋና መ/ቤት: አዲስ አበባ // ምዝገባ: ETH-LOG-4482'
+      stat1Label: 'የተመሰረተው ዓመት',
+      stat1Value: '2023',
+      stat2Label: 'አገልግሎት የምንሰጣቸው ከተሞች',
+      stat2Value: '13+',
+      stat3Label: 'ዓለም አቀፍ አጋሮች',
+      stat3Value: '12',
+      stat4Label: 'የኢንዱስትሪ ፓርኮች',
+      stat4Value: '6'
     },
     about: {
       sectionTag: 'ስለ እኛ',
@@ -370,17 +329,6 @@ export const translations: Record<Language, TranslationSchema> = {
         { id: 'machinery-trading', code: '04', title: 'የማሽነሪዎች ንግድ', subtitle: 'ኢንዱስትሪ እቃዎች አስመጪነት', description: 'ከዓለም አቀፍ አምራቾች ቀጥታ ማስመጣት።', specs: ['ፋብሪካ ቀጥታ ግዥ', 'የውጭ ምንዛሬ ማቀናጀት', 'እስከ ፋብሪካ ደጃፍ'], kpi: 'የተሟላ ዋስትና' }
       ]
     },
-    corridor: {
-      sectionTag: 'ኮሪደር',
-      headline: 'የጅቡቲ - አዲስ አበባ መስመር።',
-      subheadline: 'ከ900 ኪ.ሜ በላይ ርዝመት ያለው የትራንስፖርት መስመር።',
-      stops: [
-        { code: '01', name: 'የጅቡቲ ወደብ (ዶራሌ)', type: 'የባህር በር', transitTime: 'ቀን 00', desc: 'ከመርከብ ማውረድ እና ሰነዶች ማስተናገድ።' },
-        { code: '02', name: 'የገላፊ / ደወሌ ድንበር', type: 'የጉምሩክ ፍተሻ', transitTime: 'ቀን 01', desc: 'የተሽከርካሪዎች ርክክብ እና ፍተሻ።' },
-        { code: '03', name: 'የሞጆ ደረቅ ወደብ', type: 'የጭነት ማዕከል', transitTime: 'ቀን 02', desc: 'ኮንቴይነር ክምችት እና ማዛወር።' },
-        { code: '04', name: 'አዲስ አበባ (ቃሊቲ)', type: 'የመጨረሻ መዳረሻ', transitTime: 'ቀን 02-03', desc: 'የመጨረሻ ጉምሩክ እና ማስረከብ።' }
-      ]
-    },
     contact: {
       sectionTag: 'ግንኙነት',
       headline: 'የጭነት ጥያቄ።',
@@ -422,7 +370,6 @@ export const translations: Record<Language, TranslationSchema> = {
       about: 'من نحن',
       services: 'الخدمات',
       executive: 'الإدارة',
-      corridor: 'الممر',
       contact: 'اتصل بنا',
       quoteBtn: 'طلب عرض سعر'
     },
@@ -433,16 +380,14 @@ export const translations: Record<Language, TranslationSchema> = {
       tagline: 'حلول متكاملة لسلسلة التوريد تربط ميناء جيبوتي بوسط إثيوبيا.',
       ctaPrimary: 'طلب شحن',
       ctaSecondary: 'عرض الخدمات',
-      stat1Label: 'وقت العبور',
-      stat1Value: '36-48 ساعة',
-      stat2Label: 'الجمارك',
-      stat2Value: '99.4%',
-      stat3Label: 'الأسطول',
-      stat3Value: '120+',
-      stat4Label: 'الممر الرئيسي',
-      stat4Value: 'جيبوتي ➔ أديس',
-      corridorStatus: 'محور جيبوتي-أديس أبابا: تشغيلي',
-      hubBadge: 'المقر: أديس أبابا // رقم التسجيل: ETH-LOG-4482'
+      stat1Label: 'تأسست عام',
+      stat1Value: '2023',
+      stat2Label: 'المدن المخدومة',
+      stat2Value: '13+',
+      stat3Label: 'الشركاء الدوليون',
+      stat3Value: '12',
+      stat4Label: 'المناطق الصناعية',
+      stat4Value: '6'
     },
     about: {
       sectionTag: 'من نحن',
@@ -518,17 +463,6 @@ export const translations: Record<Language, TranslationSchema> = {
         { id: 'machinery-trading', code: '04', title: 'استيراد الآلات', subtitle: 'مصدر المعدات التجارية', description: 'شراء متكامل واستيراد الآلات الصناعية والأجزاء.', specs: ['مصادر مباشرة من المصنع', 'تنسيق تراخيص الاستيراد والعملة', 'تسليم حتى باب المصنع'], kpi: 'تسليم متكامل' }
       ]
     },
-    corridor: {
-      sectionTag: 'الممر التجاري',
-      headline: 'محور جيبوتي - أديس.',
-      subheadline: 'الشريان اللوجستي الممتد 900+ كم الذي يربط الشحن البحري في البحر الأحمر بوسط إثيوبيا.',
-      stops: [
-        { code: '01', name: 'ميناء جيبوتي (دورالية)', type: 'محطة بحرية', transitTime: 'اليوم 00', desc: 'تفريغ السفن ومعالجة بوالص الشحن.' },
-        { code: '02', name: 'حدود غالافي / ديويلي', type: 'تفتيش جمركي', transitTime: 'اليوم 01', desc: 'تسليم الحراسة والتحقق الإلكتروني.' },
-        { code: '03', name: 'ميناء موجو الجاف', type: 'مستودع تبادل', transitTime: 'اليوم 02', desc: 'تكديس الحاويات والشحن من سكة حديد إلى شاحنات.' },
-        { code: '04', name: 'أديس أبابا (قاليتي)', type: 'تسليم للمستلم', transitTime: 'اليوم 02-03', desc: 'الإفراج الجمركي النهائي والتسليم للمصنع.' }
-      ]
-    },
     contact: {
       sectionTag: 'اتصل بنا',
       headline: 'استفسارات الشحن.',
@@ -570,7 +504,6 @@ export const translations: Record<Language, TranslationSchema> = {
       about: '关于我们',
       services: '服务',
       executive: '领导层',
-      corridor: '走廊',
       contact: '联系我们',
       quoteBtn: '获取报价'
     },
@@ -581,16 +514,14 @@ export const translations: Record<Language, TranslationSchema> = {
       tagline: '连接吉布提港与埃塞俄比亚中部的端到端供应链解决方案。',
       ctaPrimary: '申请调度',
       ctaSecondary: '查看服务',
-      stat1Label: '运输时间',
-      stat1Value: '36-48小时',
-      stat2Label: '清关成功率',
-      stat2Value: '99.4%',
-      stat3Label: '车队规模',
-      stat3Value: '120+',
-      stat4Label: '主要走廊',
-      stat4Value: '吉布提 ➔ 亚的',
-      corridorStatus: '吉布提-亚的斯轴线：运营中',
-      hubBadge: '总部：亚的斯亚贝巴 // 注册: ETH-LOG-4482'
+      stat1Label: '成立于',
+      stat1Value: '2023',
+      stat2Label: '服务城市',
+      stat2Value: '13+',
+      stat3Label: '国际合作伙伴',
+      stat3Value: '12',
+      stat4Label: '工业园区',
+      stat4Value: '6'
     },
     about: {
       sectionTag: '关于我们',
@@ -664,17 +595,6 @@ export const translations: Record<Language, TranslationSchema> = {
         { id: 'freight-forwarding', code: '02', title: '货运代理', subtitle: '吉布提至亚的斯亚贝巴走廊', description: '从多哈莱集装箱码头到中部干港的海陆铁协同货运。', specs: ['多哈莱港口代理(DCT & DMP)', '埃吉铁路(EDR)整合', 'FCL & LCL集装箱拼箱'], kpi: '99.4%准时交货率' },
         { id: 'fleet-coordination', code: '03', title: '跨境车队', subtitle: '重型运输与低床运输', description: 'GPS监控的平板车、低床车（最高120吨）和冷藏车车队。', specs: ['24/7实时远程信息处理', '重型机械低床(最高120吨)', '专用边境护送协议'], kpi: '100%全程监控' },
         { id: 'machinery-trading', code: '04', title: '机械进口贸易', subtitle: '商业设备采购', description: '工业设备的一站式商业采购和进口便利化。', specs: ['工厂直接全球采购', '进口许可证和外汇协调', '工厂门到门交货'], kpi: '一站式进口交货' }
-      ]
-    },
-    corridor: {
-      sectionTag: '贸易走廊',
-      headline: '吉布提 – 亚的斯轴线。',
-      subheadline: '连接红海海运与埃塞俄比亚中部的900+公里多式联运生命线。',
-      stops: [
-        { code: '01', name: '吉布提港（多哈莱）', type: '深水码头', transitTime: '第0天', desc: '船舶卸货、提单验证和过境舱单处理。' },
-        { code: '02', name: '加拉菲/德韦勒边境', type: '海关检查', transitTime: '第1天', desc: '护送交接、电子封签验证和过境清关。' },
-        { code: '03', name: '莫约干港枢纽', type: '联运仓库', transitTime: '第2天', desc: '集装箱堆放、铁路转卡车和保税仓储。' },
-        { code: '04', name: '亚的斯亚贝巴（卡利提）', type: '收货人交付', transitTime: '第2-3天', desc: '最终清关、缴税和工厂直送。' }
       ]
     },
     contact: {

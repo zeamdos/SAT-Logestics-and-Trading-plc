@@ -255,7 +255,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ currentLang }) =
           </div>
 
           {/* Right: Map & Office Info */}
-          <div className="lg:col-span-6 flex flex-col justify-between bg-neutral-50/40">
+          <div className="lg:col-span-6 flex flex-col justify-between bg-white">
             {/* Office Info */}
             <div className="p-6 sm:p-8 border-b border-neutral-200 bg-white">
               <span className="text-[11px] font-mono uppercase tracking-widest text-[#841618] block mb-1 font-medium">

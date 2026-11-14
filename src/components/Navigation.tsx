@@ -50,7 +50,6 @@ export const Navigation: React.FC<NavigationProps> = ({
     { id: 'about',     label: t.nav.about,     path: '/#about' },
     { id: 'services',  label: t.nav.services,  path: '/#services' },
     { id: 'executive', label: t.nav.executive, path: '/#executive' },
-    { id: 'corridor',  label: t.nav.corridor,  path: '/#corridor' },
     { id: 'contact',   label: t.nav.contact,   path: '/#contact' },
   ];
 
@@ -58,7 +57,6 @@ export const Navigation: React.FC<NavigationProps> = ({
     pathname === '/' ? 'home' :
     pathname.startsWith('/services') ? 'services' :
     pathname.startsWith('/executive') ? 'executive' :
-    pathname.startsWith('/corridor') ? 'corridor' :
     pathname.startsWith('/contact') ? 'contact' : 'home'
   );
 
@@ -79,15 +77,15 @@ export const Navigation: React.FC<NavigationProps> = ({
   };
 
   return (
-    <header className="sticky top-0 z-40 bg-white/10 backdrop-blur-[2px] border-b border-white/30">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 flex items-center justify-between h-20">
+    <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-sm border-b border-white/70 shadow-sm">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 flex items-center justify-between h-28">
         {/* Logo */}
         <div
           onClick={() => handleNavClick(navItems[0])}
           className="cursor-pointer group flex items-center py-2"
           data-cursor-label="HOME"
         >
-          <div className="relative w-44 sm:w-52 h-14 flex items-center">
+          <div className="relative w-48 sm:w-56 h-16 flex items-center">
             <Image
               src="/images/logo-transparent.png"
               alt="SAT Logistics & Trading PLC"
@@ -169,7 +167,7 @@ export const Navigation: React.FC<NavigationProps> = ({
 
           {/* CTA Button */}
           <button
-            onClick={() => handleNavClick(navItems[5])}
+            onClick={() => handleNavClick(navItems[4])}
             data-cursor-label="DISPATCH"
             className="hidden sm:flex items-center gap-2 bg-[#841618] hover:bg-[#6D1113] text-white transition-colors px-4 py-2 text-xs font-mono uppercase tracking-wider shadow-sm"
           >
@@ -205,7 +203,7 @@ export const Navigation: React.FC<NavigationProps> = ({
           ))}
           <button
             onClick={() => {
-              handleNavClick(navItems[5]);
+              handleNavClick(navItems[4]);
               setMobileMenuOpen(false);
             }}
             className="w-full mt-3 py-3 bg-[#841618] hover:bg-[#6D1113] text-white text-xs font-mono uppercase tracking-widest text-center flex items-center justify-center gap-2"

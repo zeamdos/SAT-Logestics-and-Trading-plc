@@ -131,7 +131,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ currentLang, onNavig
               {a.missionHeadline}
             </span>
           </div>
-          <div className="bg-neutral-50/40 p-8 sm:p-10 space-y-5">
+          <div className="bg-white p-8 sm:p-10 space-y-5">
             {a.missionItems.map((item, i) => (
               <motion.div
                 key={i}
@@ -159,7 +159,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ currentLang, onNavig
             <span className="text-[11px] font-mono uppercase tracking-widest text-neutral-400 block mb-1">{a.purposeTag}</span>
             <span className="text-white font-light text-lg uppercase">{a.purposeHeadline}</span>
           </div>
-          <div className="p-8 flex flex-col gap-4 flex-1 bg-neutral-50/40">
+          <div className="p-8 flex flex-col gap-4 flex-1 bg-white">
             <div className="border-l-4 border-[#841618] pl-5">
               <p className="text-xs font-mono text-neutral-500 uppercase tracking-wider mb-1">Founded 2023</p>
               <p className="text-sm text-neutral-700 font-light leading-relaxed">{a.purposeFoundedNote}</p>
@@ -183,7 +183,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ currentLang, onNavig
             <span className="text-[11px] font-mono uppercase tracking-widest text-neutral-400 block mb-1">{a.principlesTag}</span>
             <span className="text-white font-light text-lg uppercase">{a.principlesHeadline}</span>
           </div>
-          <div className="p-6 sm:p-8 flex flex-col gap-4 flex-1 bg-neutral-50/40">
+          <div className="p-6 sm:p-8 flex flex-col gap-4 flex-1 bg-white">
             {a.principles.map((p, i) => (
               <motion.div
                 key={i}
@@ -221,7 +221,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ currentLang, onNavig
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="border border-neutral-200 hover:border-[#841618] transition-colors p-6 rounded-2xl bg-neutral-50/40 group"
+              className="border border-neutral-200 hover:border-[#841618] transition-colors p-6 rounded-2xl bg-white group"
             >
               <div className="w-8 h-1 bg-[#841618] mb-4 group-hover:w-12 transition-all duration-300" />
               <h4 className="text-sm font-semibold text-black uppercase mb-2 leading-snug">{cap.title}</h4>
@@ -244,7 +244,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ currentLang, onNavig
               <span className="text-[10px] font-mono text-neutral-500 uppercase tracking-wider">Through these engagements, we have demonstrated our commitment to excellence, reliability, and contributing to Ethiopia's economic and infrastructural development.</span>
             </div>
           </div>
-          <div className="p-8 sm:p-10 bg-neutral-50/40 flex flex-col justify-center gap-3">
+          <div className="p-8 sm:p-10 bg-white flex flex-col justify-center gap-3">
             {a.projectsList.map((proj, i) => (
               <motion.div
                 key={i}
@@ -288,7 +288,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ currentLang, onNavig
                   <div className="text-white text-xs font-semibold uppercase leading-tight">{step.title}</div>
                 </div>
               </div>
-              <div className="p-5 bg-neutral-50/40 flex-1 space-y-2.5">
+              <div className="p-5 bg-white flex-1 space-y-2.5">
                 {step.items.map((item, j) => (
                   <div key={j} className="flex items-start gap-2">
                     <span className="mt-1.5 w-1.5 h-1.5 bg-[#841618] shrink-0 rounded-full" />

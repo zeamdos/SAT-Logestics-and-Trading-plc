@@ -5,11 +5,9 @@ import { NavItem } from '@/types';
 import { useLanguage } from '@/context/LanguageContext';
 import { Navigation } from '@/components/Navigation';
 import { HeroSection } from '@/components/HeroSection';
-import { AboutSection } from '@/components/AboutSection';
-import { ServicesGrid } from '@/components/ServicesGrid';
-import { ExecutiveSection } from '@/components/ExecutiveSection';
-import { CorridorSection } from '@/components/CorridorSection';
-import { ContactSection } from '@/components/ContactSection';
+import { HomeAboutSnippet } from '@/components/HomeAboutSnippet';
+import { ServicesPreview } from '@/components/ServicesPreview';
+import { GallerySection } from '@/components/GallerySection';
 import { Footer } from '@/components/Footer';
 
 export default function Home() {
@@ -20,19 +18,16 @@ export default function Home() {
     const viewLabels: Record<NavItem, string> = {
       home:      'OVERVIEW',
       about:     'ABOUT US',
-      services:  'SERVICES GRID',
-      executive: 'EXECUTIVE LEADERSHIP',
-      corridor:  'DJIBOUTI CORRIDOR',
-      contact:   'CONTACT & DISPATCH',
+      services:  'SERVICES',
+      executive: 'LEADERSHIP',
+      contact:   'CONTACT',
     };
 
-    triggerTransition(viewLabels[section] || 'LOGISTICS SEGMENT', () => {
+    triggerTransition(viewLabels[section] || 'SAT LOGISTICS', () => {
       setActiveSection(section);
       const targetId = section === 'home' ? 'top' : section;
-      const targetElement = document.getElementById(targetId);
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth' });
-      }
+      const el = document.getElementById(targetId);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
     });
   };
 
@@ -44,34 +39,26 @@ export default function Home() {
       />
 
       <main className="relative z-10">
+        {/* 1 · Hero */}
         <HeroSection
           currentLang={currentLang}
           onNavigate={handleNavigate}
         />
 
-        <AboutSection
+        {/* 2 · About snippet + clients */}
+        <HomeAboutSnippet
           currentLang={currentLang}
           onNavigate={handleNavigate}
         />
 
-        <ServicesGrid
+        {/* 3 · Services preview cards */}
+        <ServicesPreview
           currentLang={currentLang}
           onNavigate={handleNavigate}
         />
 
-        <ExecutiveSection
-          currentLang={currentLang}
-          onNavigate={handleNavigate}
-        />
-
-        <CorridorSection
-          currentLang={currentLang}
-          onNavigate={handleNavigate}
-        />
-
-        <ContactSection
-          currentLang={currentLang}
-        />
+        {/* 4 · Operations gallery */}
+        <GallerySection />
       </main>
 
       <Footer

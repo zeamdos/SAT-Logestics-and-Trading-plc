@@ -1,0 +1,672 @@
+﻿import { TranslationSchema, Language } from '@/types';
+
+export const translations: Record<Language, TranslationSchema> = {
+  en: {
+    nav: {
+      home: 'Overview',
+      about: 'About Us',
+      services: 'Services',
+      executive: 'Leadership',
+      contact: 'Contact',
+      quoteBtn: 'Get a Quote'
+    },
+    hero: {
+      badge: 'Horn of Africa Multimodal Logistics',
+      headlinePart1: 'SAT LOGISTICS',
+      headlinePart2: '& TRADING PLC',
+      tagline: 'Freight forwarding, customs clearance and project cargo transport across Ethiopia and beyond.',
+      ctaPrimary: 'Request Dispatch',
+      ctaSecondary: 'View Services',
+      stat1Label: 'Founded',
+      stat1Value: '2023',
+      stat2Label: 'Cities Served',
+      stat2Value: '13+',
+      stat3Label: 'International Partners',
+      stat3Value: '12',
+      stat4Label: 'Industry Parks',
+      stat4Value: '6',
+      hubBadge: 'Headquarters: Addis Ababa // Reg: ETH-LOG-4482'
+    },
+    about: {
+      sectionTag: 'ABOUT US',
+      headline: 'Who We Are.',
+      overview: 'SAT Logistics and Trading PLC is a transportation and logistics provider in Ethiopia and beyond. Our company provides services including international freight forwarding, customs clearance, and project cargo transport.',
+      missionTag: 'OUR MISSION',
+      missionHeadline: 'Core Mission & Target Industries.',
+      missionItems: [
+        'SAT Logistics and Trading PLC offers comprehensive solutions for a wide range of industries, including but not limited to manufacturing, energy production, data mining cargo, industry parks, solar companies, wind energy farms, retail, garment industry, and special heavy project cargo handling.',
+        'In addition to freight forwarding we give logistics consultancy services to streamline supply chains and enhance our customer\'s satisfaction.',
+        'Our purpose is to effectively support the goals of private companies, manufacturers and governmental institutions in improving logistics capacity access, lower freight tariffs and improving service quality.'
+      ],
+      purposeTag: 'OUR PURPOSE',
+      purposeHeadline: 'Purpose & Capacity.',
+      purposeFoundedNote: 'Founded in 2023, SAT Logistics and Trading PLC is dedicated to providing specialized transportation and customs clearance services to ensure seamless movement of goods, from point of origin to final destination.',
+      purposeMission: 'Our mission is to provide comprehensive logistics solutions that meet the diverse international logistics needs of our clients.',
+      principlesTag: 'OPERATING PRINCIPLES',
+      principlesHeadline: 'Our Principles.',
+      principles: [
+        {
+          title: 'Partnering with Stakeholders',
+          desc: 'We position ourselves as trusted allies, prioritizing simplicity, dependability, and a client-first mindset in every collaboration.'
+        },
+        {
+          title: 'Empowering Our Workforce',
+          desc: 'Success is built on unity. We foster teamwork, encourage cooperation, and provide strong support systems for our employees.'
+        },
+        {
+          title: 'Driven by Excellence',
+          desc: 'Our operations are anchored to national and world-class standards, ensuring efficiency, consistency, and speed across all services.'
+        },
+        {
+          title: 'Future-Oriented',
+          desc: 'Progressive attitudes and growth-focused strategies allow us to continuously evolve and serve our clients better.'
+        },
+        {
+          title: 'Commitment to Sustainability',
+          desc: 'We uphold ethical practices and compliance, integrating advanced environmental safeguards into our operations.'
+        }
+      ],
+      capabilityTag: 'TEAM CAPABILITY',
+      capabilityHeadline: 'Our Team\'s Capability.',
+      capabilities: [
+        {
+          title: 'Local Expertise',
+          desc: 'Profound understanding of Ethiopia\'s transport regulations, policies, and infrastructure.'
+        },
+        {
+          title: 'Seamless Coordination',
+          desc: 'Experience in pre-forwarding processes, ensuring efficient customs clearance and document handling.'
+        },
+        {
+          title: 'Strong Partnerships',
+          desc: 'Collaborations with Ethiopian customs authorities, shipping lines, and freight forwarders.'
+        },
+        {
+          title: 'Client-Centric Approach',
+          desc: 'Customized solutions to meet your logistics needs â€” from first mile to last mile.'
+        }
+      ],
+      projectsTag: 'DELIVERED PROJECTS',
+      projectsHeadline: 'Proven Track Record.',
+      projectsDesc: 'Our company has played a significant role in the transportation of capital goods for some of Ethiopia\'s most notable infrastructure projects.',
+      projectsList: [
+        'Grand Ethiopian Renaissance Dam (GERD)',
+        'Ethiopian Airlines â€” Aircraft Ground Support Cargo',
+        'Power Generation â€” Gilgel Gibe Complex',
+        'Industry Parks: Hawassa, Dukem, Adama, Arerti, Tulufa, Debrebirhan',
+        'Ethiopian Electric Power & Ethiopian Electric Utility',
+        'Ministry of Finance â€” Capital Equipment Logistics'
+      ],
+      customersTag: 'OUR CUSTOMERS',
+      customersHeadline: 'International Partners.',
+      customersSubheadline: 'We have worked with leading global companies across energy, construction, steel, and infrastructure.'
+    },
+    executive: {
+      sectionTag: 'LEADERSHIP',
+      headline: 'Executive Leadership.',
+      subheadline: 'Founded in 2023, dedicated to providing specialized transportation and customs clearance services.',
+      name: 'Samuel Ayalew',
+      title: 'General Manager',
+      credentialBadge: 'Leading Logistics Professional',
+      governanceBadge: 'Professional License',
+      quote: '"We make your cargo transport simple."',
+      bioParagraph1: 'Holding a Master\'s degree in Logistics & Supply Chain Management, Samuel Ayalew brings over a decade of high-level freight coordination and corridor management.',
+      bioParagraph2: 'He directs SAT\'s integrated customs clearance and multimodal haulage connecting the Port of Djibouti directly to Mojo Dry Port and Addis Ababa.',
+      metricTitle1: 'Supply Chain Strategy',
+      metricDesc1: 'Specialized in dry port integration and corridor optimization.',
+      metricTitle2: 'Corridor Delivery',
+      metricDesc2: 'Sub-48h customs clearance protocol and live fleet tracking.'
+    },
+    services: {
+      sectionTag: 'SERVICES',
+      headline: 'Core Services.',
+      subheadline: 'Four specialized verticals engineered for speed and compliance.',
+      items: [
+        {
+          id: 'customs-clearance',
+          code: '01',
+          title: 'Customs Clearance',
+          subtitle: 'Documentation & Compliance',
+          description: 'Rapid electronic customs release across Addis Ababa Airport Cargo, Mojo Dry Port, and Djibouti border stations.',
+          specs: [
+            'ASYCUDA World Electronic Declarations',
+            'Tariff Classification & Duty Valuation',
+            'Transit Guarantee Bonds & LC Compliance'
+          ],
+          kpi: '24-36h Average Release'
+        },
+        {
+          id: 'freight-forwarding',
+          code: '02',
+          title: 'Freight Forwarding',
+          subtitle: 'Djibouti to Addis Ababa Corridor',
+          description: 'Synchronized sea, rail, and highway freight routing from Doraleh Container Terminal to central dry ports.',
+          specs: [
+            'Port Representation at Doraleh (DCT & DMP)',
+            'Ethio-Djibouti Railway (EDR) Integration',
+            'FCL & LCL Container Consolidation'
+          ],
+          kpi: '99.4% On-Time Delivery'
+        },
+        {
+          id: 'fleet-coordination',
+          code: '03',
+          title: 'Cross-Border Fleet',
+          subtitle: 'Heavy Haulage & Lowbed Transport',
+          description: 'GPS-monitored fleet of flatbeds, lowbeds up to 120 tons, and reefers operating across the Galafi corridor.',
+          specs: [
+            '24/7 Real-Time Telematics & Satellite Tracking',
+            'Heavy Machinery Lowbeds (Up to 120T)',
+            'Dedicated Border Convoy Protocol'
+          ],
+          kpi: '100% Monitored Haulage'
+        },
+        {
+          id: 'machinery-trading',
+          code: '04',
+          title: 'Machinery Import Trading',
+          subtitle: 'Commercial Equipment Sourcing',
+          description: 'Turnkey commercial procurement and import facilitation of industrial plant machinery, tooling, and spare assemblies.',
+          specs: [
+            'Factory-Direct Global Sourcing',
+            'Turnkey Import Licensing & Forex Coordination',
+            'Factory Doorstep Commissioning Delivery'
+          ],
+          kpi: 'Turnkey Import Delivery'
+        }
+      ]
+    },
+    contact: {
+      sectionTag: 'CONTACT',
+      headline: 'Cargo Dispatch & Inquiries.',
+      subheadline: 'Direct channel to our logistics team in Addis Ababa. Inquiries answered within 2 hours.',
+      form: {
+        nameLabel: 'Full Name',
+        namePlaceholder: 'e.g., Daniel Haile',
+        companyLabel: 'Company Name',
+        companyPlaceholder: 'e.g., Ethiopian Manufacturing Group',
+        phoneLabel: 'Phone Number',
+        phonePlaceholder: '+251 93 299 9977',
+        emailLabel: 'Email Address',
+        emailPlaceholder: 'logistics@company.com',
+        cargoTypeLabel: 'Service Category',
+        cargoTypes: [
+          'Freight Transportation',
+          'Customs Clearance',
+          'Last-Mile Delivery',
+          'Heavy Machinery Transport',
+          'Project Cargo Handling'
+        ],
+        volumeLabel: 'Estimated Volume / Weight',
+        volumePlaceholder: 'e.g., 2 x 40ft HC or 30 Tons',
+        originDestLabel: 'Origin & Inland Destination',
+        originDestPlaceholder: 'e.g., Shanghai âž” Djibouti âž” Addis Ababa',
+        messageLabel: 'Cargo Notes',
+        messagePlaceholder: 'Special handling requirements or schedule...',
+        submitBtn: 'Submit Request',
+        submittingBtn: 'Submitting...',
+        successMsg: 'Request registered. Reference ID: SAT-'
+      },
+      location: {
+        buildingTitle: 'Headquarters',
+        buildingName: 'Fetele Building',
+        addressLine1: 'Gorgorios Square, 3rd Floor',
+        addressLine2: 'Addis Ababa, Ethiopia',
+        coordinates: '09Â°00â€²05â€³N 38Â°46â€²02â€³E',
+        hoursTitle: 'Operating Hours',
+        hours: 'Mon â€“ Sat: 08:00 â€“ 18:30 (EAT) // Operations: 24/7',
+        phoneTitle: 'Direct Desk',
+        phone: '+251 93 299 9977 / +251 93 237 3839',
+        emailTitle: 'Email',
+        email: 'satlogistics0001@gmail.com',
+        mapNotice: 'Fetele Building, Gorgorios Square, Addis Ababa'
+      }
+    },
+    footer: {
+      tagline: 'Multimodal freight forwarding, customs clearance, and industrial equipment trading across East Africa.',
+      registration: 'SAT Logistics and Trading PLC â€” Reg: ETH-LOG-4482',
+      licensing: 'Licensed by Ethiopian Maritime Authority.',
+      copyright: 'Â© 2026 SAT Logistics and Trading PLC.',
+      backToTop: 'Back to Top'
+    }
+  },
+
+  am: {
+    nav: {
+      home: 'áŠ áŒ á‰ƒáˆ‹á‹­',
+      about: 'áˆµáˆˆ áŠ¥áŠ›',
+      services: 'áŠ áŒˆáˆáŒáˆŽá‰¶á‰½',
+      executive: 'áŠ áˆ˜áˆ«áˆ­',
+      contact: 'áŒáŠ•áŠ™áŠá‰µ',
+      quoteBtn: 'áŒ¥á‹«á‰„ á‹«á‰…áˆ­á‰¡'
+    },
+    hero: {
+      badge: 'á‹¨áŠ ááˆªáŠ« á‰€áŠ•á‹µ áˆ˜áˆá‰²áˆžá‹³áˆ áˆŽáŒ‚áˆµá‰²áŠ­áˆµ',
+      headlinePart1: 'áŠ¤áˆµáŠ¤á‰² áˆŽáŒ‚áˆµá‰²áŠ­áˆµ',
+      headlinePart2: 'áŠ¥áŠ“ áŠ•áŒá‹µ áŠƒ/á‹¨á‰°/á‹¨áŒ/áˆ›',
+      tagline: 'á‹¨áŒ…á‰¡á‰² á‹ˆá‹°á‰¥áŠ• áŠ¨áˆ›á‹•áŠ¨áˆ‹á‹Š áŠ¢á‰µá‹®áŒµá‹« áŒ‹áˆ­ á‹¨áˆšá‹«áŒˆáŠ“áŠ áŠ áˆµá‰°áˆ›áˆ›áŠ á‹¨áŠ á‰…áˆ­á‰¦á‰µ áˆ°áŠ•áˆ°áˆˆá‰µ áŠ¥áŠ“ á‹¨áŠ¢áŠ•á‹±áˆµá‰µáˆª áˆ›áˆ½áŠáˆªá‹Žá‰½ áŠ•áŒá‹µá¢',
+      ctaPrimary: 'á‹¨áŒ­áŠá‰µ áŠ áŒˆáˆáŒáˆŽá‰µ á‹­áŒ á‹­á‰',
+      ctaSecondary: 'áŠ áŒˆáˆáŒáˆŽá‰¶á‰½áŠ• á‹­áˆ˜áˆáŠ¨á‰±',
+      stat1Label: 'á‹¨áŠ®áˆªá‹°áˆ­ áŒŠá‹œ',
+      stat1Value: '36-48 áˆ°á‹“á‰µ',
+      stat2Label: 'á‹¨áŒ‰áˆáˆ©áŠ­ áŠ­áˆŠáˆ«áŠ•áˆµ',
+      stat2Value: '99.4%',
+      stat3Label: 'á‹¨á‰°áˆ½áŠ¨áˆ­áŠ«áˆª á‰¥á‹›á‰µ',
+      stat3Value: '120+',
+      stat4Label: 'á‹‹áŠ“á‹ áˆ˜áˆµáˆ˜áˆ­',
+      stat4Value: 'áŒ…á‰¡á‰² âž” áŠ á‹²áˆµ áŠ á‰ á‰£',
+      hubBadge: 'á‹‹áŠ“ áˆ˜/á‰¤á‰µ: áŠ á‹²áˆµ áŠ á‰ á‰£ // áˆá‹áŒˆá‰£: ETH-LOG-4482'
+    },
+    about: {
+      sectionTag: 'áˆµáˆˆ áŠ¥áŠ›',
+      headline: 'áŠ¥áŠáˆ›áŠ• áŠáŠ•á¢',
+      overview: 'áŠ¤áˆµáŠ¤á‰² áˆŽáŒ‚áˆµá‰²áŠ­áˆµ áŠ¥áŠ“ áŠ•áŒá‹µ áŠƒ/á‹¨á‰°/á‹¨áŒ/áˆ› á‰ áŠ¢á‰µá‹®áŒµá‹« áŠ¥áŠ“ áŠ¨á‹šá‹« á‰£áˆ»áŒˆáˆ­ á‹¨áŒ­áŠá‰µ á‰µáˆ«áŠ•áˆµá–áˆ­á‰µ áŠ¥áŠ“ áˆŽáŒ‚áˆµá‰²áŠ­áˆµ áŠ áŒˆáˆáŒáˆŽá‰µ áˆ°áŒª á‹µáˆ­áŒ…á‰µ áŠá‹á¢',
+      missionTag: 'á‰°áˆá‹•áŠ®',
+      missionHeadline: 'á‹‹áŠ“ á‰°áˆá‹•áŠ® áŠ¥áŠ“ áŠ¢áˆ‹áˆ› áŠ¢áŠ•á‹±áˆµá‰µáˆªá‹Žá‰½á¢',
+      missionItems: [
+        'áŠ¤áˆµáŠ¤á‰² áˆˆáˆ°áŠ áŠ¢áŠ•á‹±áˆµá‰µáˆªá‹Žá‰½ áˆáˆ‰áŠ• áŠ á‰€á áˆ˜áá‰µáˆ„ á‹­áˆ°áŒ£áˆ â€” áˆáˆ­á‰µá£ áŠƒá‹­áˆ áˆ›áˆáˆ¨á‰µá£ á€áˆá‹­ áŠƒá‹­áˆá£ á‰€áˆ‹áˆ áŠ¢áŠ•á‹±áˆµá‰µáˆªá£ á‹¨áˆá‰¥áˆµ áŠ¢áŠ•á‹±áˆµá‰µáˆª áŠ¥áŠ“ áˆá‹© á•áˆ®áŒ€áŠ­á‰µ áŒ­áŠá‰¶á‰½áŠ• áŒ¨áˆáˆ®á¢',
+        'áŠ¨áŒ­áŠá‰µ áŠ áˆµá‰°áˆ‹áˆ‹áŠáŠá‰µ á‰£áˆ»áŒˆáˆ­ á‹¨áˆŽáŒ‚áˆµá‰²áŠ­áˆµ áˆáŠ­áˆ­ áŠ áŒˆáˆáŒáˆŽá‰µ áˆ°áŒ¥á‰°áŠ• á‹¨á‹°áŠ•á‰ áŠžá‰»á‰½áŠ•áŠ• áŠ á‰…áˆ­á‰¦á‰µ áˆ°áŠ•áˆ°áˆˆá‰µ áŠ¥áŠ“áˆ»áˆ½áˆ‹áˆˆáŠ•á¢',
+        'á‹“áˆ‹áˆ›á‰½áŠ• á‹¨áŒáˆ‰áŠ• á‹˜áˆ­áá£ áŠ áˆáˆ«á‰¾á‰½áŠ• áŠ¥áŠ“ á‹¨áˆ˜áŠ•áŒáˆµá‰µ á‰°á‰‹áˆ›á‰µáŠ• á‹¨áˆŽáŒ‚áˆµá‰²áŠ­áˆµ áŠ á‰…áˆ áˆ›áˆ³á‹°áŒ áŠá‹á¢'
+      ],
+      purposeTag: 'á‹“áˆ‹áˆ›',
+      purposeHeadline: 'á‹“áˆ‹áˆ› áŠ¥áŠ“ áŠ á‰…áˆá¢',
+      purposeFoundedNote: 'áŠ¤áˆµáŠ¤á‰² áˆŽáŒ‚áˆµá‰²áŠ­áˆµ áŠ¥áŠ“ áŠ•áŒá‹µ áŠƒ/á‹¨á‰°/á‹¨áŒ/áˆ› á‰ 2023 á‹“.áˆ á‰°áˆ˜áˆµáˆ­á‰¶ áˆˆá‰°áˆ¸á‰€áŒ£áˆ¸á‰€áŒ£ á‹•á‰ƒá‹Žá‰½ á‹«áˆá‰°á‰‹áˆ¨áŒ  áŠ¥áŠ•á‰…áˆµá‰ƒáˆ´ áˆ²áˆ°áŒ¥ á‰†á‹­á‰·áˆá¢',
+      purposeMission: 'á‰°áˆá‹•áŠ®áŠ á‰½áŠ• áˆˆá‹°áŠ•á‰ áŠžá‰»á‰½áŠ• á‹“áˆˆáˆ áŠ á‰€á áˆŽáŒ‚áˆµá‰²áŠ­áˆµ ááˆ‹áŒŽá‰¶á‰½áŠ• áˆáˆ‰ á‹¨áˆšá‹«áˆŸáˆ‰ áˆáˆ‰áŠ• áŠ á‰€á áŠ áŒˆáˆáŒáˆŽá‰¶á‰½áŠ• áˆ˜áˆµáŒ á‰µ áŠá‹á¢',
+      principlesTag: 'á‹‹áŠ“ á‹°áŠ•á‰¦á‰»á‰½áŠ•',
+      principlesHeadline: 'áˆ˜áˆ­áˆ†á‹Žá‰»á‰½áŠ•á¢',
+      principles: [
+        { title: 'áŠ¨á‰£áˆˆá‹µáˆ­áˆ»á‹Žá‰½ áŒ‹áˆ­ áˆ˜á‰°á‰£á‰ áˆ­', desc: 'á‰³áˆ›áŠ áŠ áŒ‹áˆ®á‰½ áˆ†áŠáŠ•á£ á‰€áˆ‹áˆáŠá‰µáŠ•á£ áŠ áˆµá‰°áˆ›áˆ›áŠáŠá‰µáŠ• áŠ¥áŠ“ á‹°áŠ•á‰ áŠ› áˆ›á‹•áŠ¨áˆ áŠ áˆµá‰°áˆ³áˆ°á‰¥áŠ• á‰…á‹µáˆšá‹« áŠ¥áŠ•áˆ°áŒ£áˆˆáŠ•á¢' },
+        { title: 'áˆ°áˆ«á‰°áŠžá‰»á‰½áŠ•áŠ• áˆ›á‰¥á‰ƒá‰µ', desc: 'áˆµáŠ¬á‰µ á‹¨áˆšáŒˆáŠá‰£á‹ á‰ áŠ áŠ•á‹µáŠá‰µ áŠá‹á¢ á‰¡á‹µáŠ• áˆµáˆ«áŠ• áŠ¥áŠ“á‰ áˆ¨á‰³á‰³áˆˆáŠ•á£ á‰µá‰¥á‰¥áˆ­áŠ• áŠ¥áŠ“áˆ³á‹µáŒ‹áˆˆáŠ•á¢' },
+        { title: 'á‰ á‰¥á‰ƒá‰µ áˆ˜áˆ°áˆ¨á‰µ áˆµáˆ«', desc: 'áˆµáˆ«á‹Žá‰»á‰½áŠ• á‰¥áˆ”áˆ«á‹Š áŠ¥áŠ“ á‹“áˆˆáˆ áŠ á‰€á á‹°áˆ¨áŒƒá‹Žá‰½áŠ• áˆ˜áˆ°áˆ¨á‰µ á‹«á‹°áˆ­áŒ‹áˆ‰á¢' },
+        { title: 'á‹ˆá‹°áŠá‰µ áˆ›á‹¨á‰µ', desc: 'á‹ˆá‹°áŠá‰µ á‰°áŠ®áˆ­ áŠ áˆµá‰°áˆ³áˆ°á‰¥ áŠ¥áŠ“ á‹•á‹µáŒˆá‰µ á‰°áŠ®áˆ­ áˆµáˆá‰¶á‰½ áŠ áŒˆáˆáŒáˆŽá‰¶á‰»á‰½áŠ•áŠ• á‹«áˆ»áˆ½áˆ‹áˆ‰á¢' },
+        { title: 'á‹˜áˆˆá‰„á‰³á‹Š á‰áˆ­áŒ áŠáŠá‰µ', desc: 'áˆ¥áŠ-áˆáŒá‰£áˆ«á‹Š á‰°áŒá‰£áˆ­ áŠ¥áŠ“ áˆ…áŒ‹á‹Š á‰°áŒˆá‹¢áŠá‰µáŠ• áŠ áŠ•á‰€á‰ áˆáˆá£ á‹¨áŠ áŠ«á‰£á‰¢ áŒ¥á‰ á‰ƒ á‹°áˆ…áŠ•áŠá‰µáŠ• áŠ¥áŠ“á‹‹áˆ…á‹³áˆˆáŠ•á¢' }
+      ],
+      capabilityTag: 'á‹¨á‰¡á‹µáŠ• áŠ á‰…áˆ',
+      capabilityHeadline: 'á‹¨á‰¡á‹µáŠ“á‰½áŠ• áŠ á‰…áˆá¢',
+      capabilities: [
+        { title: 'á‹¨áŠ áŠ«á‰£á‰¢ áŠ¥á‹á‰€á‰µ', desc: 'á‹¨áŠ¢á‰µá‹®áŒµá‹« á‹¨á‰µáˆ«áŠ•áˆµá–áˆ­á‰µ á‹°áŠ•á‰¦á‰½á£ á–áˆŠáˆ²á‹Žá‰½ áŠ¥áŠ“ áˆ˜áˆ áˆ¨á‰° áˆáˆ›á‰µ áŒ¥áˆá‰… áŒáŠ•á‹›á‰¤á¢' },
+        { title: 'á‹«áˆá‰°á‰‹áˆ¨áŒ  á‰…áŠ•áŒ…á‰µ', desc: 'á‰…á‹µáˆšá‹«-áŒ­áŠá‰µ áˆ‚á‹°á‰¶á‰½ áˆáˆá‹µá£ áˆáŒ£áŠ• áŒ‰áˆáˆ©áŠ­ áˆ°áŠá‹¶á‰½ áˆ›áˆµá‰°áŠ“áŒˆá‹µá¢' },
+        { title: 'áŒ áŠ•áŠ«áˆ« áŠ áŒ‹áˆ­áŠá‰µ', desc: 'áŠ¨áŒ‰áˆáˆ©áŠ­ á‰£áˆˆáˆµáˆáŒ£áŠ“á‰µá£ á‹¨áŒ­áŠá‰µ á‹ˆáŠªáˆŽá‰½ áŠ¥áŠ“ áŠ áŒ“áŒ“á‹¦á‰½ áŒ‹áˆ­ á‰µá‰¥á‰¥áˆ­á¢' },
+        { title: 'á‹°áŠ•á‰ áŠ› áˆ›á‹•áŠ¨áˆ áŠ á‰€áˆ«áˆ¨á‰¥', desc: 'áˆˆáŠ¥á‹«áŠ•á‹³áŠ•á‹± á‹°áŠ•á‰ áŠ› ááˆ‹áŒŽá‰µ á‹¨áˆšáˆµáˆ›áˆ› áˆŽáŒ‚áˆµá‰²áŠ­áˆµ áˆ˜áá‰µáˆ„á¢' }
+      ],
+      projectsTag: 'á‹«áˆµáˆ¨áŠ¨á‰¥áŠ“á‰¸á‹ á•áˆ®áŒ€áŠ­á‰¶á‰½',
+      projectsHeadline: 'á‰°áˆáŒ»áˆš á•áˆ®áŒ€áŠ­á‰¶á‰½á¢',
+      projectsDesc: 'áŠ©á‰£áŠ•á‹«á‰½áŠ• á‹¨áŠ¢á‰µá‹®áŒµá‹« á‰³áˆ‹áˆ‹á‰… áˆ˜áˆ áˆ¨á‰° áˆáˆ›á‰µ á•áˆ®áŒ€áŠ­á‰¶á‰½ áŠ«á’á‰³áˆ áŠ¥á‰ƒá‹Žá‰½ á‰µáˆ«áŠ•áˆµá–áˆ­á‰µ áˆ‹á‹­ á‰µáˆá‰… áˆšáŠ“ á‰°áŒ«á‹á‰·áˆá¢',
+      projectsList: [
+        'á‰³áˆ‹á‰ á‹¨áŠ¢á‰µá‹®áŒµá‹« áˆ¬áŠ”áˆ³áŠ•áˆµ áŒá‹µá‰¥ (áŒ‰á‰£ GERD)',
+        'á‹¨áŠ¢á‰µá‹®áŒµá‹« áŠ á‹¨áˆ­ áˆ˜áŠ•áŒˆá‹µ â€” áŠ«áˆ­áŒŽ',
+        'áŠƒá‹­áˆ áˆ›áˆáˆ¨á‰» â€” áŒŠáˆáŒŒ áŒŠá‰¤',
+        'á‹¨áŠ¢áŠ•á‹±áˆµá‰µáˆª á“áˆ­áŠ®á‰½: áˆ€á‹‹áˆ³á£ á‹±áŠ¨áˆá£ áŠ á‹³áˆ›',
+        'á‹¨áŠ¢á‰µá‹®áŒµá‹« áŠ¤áˆŒáŠ­á‰µáˆªáŠ­ áŠƒá‹­áˆáŠ“ áŠ áŒˆáˆáŒáˆŽá‰µ',
+        'á‹¨á‹á‹­áŠ“áŠ•áˆµ áˆšáŠ’áˆµá‰´áˆ­ â€” áŠ«á’á‰³áˆ á‹•á‰ƒá‹Žá‰½'
+      ],
+      customersTag: 'á‹°áŠ•á‰ áŠžá‰»á‰½áŠ•',
+      customersHeadline: 'á‹“áˆˆáˆ áŠ á‰€á áŠ áŒ‹áˆ®á‰»á‰½áŠ•á¢',
+      customersSubheadline: 'á‰ áŠƒá‹­áˆá£ áŒáŠ•á‰£á‰³á£ á‰¥áˆ¨á‰µ áŠ¥áŠ“ áŠ¢áŠ•ááˆ«áˆµá‰µáˆ«áŠ­á‰¸áˆ­ á‹˜áˆ­á áŠ¨áˆšáˆ°áˆ© á‰³á‹‹á‰‚ á‹“áˆˆáˆ áŠ á‰€á áŠ©á‰£áŠ•á‹«á‹Žá‰½ áŒ‹áˆ­ áˆ°áˆ­á‰°áŠ“áˆá¢'
+    },
+    executive: {
+      sectionTag: 'áŠ áˆ˜áˆ«áˆ­',
+      headline: 'á‹¨áˆµáˆ« áŠ áˆ˜áˆ«áˆ­á¢',
+      subheadline: 'á‰ áŠ áˆˆáˆ áŠ á‰€á á‹¨áŠ á‰…áˆ­á‰¦á‰µ áˆ°áŠ•áˆ°áˆˆá‰µ áŒ¥áˆá‰… áŠ¥á‹á‰€á‰µ áŠ¥áŠ“ á‰ áˆáˆµáˆ«á‰… áŠ ááˆªáŠ« áˆ˜áˆá‰²áˆžá‹³áˆ á‰µáˆ«áŠ•áˆµá–áˆ­á‰µ áˆáˆá‹µ á‹¨á‰°áˆ˜áˆ°áˆ¨á‰°á¢',
+      name: 'áˆ³áˆ™áŠ¤áˆ áŠ á‹«áˆŒá‹',
+      title: 'á‹‹áŠ“ áˆµáˆ« áŠ áˆµáˆáƒáˆš',
+      credentialBadge: 'Leading Logistics Professional',
+      quote: '"á‹¨áŒ­áŠá‰µ á‰µáˆ«áŠ•áˆµá–áˆ­á‰µá‹ŽáŠ• á‰€áˆ‹áˆ áŠ¥áŠ“á‹°áˆ­áŒ‹áˆˆáŠ•á¢"',
+      bioParagraph1: 'á‰ áˆŽáŒ‚áˆµá‰²áŠ­áˆµ áŠ¥áŠ“ áŠ á‰…áˆ­á‰¦á‰µ áˆ°áŠ•áˆ°áˆˆá‰µ áŠ áˆµá‰°á‹³á‹°áˆ­ á‹¨áˆ›áˆµá‰°áˆ­áˆµ á‹²áŒáˆª á‹«áˆ‹á‰¸á‹ áˆ²áˆ†áŠ•á£ áŠ¨áŠ áˆµáˆ­ á‹“áˆ˜á‰³á‰µ á‰ áˆ‹á‹­ áˆ°áˆ­á‰°á‹‹áˆá¢',
+      bioParagraph2: 'áŠ¤áˆµáŠ¤á‰² á‹¨áŒ…á‰¡á‰² á‹ˆá‹°á‰¥áŠ• áŠ¨áˆžáŒ† á‹°áˆ¨á‰… á‹ˆá‹°á‰¥ áŠ¥áŠ“ áŠ á‹²áˆµ áŠ á‰ á‰£ áŒ‹áˆ­ á‹¨áˆšá‹«áŒˆáŠ“áŠ á‹¨á‰°á‰€áŠ“áŒ€ áˆµáˆ«á‹Žá‰½áŠ• á‹­áˆ˜áˆ«áˆ‰á¢',
+      metricTitle1: 'á‹¨áŠ á‰…áˆ­á‰¦á‰µ áˆ°áŠ•áˆ°áˆˆá‰µ áˆµá‰µáˆ«á‰´áŒ‚',
+      metricDesc1: 'á‰ á‹°áˆ¨á‰… á‹ˆá‹°á‰¥ á‰µáˆµáˆµáˆ­ áŠ¥áŠ“ áŠ®áˆªá‹°áˆ­ áˆ›á‰€áˆ‹áŒ á áˆ‹á‹­ á‹«á‰°áŠ®áˆ¨á¢',
+      metricTitle2: 'á‹¨áŠ®áˆªá‹°áˆ­ á‰…áˆáŒ¥ááŠ“',
+      metricDesc2: 'áŠ¨48 áˆ°á‹“á‰µ á‰ á‰³á‰½ á‹¨áˆ†áŠ áŒ‰áˆáˆ©áŠ­ áŠ­áˆŠáˆ«áŠ•áˆµá¢',
+      governanceBadge: 'áˆá‰ƒá‹µ á‹«áˆˆá‹ áŠ¦á•áˆ¬á‰°áˆ­ // á‹¨áŠ¢á‰µá‹®áŒµá‹« á‰£áˆ…áˆ­ á‰µáˆ«áŠ•áˆµá–áˆ­á‰µ'
+    },
+    services: {
+      sectionTag: 'áŠ áŒˆáˆáŒáˆŽá‰¶á‰½',
+      headline: 'á‹‹áŠ“ á‹‹áŠ“ áŠ áŒˆáˆáŒáˆŽá‰¶á‰½á¢',
+      subheadline: 'áˆˆááŒ¥áŠá‰µáŠ“ áˆˆáˆ…áŒ á‰°áŒˆá‹¢áŠá‰µ á‹¨á‰°á‹˜áŒ‹áŒ áŠ áˆ«á‰µ áˆ˜áˆ°áˆ¨á‰³á‹Š á‹˜áˆ­áŽá‰½á¢',
+      items: [
+        { id: 'customs-clearance', code: '01', title: 'á‹¨áŒ‰áˆáˆ©áŠ­ áŠ­áˆŠáˆ«áŠ•áˆµ', subtitle: 'áˆáŒ£áŠ• ASYCUDA á‹²áŠ­áˆ‹áˆ«áˆ²á‹®áŠ•', description: 'á‰ áˆžáŒ† á‹°áˆ¨á‰… á‹ˆá‹°á‰¥ áŠ¥áŠ“ áŒ…á‰¡á‰² á‹µáŠ•á‰ áˆ­ áˆáŒ£áŠ• áŒ‰áˆáˆ©áŠ­ áˆ‚á‹°á‰¶á‰½á¢', specs: ['ASYCUDA World á‹²áŠ­áˆ‹áˆ«áˆ²á‹®áŠ•', 'á‰³áˆªá áˆá‹°á‰£', 'á‰µáˆ«áŠ•á‹šá‰µ á‰¦áŠ•á‹µ'], kpi: '24-36 áˆ°á‹“á‰³á‰µ' },
+        { id: 'freight-forwarding', code: '02', title: 'á‹¨áŒ­áŠá‰µ áŠ áˆµá‰°áˆ‹áˆ‹áŠáŠá‰µ', subtitle: 'áŒ…á‰¡á‰² - áŠ á‹²áˆµ áŠ á‰ á‰£', description: 'áŠ¨á‹¶áˆ«áˆŒ á‰°áˆ­áˆšáŠ“áˆ áŠ¥áˆµáŠ¨ áˆ›á‹•áŠ¨áˆ‹á‹Š á‹°áˆ¨á‰… á‹ˆá‹°á‰¦á‰½á¢', specs: ['DCT & DMP á‰°á‹ˆáŠ«á‹®á‰½', 'EDR áˆá‹µáˆ­ á‰£á‰¡áˆ­', 'FCL & LCL'], kpi: '99.4% áˆáŒ£áŠ”' },
+        { id: 'fleet-coordination', code: '03', title: 'áŠ áŒˆáˆ­ áŠ á‰‹áˆ«áŒ­ á‰°áˆ½áŠ¨áˆ­áŠ«áˆªá‹Žá‰½', subtitle: 'áŠ¨á‰£á‹µ áˆ›áˆ½áŠáˆª áŒ«áŠ', description: 'GPS á‹¨á‰³áŒˆá‹˜ ááˆ‹á‰µá‰¤á‹µ áŠ¥áŠ“ áˆŽá‹á‰¤á‹µ á‰°áˆ½áŠ¨áˆ­áŠ«áˆªá‹Žá‰½á¢', specs: ['24/7 áŒ‚á’áŠ¤áˆµ áŠ­á‰µá‰µáˆ', 'áŠ¥áˆµáŠ¨ 120T áˆŽá‹á‰¤á‹µ', 'á‹µáŠ•á‰ áˆ­ á•áˆ®á‰¶áŠ®áˆ'], kpi: '100% áŠ­á‰µá‰µáˆ' },
+        { id: 'machinery-trading', code: '04', title: 'á‹¨áˆ›áˆ½áŠáˆªá‹Žá‰½ áŠ•áŒá‹µ', subtitle: 'áŠ¢áŠ•á‹±áˆµá‰µáˆª áŠ¥á‰ƒá‹Žá‰½ áŠ áˆµáˆ˜áŒªáŠá‰µ', description: 'áŠ¨á‹“áˆˆáˆ áŠ á‰€á áŠ áˆáˆ«á‰¾á‰½ á‰€áŒ¥á‰³ áˆ›áˆµáˆ˜áŒ£á‰µá¢', specs: ['á‹á‰¥áˆªáŠ« á‰€áŒ¥á‰³ áŒá‹¥', 'á‹¨á‹áŒ­ áˆáŠ•á‹›áˆ¬ áˆ›á‰€áŠ“áŒ€á‰µ', 'áŠ¥áˆµáŠ¨ á‹á‰¥áˆªáŠ« á‹°áŒƒá'], kpi: 'á‹¨á‰°áˆŸáˆ‹ á‹‹áˆµá‰µáŠ“' }
+      ]
+    },
+    corridor: {
+      sectionTag: 'áŠ®áˆªá‹°áˆ­',
+      headline: 'á‹¨áŒ…á‰¡á‰² - áŠ á‹²áˆµ áŠ á‰ á‰£ áˆ˜áˆµáˆ˜áˆ­á¢',
+      subheadline: 'áŠ¨900 áŠª.áˆœ á‰ áˆ‹á‹­ áˆ­á‹áˆ˜á‰µ á‹«áˆˆá‹ á‹¨á‰µáˆ«áŠ•áˆµá–áˆ­á‰µ áˆ˜áˆµáˆ˜áˆ­á¢',
+      stops: [
+        { code: '01', name: 'á‹¨áŒ…á‰¡á‰² á‹ˆá‹°á‰¥ (á‹¶áˆ«áˆŒ)', type: 'á‹¨á‰£áˆ…áˆ­ á‰ áˆ­', transitTime: 'á‰€áŠ• 00', desc: 'áŠ¨áˆ˜áˆ­áŠ¨á‰¥ áˆ›á‹áˆ¨á‹µ áŠ¥áŠ“ áˆ°áŠá‹¶á‰½ áˆ›áˆµá‰°áŠ“áŒˆá‹µá¢' },
+        { code: '02', name: 'á‹¨áŒˆáˆ‹áŠ / á‹°á‹ˆáˆŒ á‹µáŠ•á‰ áˆ­', type: 'á‹¨áŒ‰áˆáˆ©áŠ­ áá‰°áˆ»', transitTime: 'á‰€áŠ• 01', desc: 'á‹¨á‰°áˆ½áŠ¨áˆ­áŠ«áˆªá‹Žá‰½ áˆ­áŠ­áŠ­á‰¥ áŠ¥áŠ“ áá‰°áˆ»á¢' },
+        { code: '03', name: 'á‹¨áˆžáŒ† á‹°áˆ¨á‰… á‹ˆá‹°á‰¥', type: 'á‹¨áŒ­áŠá‰µ áˆ›á‹•áŠ¨áˆ', transitTime: 'á‰€áŠ• 02', desc: 'áŠ®áŠ•á‰´á‹­áŠáˆ­ áŠ­áˆá‰½á‰µ áŠ¥áŠ“ áˆ›á‹›á‹ˆáˆ­á¢' },
+        { code: '04', name: 'áŠ á‹²áˆµ áŠ á‰ á‰£ (á‰ƒáˆŠá‰²)', type: 'á‹¨áˆ˜áŒ¨áˆ¨áˆ» áˆ˜á‹³áˆ¨áˆ»', transitTime: 'á‰€áŠ• 02-03', desc: 'á‹¨áˆ˜áŒ¨áˆ¨áˆ» áŒ‰áˆáˆ©áŠ­ áŠ¥áŠ“ áˆ›áˆµáˆ¨áŠ¨á‰¥á¢' }
+      ]
+    },
+    contact: {
+      sectionTag: 'áŒáŠ•áŠ™áŠá‰µ',
+      headline: 'á‹¨áŒ­áŠá‰µ áŒ¥á‹«á‰„á¢',
+      subheadline: 'á‰ 2 áˆ°á‹“á‰³á‰µ á‹áˆµáŒ¥ áˆáˆ‹áˆ½ á‹«áŒˆáŠ›áˆ‰á¢',
+      form: {
+        nameLabel: 'áˆ™áˆ‰ áˆµáˆ', namePlaceholder: 'áˆáˆ³áˆŒá¡ á‹³áŠ•áŠ¤áˆ áŠƒá‹­áˆŒ',
+        companyLabel: 'á‹¨á‹µáˆ­áŒ…á‰µ áˆµáˆ', companyPlaceholder: 'áˆáˆ³áˆŒá¡ áŠ¢á‰µá‹®áŒµá‹« áˆ›áŠ‘á‹áŠ­á‰¸áˆªáŠ•áŒ',
+        phoneLabel: 'áˆµáˆáŠ­ á‰áŒ¥áˆ­', phonePlaceholder: '+251 91 234 5678',
+        emailLabel: 'áŠ¢áˆœá‹­áˆ', emailPlaceholder: 'logistics@company.com',
+        cargoTypeLabel: 'á‹¨áŠ áŒˆáˆáŒáˆŽá‰µ áŠ á‹­áŠá‰µ',
+        cargoTypes: ['ááˆ¬á‹­á‰µ á‰µáˆ«áŠ•áˆµá–áˆ­á‰´áˆ½áŠ•', 'áŒ‰áˆáˆ©áŠ­ áŠ­áˆŠáˆ«áŠ•áˆµ', 'áˆŽáŒ‚áˆµá‰²áŠ­áˆµ áˆ›á‹µáˆ¨áˆµ', 'áŠ¨á‰£á‹µ áˆ›áˆ½áŠáˆª áˆ›áŒ“áŒ“á‹', 'á•áˆ®áŒ€áŠ­á‰µ áŒ­áŠá‰µ'],
+        volumeLabel: 'á‹¨áŒ­áŠá‰± áˆ˜áŒ áŠ•', volumePlaceholder: 'áˆáˆ³áˆŒá¡ 2 x 40ft',
+        originDestLabel: 'áˆ˜áŠáˆ» áŠ¥áŠ“ áˆ˜á‹µáˆ¨áˆ»', originDestPlaceholder: 'áˆáˆ³áˆŒá¡ áˆ»áŠ•áŒ‹á‹­ âž” áŒ…á‰¡á‰² âž” áˆžáŒ†',
+        messageLabel: 'á‰°áŒ¨áˆ›áˆª áˆ›á‰¥áˆ«áˆªá‹«', messagePlaceholder: 'áˆµáˆˆ áŒ­áŠá‰± áˆáŠ”á‰³ á‹­áŒ¥á‰€áˆ±...',
+        submitBtn: 'áŒ¥á‹«á‰„á‹áŠ• á‹­áˆ‹áŠ©', submittingBtn: 'á‰ áˆ˜áˆ‹áŠ­ áˆ‹á‹­...', successMsg: 'áŒ¥á‹«á‰„á‹Ž á‰°áˆ˜á‹áŒá‰§áˆ! SAT-'
+      },
+      location: {
+        buildingTitle: 'á‹‹áŠ“ á‰¢áˆ®', buildingName: 'áˆá‰°áˆˆ áˆ…áŠ•áƒ',
+        addressLine1: 'á‹ˆáˆŽ áˆ°áˆáˆ­', addressLine2: 'áŠ á‹²áˆµ áŠ á‰ á‰£á£ áŠ¢á‰µá‹®áŒµá‹«',
+        coordinates: '09Â°00â€²05â€³N 38Â°46â€²02â€³E',
+        hoursTitle: 'á‹¨áˆµáˆ« áˆ°á‹“á‰³á‰µ', hours: 'áˆ°áŠž â€“ á‰…á‹³áˆœ: 08:00 â€“ 18:30',
+        phoneTitle: 'áˆµáˆáŠ­', phone: '+251 93 299 9977',
+        emailTitle: 'áŠ¢áˆœá‹­áˆ', email: 'satlogistics0001@gmail.com',
+        mapNotice: 'áˆá‰°áˆˆ áˆ…áŠ•áƒá£ á‹ˆáˆŽ áˆ°áˆáˆ­'
+      }
+    },
+    footer: {
+      tagline: 'áŠ áˆµá‰°áˆ›áˆ›áŠ á‹¨áŒ­áŠá‰µ áŠ áˆµá‰°áˆ‹áˆ‹áŠáŠá‰µ áŠ¥áŠ“ á‹¨áŒ‰áˆáˆ©áŠ­ áŠ­áˆŠáˆ«áŠ•áˆµá¢',
+      registration: 'áŠ¤áˆµáŠ¤á‰² áˆŽáŒ‚áˆµá‰²áŠ­áˆµ â€” áˆá‹áŒˆá‰£: ETH-LOG-4482',
+      licensing: 'á‰ áŠ¢á‰µá‹®áŒµá‹« á‰£áˆ…áˆ­ á‰µáˆ«áŠ•áˆµá–áˆ­á‰µ áŠ¥á‹á‰…áŠ“ á‹¨á‰°áˆ°áŒ á‹á¢',
+      copyright: 'Â© 2026 áŠ¤áˆµáŠ¤á‰² áˆŽáŒ‚áˆµá‰²áŠ­áˆµ áŠ¥áŠ“ áŠ•áŒá‹µ áŠƒ/á‹¨á‰°/á‹¨áŒ/áˆ›á¢',
+      backToTop: 'á‹ˆá‹° áˆ‹á‹­'
+    }
+  },
+
+  ar: {
+    nav: {
+      home: 'Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠØ©',
+      about: 'Ù…Ù† Ù†Ø­Ù†',
+      services: 'Ø§Ù„Ø®Ø¯Ù…Ø§Øª',
+      executive: 'Ø§Ù„Ø¥Ø¯Ø§Ø±Ø©',
+      contact: 'Ø§ØªØµÙ„ Ø¨Ù†Ø§',
+      quoteBtn: 'Ø·Ù„Ø¨ Ø¹Ø±Ø¶ Ø³Ø¹Ø±'
+    },
+    hero: {
+      badge: 'Ø§Ù„Ù„ÙˆØ¬Ø³ØªÙŠØ§Øª Ø§Ù„Ù…ØªØ¹Ø¯Ø¯Ø© Ø§Ù„ÙˆØ³Ø§Ø¦Ø· ÙÙŠ Ø§Ù„Ù‚Ø±Ù† Ø§Ù„Ø£ÙØ±ÙŠÙ‚ÙŠ',
+      headlinePart1: 'Ø´Ø±ÙƒØ© SAT',
+      headlinePart2: 'Ù„Ù„Ø®Ø¯Ù…Ø§Øª Ø§Ù„Ù„ÙˆØ¬Ø³ØªÙŠØ© ÙˆØ§Ù„ØªØ¬Ø§Ø±Ø©',
+      tagline: 'Ø­Ù„ÙˆÙ„ Ù…ØªÙƒØ§Ù…Ù„Ø© Ù„Ø³Ù„Ø³Ù„Ø© Ø§Ù„ØªÙˆØ±ÙŠØ¯ ØªØ±Ø¨Ø· Ù…ÙŠÙ†Ø§Ø¡ Ø¬ÙŠØ¨ÙˆØªÙŠ Ø¨ÙˆØ³Ø· Ø¥Ø«ÙŠÙˆØ¨ÙŠØ§.',
+      ctaPrimary: 'Ø·Ù„Ø¨ Ø´Ø­Ù†',
+      ctaSecondary: 'Ø¹Ø±Ø¶ Ø§Ù„Ø®Ø¯Ù…Ø§Øª',
+      stat1Label: 'ÙˆÙ‚Øª Ø§Ù„Ø¹Ø¨ÙˆØ±',
+      stat1Value: '36-48 Ø³Ø§Ø¹Ø©',
+      stat2Label: 'Ø§Ù„Ø¬Ù…Ø§Ø±Ùƒ',
+      stat2Value: '99.4%',
+      stat3Label: 'Ø§Ù„Ø£Ø³Ø·ÙˆÙ„',
+      stat3Value: '120+',
+      stat4Label: 'Ø§Ù„Ù…Ù…Ø± Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠ',
+      stat4Value: 'Ø¬ÙŠØ¨ÙˆØªÙŠ âž” Ø£Ø¯ÙŠØ³',
+      hubBadge: 'Ø§Ù„Ù…Ù‚Ø±: Ø£Ø¯ÙŠØ³ Ø£Ø¨Ø§Ø¨Ø§ // Ø±Ù‚Ù… Ø§Ù„ØªØ³Ø¬ÙŠÙ„: ETH-LOG-4482'
+    },
+    about: {
+      sectionTag: 'Ù…Ù† Ù†Ø­Ù†',
+      headline: 'Ù‡ÙˆÙŠØªÙ†Ø§.',
+      overview: 'Ø´Ø±ÙƒØ© SAT Ù„Ù„Ø®Ø¯Ù…Ø§Øª Ø§Ù„Ù„ÙˆØ¬Ø³ØªÙŠØ© ÙˆØ§Ù„ØªØ¬Ø§Ø±Ø© Ù‡ÙŠ Ù…Ø²ÙˆØ¯ Ù„Ø®Ø¯Ù…Ø§Øª Ø§Ù„Ù†Ù‚Ù„ ÙˆØ§Ù„Ù„ÙˆØ¬Ø³ØªÙŠØ§Øª ÙÙŠ Ø¥Ø«ÙŠÙˆØ¨ÙŠØ§ ÙˆÙ…Ø§ ÙˆØ±Ø§Ø¡Ù‡Ø§.',
+      missionTag: 'Ù…Ù‡Ù…ØªÙ†Ø§',
+      missionHeadline: 'Ø§Ù„Ù…Ù‡Ù…Ø© Ø§Ù„Ø£Ø³Ø§Ø³ÙŠØ© ÙˆØ§Ù„ØµÙ†Ø§Ø¹Ø§Øª Ø§Ù„Ù…Ø³ØªÙ‡Ø¯ÙØ©.',
+      missionItems: [
+        'ØªÙ‚Ø¯Ù… SAT Ø­Ù„ÙˆÙ„Ø§Ù‹ Ø´Ø§Ù…Ù„Ø© Ù„Ø·ÙŠÙ ÙˆØ§Ø³Ø¹ Ù…Ù† Ø§Ù„ØµÙ†Ø§Ø¹Ø§Øª Ø¨Ù…Ø§ ÙÙŠÙ‡Ø§ Ø§Ù„ØªØµÙ†ÙŠØ¹ØŒ ÙˆØ§Ù„Ø·Ø§Ù‚Ø©ØŒ ÙˆØ§Ù„Ù…Ù†Ø§Ø·Ù‚ Ø§Ù„ØµÙ†Ø§Ø¹ÙŠØ©ØŒ ÙˆØ§Ù„Ø·Ø§Ù‚Ø© Ø§Ù„Ø´Ù…Ø³ÙŠØ©ØŒ ÙˆØ§Ù„Ø¨Ø¶Ø§Ø¦Ø¹ Ø§Ù„Ø«Ù‚ÙŠÙ„Ø©.',
+        'Ø¨Ø§Ù„Ø¥Ø¶Ø§ÙØ© Ø¥Ù„Ù‰ Ø§Ù„Ø´Ø­Ù†ØŒ Ù†Ù‚Ø¯Ù… Ø®Ø¯Ù…Ø§Øª Ø§Ø³ØªØ´Ø§Ø±ÙŠØ© Ù„ÙˆØ¬Ø³ØªÙŠØ© Ù„ØªØ­Ø³ÙŠÙ† Ø³Ù„Ø§Ø³Ù„ Ø§Ù„ØªÙˆØ±ÙŠØ¯.',
+        'Ù‡Ø¯ÙÙ†Ø§ Ø¯Ø¹Ù… Ø§Ù„Ø´Ø±ÙƒØ§Øª Ø§Ù„Ø®Ø§ØµØ© ÙˆØ§Ù„Ù…Ø¤Ø³Ø³Ø§Øª Ø§Ù„Ø­ÙƒÙˆÙ…ÙŠØ© ÙÙŠ ØªØ­Ø³ÙŠÙ† Ø§Ù„ÙˆØµÙˆÙ„ Ø§Ù„Ù„ÙˆØ¬Ø³ØªÙŠ ÙˆØ®ÙØ¶ Ø§Ù„ØªØ¹Ø±ÙŠÙØ§Øª.'
+      ],
+      purposeTag: 'ØºØ±Ø¶Ù†Ø§',
+      purposeHeadline: 'Ø§Ù„ØºØ±Ø¶ ÙˆØ§Ù„Ø·Ø§Ù‚Ø©.',
+      purposeFoundedNote: 'ØªØ£Ø³Ø³Øª Ø¹Ø§Ù… 2023ØŒ ÙˆØªÙ„ØªØ²Ù… Ø¨ØªÙ‚Ø¯ÙŠÙ… Ø®Ø¯Ù…Ø§Øª Ù†Ù‚Ù„ ÙˆØªØ®Ù„ÙŠØµ Ø¬Ù…Ø±ÙƒÙŠ Ù…ØªØ®ØµØµØ©.',
+      purposeMission: 'Ù…Ù‡Ù…ØªÙ†Ø§ ØªÙ‚Ø¯ÙŠÙ… Ø­Ù„ÙˆÙ„ Ù„ÙˆØ¬Ø³ØªÙŠØ© Ø´Ø§Ù…Ù„Ø© ØªÙ„Ø¨ÙŠ Ø§Ù„Ø§Ø­ØªÙŠØ§Ø¬Ø§Øª Ø§Ù„Ø¯ÙˆÙ„ÙŠØ© Ø§Ù„Ù…ØªÙ†ÙˆØ¹Ø© Ù„Ø¹Ù…Ù„Ø§Ø¦Ù†Ø§.',
+      principlesTag: 'Ù…Ø¨Ø§Ø¯Ø¦ Ø§Ù„ØªØ´ØºÙŠÙ„',
+      principlesHeadline: 'Ù…Ø¨Ø§Ø¯Ø¦Ù†Ø§.',
+      principles: [
+        { title: 'Ø§Ù„Ø´Ø±Ø§ÙƒØ© Ù…Ø¹ Ø£ØµØ­Ø§Ø¨ Ø§Ù„Ù…ØµÙ„Ø­Ø©', desc: 'Ù†Ø¶Ø¹ Ø£Ù†ÙØ³Ù†Ø§ ÙƒØ­Ù„ÙØ§Ø¡ Ù…ÙˆØ«ÙˆÙ‚ÙŠÙ† Ù†ÙˆÙ„ÙŠ Ø§Ù„Ø¨Ø³Ø§Ø·Ø© ÙˆØ§Ù„Ø§Ø¹ØªÙ…Ø§Ø¯ÙŠØ© Ø£ÙˆÙ„ÙˆÙŠØ© Ù‚ØµÙˆÙ‰.' },
+        { title: 'ØªÙ…ÙƒÙŠÙ† Ù…ÙˆØ¸ÙÙŠÙ†Ø§', desc: 'Ø§Ù„Ù†Ø¬Ø§Ø­ Ù…Ø¨Ù†ÙŠ Ø¹Ù„Ù‰ Ø§Ù„ÙˆØ­Ø¯Ø©ØŒ Ù†Ø¹Ø²Ø² Ø§Ù„Ø¹Ù…Ù„ Ø§Ù„Ø¬Ù…Ø§Ø¹ÙŠ ÙˆØ§Ù„ØªØ¹Ø§ÙˆÙ†.' },
+        { title: 'Ø§Ù„Ø¯Ø§ÙØ¹ Ù†Ø­Ùˆ Ø§Ù„ØªÙ…ÙŠØ²', desc: 'Ø¹Ù…Ù„ÙŠØ§ØªÙ†Ø§ Ù…Ø±ØªÙƒØ²Ø© Ø¹Ù„Ù‰ Ø§Ù„Ù…Ø¹Ø§ÙŠÙŠØ± Ø§Ù„ÙˆØ·Ù†ÙŠØ© ÙˆØ§Ù„Ø¯ÙˆÙ„ÙŠØ©.' },
+        { title: 'Ø§Ù„ØªÙˆØ¬Ù‡ Ù†Ø­Ùˆ Ø§Ù„Ù…Ø³ØªÙ‚Ø¨Ù„', desc: 'Ù…ÙˆØ§Ù‚Ù ØªÙ‚Ø¯Ù…ÙŠØ© ÙˆØªØ±ÙƒÙŠØ² Ø¹Ù„Ù‰ Ø§Ù„Ù†Ù…Ùˆ Ø§Ù„Ù…Ø³ØªÙ…Ø±.' },
+        { title: 'Ø§Ù„Ø§Ù„ØªØ²Ø§Ù… Ø¨Ø§Ù„Ø§Ø³ØªØ¯Ø§Ù…Ø©', desc: 'Ù†Ù…Ø§Ø±Ø³ Ø§Ù„Ø¹Ù…Ù„ Ø§Ù„Ø£Ø®Ù„Ø§Ù‚ÙŠ ÙˆÙ†Ø¯Ù…Ø¬ Ø¶Ù…Ø§Ù†Ø§Øª Ø¨ÙŠØ¦ÙŠØ© Ù…ØªÙ‚Ø¯Ù…Ø©.' }
+      ],
+      capabilityTag: 'Ù‚Ø¯Ø±Ø§Øª Ø§Ù„ÙØ±ÙŠÙ‚',
+      capabilityHeadline: 'Ù‚Ø¯Ø±Ø§Øª ÙØ±ÙŠÙ‚Ù†Ø§.',
+      capabilities: [
+        { title: 'Ø§Ù„Ø®Ø¨Ø±Ø© Ø§Ù„Ù…Ø­Ù„ÙŠØ©', desc: 'ÙÙ‡Ù… Ø¹Ù…ÙŠÙ‚ Ù„Ù„ÙˆØ§Ø¦Ø­ Ø§Ù„Ù†Ù‚Ù„ ÙˆØ§Ù„Ø³ÙŠØ§Ø³Ø§Øª ÙˆØ§Ù„Ø¨Ù†ÙŠØ© Ø§Ù„ØªØ­ØªÙŠØ© Ø§Ù„Ø¥Ø«ÙŠÙˆØ¨ÙŠØ©.' },
+        { title: 'Ø§Ù„ØªÙ†Ø³ÙŠÙ‚ Ø§Ù„Ø³Ù„Ø³', desc: 'Ø®Ø¨Ø±Ø© ÙÙŠ Ø¹Ù…Ù„ÙŠØ§Øª Ù…Ø§ Ù‚Ø¨Ù„ Ø§Ù„Ø´Ø­Ù† ÙˆØ¥Ø¯Ø§Ø±Ø© Ø§Ù„ÙˆØ«Ø§Ø¦Ù‚ Ø§Ù„Ø¬Ù…Ø±ÙƒÙŠØ©.' },
+        { title: 'Ø´Ø±Ø§ÙƒØ§Øª Ù‚ÙˆÙŠØ©', desc: 'ØªØ¹Ø§ÙˆÙ† Ù…Ø¹ Ø³Ù„Ø·Ø§Øª Ø§Ù„Ø¬Ù…Ø§Ø±Ùƒ ÙˆØ®Ø·ÙˆØ· Ø§Ù„Ø´Ø­Ù† ÙˆØ§Ù„ÙˆÙƒÙ„Ø§Ø¡.' },
+        { title: 'Ù†Ù‡Ø¬ ÙŠØ±ÙƒØ² Ø¹Ù„Ù‰ Ø§Ù„Ø¹Ù…ÙŠÙ„', desc: 'Ø­Ù„ÙˆÙ„ Ù…Ø®ØµØµØ© Ù„ØªÙ„Ø¨ÙŠØ© Ø§Ø­ØªÙŠØ§Ø¬Ø§ØªÙƒ Ø§Ù„Ù„ÙˆØ¬Ø³ØªÙŠØ©.' }
+      ],
+      projectsTag: 'Ø§Ù„Ù…Ø´Ø§Ø±ÙŠØ¹ Ø§Ù„Ù…Ù†Ø¬Ø²Ø©',
+      projectsHeadline: 'Ø³Ø¬Ù„ Ø­Ø§ÙÙ„.',
+      projectsDesc: 'Ø£Ø¯Ù‘Øª Ø´Ø±ÙƒØªÙ†Ø§ Ø¯ÙˆØ±Ø§Ù‹ Ù…Ø­ÙˆØ±ÙŠØ§Ù‹ ÙÙŠ Ù†Ù‚Ù„ Ø§Ù„Ø¨Ø¶Ø§Ø¦Ø¹ Ø§Ù„Ø±Ø£Ø³Ù…Ø§Ù„ÙŠØ© Ù„Ø¨Ø¹Ø¶ Ø£Ø¨Ø±Ø² Ù…Ø´Ø§Ø±ÙŠØ¹ Ø§Ù„Ø¨Ù†ÙŠØ© Ø§Ù„ØªØ­ØªÙŠØ© ÙÙŠ Ø¥Ø«ÙŠÙˆØ¨ÙŠØ§.',
+      projectsList: [
+        'Ø³Ø¯ Ø§Ù„Ù†Ù‡Ø¶Ø© Ø§Ù„Ø¥Ø«ÙŠÙˆØ¨ÙŠ Ø§Ù„ÙƒØ¨ÙŠØ± (GERD)',
+        'Ø§Ù„Ø®Ø·ÙˆØ· Ø§Ù„Ø¬ÙˆÙŠØ© Ø§Ù„Ø¥Ø«ÙŠÙˆØ¨ÙŠØ© â€” Ø´Ø­Ù† Ø§Ù„Ø¨Ø¶Ø§Ø¦Ø¹',
+        'ØªÙˆÙ„ÙŠØ¯ Ø§Ù„Ø·Ø§Ù‚Ø© â€” Ù…Ø¬Ù…Ø¹ Ø¬ÙŠÙ„Ø¬ÙŠÙ„ Ø¬ÙŠØ¨ÙŠ',
+        'Ø§Ù„Ù…Ù†Ø§Ø·Ù‚ Ø§Ù„ØµÙ†Ø§Ø¹ÙŠØ©: Ù‡Ø§ÙˆØ§Ø³Ø§ØŒ Ø¯ÙˆÙƒÙŠÙ…ØŒ Ø£Ø¯Ø§Ù…Ø§',
+        'Ø§Ù„Ø·Ø§Ù‚Ø© Ø§Ù„ÙƒÙ‡Ø±Ø¨Ø§Ø¦ÙŠØ© Ø§Ù„Ø¥Ø«ÙŠÙˆØ¨ÙŠØ©',
+        'ÙˆØ²Ø§Ø±Ø© Ø§Ù„Ù…Ø§Ù„ÙŠØ© â€” Ù„ÙˆØ¬Ø³ØªÙŠØ§Øª Ø§Ù„Ù…Ø¹Ø¯Ø§Øª Ø§Ù„Ø±Ø£Ø³Ù…Ø§Ù„ÙŠØ©'
+      ],
+      customersTag: 'Ø¹Ù…Ù„Ø§Ø¤Ù†Ø§',
+      customersHeadline: 'Ø§Ù„Ø´Ø±ÙƒØ§Ø¡ Ø§Ù„Ø¯ÙˆÙ„ÙŠÙˆÙ†.',
+      customersSubheadline: 'Ø¹Ù…Ù„Ù†Ø§ Ù…Ø¹ ÙƒØ¨Ø±Ù‰ Ø§Ù„Ø´Ø±ÙƒØ§Øª Ø§Ù„Ø¹Ø§Ù„Ù…ÙŠØ© ÙÙŠ Ù‚Ø·Ø§Ø¹Ø§Øª Ø§Ù„Ø·Ø§Ù‚Ø© ÙˆØ§Ù„Ø¨Ù†Ø§Ø¡ ÙˆØ§Ù„ØµÙ„Ø¨ ÙˆØ§Ù„Ø¨Ù†ÙŠØ© Ø§Ù„ØªØ­ØªÙŠØ©.'
+    },
+    executive: {
+      sectionTag: 'Ø§Ù„Ø¥Ø¯Ø§Ø±Ø©',
+      headline: 'Ù‚ÙŠØ§Ø¯Ø© ØªÙ†ÙÙŠØ°ÙŠØ©.',
+      subheadline: 'ØªØ£Ø³Ø³Øª Ø¹Ø§Ù… 2023 Ù„ØªÙ‚Ø¯ÙŠÙ… Ø®Ø¯Ù…Ø§Øª Ù†Ù‚Ù„ ÙˆØªØ®Ù„ÙŠØµ Ø¬Ù…Ø±ÙƒÙŠ Ù…ØªØ®ØµØµØ©.',
+      name: 'ØµÙ…ÙˆØ¦ÙŠÙ„ Ø£ÙŠØ§Ù„Ùˆ',
+      title: 'Ø§Ù„Ù…Ø¯ÙŠØ± Ø§Ù„Ø¹Ø§Ù…',
+      credentialBadge: 'Ù…ØªØ®ØµØµ Ù„ÙˆØ¬Ø³ØªÙŠ Ø±Ø§Ø¦Ø¯',
+      quote: '"Ù†Ø¬Ø¹Ù„ Ø´Ø­Ù† Ø¨Ø¶Ø§Ø¦Ø¹Ùƒ Ø£Ù…Ø±Ø§Ù‹ Ø¨Ø³ÙŠØ·Ø§Ù‹."',
+      bioParagraph1: 'ÙŠØ­Ù…Ù„ Ø¯Ø±Ø¬Ø© Ø§Ù„Ù…Ø§Ø¬Ø³ØªÙŠØ± ÙÙŠ Ø§Ù„Ù„ÙˆØ¬Ø³ØªÙŠØ§Øª ÙˆØ¥Ø¯Ø§Ø±Ø© Ø³Ù„Ø§Ø³Ù„ Ø§Ù„ØªÙˆØ±ÙŠØ¯ Ù…Ø¹ Ø®Ø¨Ø±Ø© ØªØ²ÙŠØ¯ Ø¹Ù† Ø¹Ù‚Ø¯.',
+      bioParagraph2: 'ÙŠÙ‚ÙˆØ¯ Ø¹Ù…Ù„ÙŠØ§Øª Ø§Ù„ØªØ®Ù„ÙŠØµ Ø§Ù„Ø¬Ù…Ø±ÙƒÙŠ Ø§Ù„Ù…ØªÙƒØ§Ù…Ù„ ÙˆØ§Ù„Ù†Ù‚Ù„ Ø§Ù„Ù…ØªØ¹Ø¯Ø¯ Ø§Ù„ÙˆØ³Ø§Ø¦Ø· Ù…Ù† Ù…ÙŠÙ†Ø§Ø¡ Ø¬ÙŠØ¨ÙˆØªÙŠ.',
+      metricTitle1: 'Ø§Ø³ØªØ±Ø§ØªÙŠØ¬ÙŠØ© Ø³Ù„Ø³Ù„Ø© Ø§Ù„ØªÙˆØ±ÙŠØ¯',
+      metricDesc1: 'Ù…ØªØ®ØµØµ ÙÙŠ ØªÙƒØ§Ù…Ù„ Ø§Ù„Ù…ÙˆØ§Ù†Ø¦ Ø§Ù„Ø¬Ø§ÙØ© ÙˆØªØ­Ø³ÙŠÙ† Ø§Ù„Ù…Ù…Ø±Ø§Øª.',
+      metricTitle2: 'ØªØ³Ù„ÙŠÙ… Ø§Ù„Ù…Ù…Ø±',
+      metricDesc2: 'Ø¨Ø±ÙˆØªÙˆÙƒÙˆÙ„ ØªØ®Ù„ÙŠØµ Ø¬Ù…Ø±ÙƒÙŠ ÙÙŠ Ø£Ù‚Ù„ Ù…Ù† 48 Ø³Ø§Ø¹Ø©.',
+      governanceBadge: 'Ù…Ø´ØºÙ„ Ù…Ø±Ø®Øµ // Ù‡ÙŠØ¦Ø© Ø§Ù„Ù…Ù„Ø§Ø­Ø© Ø§Ù„Ø¥Ø«ÙŠÙˆØ¨ÙŠØ©'
+    },
+    services: {
+      sectionTag: 'Ø§Ù„Ø®Ø¯Ù…Ø§Øª',
+      headline: 'Ø§Ù„Ø®Ø¯Ù…Ø§Øª Ø§Ù„Ø£Ø³Ø§Ø³ÙŠØ©.',
+      subheadline: 'Ø£Ø±Ø¨Ø¹Ø© Ù‚Ø·Ø§Ø¹Ø§Øª Ù…ØªØ®ØµØµØ© Ù…ØµÙ…Ù…Ø© Ù„Ù„Ø³Ø±Ø¹Ø© ÙˆØ§Ù„Ø§Ù…ØªØ«Ø§Ù„.',
+      items: [
+        { id: 'customs-clearance', code: '01', title: 'Ø§Ù„ØªØ®Ù„ÙŠØµ Ø§Ù„Ø¬Ù…Ø±ÙƒÙŠ', subtitle: 'Ø¥Ù‚Ø±Ø§Ø±Ø§Øª ASYCUDA Ø§Ù„Ù…Ø¹ØªÙ…Ø¯Ø©', description: 'Ø¥ÙØ±Ø§Ø¬ Ø¬Ù…Ø±ÙƒÙŠ Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ Ø³Ø±ÙŠØ¹ Ø¹Ø¨Ø± Ù…Ø­Ø·Ø§Øª Ø§Ù„Ø­Ø¯ÙˆØ¯.', specs: ['Ø¥Ù‚Ø±Ø§Ø±Ø§Øª ASYCUDA World', 'ØªØµÙ†ÙŠÙ Ø§Ù„ØªØ¹Ø±ÙŠÙØ© ÙˆØ§Ù„ØªÙ‚ÙŠÙŠÙ…', 'Ø³Ù†Ø¯Ø§Øª Ø¶Ù…Ø§Ù† Ø§Ù„Ø¹Ø¨ÙˆØ±'], kpi: 'Ù…ØªÙˆØ³Ø· 24-36 Ø³Ø§Ø¹Ø©' },
+        { id: 'freight-forwarding', code: '02', title: 'Ø§Ù„Ø´Ø­Ù† ÙˆØ§Ù„ØªØ®Ù„ÙŠØµ', subtitle: 'Ù…Ù…Ø± Ø¬ÙŠØ¨ÙˆØªÙŠ-Ø£Ø¯ÙŠØ³ Ø£Ø¨Ø§Ø¨Ø§', description: 'ØªÙˆØ¬ÙŠÙ‡ Ø´Ø­Ù† Ù…ØªØ²Ø§Ù…Ù† Ø¨Ø­Ø±Ø§Ù‹ ÙˆØ³ÙƒØ© Ø­Ø¯ÙŠØ¯Ø§Ù‹ ÙˆØ·Ø±ÙŠÙ‚Ø§Ù‹.', specs: ['ØªÙ…Ø«ÙŠÙ„ ÙÙŠ Ø¯ÙˆØ±Ø§Ù„ÙŠØ© (DCT & DMP)', 'ØªÙƒØ§Ù…Ù„ Ø³ÙƒØ© Ø­Ø¯ÙŠØ¯ Ø¥Ø«ÙŠÙˆ-Ø¬ÙŠØ¨ÙˆØªÙŠ', 'ØªØ¬Ù…ÙŠØ¹ Ø­Ø§ÙˆÙŠØ§Øª FCL & LCL'], kpi: '99.4% ØªØ³Ù„ÙŠÙ… ÙÙŠ Ø§Ù„ÙˆÙ‚Øª' },
+        { id: 'fleet-coordination', code: '03', title: 'Ø£Ø³Ø·ÙˆÙ„ Ø¹Ø§Ø¨Ø± Ù„Ù„Ø­Ø¯ÙˆØ¯', subtitle: 'Ù†Ù‚Ù„ Ø¨Ø¶Ø§Ø¦Ø¹ Ø«Ù‚ÙŠÙ„Ø©', description: 'Ø£Ø³Ø·ÙˆÙ„ Ù…Ø±Ø§Ù‚Ø¨ Ø¨Ø§Ù„Ù€GPS Ù…Ù† Ù…Ù†ØµØ§Øª ÙˆÙ†Ø§Ù‚Ù„Ø§Øª Ø«Ù‚ÙŠÙ„Ø©.', specs: ['ØªØªØ¨Ø¹ ÙÙˆØ±ÙŠ 24/7', 'Ù†Ø§Ù‚Ù„Ø§Øª Ø­ØªÙ‰ 120 Ø·Ù†', 'Ø¨Ø±ÙˆØªÙˆÙƒÙˆÙ„ Ù‚Ø§ÙÙ„Ø© Ø§Ù„Ø­Ø¯ÙˆØ¯'], kpi: '100% Ù†Ù‚Ù„ Ù…Ø±Ø§Ù‚Ø¨' },
+        { id: 'machinery-trading', code: '04', title: 'Ø§Ø³ØªÙŠØ±Ø§Ø¯ Ø§Ù„Ø¢Ù„Ø§Øª', subtitle: 'Ù…ØµØ¯Ø± Ø§Ù„Ù…Ø¹Ø¯Ø§Øª Ø§Ù„ØªØ¬Ø§Ø±ÙŠØ©', description: 'Ø´Ø±Ø§Ø¡ Ù…ØªÙƒØ§Ù…Ù„ ÙˆØ§Ø³ØªÙŠØ±Ø§Ø¯ Ø§Ù„Ø¢Ù„Ø§Øª Ø§Ù„ØµÙ†Ø§Ø¹ÙŠØ© ÙˆØ§Ù„Ø£Ø¬Ø²Ø§Ø¡.', specs: ['Ù…ØµØ§Ø¯Ø± Ù…Ø¨Ø§Ø´Ø±Ø© Ù…Ù† Ø§Ù„Ù…ØµÙ†Ø¹', 'ØªÙ†Ø³ÙŠÙ‚ ØªØ±Ø§Ø®ÙŠØµ Ø§Ù„Ø§Ø³ØªÙŠØ±Ø§Ø¯ ÙˆØ§Ù„Ø¹Ù…Ù„Ø©', 'ØªØ³Ù„ÙŠÙ… Ø­ØªÙ‰ Ø¨Ø§Ø¨ Ø§Ù„Ù…ØµÙ†Ø¹'], kpi: 'ØªØ³Ù„ÙŠÙ… Ù…ØªÙƒØ§Ù…Ù„' }
+      ]
+    },
+    corridor: {
+      sectionTag: 'Ø§Ù„Ù…Ù…Ø± Ø§Ù„ØªØ¬Ø§Ø±ÙŠ',
+      headline: 'Ù…Ø­ÙˆØ± Ø¬ÙŠØ¨ÙˆØªÙŠ - Ø£Ø¯ÙŠØ³.',
+      subheadline: 'Ø§Ù„Ø´Ø±ÙŠØ§Ù† Ø§Ù„Ù„ÙˆØ¬Ø³ØªÙŠ Ø§Ù„Ù…Ù…ØªØ¯ 900+ ÙƒÙ… Ø§Ù„Ø°ÙŠ ÙŠØ±Ø¨Ø· Ø§Ù„Ø´Ø­Ù† Ø§Ù„Ø¨Ø­Ø±ÙŠ ÙÙŠ Ø§Ù„Ø¨Ø­Ø± Ø§Ù„Ø£Ø­Ù…Ø± Ø¨ÙˆØ³Ø· Ø¥Ø«ÙŠÙˆØ¨ÙŠØ§.',
+      stops: [
+        { code: '01', name: 'Ù…ÙŠÙ†Ø§Ø¡ Ø¬ÙŠØ¨ÙˆØªÙŠ (Ø¯ÙˆØ±Ø§Ù„ÙŠØ©)', type: 'Ù…Ø­Ø·Ø© Ø¨Ø­Ø±ÙŠØ©', transitTime: 'Ø§Ù„ÙŠÙˆÙ… 00', desc: 'ØªÙØ±ÙŠØº Ø§Ù„Ø³ÙÙ† ÙˆÙ…Ø¹Ø§Ù„Ø¬Ø© Ø¨ÙˆØ§Ù„Øµ Ø§Ù„Ø´Ø­Ù†.' },
+        { code: '02', name: 'Ø­Ø¯ÙˆØ¯ ØºØ§Ù„Ø§ÙÙŠ / Ø¯ÙŠÙˆÙŠÙ„ÙŠ', type: 'ØªÙØªÙŠØ´ Ø¬Ù…Ø±ÙƒÙŠ', transitTime: 'Ø§Ù„ÙŠÙˆÙ… 01', desc: 'ØªØ³Ù„ÙŠÙ… Ø§Ù„Ø­Ø±Ø§Ø³Ø© ÙˆØ§Ù„ØªØ­Ù‚Ù‚ Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ.' },
+        { code: '03', name: 'Ù…ÙŠÙ†Ø§Ø¡ Ù…ÙˆØ¬Ùˆ Ø§Ù„Ø¬Ø§Ù', type: 'Ù…Ø³ØªÙˆØ¯Ø¹ ØªØ¨Ø§Ø¯Ù„', transitTime: 'Ø§Ù„ÙŠÙˆÙ… 02', desc: 'ØªÙƒØ¯ÙŠØ³ Ø§Ù„Ø­Ø§ÙˆÙŠØ§Øª ÙˆØ§Ù„Ø´Ø­Ù† Ù…Ù† Ø³ÙƒØ© Ø­Ø¯ÙŠØ¯ Ø¥Ù„Ù‰ Ø´Ø§Ø­Ù†Ø§Øª.' },
+        { code: '04', name: 'Ø£Ø¯ÙŠØ³ Ø£Ø¨Ø§Ø¨Ø§ (Ù‚Ø§Ù„ÙŠØªÙŠ)', type: 'ØªØ³Ù„ÙŠÙ… Ù„Ù„Ù…Ø³ØªÙ„Ù…', transitTime: 'Ø§Ù„ÙŠÙˆÙ… 02-03', desc: 'Ø§Ù„Ø¥ÙØ±Ø§Ø¬ Ø§Ù„Ø¬Ù…Ø±ÙƒÙŠ Ø§Ù„Ù†Ù‡Ø§Ø¦ÙŠ ÙˆØ§Ù„ØªØ³Ù„ÙŠÙ… Ù„Ù„Ù…ØµÙ†Ø¹.' }
+      ]
+    },
+    contact: {
+      sectionTag: 'Ø§ØªØµÙ„ Ø¨Ù†Ø§',
+      headline: 'Ø§Ø³ØªÙØ³Ø§Ø±Ø§Øª Ø§Ù„Ø´Ø­Ù†.',
+      subheadline: 'Ù‚Ù†Ø§Ø© Ù…Ø¨Ø§Ø´Ø±Ø© Ù„ÙØ±ÙŠÙ‚Ù†Ø§ ÙÙŠ Ø£Ø¯ÙŠØ³ Ø£Ø¨Ø§Ø¨Ø§. Ø±Ø¯ÙˆØ¯ Ø®Ù„Ø§Ù„ Ø³Ø§Ø¹ØªÙŠÙ†.',
+      form: {
+        nameLabel: 'Ø§Ù„Ø§Ø³Ù… Ø§Ù„ÙƒØ§Ù…Ù„', namePlaceholder: 'Ù…Ø«Ø§Ù„: Ø£Ø­Ù…Ø¯ Ù…Ø­Ù…Ø¯',
+        companyLabel: 'Ø§Ø³Ù… Ø§Ù„Ø´Ø±ÙƒØ©', companyPlaceholder: 'Ù…Ø«Ø§Ù„: Ù…Ø¬Ù…ÙˆØ¹Ø© Ø§Ù„ØªØµÙ†ÙŠØ¹ Ø§Ù„Ø¥Ø«ÙŠÙˆØ¨ÙŠØ©',
+        phoneLabel: 'Ø±Ù‚Ù… Ø§Ù„Ù‡Ø§ØªÙ', phonePlaceholder: '+251 93 299 9977',
+        emailLabel: 'Ø§Ù„Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ', emailPlaceholder: 'logistics@company.com',
+        cargoTypeLabel: 'ÙØ¦Ø© Ø§Ù„Ø®Ø¯Ù…Ø©',
+        cargoTypes: ['Ù†Ù‚Ù„ Ø§Ù„Ø¨Ø¶Ø§Ø¦Ø¹', 'Ø§Ù„ØªØ®Ù„ÙŠØµ Ø§Ù„Ø¬Ù…Ø±ÙƒÙŠ', 'Ø§Ù„ØªØ³Ù„ÙŠÙ… Ù„Ù„Ù…Ù†Ø²Ù„', 'Ù†Ù‚Ù„ Ø§Ù„Ø¢Ù„Ø§Øª Ø§Ù„Ø«Ù‚ÙŠÙ„Ø©', 'Ù…Ù†Ø§ÙˆÙ„Ø© Ø§Ù„Ø¨Ø¶Ø§Ø¦Ø¹ Ø§Ù„Ø®Ø§ØµØ©'],
+        volumeLabel: 'Ø§Ù„Ø­Ø¬Ù… / Ø§Ù„ÙˆØ²Ù† Ø§Ù„Ù…Ù‚Ø¯Ø±', volumePlaceholder: 'Ù…Ø«Ø§Ù„: Ø­Ø§ÙˆÙŠØªØ§Ù† 40 Ù‚Ø¯Ù…',
+        originDestLabel: 'Ø§Ù„Ù…ØµØ¯Ø± ÙˆØ§Ù„ÙˆØ¬Ù‡Ø©', originDestPlaceholder: 'Ù…Ø«Ø§Ù„: Ø´Ù†ØºÙ‡Ø§ÙŠ âž” Ø¬ÙŠØ¨ÙˆØªÙŠ âž” Ø£Ø¯ÙŠØ³ Ø£Ø¨Ø§Ø¨Ø§',
+        messageLabel: 'Ù…Ù„Ø§Ø­Ø¸Ø§Øª Ø§Ù„Ø´Ø­Ù†', messagePlaceholder: 'Ù…ØªØ·Ù„Ø¨Ø§Øª Ø®Ø§ØµØ©...',
+        submitBtn: 'Ø¥Ø±Ø³Ø§Ù„ Ø§Ù„Ø·Ù„Ø¨', submittingBtn: 'Ø¬Ø§Ø±Ù Ø§Ù„Ø¥Ø±Ø³Ø§Ù„...', successMsg: 'ØªÙ… ØªØ³Ø¬ÙŠÙ„ Ø·Ù„Ø¨Ùƒ. Ø±Ù‚Ù… Ø§Ù„Ù…Ø±Ø¬Ø¹: SAT-'
+      },
+      location: {
+        buildingTitle: 'Ø§Ù„Ù…Ù‚Ø± Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠ', buildingName: 'Ù…Ø¨Ù†Ù‰ ÙÙŠØªÙŠÙ„ÙŠ',
+        addressLine1: 'Ù…ÙŠØ¯Ø§Ù† ØºÙˆØ±ØºÙˆØ±ÙŠÙˆØ³ØŒ Ø§Ù„Ø·Ø§Ø¨Ù‚ Ø§Ù„Ø«Ø§Ù„Ø«', addressLine2: 'Ø£Ø¯ÙŠØ³ Ø£Ø¨Ø§Ø¨Ø§ØŒ Ø¥Ø«ÙŠÙˆØ¨ÙŠØ§',
+        coordinates: '09Â°00â€²05â€³N 38Â°46â€²02â€³E',
+        hoursTitle: 'Ø³Ø§Ø¹Ø§Øª Ø§Ù„Ø¹Ù…Ù„', hours: 'Ø§Ù„Ø§Ø«Ù†ÙŠÙ† â€“ Ø§Ù„Ø³Ø¨Øª: 08:00 â€“ 18:30',
+        phoneTitle: 'Ø§Ù„Ù‡Ø§ØªÙ Ø§Ù„Ù…Ø¨Ø§Ø´Ø±', phone: '+251 93 299 9977',
+        emailTitle: 'Ø§Ù„Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ', email: 'satlogistics0001@gmail.com',
+        mapNotice: 'Ù…Ø¨Ù†Ù‰ ÙÙŠØªÙŠÙ„ÙŠØŒ Ù…ÙŠØ¯Ø§Ù† ØºÙˆØ±ØºÙˆØ±ÙŠÙˆØ³ØŒ Ø£Ø¯ÙŠØ³ Ø£Ø¨Ø§Ø¨Ø§'
+      }
+    },
+    footer: {
+      tagline: 'Ø´Ø­Ù† Ù…ØªØ¹Ø¯Ø¯ Ø§Ù„ÙˆØ³Ø§Ø¦Ø· ÙˆØªØ®Ù„ÙŠØµ Ø¬Ù…Ø±ÙƒÙŠ ÙˆØªØ¯Ø§ÙˆÙ„ Ù…Ø¹Ø¯Ø§Øª ØµÙ†Ø§Ø¹ÙŠØ© Ø¹Ø¨Ø± Ø´Ø±Ù‚ Ø£ÙØ±ÙŠÙ‚ÙŠØ§.',
+      registration: 'Ø´Ø±ÙƒØ© SAT Ù„Ù„Ø®Ø¯Ù…Ø§Øª Ø§Ù„Ù„ÙˆØ¬Ø³ØªÙŠØ© ÙˆØ§Ù„ØªØ¬Ø§Ø±Ø© â€” Ø±Ù‚Ù… Ø§Ù„ØªØ³Ø¬ÙŠÙ„: ETH-LOG-4482',
+      licensing: 'Ù…Ø±Ø®ØµØ© Ù…Ù† Ù‡ÙŠØ¦Ø© Ø§Ù„Ù…Ù„Ø§Ø­Ø© Ø§Ù„Ø¥Ø«ÙŠÙˆØ¨ÙŠØ©.',
+      copyright: 'Â© 2026 Ø´Ø±ÙƒØ© SAT Ù„Ù„Ø®Ø¯Ù…Ø§Øª Ø§Ù„Ù„ÙˆØ¬Ø³ØªÙŠØ© ÙˆØ§Ù„ØªØ¬Ø§Ø±Ø©.',
+      backToTop: 'Ø§Ù„Ø¹ÙˆØ¯Ø© Ù„Ù„Ø£Ø¹Ù„Ù‰'
+    }
+  },
+
+  zh: {
+    nav: {
+      home: 'æ¦‚è§ˆ',
+      about: 'å…³äºŽæˆ‘ä»¬',
+      services: 'æœåŠ¡',
+      executive: 'é¢†å¯¼å±‚',
+      contact: 'è”ç³»æˆ‘ä»¬',
+      quoteBtn: 'èŽ·å–æŠ¥ä»·'
+    },
+    hero: {
+      badge: 'éžæ´²ä¹‹è§’å¤šå¼è”è¿ç‰©æµ',
+      headlinePart1: 'SAT ç‰©æµ',
+      headlinePart2: 'è´¸æ˜“æœ‰é™å…¬å¸',
+      tagline: 'è¿žæŽ¥å‰å¸ƒææ¸¯ä¸ŽåŸƒå¡žä¿„æ¯”äºšä¸­éƒ¨çš„ç«¯åˆ°ç«¯ä¾›åº”é“¾è§£å†³æ–¹æ¡ˆã€‚',
+      ctaPrimary: 'ç”³è¯·è°ƒåº¦',
+      ctaSecondary: 'æŸ¥çœ‹æœåŠ¡',
+      stat1Label: 'è¿è¾“æ—¶é—´',
+      stat1Value: '36-48å°æ—¶',
+      stat2Label: 'æ¸…å…³æˆåŠŸçŽ‡',
+      stat2Value: '99.4%',
+      stat3Label: 'è½¦é˜Ÿè§„æ¨¡',
+      stat3Value: '120+',
+      stat4Label: 'ä¸»è¦èµ°å»Š',
+      stat4Value: 'å‰å¸ƒæ âž” äºšçš„',
+      hubBadge: 'æ€»éƒ¨ï¼šäºšçš„æ–¯äºšè´å·´ // æ³¨å†Œ: ETH-LOG-4482'
+    },
+    about: {
+      sectionTag: 'å…³äºŽæˆ‘ä»¬',
+      headline: 'æˆ‘ä»¬æ˜¯è°ã€‚',
+      overview: 'SATç‰©æµè´¸æ˜“æœ‰é™å…¬å¸æ˜¯åŸƒå¡žä¿„æ¯”äºšåŠå‘¨è¾¹åœ°åŒºçš„è¿è¾“å’Œç‰©æµæœåŠ¡æä¾›å•†ï¼Œæä¾›å›½é™…è´§è¿ä»£ç†ã€æ¸…å…³å’Œé¡¹ç›®è´§ç‰©è¿è¾“æœåŠ¡ã€‚',
+      missionTag: 'æˆ‘ä»¬çš„ä½¿å‘½',
+      missionHeadline: 'æ ¸å¿ƒä½¿å‘½ä¸Žç›®æ ‡è¡Œä¸šã€‚',
+      missionItems: [
+        'SATä¸ºåˆ¶é€ ä¸šã€èƒ½æºç”Ÿäº§ã€å·¥ä¸šå›­åŒºã€å¤ªé˜³èƒ½ã€é›¶å”®ã€æœè£…è¡Œä¸šå’Œç‰¹æ®Šé‡åž‹é¡¹ç›®è´§ç‰©æä¾›å…¨é¢è§£å†³æ–¹æ¡ˆã€‚',
+        'é™¤è´§è¿ä»£ç†å¤–ï¼Œæˆ‘ä»¬è¿˜æä¾›ç‰©æµå’¨è¯¢æœåŠ¡ï¼Œä»¥ä¼˜åŒ–å®¢æˆ·çš„ä¾›åº”é“¾ã€‚',
+        'æˆ‘ä»¬çš„ç›®æ ‡æ˜¯æœ‰æ•ˆæ”¯æŒç§è¥ä¼ä¸šã€åˆ¶é€ å•†å’Œæ”¿åºœæœºæž„æ”¹å–„ç‰©æµèƒ½åŠ›ã€é™ä½Žè¿è´¹å¹¶æé«˜æœåŠ¡è´¨é‡ã€‚'
+      ],
+      purposeTag: 'æˆ‘ä»¬çš„å®—æ—¨',
+      purposeHeadline: 'å®—æ—¨ä¸Žèƒ½åŠ›ã€‚',
+      purposeFoundedNote: 'SATç‰©æµè´¸æ˜“æœ‰é™å…¬å¸æˆç«‹äºŽ2023å¹´ï¼Œè‡´åŠ›äºŽæä¾›ä¸“ä¸šçš„è¿è¾“å’Œæ¸…å…³æœåŠ¡ï¼Œç¡®ä¿è´§ç‰©ä»Žèµ·ç‚¹åˆ°ç»ˆç‚¹çš„æ— ç¼ç§»åŠ¨ã€‚',
+      purposeMission: 'æˆ‘ä»¬çš„ä½¿å‘½æ˜¯æä¾›å…¨é¢çš„ç‰©æµè§£å†³æ–¹æ¡ˆï¼Œæ»¡è¶³å®¢æˆ·å¤šæ ·åŒ–çš„å›½é™…ç‰©æµéœ€æ±‚ã€‚',
+      principlesTag: 'è¿è¥åŽŸåˆ™',
+      principlesHeadline: 'æˆ‘ä»¬çš„åŽŸåˆ™ã€‚',
+      principles: [
+        { title: 'ä¸Žåˆ©ç›Šç›¸å…³è€…åˆä½œ', desc: 'æˆ‘ä»¬ä»¥å€¼å¾—ä¿¡èµ–çš„ç›Ÿå‹å®šä½è‡ªå·±ï¼Œä¼˜å…ˆè€ƒè™‘ç®€å•æ€§ã€å¯é æ€§å’Œä»¥å®¢æˆ·ä¸ºä¸­å¿ƒçš„ç†å¿µã€‚' },
+        { title: 'èµ‹èƒ½æˆ‘ä»¬çš„å‘˜å·¥', desc: 'æˆåŠŸå»ºç«‹åœ¨å›¢ç»“ä¹‹ä¸Šï¼Œæˆ‘ä»¬ä¿ƒè¿›å›¢é˜Ÿåˆä½œå¹¶æä¾›å¼ºå¤§çš„å‘˜å·¥æ”¯æŒä½“ç³»ã€‚' },
+        { title: 'ä»¥å“è¶Šä¸ºé©±åŠ¨', desc: 'æˆ‘ä»¬çš„è¿è¥ä»¥å›½å†…å¤–æ ‡å‡†ä¸ºåŸºå‡†ï¼Œç¡®ä¿æ‰€æœ‰æœåŠ¡çš„æ•ˆçŽ‡ã€ä¸€è‡´æ€§å’Œé€Ÿåº¦ã€‚' },
+        { title: 'é¢å‘æœªæ¥', desc: 'ç§¯æžè¿›å–çš„æ€åº¦å’Œä»¥å¢žé•¿ä¸ºå¯¼å‘çš„æˆ˜ç•¥ä½¿æˆ‘ä»¬ä¸æ–­è¿›åŒ–ï¼Œæ›´å¥½åœ°æœåŠ¡å®¢æˆ·ã€‚' },
+        { title: 'å¯¹å¯æŒç»­æ€§çš„æ‰¿è¯º', desc: 'æˆ‘ä»¬åšæŒé“å¾·å®žè·µå’Œåˆè§„ï¼Œå°†å…ˆè¿›çš„çŽ¯å¢ƒä¿éšœæŽªæ–½èžå…¥è¿è¥ã€‚' }
+      ],
+      capabilityTag: 'å›¢é˜Ÿèƒ½åŠ›',
+      capabilityHeadline: 'æˆ‘ä»¬å›¢é˜Ÿçš„èƒ½åŠ›ã€‚',
+      capabilities: [
+        { title: 'æœ¬åœ°ä¸“ä¸šçŸ¥è¯†', desc: 'å¯¹åŸƒå¡žä¿„æ¯”äºšè¿è¾“æ³•è§„ã€æ”¿ç­–å’ŒåŸºç¡€è®¾æ–½çš„æ·±åˆ»ç†è§£ã€‚' },
+        { title: 'æ— ç¼åè°ƒ', desc: 'ä¸°å¯Œçš„å‰æœŸè¿è¾“æµç¨‹ç»éªŒï¼Œç¡®ä¿é«˜æ•ˆçš„æ¸…å…³å’Œæ–‡ä»¶å¤„ç†ã€‚' },
+        { title: 'å¼ºå¤§çš„åˆä½œä¼™ä¼´å…³ç³»', desc: 'ä¸ŽåŸƒå¡žä¿„æ¯”äºšæµ·å…³å½“å±€ã€èˆªè¿å…¬å¸å’Œè´§è¿ä»£ç†çš„åˆä½œã€‚' },
+        { title: 'ä»¥å®¢æˆ·ä¸ºä¸­å¿ƒçš„æ–¹å¼', desc: 'é‡èº«å®šåˆ¶çš„è§£å†³æ–¹æ¡ˆï¼Œæ»¡è¶³æ‚¨çš„ç‰©æµéœ€æ±‚ã€‚' }
+      ],
+      projectsTag: 'å·²äº¤ä»˜é¡¹ç›®',
+      projectsHeadline: 'æˆç†Ÿçš„ä¸šç»©è®°å½•ã€‚',
+      projectsDesc: 'æˆ‘ä»¬å…¬å¸åœ¨åŸƒå¡žä¿„æ¯”äºšæœ€é‡è¦çš„åŸºç¡€è®¾æ–½é¡¹ç›®è´§ç‰©è¿è¾“ä¸­å‘æŒ¥äº†é‡è¦ä½œç”¨ã€‚',
+      projectsList: [
+        'åŸƒå¡žä¿„æ¯”äºšå¤å…´å¤§å (GERD)',
+        'åŸƒå¡žä¿„æ¯”äºšèˆªç©º â€” è´§è¿',
+        'å‘ç”µ â€” å‰å°”å‰å°”åŸºè´ç»¼åˆä½“',
+        'å·¥ä¸šå›­åŒºï¼šå“ˆç“¦è¨ã€æœè‚¯ã€é˜¿è¾¾çŽ›',
+        'åŸƒå¡žä¿„æ¯”äºšç”µåŠ›',
+        'è´¢æ”¿éƒ¨ â€” èµ„æœ¬è®¾å¤‡ç‰©æµ'
+      ],
+      customersTag: 'æˆ‘ä»¬çš„å®¢æˆ·',
+      customersHeadline: 'å›½é™…åˆä½œä¼™ä¼´ã€‚',
+      customersSubheadline: 'æˆ‘ä»¬ä¸Žèƒ½æºã€å»ºè®¾ã€é’¢é“å’ŒåŸºç¡€è®¾æ–½é¢†åŸŸçš„å…¨çƒé¢†å…ˆä¼ä¸šåˆä½œã€‚'
+    },
+    executive: {
+      sectionTag: 'é¢†å¯¼å±‚',
+      headline: 'æ‰§è¡Œé¢†å¯¼å±‚ã€‚',
+      subheadline: 'æˆç«‹äºŽ2023å¹´ï¼Œè‡´åŠ›äºŽæä¾›ä¸“ä¸šçš„è¿è¾“å’Œæ¸…å…³æœåŠ¡ã€‚',
+      name: 'è¨ç©†åŸƒå°”Â·é˜¿äºšåˆ—å¤«',
+      title: 'æ€»ç»ç†',
+      credentialBadge: 'é¢†å…ˆç‰©æµä¸“ä¸šäººå£«',
+      quote: '"æˆ‘ä»¬è®©æ‚¨çš„è´§ç‰©è¿è¾“å˜å¾—ç®€å•ã€‚"',
+      bioParagraph1: 'æ‹¥æœ‰ç‰©æµä¸Žä¾›åº”é“¾ç®¡ç†ç¡•å£«å­¦ä½ï¼Œå…·æœ‰åå¹´ä»¥ä¸Šé«˜çº§è´§è¿åè°ƒå’Œèµ°å»Šç®¡ç†ç»éªŒã€‚',
+      bioParagraph2: 'ä»–è´Ÿè´£SATçš„ç»¼åˆæ¸…å…³å’Œå¤šå¼è”è¿ä¸šåŠ¡ï¼Œè¿žæŽ¥å‰å¸ƒææ¸¯ä¸ŽèŽ«çº¦å¹²æ¸¯å’Œäºšçš„æ–¯äºšè´å·´ã€‚',
+      metricTitle1: 'ä¾›åº”é“¾æˆ˜ç•¥',
+      metricDesc1: 'ä¸“æ³¨äºŽå¹²æ¸¯ä¸€ä½“åŒ–å’Œèµ°å»Šä¼˜åŒ–ã€‚',
+      metricTitle2: 'èµ°å»Šäº¤ä»˜',
+      metricDesc2: '48å°æ—¶å†…æ¸…å…³åè®®å’Œå®žæ—¶è½¦é˜Ÿè·Ÿè¸ªã€‚',
+      governanceBadge: 'æŒç‰Œè¿è¥å•† // åŸƒå¡žä¿„æ¯”äºšæµ·äº‹å±€'
+    },
+    services: {
+      sectionTag: 'æœåŠ¡',
+      headline: 'æ ¸å¿ƒæœåŠ¡ã€‚',
+      subheadline: 'å››ä¸ªä¸“ä¸šåž‚ç›´é¢†åŸŸï¼Œä¸“ä¸ºé€Ÿåº¦å’Œåˆè§„æ€§è€Œè®¾è®¡ã€‚',
+      items: [
+        { id: 'customs-clearance', code: '01', title: 'æ¸…å…³æœåŠ¡', subtitle: 'AEOè®¤è¯ & ASYCUDAç”³æŠ¥', description: 'å¿«é€Ÿç”µå­æ¸…å…³ï¼Œè¦†ç›–äºšçš„æ–¯äºšè´å·´æœºåœºè´§è¿ç«™ã€èŽ«çº¦å¹²æ¸¯å’Œå‰å¸ƒæè¾¹å¢ƒã€‚', specs: ['ASYCUDA Worldç”µå­ç”³æŠ¥', 'å…³ç¨Žåˆ†ç±»ä¸Žä¼°ä»·', 'è¿‡å¢ƒæ‹…ä¿å€ºåˆ¸ä¸Žä¿¡ç”¨è¯åˆè§„'], kpi: 'å¹³å‡24-36å°æ—¶æ”¾è¡Œ' },
+        { id: 'freight-forwarding', code: '02', title: 'è´§è¿ä»£ç†', subtitle: 'å‰å¸ƒæè‡³äºšçš„æ–¯äºšè´å·´èµ°å»Š', description: 'ä»Žå¤šå“ˆèŽ±é›†è£…ç®±ç å¤´åˆ°ä¸­éƒ¨å¹²æ¸¯çš„æµ·é™†é“ååŒè´§è¿ã€‚', specs: ['å¤šå“ˆèŽ±æ¸¯å£ä»£ç†(DCT & DMP)', 'åŸƒå‰é“è·¯(EDR)æ•´åˆ', 'FCL & LCLé›†è£…ç®±æ‹¼ç®±'], kpi: '99.4%å‡†æ—¶äº¤è´§çŽ‡' },
+        { id: 'fleet-coordination', code: '03', title: 'è·¨å¢ƒè½¦é˜Ÿ', subtitle: 'é‡åž‹è¿è¾“ä¸Žä½ŽåºŠè¿è¾“', description: 'GPSç›‘æŽ§çš„å¹³æ¿è½¦ã€ä½ŽåºŠè½¦ï¼ˆæœ€é«˜120å¨ï¼‰å’Œå†·è—è½¦è½¦é˜Ÿã€‚', specs: ['24/7å®žæ—¶è¿œç¨‹ä¿¡æ¯å¤„ç†', 'é‡åž‹æœºæ¢°ä½ŽåºŠ(æœ€é«˜120å¨)', 'ä¸“ç”¨è¾¹å¢ƒæŠ¤é€åè®®'], kpi: '100%å…¨ç¨‹ç›‘æŽ§' },
+        { id: 'machinery-trading', code: '04', title: 'æœºæ¢°è¿›å£è´¸æ˜“', subtitle: 'å•†ä¸šè®¾å¤‡é‡‡è´­', description: 'å·¥ä¸šè®¾å¤‡çš„ä¸€ç«™å¼å•†ä¸šé‡‡è´­å’Œè¿›å£ä¾¿åˆ©åŒ–ã€‚', specs: ['å·¥åŽ‚ç›´æŽ¥å…¨çƒé‡‡è´­', 'è¿›å£è®¸å¯è¯å’Œå¤–æ±‡åè°ƒ', 'å·¥åŽ‚é—¨åˆ°é—¨äº¤è´§'], kpi: 'ä¸€ç«™å¼è¿›å£äº¤è´§' }
+      ]
+    },
+    corridor: {
+      sectionTag: 'è´¸æ˜“èµ°å»Š',
+      headline: 'å‰å¸ƒæ â€“ äºšçš„æ–¯è½´çº¿ã€‚',
+      subheadline: 'è¿žæŽ¥çº¢æµ·æµ·è¿ä¸ŽåŸƒå¡žä¿„æ¯”äºšä¸­éƒ¨çš„900+å…¬é‡Œå¤šå¼è”è¿ç”Ÿå‘½çº¿ã€‚',
+      stops: [
+        { code: '01', name: 'å‰å¸ƒææ¸¯ï¼ˆå¤šå“ˆèŽ±ï¼‰', type: 'æ·±æ°´ç å¤´', transitTime: 'ç¬¬0å¤©', desc: 'èˆ¹èˆ¶å¸è´§ã€æå•éªŒè¯å’Œè¿‡å¢ƒèˆ±å•å¤„ç†ã€‚' },
+        { code: '02', name: 'åŠ æ‹‰è²/å¾·éŸ¦å‹’è¾¹å¢ƒ', type: 'æµ·å…³æ£€æŸ¥', transitTime: 'ç¬¬1å¤©', desc: 'æŠ¤é€äº¤æŽ¥ã€ç”µå­å°ç­¾éªŒè¯å’Œè¿‡å¢ƒæ¸…å…³ã€‚' },
+        { code: '03', name: 'èŽ«çº¦å¹²æ¸¯æž¢çº½', type: 'è”è¿ä»“åº“', transitTime: 'ç¬¬2å¤©', desc: 'é›†è£…ç®±å †æ”¾ã€é“è·¯è½¬å¡è½¦å’Œä¿ç¨Žä»“å‚¨ã€‚' },
+        { code: '04', name: 'äºšçš„æ–¯äºšè´å·´ï¼ˆå¡åˆ©æï¼‰', type: 'æ”¶è´§äººäº¤ä»˜', transitTime: 'ç¬¬2-3å¤©', desc: 'æœ€ç»ˆæ¸…å…³ã€ç¼´ç¨Žå’Œå·¥åŽ‚ç›´é€ã€‚' }
+      ]
+    },
+    contact: {
+      sectionTag: 'è”ç³»æˆ‘ä»¬',
+      headline: 'è´§ç‰©è°ƒåº¦ä¸ŽæŸ¥è¯¢ã€‚',
+      subheadline: 'ç›´æŽ¥è”ç³»æˆ‘ä»¬åœ¨äºšçš„æ–¯äºšè´å·´çš„ç‰©æµå›¢é˜Ÿã€‚æŸ¥è¯¢å°†åœ¨2å°æ—¶å†…ç­”å¤ã€‚',
+      form: {
+        nameLabel: 'å…¨å', namePlaceholder: 'ä¾‹ï¼šå¼ ä¼Ÿ',
+        companyLabel: 'å…¬å¸åç§°', companyPlaceholder: 'ä¾‹ï¼šåŸƒå¡žä¿„æ¯”äºšåˆ¶é€ é›†å›¢',
+        phoneLabel: 'ç”µè¯å·ç ', phonePlaceholder: '+251 93 299 9977',
+        emailLabel: 'ç”µå­é‚®ä»¶', emailPlaceholder: 'logistics@company.com',
+        cargoTypeLabel: 'æœåŠ¡ç±»åˆ«',
+        cargoTypes: ['è´§è¿è¿è¾“', 'æ¸…å…³æœåŠ¡', 'æœ€åŽä¸€å…¬é‡Œé…é€', 'é‡åž‹æœºæ¢°è¿è¾“', 'é¡¹ç›®è´§ç‰©å¤„ç†'],
+        volumeLabel: 'é¢„è®¡ä½“ç§¯/é‡é‡', volumePlaceholder: 'ä¾‹ï¼š2ä¸ª40è‹±å°ºé«˜æŸœæˆ–30å¨',
+        originDestLabel: 'èµ·è¿åœ°å’Œç›®çš„åœ°', originDestPlaceholder: 'ä¾‹ï¼šä¸Šæµ· âž” å‰å¸ƒæ âž” äºšçš„æ–¯äºšè´å·´',
+        messageLabel: 'è´§ç‰©å¤‡æ³¨', messagePlaceholder: 'ç‰¹æ®Šå¤„ç†è¦æ±‚æˆ–æ—¶é—´è¡¨...',
+        submitBtn: 'æäº¤è¯·æ±‚', submittingBtn: 'æäº¤ä¸­...', successMsg: 'è¯·æ±‚å·²ç™»è®°ã€‚å‚è€ƒç¼–å·ï¼šSAT-'
+      },
+      location: {
+        buildingTitle: 'æ€»éƒ¨', buildingName: 'è´¹ç‰¹èŽ±å¤§åŽ¦',
+        addressLine1: 'æˆˆå°”æˆˆé‡Œå¥¥æ–¯å¹¿åœºï¼Œ3æ¥¼', addressLine2: 'äºšçš„æ–¯äºšè´å·´ï¼ŒåŸƒå¡žä¿„æ¯”äºš',
+        coordinates: '09Â°00â€²05â€³N 38Â°46â€²02â€³E',
+        hoursTitle: 'è¥ä¸šæ—¶é—´', hours: 'å‘¨ä¸€è‡³å‘¨å…­ï¼š08:00 â€“ 18:30 (EAT) // è¿è¥ï¼š24/7',
+        phoneTitle: 'ç›´çº¿ç”µè¯', phone: '+251 93 299 9977',
+        emailTitle: 'ç”µå­é‚®ä»¶', email: 'satlogistics0001@gmail.com',
+        mapNotice: 'è´¹ç‰¹èŽ±å¤§åŽ¦ï¼Œæˆˆå°”æˆˆé‡Œå¥¥æ–¯å¹¿åœºï¼Œäºšçš„æ–¯äºšè´å·´'
+      }
+    },
+    footer: {
+      tagline: 'è¦†ç›–ä¸œéžçš„å¤šå¼è”è¿è´§è¿ä»£ç†ã€æ¸…å…³å’Œå·¥ä¸šè®¾å¤‡è´¸æ˜“ã€‚',
+      registration: 'SATç‰©æµè´¸æ˜“æœ‰é™å…¬å¸ â€” æ³¨å†Œå·: ETH-LOG-4482',
+      licensing: 'ç»åŸƒå¡žä¿„æ¯”äºšæµ·äº‹å±€æŽˆæƒã€‚',
+      copyright: 'Â© 2026 SATç‰©æµè´¸æ˜“æœ‰é™å…¬å¸ã€‚',
+      backToTop: 'è¿”å›žé¡¶éƒ¨'
+    }
+  }
+};
+

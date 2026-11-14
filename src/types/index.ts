@@ -1,6 +1,6 @@
 export type Language = 'en' | 'am' | 'ar' | 'zh';
 
-export type NavItem = 'home' | 'about' | 'services' | 'executive' | 'corridor' | 'contact';
+export type NavItem = 'home' | 'about' | 'services' | 'executive' | 'contact';
 
 export interface TranslationSchema {
   nav: {
@@ -8,7 +8,6 @@ export interface TranslationSchema {
     about: string;
     services: string;
     executive: string;
-    corridor: string;
     contact: string;
     quoteBtn: string;
   };
@@ -27,8 +26,6 @@ export interface TranslationSchema {
     stat3Value: string;
     stat4Label: string;
     stat4Value: string;
-    corridorStatus: string;
-    hubBadge: string;
   };
   about: {
     sectionTag: string;
@@ -83,18 +80,6 @@ export interface TranslationSchema {
       description: string;
       specs: string[];
       kpi: string;
-    }[];
-  };
-  corridor: {
-    sectionTag: string;
-    headline: string;
-    subheadline: string;
-    stops: {
-      code: string;
-      name: string;
-      type: string;
-      transitTime: string;
-      desc: string;
     }[];
   };
   contact: {

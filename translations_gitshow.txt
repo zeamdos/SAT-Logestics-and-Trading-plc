@@ -1,0 +1,714 @@
+﻿import { TranslationSchema, Language } from '@/types';
+
+export const translations: Record<Language, TranslationSchema> = {
+  en: {
+    nav: {
+      home: 'Overview',
+      about: 'About Us',
+      services: 'Services',
+      executive: 'Leadership',
+      corridor: 'Corridor',
+      contact: 'Contact',
+      quoteBtn: 'Get a Quote'
+    },
+    hero: {
+      badge: 'Horn of Africa Multimodal Logistics',
+      headlinePart1: 'SAT LOGISTICS',
+      headlinePart2: '& TRADING PLC',
+      tagline: 'End-to-end supply chain solutions and commercial equipment trading connecting the Port of Djibouti to central Ethiopia.',
+      ctaPrimary: 'Request Dispatch',
+      ctaSecondary: 'View Services',
+      stat1Label: 'Transit Time',
+      stat1Value: '36-48h',
+      stat2Label: 'Customs SLA',
+      stat2Value: '99.4%',
+      stat3Label: 'Fleet Capacity',
+      stat3Value: '120+',
+      stat4Label: 'Primary Corridor',
+      stat4Value: 'DJI Γ₧ö ADD',
+      corridorStatus: 'Djibouti-Addis Axis: Operational',
+      hubBadge: 'HQ: Addis Ababa // Reg: ETH-LOG-4482'
+    },
+    about: {
+      sectionTag: 'ABOUT US',
+      headline: 'Who We Are.',
+      overview: 'SAT Logistics and Trading PLC is a transportation and logistics provider in Ethiopia and beyond. Our company provides services including international freight forwarding, customs clearance, and project cargo transport.',
+      missionTag: 'OUR MISSION',
+      missionHeadline: 'Core Mission & Target Industries.',
+      missionItems: [
+        'SAT Logistics and Trading PLC offers comprehensive solutions for a wide range of industries, including but not limited to manufacturing, energy production, data mining cargo, industry parks, solar companies, wing energy farms, retail, garment industry, and special heavy project cargo handling.',
+        'In addition to freight forwarding we give logistics consultancy services to streamline supply chains and enhance our customer\'s satisfaction.',
+        'Our purpose is to effectively support the goals of private companies, manufacturers and governmental institutions in improving logistics capacity access, lower freight tariffs and improving service quality.'
+      ],
+      purposeTag: 'OUR PURPOSE',
+      purposeHeadline: 'Purpose & Capacity.',
+      purposeFoundedNote: 'Founded in 2023, SAT Logistics and Trading PLC is dedicated to providing specialized transportation and customs clearance services to ensure seamless movement of goods, from point of origin to final destination.',
+      purposeMission: 'Our mission is to provide comprehensive logistics solutions that meet the diverse international logistics needs of our clients.',
+      principlesTag: 'OPERATING PRINCIPALS',
+      principlesHeadline: 'Our Principles.',
+      principles: [
+        {
+          title: 'Partnering with Stakeholders',
+          desc: 'We position ourselves as trusted allies, prioritizing simplicity, dependability, and a client-first mindset in every collaboration.'
+        },
+        {
+          title: 'Empowering Our Workforce',
+          desc: 'Success is built on unity. We foster teamwork, encourage cooperation, and provide strong support systems for our employees.'
+        },
+        {
+          title: 'Driven by Excellence',
+          desc: 'Our operations are anchored to national and world-class standards, ensuring efficiency, consistency, and speed across all services.'
+        },
+        {
+          title: 'Future-Oriented',
+          desc: 'Progressive attitudes and growth-focused strategies allow us to continuously evolve and serve our clients better.'
+        },
+        {
+          title: 'Commitment to Sustainability',
+          desc: 'We uphold ethical practices and compliance, integrating advanced environmental safeguards into our operations.'
+        }
+      ],
+      capabilityTag: 'TEAM CAPABILITY',
+      capabilityHeadline: 'Our Team\'s Capability.',
+      capabilities: [
+        {
+          title: 'Local Expertise',
+          desc: 'Profound understanding of Ethiopia\'s transport regulations, policies, and infrastructure.'
+        },
+        {
+          title: 'Seamless Coordination',
+          desc: 'Experience in pre-forwarding processes, ensuring efficient customs clearance and document handling.'
+        },
+        {
+          title: 'Strong Partnerships',
+          desc: 'Collaborations with Ethiopian customs authorities, shipping lines, and freight forwarders.'
+        },
+        {
+          title: 'Client-Centric Approach',
+          desc: 'Customized solutions to meet your logistics needs ΓÇö from first mile to last mile.'
+        }
+      ],
+      projectsTag: 'DELIVERED PROJECTS',
+      projectsHeadline: 'Proven Track Record.',
+      projectsDesc: 'Our company has played a significant role in the transportation of capital goods for some of Ethiopia\'s most notable infrastructure projects.',
+      projectsList: [
+        'Grand Ethiopian Renaissance Dam (GERD)',
+        'Ethiopian Airlines ΓÇö Aircraft Ground Support Cargo',
+        'Power Generation ΓÇö Gilgel Gibe Complex',
+        'Industry Parks: Hawassa, Dukem, Adama, Arerti, Tulufa, Debrebirhan',
+        'Ethiopian Electric Power & Ethiopian Electric Utility',
+        'Ministry of Finance ΓÇö Capital Equipment Logistics'
+      ],
+      customersTag: 'OUR CUSTOMERS',
+      customersHeadline: 'International Partners.',
+      customersSubheadline: 'We have worked with leading global companies across energy, construction, steel, and infrastructure.'
+    },
+    executive: {
+      sectionTag: 'LEADERSHIP',
+      headline: 'Executive Leadership.',
+      subheadline: 'Founded in 2023, dedicated to providing specialized transportation and customs clearance services.',
+      name: 'Samuel Ayalew',
+      title: 'General Manager',
+      credentialBadge: 'Leading Logistics Professional',
+      quote: '"We make your cargo transport simple."',
+      bioParagraph1: 'Holding a Master\'s degree in Logistics & Supply Chain Management, Samuel Ayalew brings over a decade of high-level freight coordination and corridor management.',
+      bioParagraph2: 'He directs SAT\'s integrated customs clearance and multimodal haulage connecting the Port of Djibouti directly to Mojo Dry Port and Addis Ababa.',
+      metricTitle1: 'Supply Chain Strategy',
+      metricDesc1: 'Specialized in dry port integration and corridor optimization.',
+      metricTitle2: 'Corridor Delivery',
+      metricDesc2: 'Sub-48h customs clearance protocol and live fleet tracking.',
+      governanceBadge: 'Licensed Operator // Ethiopian Maritime Authority'
+    },
+    services: {
+      sectionTag: 'SERVICES',
+      headline: 'Core Services.',
+      subheadline: 'Four specialized verticals engineered for speed and compliance.',
+      items: [
+        {
+          id: 'customs-clearance',
+          code: '01',
+          title: 'Customs Clearance',
+          subtitle: 'AEO Accredited & ASYCUDA Declaration',
+          description: 'Rapid electronic customs release across Addis Ababa Airport Cargo, Mojo Dry Port, and Djibouti border stations.',
+          specs: [
+            'ASYCUDA World Electronic Declarations',
+            'Tariff Classification & Duty Valuation',
+            'Transit Guarantee Bonds & LC Compliance'
+          ],
+          kpi: '24-36h Average Release'
+        },
+        {
+          id: 'freight-forwarding',
+          code: '02',
+          title: 'Freight Forwarding',
+          subtitle: 'Djibouti to Addis Ababa Corridor',
+          description: 'Synchronized sea, rail, and highway freight routing from Doraleh Container Terminal to central dry ports.',
+          specs: [
+            'Port Representation at Doraleh (DCT & DMP)',
+            'Ethio-Djibouti Railway (EDR) Integration',
+            'FCL & LCL Container Consolidation'
+          ],
+          kpi: '99.4% On-Time Delivery'
+        },
+        {
+          id: 'fleet-coordination',
+          code: '03',
+          title: 'Cross-Border Fleet',
+          subtitle: 'Heavy Haulage & Lowbed Transport',
+          description: 'GPS-monitored fleet of flatbeds, lowbeds up to 120 tons, and reefers operating across the Galafi corridor.',
+          specs: [
+            '24/7 Real-Time Telematics & Satellite Tracking',
+            'Heavy Machinery Lowbeds (Up to 120T)',
+            'Dedicated Border Convoy Protocol'
+          ],
+          kpi: '100% Monitored Haulage'
+        },
+        {
+          id: 'machinery-trading',
+          code: '04',
+          title: 'Machinery Import Trading',
+          subtitle: 'Commercial Equipment Sourcing',
+          description: 'Turnkey commercial procurement and import facilitation of industrial plant machinery, tooling, and spare assemblies.',
+          specs: [
+            'Factory-Direct Global Sourcing',
+            'Turnkey Import Licensing & Forex Coordination',
+            'Factory Doorstep Commissioning Delivery'
+          ],
+          kpi: 'Turnkey Import Delivery'
+        }
+      ]
+    },
+    corridor: {
+      sectionTag: 'TRADE CORRIDOR',
+      headline: 'Djibouti ΓÇô Addis Axis.',
+      subheadline: 'The 900+ km multimodal lifeline connecting Red Sea maritime shipping to central Ethiopia.',
+      stops: [
+        {
+          code: '01',
+          name: 'Port of Djibouti (Doraleh)',
+          type: 'Deep-Sea Terminal',
+          transitTime: 'Day 00',
+          desc: 'Vessel discharge, bill of lading validation, and transit manifest processing.'
+        },
+        {
+          code: '02',
+          name: 'Galafi / Dewele Border',
+          type: 'Customs Inspection',
+          transitTime: 'Day 01',
+          desc: 'Escort handover, electronic seal verification, and transit clearance.'
+        },
+        {
+          code: '03',
+          name: 'Mojo Dry Port Hub',
+          type: 'Intermodal Depot',
+          transitTime: 'Day 02',
+          desc: 'Container stacking, rail-to-truck transshipment, and bonded storage.'
+        },
+        {
+          code: '04',
+          name: 'Addis Ababa (Kality)',
+          type: 'Consignee Delivery',
+          transitTime: 'Day 02-03',
+          desc: 'Final customs release, duty settlement, and direct factory delivery.'
+        }
+      ]
+    },
+    contact: {
+      sectionTag: 'CONTACT',
+      headline: 'Cargo Dispatch & Inquiries.',
+      subheadline: 'Direct channel to our logistics team in Addis Ababa. Inquiries answered within 2 hours.',
+      form: {
+        nameLabel: 'Full Name',
+        namePlaceholder: 'e.g., Daniel Haile',
+        companyLabel: 'Company Name',
+        companyPlaceholder: 'e.g., Ethiopian Manufacturing Group',
+        phoneLabel: 'Phone Number',
+        phonePlaceholder: '+251 93 299 9977',
+        emailLabel: 'Email Address',
+        emailPlaceholder: 'logistics@company.com',
+        cargoTypeLabel: 'Service Category',
+        cargoTypes: [
+          'Freight Transportation',
+          'Customs Clearance',
+          'Last-Mile Delivery',
+          'Heavy Machinery Transport',
+          'Project Cargo Handling'
+        ],
+        volumeLabel: 'Estimated Volume / Weight',
+        volumePlaceholder: 'e.g., 2 x 40ft HC or 30 Tons',
+        originDestLabel: 'Origin & Inland Destination',
+        originDestPlaceholder: 'e.g., Shanghai Γ₧ö Djibouti Γ₧ö Addis Ababa',
+        messageLabel: 'Cargo Notes',
+        messagePlaceholder: 'Special handling requirements or schedule...',
+        submitBtn: 'Submit Request',
+        submittingBtn: 'Submitting...',
+        successMsg: 'Request registered. Reference ID: SAT-'
+      },
+      location: {
+        buildingTitle: 'Headquarters',
+        buildingName: 'Fetele Building',
+        addressLine1: 'Gorgorios Square, 3rd Floor',
+        addressLine2: 'Addis Ababa, Ethiopia',
+        coordinates: '09┬░00ΓÇ▓05ΓÇ│N 38┬░46ΓÇ▓02ΓÇ│E',
+        hoursTitle: 'Operating Hours',
+        hours: 'Mon ΓÇô Sat: 08:00 ΓÇô 18:30 (EAT) // Operations: 24/7',
+        phoneTitle: 'Direct Desk',
+        phone: '+251 93 299 9977 / +251 93 237 3839',
+        emailTitle: 'Email',
+        email: 'satlogistics0001@gmail.com',
+        mapNotice: 'Fetele Building, Gorgorios Square, Addis Ababa'
+      }
+    },
+    footer: {
+      tagline: 'Multimodal freight forwarding, customs clearance, and industrial equipment trading across East Africa.',
+      registration: 'SAT Logistics and Trading PLC ΓÇö Reg. No. ETH-LOG-4482',
+      licensing: 'Authorized by the Ethiopian Maritime Authority.',
+      copyright: '┬⌐ 2026 SAT Logistics and Trading PLC.',
+      backToTop: 'Back to Top'
+    }
+  },
+
+  am: {
+    nav: {
+      home: 'ßèáßîáßëâßêïßï¡',
+      about: 'ßê╡ßêê ßèÑßè¢',
+      services: 'ßèáßîêßêìßîìßêÄßë╢ßë╜',
+      executive: 'ßèáßêÿßê½ßê¡',
+      corridor: 'ßè«ßê¬ßï░ßê¡',
+      contact: 'ßîìßèòßèÖßèÉßë╡',
+      quoteBtn: 'ßîÑßï½ßëä ßï½ßëàßê¡ßëí'
+    },
+    hero: {
+      badge: 'ßï¿ßèáßììßê¬ßè½ ßëÇßèòßï╡ ßêÿßêìßë▓ßê₧ßï│ßêì ßêÄßîéßê╡ßë▓ßè¡ßê╡',
+      headlinePart1: 'ßèñßê╡ßèñßë▓ ßêÄßîéßê╡ßë▓ßè¡ßê╡',
+      headlinePart2: 'ßèÑßèô ßèòßîìßï╡ ßèâ/ßï¿ßë░/ßï¿ßîì/ßê¢',
+      tagline: 'ßï¿ßîàßëíßë▓ ßïêßï░ßëÑßèò ßè¿ßê¢ßïòßè¿ßêïßïè ßèóßë╡ßï«ßî╡ßï½ ßîïßê¡ ßï¿ßêÜßï½ßîêßèôßè¥ ßèáßê╡ßë░ßê¢ßê¢ßè¥ ßï¿ßèáßëàßê¡ßëªßë╡ ßê░ßèòßê░ßêêßë╡ ßèÑßèô ßï¿ßèóßèòßï▒ßê╡ßë╡ßê¬ ßê¢ßê╜ßèÉßê¬ßïÄßë╜ ßèòßîìßï╡ßìó',
+      ctaPrimary: 'ßï¿ßî¡ßèÉßë╡ ßèáßîêßêìßîìßêÄßë╡ ßï¡ßîáßï¡ßëü',
+      ctaSecondary: 'ßèáßîêßêìßîìßêÄßë╢ßë╜ßèò ßï¡ßêÿßêìßè¿ßë▒',
+      stat1Label: 'ßï¿ßè«ßê¬ßï░ßê¡ ßîèßï£',
+      stat1Value: '36-48 ßê░ßïôßë╡',
+      stat2Label: 'ßï¿ßîëßê¥ßê⌐ßè¡ ßè¡ßêèßê½ßèòßê╡',
+      stat2Value: '99.4%',
+      stat3Label: 'ßï¿ßë░ßê╜ßè¿ßê¡ßè½ßê¬ ßëÑßï¢ßë╡',
+      stat3Value: '120+',
+      stat4Label: 'ßïïßèôßïì ßêÿßê╡ßêÿßê¡',
+      stat4Value: 'ßîàßëíßë▓ Γ₧ö ßèáßï▓ßê╡ ßèáßëáßëú',
+      corridorStatus: 'ßï¿ßîàßëíßë▓-ßèáßï▓ßê╡ ßèáßëáßëú ßêÿßê╡ßêÿßê¡: ßëáßë░ßêƒßêï ßï¥ßîìßîüßèÉßë╡ ßêïßï¡',
+      hubBadge: 'ßïïßèô ßêÿ/ßëñßë╡: ßèáßï▓ßê╡ ßèáßëáßëú // ßê¥ßï¥ßîêßëú: ETH-LOG-4482'
+    },
+    about: {
+      sectionTag: 'ßê╡ßêê ßèÑßè¢',
+      headline: 'ßèÑßèÉßê¢ßèò ßèÉßèòßìó',
+      overview: 'ßèñßê╡ßèñßë▓ ßêÄßîéßê╡ßë▓ßè¡ßê╡ ßèÑßèô ßèòßîìßï╡ ßèâ/ßï¿ßë░/ßï¿ßîì/ßê¢ ßëáßèóßë╡ßï«ßî╡ßï½ ßèÑßèô ßè¿ßïÜßï½ ßëúßê╗ßîêßê¡ ßï¿ßî¡ßèÉßë╡ ßë╡ßê½ßèòßê╡ßìûßê¡ßë╡ ßèÑßèô ßêÄßîéßê╡ßë▓ßè¡ßê╡ ßèáßîêßêìßîìßêÄßë╡ ßê░ßî¬ ßï╡ßê¡ßîàßë╡ ßèÉßïìßìó',
+      missionTag: 'ßë░ßêìßïòßè«',
+      missionHeadline: 'ßïïßèô ßë░ßêìßïòßè« ßèÑßèô ßèóßêïßê¢ ßèóßèòßï▒ßê╡ßë╡ßê¬ßïÄßë╜ßìó',
+      missionItems: [
+        'ßèñßê╡ßèñßë▓ ßêêßê░ßìè ßèóßèòßï▒ßê╡ßë╡ßê¬ßïÄßë╜ ßêüßêëßèò ßèáßëÇßìì ßêÿßììßë╡ßêä ßï¡ßê░ßîúßêì ΓÇö ßê¥ßê¡ßë╡ßìú ßèâßï¡ßêì ßê¢ßê¥ßê¿ßë╡ßìú ßìÇßêÉßï¡ ßèâßï¡ßêìßìú ßëÇßêïßêì ßèóßèòßï▒ßê╡ßë╡ßê¬ßìú ßï¿ßêìßëÑßê╡ ßèóßèòßï▒ßê╡ßë╡ßê¬ ßèÑßèô ßêìßï⌐ ßìòßê«ßîÇßè¡ßë╡ ßî¡ßèÉßë╢ßë╜ßèò ßî¿ßê¥ßê«ßìó',
+        'ßè¿ßî¡ßèÉßë╡ ßèáßê╡ßë░ßêïßêïßìèßèÉßë╡ ßëúßê╗ßîêßê¡ ßï¿ßêÄßîéßê╡ßë▓ßè¡ßê╡ ßê¥ßè¡ßê¡ ßèáßîêßêìßîìßêÄßë╡ ßê░ßîÑßë░ßèò ßï¿ßï░ßèòßëáßè₧ßë╗ßë╜ßèòßèò ßèáßëàßê¡ßëªßë╡ ßê░ßèòßê░ßêêßë╡ ßèÑßèôßê╗ßê╜ßêïßêêßèòßìó',
+        'ßïôßêïßê¢ßë╜ßèò ßï¿ßîìßêëßèò ßïÿßê¡ßììßìú ßèáßê¥ßê½ßë╛ßë╜ßèò ßèÑßèô ßï¿ßêÿßèòßîìßê╡ßë╡ ßë░ßëïßê¢ßë╡ßèò ßï¿ßêÄßîéßê╡ßë▓ßè¡ßê╡ ßèáßëàßê¥ ßê¢ßê│ßï░ßîì ßèÉßïìßìó'
+      ],
+      purposeTag: 'ßïôßêïßê¢',
+      purposeHeadline: 'ßïôßêïßê¢ ßèÑßèô ßèáßëàßê¥ßìó',
+      purposeFoundedNote: 'ßèñßê╡ßèñßë▓ ßêÄßîéßê╡ßë▓ßè¡ßê╡ ßèÑßèô ßèòßîìßï╡ ßèâ/ßï¿ßë░/ßï¿ßîì/ßê¢ ßëá2023 ßïô.ßê¥ ßë░ßêÿßê╡ßê¡ßë╢ ßêêßë░ßê╕ßëÇßîúßê╕ßëÇßîú ßïòßëâßïÄßë╜ ßï½ßêìßë░ßëïßê¿ßîá ßèÑßèòßëàßê╡ßëâßê┤ ßê▓ßê░ßîÑ ßëåßï¡ßë╖ßêìßìó',
+      purposeMission: 'ßë░ßêìßïòßè«ßèáßë╜ßèò ßêêßï░ßèòßëáßè₧ßë╗ßë╜ßèò ßïôßêêßê¥ ßèáßëÇßìì ßêÄßîéßê╡ßë▓ßè¡ßê╡ ßììßêïßîÄßë╢ßë╜ßèò ßêüßêë ßï¿ßêÜßï½ßêƒßêë ßêüßêëßèò ßèáßëÇßìì ßèáßîêßêìßîìßêÄßë╢ßë╜ßèò ßêÿßê╡ßîáßë╡ ßèÉßïìßìó',
+      principlesTag: 'ßïïßèô ßï░ßèòßëªßë╗ßë╜ßèò',
+      principlesHeadline: 'ßêÿßê¡ßêåßïÄßë╗ßë╜ßèòßìó',
+      principles: [
+        { title: 'ßè¿ßëúßêêßï╡ßê¡ßê╗ßïÄßë╜ ßîïßê¡ ßêÿßë░ßëúßëáßê¡', desc: 'ßë│ßê¢ßè¥ ßèáßîïßê«ßë╜ ßêåßèÉßèòßìú ßëÇßêïßêìßèÉßë╡ßèòßìú ßèáßê╡ßë░ßê¢ßê¢ßè¥ßèÉßë╡ßèò ßèÑßèô ßï░ßèòßëáßè¢ ßê¢ßïòßè¿ßêì ßèáßê╡ßë░ßê│ßê░ßëÑßèò ßëàßï╡ßêÜßï½ ßèÑßèòßê░ßîúßêêßèòßìó' },
+        { title: 'ßê░ßê½ßë░ßè₧ßë╗ßë╜ßèòßèò ßê¢ßëÑßëâßë╡', desc: 'ßê╡ßè¼ßë╡ ßï¿ßêÜßîêßèÉßëúßïì ßëáßèáßèòßï╡ßèÉßë╡ ßèÉßïìßìó ßëíßï╡ßèò ßê╡ßê½ßèò ßèÑßèôßëáßê¿ßë│ßë│ßêêßèòßìú ßë╡ßëÑßëÑßê¡ßèò ßèÑßèôßê│ßï╡ßîïßêêßèòßìó' },
+        { title: 'ßëáßëÑßëâßë╡ ßêÿßê░ßê¿ßë╡ ßê╡ßê½', desc: 'ßê╡ßê½ßïÄßë╗ßë╜ßèò ßëÑßêößê½ßïè ßèÑßèô ßïôßêêßê¥ ßèáßëÇßìì ßï░ßê¿ßîâßïÄßë╜ßèò ßêÿßê░ßê¿ßë╡ ßï½ßï░ßê¡ßîïßêëßìó' },
+        { title: 'ßïêßï░ßìèßë╡ ßê¢ßï¿ßë╡', desc: 'ßïêßï░ßìèßë╡ ßë░ßè«ßê¡ ßèáßê╡ßë░ßê│ßê░ßëÑ ßèÑßèô ßïòßï╡ßîêßë╡ ßë░ßè«ßê¡ ßê╡ßêìßë╢ßë╜ ßèáßîêßêìßîìßêÄßë╢ßë╗ßë╜ßèòßèò ßï½ßê╗ßê╜ßêïßêëßìó' },
+        { title: 'ßïÿßêêßëäßë│ßïè ßëüßê¡ßîáßè¥ßèÉßë╡', desc: 'ßêÑßèÉ-ßê¥ßîìßëúßê½ßïè ßë░ßîìßëúßê¡ ßèÑßèô ßêàßîïßïè ßë░ßîêßïóßèÉßë╡ßèò ßèáßèòßëÇßëáßêìßê¥ßìú ßï¿ßèáßè½ßëúßëó ßîÑßëáßëâ ßï░ßêàßèòßèÉßë╡ßèò ßèÑßèôßïïßêàßï│ßêêßèòßìó' }
+      ],
+      capabilityTag: 'ßï¿ßëíßï╡ßèò ßèáßëàßê¥',
+      capabilityHeadline: 'ßï¿ßëíßï╡ßèôßë╜ßèò ßèáßëàßê¥ßìó',
+      capabilities: [
+        { title: 'ßï¿ßèáßè½ßëúßëó ßèÑßïìßëÇßë╡', desc: 'ßï¿ßèóßë╡ßï«ßî╡ßï½ ßï¿ßë╡ßê½ßèòßê╡ßìûßê¡ßë╡ ßï░ßèòßëªßë╜ßìú ßìûßêèßê▓ßïÄßë╜ ßèÑßèô ßêÿßêáßê¿ßë░ ßêìßê¢ßë╡ ßîÑßêìßëà ßîìßèòßï¢ßëñßìó' },
+        { title: 'ßï½ßêìßë░ßëïßê¿ßîá ßëàßèòßîàßë╡', desc: 'ßëàßï╡ßêÜßï½-ßî¡ßèÉßë╡ ßêéßï░ßë╢ßë╜ ßêìßê¥ßï╡ßìú ßìêßîúßèò ßîëßê¥ßê⌐ßè¡ ßê░ßèÉßï╢ßë╜ ßê¢ßê╡ßë░ßèôßîêßï╡ßìó' },
+        { title: 'ßîáßèòßè½ßê½ ßèáßîïßê¡ßèÉßë╡', desc: 'ßè¿ßîëßê¥ßê⌐ßè¡ ßëúßêêßê╡ßêìßîúßèôßë╡ßìú ßï¿ßî¡ßèÉßë╡ ßïêßè¬ßêÄßë╜ ßèÑßèô ßèáßîôßîôßïªßë╜ ßîïßê¡ ßë╡ßëÑßëÑßê¡ßìó' },
+        { title: 'ßï░ßèòßëáßè¢ ßê¢ßïòßè¿ßêì ßèáßëÇßê½ßê¿ßëÑ', desc: 'ßêêßèÑßï½ßèòßï│ßèòßï▒ ßï░ßèòßëáßè¢ ßììßêïßîÄßë╡ ßï¿ßêÜßê╡ßê¢ßê¢ ßêÄßîéßê╡ßë▓ßè¡ßê╡ ßêÿßììßë╡ßêäßìó' }
+      ],
+      projectsTag: 'ßï½ßê╡ßê¿ßè¿ßëÑßèôßë╕ßïì ßìòßê«ßîÇßè¡ßë╢ßë╜',
+      projectsHeadline: 'ßë░ßìêßî╗ßêÜ ßìòßê«ßîÇßè¡ßë╢ßë╜ßìó',
+      projectsDesc: 'ßè⌐ßëúßèòßï½ßë╜ßèò ßï¿ßèóßë╡ßï«ßî╡ßï½ ßë│ßêïßêïßëà ßêÿßêáßê¿ßë░ ßêìßê¢ßë╡ ßìòßê«ßîÇßè¡ßë╢ßë╜ ßè½ßìÆßë│ßêì ßèÑßëâßïÄßë╜ ßë╡ßê½ßèòßê╡ßìûßê¡ßë╡ ßêïßï¡ ßë╡ßêìßëà ßêÜßèô ßë░ßî½ßïìßë╖ßêìßìó',
+      projectsList: [
+        'ßë│ßêïßëü ßï¿ßèóßë╡ßï«ßî╡ßï½ ßê¼ßèößê│ßèòßê╡ ßîìßï╡ßëÑ (ßîëßëú GERD)',
+        'ßï¿ßèóßë╡ßï«ßî╡ßï½ ßèáßï¿ßê¡ ßêÿßèòßîêßï╡ ΓÇö ßè½ßê¡ßîÄ',
+        'ßèâßï¡ßêì ßê¢ßê¥ßê¿ßë╗ ΓÇö ßîèßêìßîî ßîèßëñ',
+        'ßï¿ßèóßèòßï▒ßê╡ßë╡ßê¬ ßìôßê¡ßè«ßë╜: ßêÇßïïßê│ßìú ßï▒ßè¿ßê¥ßìú ßèáßï│ßê¢',
+        'ßï¿ßèóßë╡ßï«ßî╡ßï½ ßèñßêîßè¡ßë╡ßê¬ßè¡ ßèâßï¡ßêìßèô ßèáßîêßêìßîìßêÄßë╡',
+        'ßï¿ßìïßï¡ßèôßèòßê╡ ßêÜßèÆßê╡ßë┤ßê¡ ΓÇö ßè½ßìÆßë│ßêì ßïòßëâßïÄßë╜'
+      ],
+      customersTag: 'ßï░ßèòßëáßè₧ßë╗ßë╜ßèò',
+      customersHeadline: 'ßïôßêêßê¥ ßèáßëÇßìì ßèáßîïßê«ßë╗ßë╜ßèòßìó',
+      customersSubheadline: 'ßëáßèâßï¡ßêìßìú ßîìßèòßëúßë│ßìú ßëÑßê¿ßë╡ ßèÑßèô ßèóßèòßììßê½ßê╡ßë╡ßê½ßè¡ßë╕ßê¡ ßïÿßê¡ßìì ßè¿ßêÜßê░ßê⌐ ßë│ßïïßëé ßïôßêêßê¥ ßèáßëÇßìì ßè⌐ßëúßèòßï½ßïÄßë╜ ßîïßê¡ ßê░ßê¡ßë░ßèôßêìßìó'
+    },
+    executive: {
+      sectionTag: 'ßèáßêÿßê½ßê¡',
+      headline: 'ßï¿ßê╡ßê½ ßèáßêÿßê½ßê¡ßìó',
+      subheadline: 'ßëáßèáßêêßê¥ ßèáßëÇßìì ßï¿ßèáßëàßê¡ßëªßë╡ ßê░ßèòßê░ßêêßë╡ ßîÑßêìßëà ßèÑßïìßëÇßë╡ ßèÑßèô ßëáßê¥ßê╡ßê½ßëà ßèáßììßê¬ßè½ ßêÿßêìßë▓ßê₧ßï│ßêì ßë╡ßê½ßèòßê╡ßìûßê¡ßë╡ ßêìßê¥ßï╡ ßï¿ßë░ßêÿßê░ßê¿ßë░ßìó',
+      name: 'ßê│ßêÖßèñßêì ßèáßï½ßêîßïì',
+      title: 'ßïïßèô ßê╡ßê½ ßèáßê╡ßìêßìâßêÜ',
+      credentialBadge: 'Leading Logistics Professional',
+      quote: '"ßï¿ßî¡ßèÉßë╡ ßë╡ßê½ßèòßê╡ßìûßê¡ßë╡ßïÄßèò ßëÇßêïßêì ßèÑßèôßï░ßê¡ßîïßêêßèòßìó"',
+      bioParagraph1: 'ßëáßêÄßîéßê╡ßë▓ßè¡ßê╡ ßèÑßèô ßèáßëàßê¡ßëªßë╡ ßê░ßèòßê░ßêêßë╡ ßèáßê╡ßë░ßï│ßï░ßê¡ ßï¿ßê¢ßê╡ßë░ßê¡ßê╡ ßï▓ßîìßê¬ ßï½ßêïßë╕ßïì ßê▓ßêåßèòßìú ßè¿ßèáßê╡ßê¡ ßïôßêÿßë│ßë╡ ßëáßêïßï¡ ßê░ßê¡ßë░ßïïßêìßìó',
+      bioParagraph2: 'ßèñßê╡ßèñßë▓ ßï¿ßîàßëíßë▓ ßïêßï░ßëÑßèò ßè¿ßê₧ßîå ßï░ßê¿ßëà ßïêßï░ßëÑ ßèÑßèô ßèáßï▓ßê╡ ßèáßëáßëú ßîïßê¡ ßï¿ßêÜßï½ßîêßèôßè¥ ßï¿ßë░ßëÇßèôßîÇ ßê╡ßê½ßïÄßë╜ßèò ßï¡ßêÿßê½ßêëßìó',
+      metricTitle1: 'ßï¿ßèáßëàßê¡ßëªßë╡ ßê░ßèòßê░ßêêßë╡ ßê╡ßë╡ßê½ßë┤ßîé',
+      metricDesc1: 'ßëáßï░ßê¿ßëà ßïêßï░ßëÑ ßë╡ßê╡ßê╡ßê¡ ßèÑßèô ßè«ßê¬ßï░ßê¡ ßê¢ßëÇßêïßîáßìì ßêïßï¡ ßï½ßë░ßè«ßê¿ßìó',
+      metricTitle2: 'ßï¿ßè«ßê¬ßï░ßê¡ ßëàßêìßîÑßììßèô',
+      metricDesc2: 'ßè¿48 ßê░ßïôßë╡ ßëáßë│ßë╜ ßï¿ßêåßèÉ ßîëßê¥ßê⌐ßè¡ ßè¡ßêèßê½ßèòßê╡ßìó',
+      governanceBadge: 'ßìêßëâßï╡ ßï½ßêêßïì ßèªßìòßê¼ßë░ßê¡ // ßï¿ßèóßë╡ßï«ßî╡ßï½ ßëúßêàßê¡ ßë╡ßê½ßèòßê╡ßìûßê¡ßë╡'
+    },
+    services: {
+      sectionTag: 'ßèáßîêßêìßîìßêÄßë╢ßë╜',
+      headline: 'ßïïßèô ßïïßèô ßèáßîêßêìßîìßêÄßë╢ßë╜ßìó',
+      subheadline: 'ßêêßììßîÑßèÉßë╡ßèô ßêêßêàßîì ßë░ßîêßïóßèÉßë╡ ßï¿ßë░ßïÿßîïßîü ßèáßê½ßë╡ ßêÿßê░ßê¿ßë│ßïè ßïÿßê¡ßìÄßë╜ßìó',
+      items: [
+        { id: 'customs-clearance', code: '01', title: 'ßï¿ßîëßê¥ßê⌐ßè¡ ßè¡ßêèßê½ßèòßê╡', subtitle: 'ßìêßîúßèò ASYCUDA ßï▓ßè¡ßêïßê½ßê▓ßï«ßèò', description: 'ßëáßê₧ßîå ßï░ßê¿ßëà ßïêßï░ßëÑ ßèÑßèô ßîàßëíßë▓ ßï╡ßèòßëáßê¡ ßìêßîúßèò ßîëßê¥ßê⌐ßè¡ ßêéßï░ßë╢ßë╜ßìó', specs: ['ASYCUDA World ßï▓ßè¡ßêïßê½ßê▓ßï«ßèò', 'ßë│ßê¬ßìì ßê¥ßï░ßëú', 'ßë╡ßê½ßèòßïÜßë╡ ßëªßèòßï╡'], kpi: '24-36 ßê░ßïôßë│ßë╡' },
+        { id: 'freight-forwarding', code: '02', title: 'ßï¿ßî¡ßèÉßë╡ ßèáßê╡ßë░ßêïßêïßìèßèÉßë╡', subtitle: 'ßîàßëíßë▓ - ßèáßï▓ßê╡ ßèáßëáßëú', description: 'ßè¿ßï╢ßê½ßêî ßë░ßê¡ßêÜßèôßêì ßèÑßê╡ßè¿ ßê¢ßïòßè¿ßêïßïè ßï░ßê¿ßëà ßïêßï░ßëªßë╜ßìó', specs: ['DCT & DMP ßë░ßïêßè½ßï«ßë╜', 'EDR ßê¥ßï╡ßê¡ ßëúßëíßê¡', 'FCL & LCL'], kpi: '99.4% ßê¥ßîúßèö' },
+        { id: 'fleet-coordination', code: '03', title: 'ßèáßîêßê¡ ßèáßëïßê½ßî¡ ßë░ßê╜ßè¿ßê¡ßè½ßê¬ßïÄßë╜', subtitle: 'ßè¿ßëúßï╡ ßê¢ßê╜ßèÉßê¬ ßî½ßè¥', description: 'GPS ßï¿ßë│ßîêßïÿ ßììßêïßë╡ßëñßï╡ ßèÑßèô ßêÄßïìßëñßï╡ ßë░ßê╜ßè¿ßê¡ßè½ßê¬ßïÄßë╜ßìó', specs: ['24/7 ßîéßìÆßèñßê╡ ßè¡ßë╡ßë╡ßêì', 'ßèÑßê╡ßè¿ 120T ßêÄßïìßëñßï╡', 'ßï╡ßèòßëáßê¡ ßìòßê«ßë╢ßè«ßêì'], kpi: '100% ßè¡ßë╡ßë╡ßêì' },
+        { id: 'machinery-trading', code: '04', title: 'ßï¿ßê¢ßê╜ßèÉßê¬ßïÄßë╜ ßèòßîìßï╡', subtitle: 'ßèóßèòßï▒ßê╡ßë╡ßê¬ ßèÑßëâßïÄßë╜ ßèáßê╡ßêÿßî¬ßèÉßë╡', description: 'ßè¿ßïôßêêßê¥ ßèáßëÇßìì ßèáßê¥ßê½ßë╛ßë╜ ßëÇßîÑßë│ ßê¢ßê╡ßêÿßîúßë╡ßìó', specs: ['ßìïßëÑßê¬ßè½ ßëÇßîÑßë│ ßîìßïÑ', 'ßï¿ßïìßî¡ ßê¥ßèòßï¢ßê¼ ßê¢ßëÇßèôßîÇßë╡', 'ßèÑßê╡ßè¿ ßìïßëÑßê¬ßè½ ßï░ßîâßìì'], kpi: 'ßï¿ßë░ßêƒßêï ßïïßê╡ßë╡ßèô' }
+      ]
+    },
+    corridor: {
+      sectionTag: 'ßè«ßê¬ßï░ßê¡',
+      headline: 'ßï¿ßîàßëíßë▓ - ßèáßï▓ßê╡ ßèáßëáßëú ßêÿßê╡ßêÿßê¡ßìó',
+      subheadline: 'ßè¿900 ßè¬.ßê£ ßëáßêïßï¡ ßê¡ßï¥ßêÿßë╡ ßï½ßêêßïì ßï¿ßë╡ßê½ßèòßê╡ßìûßê¡ßë╡ ßêÿßê╡ßêÿßê¡ßìó',
+      stops: [
+        { code: '01', name: 'ßï¿ßîàßëíßë▓ ßïêßï░ßëÑ (ßï╢ßê½ßêî)', type: 'ßï¿ßëúßêàßê¡ ßëáßê¡', transitTime: 'ßëÇßèò 00', desc: 'ßè¿ßêÿßê¡ßè¿ßëÑ ßê¢ßïìßê¿ßï╡ ßèÑßèô ßê░ßèÉßï╢ßë╜ ßê¢ßê╡ßë░ßèôßîêßï╡ßìó' },
+        { code: '02', name: 'ßï¿ßîêßêïßìè / ßï░ßïêßêî ßï╡ßèòßëáßê¡', type: 'ßï¿ßîëßê¥ßê⌐ßè¡ ßììßë░ßê╗', transitTime: 'ßëÇßèò 01', desc: 'ßï¿ßë░ßê╜ßè¿ßê¡ßè½ßê¬ßïÄßë╜ ßê¡ßè¡ßè¡ßëÑ ßèÑßèô ßììßë░ßê╗ßìó' },
+        { code: '03', name: 'ßï¿ßê₧ßîå ßï░ßê¿ßëà ßïêßï░ßëÑ', type: 'ßï¿ßî¡ßèÉßë╡ ßê¢ßïòßè¿ßêì', transitTime: 'ßëÇßèò 02', desc: 'ßè«ßèòßë┤ßï¡ßèÉßê¡ ßè¡ßê¥ßë╜ßë╡ ßèÑßèô ßê¢ßï¢ßïêßê¡ßìó' },
+        { code: '04', name: 'ßèáßï▓ßê╡ ßèáßëáßëú (ßëâßêèßë▓)', type: 'ßï¿ßêÿßî¿ßê¿ßê╗ ßêÿßï│ßê¿ßê╗', transitTime: 'ßëÇßèò 02-03', desc: 'ßï¿ßêÿßî¿ßê¿ßê╗ ßîëßê¥ßê⌐ßè¡ ßèÑßèô ßê¢ßê╡ßê¿ßè¿ßëÑßìó' }
+      ]
+    },
+    contact: {
+      sectionTag: 'ßîìßèòßèÖßèÉßë╡',
+      headline: 'ßï¿ßî¡ßèÉßë╡ ßîÑßï½ßëäßìó',
+      subheadline: 'ßëá2 ßê░ßïôßë│ßë╡ ßïìßê╡ßîÑ ßê¥ßêïßê╜ ßï½ßîêßè¢ßêëßìó',
+      form: {
+        nameLabel: 'ßêÖßêë ßê╡ßê¥', namePlaceholder: 'ßê¥ßê│ßêîßìí ßï│ßèòßèñßêì ßèâßï¡ßêî',
+        companyLabel: 'ßï¿ßï╡ßê¡ßîàßë╡ ßê╡ßê¥', companyPlaceholder: 'ßê¥ßê│ßêîßìí ßèóßë╡ßï«ßî╡ßï½ ßê¢ßèæßìïßè¡ßë╕ßê¬ßèòßîì',
+        phoneLabel: 'ßê╡ßêìßè¡ ßëüßîÑßê¡', phonePlaceholder: '+251 91 234 5678',
+        emailLabel: 'ßèóßê£ßï¡ßêì', emailPlaceholder: 'logistics@company.com',
+        cargoTypeLabel: 'ßï¿ßèáßîêßêìßîìßêÄßë╡ ßèáßï¡ßèÉßë╡',
+        cargoTypes: ['ßììßê¼ßï¡ßë╡ ßë╡ßê½ßèòßê╡ßìûßê¡ßë┤ßê╜ßèò', 'ßîëßê¥ßê⌐ßè¡ ßè¡ßêèßê½ßèòßê╡', 'ßêÄßîéßê╡ßë▓ßè¡ßê╡ ßê¢ßï╡ßê¿ßê╡', 'ßè¿ßëúßï╡ ßê¢ßê╜ßèÉßê¬ ßê¢ßîôßîôßï¥', 'ßìòßê«ßîÇßè¡ßë╡ ßî¡ßèÉßë╡'],
+        volumeLabel: 'ßï¿ßî¡ßèÉßë▒ ßêÿßîáßèò', volumePlaceholder: 'ßê¥ßê│ßêîßìí 2 x 40ft',
+        originDestLabel: 'ßêÿßèÉßê╗ ßèÑßèô ßêÿßï╡ßê¿ßê╗', originDestPlaceholder: 'ßê¥ßê│ßêîßìí ßê╗ßèòßîïßï¡ Γ₧ö ßîàßëíßë▓ Γ₧ö ßê₧ßîå',
+        messageLabel: 'ßë░ßî¿ßê¢ßê¬ ßê¢ßëÑßê½ßê¬ßï½', messagePlaceholder: 'ßê╡ßêê ßî¡ßèÉßë▒ ßêüßèößë│ ßï¡ßîÑßëÇßê▒...',
+        submitBtn: 'ßîÑßï½ßëäßïìßèò ßï¡ßêïßè⌐', submittingBtn: 'ßëáßêÿßêïßè¡ ßêïßï¡...', successMsg: 'ßîÑßï½ßëäßïÄ ßë░ßêÿßï¥ßîìßëºßêì! SAT-'
+      },
+      location: {
+        buildingTitle: 'ßïïßèô ßëóßê«', buildingName: 'ßìêßë░ßêê ßêàßèòßìâ',
+        addressLine1: 'ßïêßêÄ ßê░ßìêßê¡', addressLine2: 'ßèáßï▓ßê╡ ßèáßëáßëúßìú ßèóßë╡ßï«ßî╡ßï½',
+        coordinates: '09┬░00ΓÇ▓05ΓÇ│N 38┬░46ΓÇ▓02ΓÇ│E',
+        hoursTitle: 'ßï¿ßê╡ßê½ ßê░ßïôßë│ßë╡', hours: 'ßê░ßè₧ ΓÇô ßëàßï│ßê£: 08:00 ΓÇô 18:30',
+        phoneTitle: 'ßê╡ßêìßè¡', phone: '+251 93 299 9977',
+        emailTitle: 'ßèóßê£ßï¡ßêì', email: 'satlogistics0001@gmail.com',
+        mapNotice: 'ßìêßë░ßêê ßêàßèòßìâßìú ßïêßêÄ ßê░ßìêßê¡'
+      }
+    },
+    footer: {
+      tagline: 'ßèáßê╡ßë░ßê¢ßê¢ßè¥ ßï¿ßî¡ßèÉßë╡ ßèáßê╡ßë░ßêïßêïßìèßèÉßë╡ ßèÑßèô ßï¿ßîëßê¥ßê⌐ßè¡ ßè¡ßêèßê½ßèòßê╡ßìó',
+      registration: 'ßèñßê╡ßèñßë▓ ßêÄßîéßê╡ßë▓ßè¡ßê╡ ΓÇö ßê¥ßï¥ßîêßëú: ETH-LOG-4482',
+      licensing: 'ßëáßèóßë╡ßï«ßî╡ßï½ ßëúßêàßê¡ ßë╡ßê½ßèòßê╡ßìûßê¡ßë╡ ßèÑßïìßëàßèô ßï¿ßë░ßê░ßîáßïìßìó',
+      copyright: '┬⌐ 2026 ßèñßê╡ßèñßë▓ ßêÄßîéßê╡ßë▓ßè¡ßê╡ ßèÑßèô ßèòßîìßï╡ ßèâ/ßï¿ßë░/ßï¿ßîì/ßê¢ßìó',
+      backToTop: 'ßïêßï░ ßêïßï¡'
+    }
+  },
+
+  ar: {
+    nav: {
+      home: '╪º┘ä╪▒╪ª┘è╪│┘è╪⌐',
+      about: '┘à┘å ┘å╪¡┘å',
+      services: '╪º┘ä╪«╪»┘à╪º╪¬',
+      executive: '╪º┘ä╪Ñ╪»╪º╪▒╪⌐',
+      corridor: '╪º┘ä┘à┘à╪▒',
+      contact: '╪º╪¬╪╡┘ä ╪¿┘å╪º',
+      quoteBtn: '╪╖┘ä╪¿ ╪╣╪▒╪╢ ╪│╪╣╪▒'
+    },
+    hero: {
+      badge: '╪º┘ä┘ä┘ê╪¼╪│╪¬┘è╪º╪¬ ╪º┘ä┘à╪¬╪╣╪»╪»╪⌐ ╪º┘ä┘ê╪│╪º╪ª╪╖ ┘ü┘è ╪º┘ä┘é╪▒┘å ╪º┘ä╪ú┘ü╪▒┘è┘é┘è',
+      headlinePart1: '╪┤╪▒┘â╪⌐ SAT',
+      headlinePart2: '┘ä┘ä╪«╪»┘à╪º╪¬ ╪º┘ä┘ä┘ê╪¼╪│╪¬┘è╪⌐ ┘ê╪º┘ä╪¬╪¼╪º╪▒╪⌐',
+      tagline: '╪¡┘ä┘ê┘ä ┘à╪¬┘â╪º┘à┘ä╪⌐ ┘ä╪│┘ä╪│┘ä╪⌐ ╪º┘ä╪¬┘ê╪▒┘è╪» ╪¬╪▒╪¿╪╖ ┘à┘è┘å╪º╪í ╪¼┘è╪¿┘ê╪¬┘è ╪¿┘ê╪│╪╖ ╪Ñ╪½┘è┘ê╪¿┘è╪º.',
+      ctaPrimary: '╪╖┘ä╪¿ ╪┤╪¡┘å',
+      ctaSecondary: '╪╣╪▒╪╢ ╪º┘ä╪«╪»┘à╪º╪¬',
+      stat1Label: '┘ê┘é╪¬ ╪º┘ä╪╣╪¿┘ê╪▒',
+      stat1Value: '36-48 ╪│╪º╪╣╪⌐',
+      stat2Label: '╪º┘ä╪¼┘à╪º╪▒┘â',
+      stat2Value: '99.4%',
+      stat3Label: '╪º┘ä╪ú╪│╪╖┘ê┘ä',
+      stat3Value: '120+',
+      stat4Label: '╪º┘ä┘à┘à╪▒ ╪º┘ä╪▒╪ª┘è╪│┘è',
+      stat4Value: '╪¼┘è╪¿┘ê╪¬┘è Γ₧ö ╪ú╪»┘è╪│',
+      corridorStatus: '┘à╪¡┘ê╪▒ ╪¼┘è╪¿┘ê╪¬┘è-╪ú╪»┘è╪│ ╪ú╪¿╪º╪¿╪º: ╪¬╪┤╪║┘è┘ä┘è',
+      hubBadge: '╪º┘ä┘à┘é╪▒: ╪ú╪»┘è╪│ ╪ú╪¿╪º╪¿╪º // ╪▒┘é┘à ╪º┘ä╪¬╪│╪¼┘è┘ä: ETH-LOG-4482'
+    },
+    about: {
+      sectionTag: '┘à┘å ┘å╪¡┘å',
+      headline: '┘ç┘ê┘è╪¬┘å╪º.',
+      overview: '╪┤╪▒┘â╪⌐ SAT ┘ä┘ä╪«╪»┘à╪º╪¬ ╪º┘ä┘ä┘ê╪¼╪│╪¬┘è╪⌐ ┘ê╪º┘ä╪¬╪¼╪º╪▒╪⌐ ┘ç┘è ┘à╪▓┘ê╪» ┘ä╪«╪»┘à╪º╪¬ ╪º┘ä┘å┘é┘ä ┘ê╪º┘ä┘ä┘ê╪¼╪│╪¬┘è╪º╪¬ ┘ü┘è ╪Ñ╪½┘è┘ê╪¿┘è╪º ┘ê┘à╪º ┘ê╪▒╪º╪í┘ç╪º.',
+      missionTag: '┘à┘ç┘à╪¬┘å╪º',
+      missionHeadline: '╪º┘ä┘à┘ç┘à╪⌐ ╪º┘ä╪ú╪│╪º╪│┘è╪⌐ ┘ê╪º┘ä╪╡┘å╪º╪╣╪º╪¬ ╪º┘ä┘à╪│╪¬┘ç╪»┘ü╪⌐.',
+      missionItems: [
+        '╪¬┘é╪»┘à SAT ╪¡┘ä┘ê┘ä╪º┘ï ╪┤╪º┘à┘ä╪⌐ ┘ä╪╖┘è┘ü ┘ê╪º╪│╪╣ ┘à┘å ╪º┘ä╪╡┘å╪º╪╣╪º╪¬ ╪¿┘à╪º ┘ü┘è┘ç╪º ╪º┘ä╪¬╪╡┘å┘è╪╣╪î ┘ê╪º┘ä╪╖╪º┘é╪⌐╪î ┘ê╪º┘ä┘à┘å╪º╪╖┘é ╪º┘ä╪╡┘å╪º╪╣┘è╪⌐╪î ┘ê╪º┘ä╪╖╪º┘é╪⌐ ╪º┘ä╪┤┘à╪│┘è╪⌐╪î ┘ê╪º┘ä╪¿╪╢╪º╪ª╪╣ ╪º┘ä╪½┘é┘è┘ä╪⌐.',
+        '╪¿╪º┘ä╪Ñ╪╢╪º┘ü╪⌐ ╪Ñ┘ä┘ë ╪º┘ä╪┤╪¡┘å╪î ┘å┘é╪»┘à ╪«╪»┘à╪º╪¬ ╪º╪│╪¬╪┤╪º╪▒┘è╪⌐ ┘ä┘ê╪¼╪│╪¬┘è╪⌐ ┘ä╪¬╪¡╪│┘è┘å ╪│┘ä╪º╪│┘ä ╪º┘ä╪¬┘ê╪▒┘è╪».',
+        '┘ç╪»┘ü┘å╪º ╪»╪╣┘à ╪º┘ä╪┤╪▒┘â╪º╪¬ ╪º┘ä╪«╪º╪╡╪⌐ ┘ê╪º┘ä┘à╪ñ╪│╪│╪º╪¬ ╪º┘ä╪¡┘â┘ê┘à┘è╪⌐ ┘ü┘è ╪¬╪¡╪│┘è┘å ╪º┘ä┘ê╪╡┘ê┘ä ╪º┘ä┘ä┘ê╪¼╪│╪¬┘è ┘ê╪«┘ü╪╢ ╪º┘ä╪¬╪╣╪▒┘è┘ü╪º╪¬.'
+      ],
+      purposeTag: '╪║╪▒╪╢┘å╪º',
+      purposeHeadline: '╪º┘ä╪║╪▒╪╢ ┘ê╪º┘ä╪╖╪º┘é╪⌐.',
+      purposeFoundedNote: '╪¬╪ú╪│╪│╪¬ ╪╣╪º┘à 2023╪î ┘ê╪¬┘ä╪¬╪▓┘à ╪¿╪¬┘é╪»┘è┘à ╪«╪»┘à╪º╪¬ ┘å┘é┘ä ┘ê╪¬╪«┘ä┘è╪╡ ╪¼┘à╪▒┘â┘è ┘à╪¬╪«╪╡╪╡╪⌐.',
+      purposeMission: '┘à┘ç┘à╪¬┘å╪º ╪¬┘é╪»┘è┘à ╪¡┘ä┘ê┘ä ┘ä┘ê╪¼╪│╪¬┘è╪⌐ ╪┤╪º┘à┘ä╪⌐ ╪¬┘ä╪¿┘è ╪º┘ä╪º╪¡╪¬┘è╪º╪¼╪º╪¬ ╪º┘ä╪»┘ê┘ä┘è╪⌐ ╪º┘ä┘à╪¬┘å┘ê╪╣╪⌐ ┘ä╪╣┘à┘ä╪º╪ª┘å╪º.',
+      principlesTag: '┘à╪¿╪º╪»╪ª ╪º┘ä╪¬╪┤╪║┘è┘ä',
+      principlesHeadline: '┘à╪¿╪º╪»╪ª┘å╪º.',
+      principles: [
+        { title: '╪º┘ä╪┤╪▒╪º┘â╪⌐ ┘à╪╣ ╪ú╪╡╪¡╪º╪¿ ╪º┘ä┘à╪╡┘ä╪¡╪⌐', desc: '┘å╪╢╪╣ ╪ú┘å┘ü╪│┘å╪º ┘â╪¡┘ä┘ü╪º╪í ┘à┘ê╪½┘ê┘é┘è┘å ┘å┘ê┘ä┘è ╪º┘ä╪¿╪│╪º╪╖╪⌐ ┘ê╪º┘ä╪º╪╣╪¬┘à╪º╪»┘è╪⌐ ╪ú┘ê┘ä┘ê┘è╪⌐ ┘é╪╡┘ê┘ë.' },
+        { title: '╪¬┘à┘â┘è┘å ┘à┘ê╪╕┘ü┘è┘å╪º', desc: '╪º┘ä┘å╪¼╪º╪¡ ┘à╪¿┘å┘è ╪╣┘ä┘ë ╪º┘ä┘ê╪¡╪»╪⌐╪î ┘å╪╣╪▓╪▓ ╪º┘ä╪╣┘à┘ä ╪º┘ä╪¼┘à╪º╪╣┘è ┘ê╪º┘ä╪¬╪╣╪º┘ê┘å.' },
+        { title: '╪º┘ä╪»╪º┘ü╪╣ ┘å╪¡┘ê ╪º┘ä╪¬┘à┘è╪▓', desc: '╪╣┘à┘ä┘è╪º╪¬┘å╪º ┘à╪▒╪¬┘â╪▓╪⌐ ╪╣┘ä┘ë ╪º┘ä┘à╪╣╪º┘è┘è╪▒ ╪º┘ä┘ê╪╖┘å┘è╪⌐ ┘ê╪º┘ä╪»┘ê┘ä┘è╪⌐.' },
+        { title: '╪º┘ä╪¬┘ê╪¼┘ç ┘å╪¡┘ê ╪º┘ä┘à╪│╪¬┘é╪¿┘ä', desc: '┘à┘ê╪º┘é┘ü ╪¬┘é╪»┘à┘è╪⌐ ┘ê╪¬╪▒┘â┘è╪▓ ╪╣┘ä┘ë ╪º┘ä┘å┘à┘ê ╪º┘ä┘à╪│╪¬┘à╪▒.' },
+        { title: '╪º┘ä╪º┘ä╪¬╪▓╪º┘à ╪¿╪º┘ä╪º╪│╪¬╪»╪º┘à╪⌐', desc: '┘å┘à╪º╪▒╪│ ╪º┘ä╪╣┘à┘ä ╪º┘ä╪ú╪«┘ä╪º┘é┘è ┘ê┘å╪»┘à╪¼ ╪╢┘à╪º┘å╪º╪¬ ╪¿┘è╪ª┘è╪⌐ ┘à╪¬┘é╪»┘à╪⌐.' }
+      ],
+      capabilityTag: '┘é╪»╪▒╪º╪¬ ╪º┘ä┘ü╪▒┘è┘é',
+      capabilityHeadline: '┘é╪»╪▒╪º╪¬ ┘ü╪▒┘è┘é┘å╪º.',
+      capabilities: [
+        { title: '╪º┘ä╪«╪¿╪▒╪⌐ ╪º┘ä┘à╪¡┘ä┘è╪⌐', desc: '┘ü┘ç┘à ╪╣┘à┘è┘é ┘ä┘ä┘ê╪º╪ª╪¡ ╪º┘ä┘å┘é┘ä ┘ê╪º┘ä╪│┘è╪º╪│╪º╪¬ ┘ê╪º┘ä╪¿┘å┘è╪⌐ ╪º┘ä╪¬╪¡╪¬┘è╪⌐ ╪º┘ä╪Ñ╪½┘è┘ê╪¿┘è╪⌐.' },
+        { title: '╪º┘ä╪¬┘å╪│┘è┘é ╪º┘ä╪│┘ä╪│', desc: '╪«╪¿╪▒╪⌐ ┘ü┘è ╪╣┘à┘ä┘è╪º╪¬ ┘à╪º ┘é╪¿┘ä ╪º┘ä╪┤╪¡┘å ┘ê╪Ñ╪»╪º╪▒╪⌐ ╪º┘ä┘ê╪½╪º╪ª┘é ╪º┘ä╪¼┘à╪▒┘â┘è╪⌐.' },
+        { title: '╪┤╪▒╪º┘â╪º╪¬ ┘é┘ê┘è╪⌐', desc: '╪¬╪╣╪º┘ê┘å ┘à╪╣ ╪│┘ä╪╖╪º╪¬ ╪º┘ä╪¼┘à╪º╪▒┘â ┘ê╪«╪╖┘ê╪╖ ╪º┘ä╪┤╪¡┘å ┘ê╪º┘ä┘ê┘â┘ä╪º╪í.' },
+        { title: '┘å┘ç╪¼ ┘è╪▒┘â╪▓ ╪╣┘ä┘ë ╪º┘ä╪╣┘à┘è┘ä', desc: '╪¡┘ä┘ê┘ä ┘à╪«╪╡╪╡╪⌐ ┘ä╪¬┘ä╪¿┘è╪⌐ ╪º╪¡╪¬┘è╪º╪¼╪º╪¬┘â ╪º┘ä┘ä┘ê╪¼╪│╪¬┘è╪⌐.' }
+      ],
+      projectsTag: '╪º┘ä┘à╪┤╪º╪▒┘è╪╣ ╪º┘ä┘à┘å╪¼╪▓╪⌐',
+      projectsHeadline: '╪│╪¼┘ä ╪¡╪º┘ü┘ä.',
+      projectsDesc: '╪ú╪»┘æ╪¬ ╪┤╪▒┘â╪¬┘å╪º ╪»┘ê╪▒╪º┘ï ┘à╪¡┘ê╪▒┘è╪º┘ï ┘ü┘è ┘å┘é┘ä ╪º┘ä╪¿╪╢╪º╪ª╪╣ ╪º┘ä╪▒╪ú╪│┘à╪º┘ä┘è╪⌐ ┘ä╪¿╪╣╪╢ ╪ú╪¿╪▒╪▓ ┘à╪┤╪º╪▒┘è╪╣ ╪º┘ä╪¿┘å┘è╪⌐ ╪º┘ä╪¬╪¡╪¬┘è╪⌐ ┘ü┘è ╪Ñ╪½┘è┘ê╪¿┘è╪º.',
+      projectsList: [
+        '╪│╪» ╪º┘ä┘å┘ç╪╢╪⌐ ╪º┘ä╪Ñ╪½┘è┘ê╪¿┘è ╪º┘ä┘â╪¿┘è╪▒ (GERD)',
+        '╪º┘ä╪«╪╖┘ê╪╖ ╪º┘ä╪¼┘ê┘è╪⌐ ╪º┘ä╪Ñ╪½┘è┘ê╪¿┘è╪⌐ ΓÇö ╪┤╪¡┘å ╪º┘ä╪¿╪╢╪º╪ª╪╣',
+        '╪¬┘ê┘ä┘è╪» ╪º┘ä╪╖╪º┘é╪⌐ ΓÇö ┘à╪¼┘à╪╣ ╪¼┘è┘ä╪¼┘è┘ä ╪¼┘è╪¿┘è',
+        '╪º┘ä┘à┘å╪º╪╖┘é ╪º┘ä╪╡┘å╪º╪╣┘è╪⌐: ┘ç╪º┘ê╪º╪│╪º╪î ╪»┘ê┘â┘è┘à╪î ╪ú╪»╪º┘à╪º',
+        '╪º┘ä╪╖╪º┘é╪⌐ ╪º┘ä┘â┘ç╪▒╪¿╪º╪ª┘è╪⌐ ╪º┘ä╪Ñ╪½┘è┘ê╪¿┘è╪⌐',
+        '┘ê╪▓╪º╪▒╪⌐ ╪º┘ä┘à╪º┘ä┘è╪⌐ ΓÇö ┘ä┘ê╪¼╪│╪¬┘è╪º╪¬ ╪º┘ä┘à╪╣╪»╪º╪¬ ╪º┘ä╪▒╪ú╪│┘à╪º┘ä┘è╪⌐'
+      ],
+      customersTag: '╪╣┘à┘ä╪º╪ñ┘å╪º',
+      customersHeadline: '╪º┘ä╪┤╪▒┘â╪º╪í ╪º┘ä╪»┘ê┘ä┘è┘ê┘å.',
+      customersSubheadline: '╪╣┘à┘ä┘å╪º ┘à╪╣ ┘â╪¿╪▒┘ë ╪º┘ä╪┤╪▒┘â╪º╪¬ ╪º┘ä╪╣╪º┘ä┘à┘è╪⌐ ┘ü┘è ┘é╪╖╪º╪╣╪º╪¬ ╪º┘ä╪╖╪º┘é╪⌐ ┘ê╪º┘ä╪¿┘å╪º╪í ┘ê╪º┘ä╪╡┘ä╪¿ ┘ê╪º┘ä╪¿┘å┘è╪⌐ ╪º┘ä╪¬╪¡╪¬┘è╪⌐.'
+    },
+    executive: {
+      sectionTag: '╪º┘ä╪Ñ╪»╪º╪▒╪⌐',
+      headline: '┘é┘è╪º╪»╪⌐ ╪¬┘å┘ü┘è╪░┘è╪⌐.',
+      subheadline: '╪¬╪ú╪│╪│╪¬ ╪╣╪º┘à 2023 ┘ä╪¬┘é╪»┘è┘à ╪«╪»┘à╪º╪¬ ┘å┘é┘ä ┘ê╪¬╪«┘ä┘è╪╡ ╪¼┘à╪▒┘â┘è ┘à╪¬╪«╪╡╪╡╪⌐.',
+      name: '╪╡┘à┘ê╪ª┘è┘ä ╪ú┘è╪º┘ä┘ê',
+      title: '╪º┘ä┘à╪»┘è╪▒ ╪º┘ä╪╣╪º┘à',
+      credentialBadge: '┘à╪¬╪«╪╡╪╡ ┘ä┘ê╪¼╪│╪¬┘è ╪▒╪º╪ª╪»',
+      quote: '"┘å╪¼╪╣┘ä ╪┤╪¡┘å ╪¿╪╢╪º╪ª╪╣┘â ╪ú┘à╪▒╪º┘ï ╪¿╪│┘è╪╖╪º┘ï."',
+      bioParagraph1: '┘è╪¡┘à┘ä ╪»╪▒╪¼╪⌐ ╪º┘ä┘à╪º╪¼╪│╪¬┘è╪▒ ┘ü┘è ╪º┘ä┘ä┘ê╪¼╪│╪¬┘è╪º╪¬ ┘ê╪Ñ╪»╪º╪▒╪⌐ ╪│┘ä╪º╪│┘ä ╪º┘ä╪¬┘ê╪▒┘è╪» ┘à╪╣ ╪«╪¿╪▒╪⌐ ╪¬╪▓┘è╪» ╪╣┘å ╪╣┘é╪».',
+      bioParagraph2: '┘è┘é┘ê╪» ╪╣┘à┘ä┘è╪º╪¬ ╪º┘ä╪¬╪«┘ä┘è╪╡ ╪º┘ä╪¼┘à╪▒┘â┘è ╪º┘ä┘à╪¬┘â╪º┘à┘ä ┘ê╪º┘ä┘å┘é┘ä ╪º┘ä┘à╪¬╪╣╪»╪» ╪º┘ä┘ê╪│╪º╪ª╪╖ ┘à┘å ┘à┘è┘å╪º╪í ╪¼┘è╪¿┘ê╪¬┘è.',
+      metricTitle1: '╪º╪│╪¬╪▒╪º╪¬┘è╪¼┘è╪⌐ ╪│┘ä╪│┘ä╪⌐ ╪º┘ä╪¬┘ê╪▒┘è╪»',
+      metricDesc1: '┘à╪¬╪«╪╡╪╡ ┘ü┘è ╪¬┘â╪º┘à┘ä ╪º┘ä┘à┘ê╪º┘å╪ª ╪º┘ä╪¼╪º┘ü╪⌐ ┘ê╪¬╪¡╪│┘è┘å ╪º┘ä┘à┘à╪▒╪º╪¬.',
+      metricTitle2: '╪¬╪│┘ä┘è┘à ╪º┘ä┘à┘à╪▒',
+      metricDesc2: '╪¿╪▒┘ê╪¬┘ê┘â┘ê┘ä ╪¬╪«┘ä┘è╪╡ ╪¼┘à╪▒┘â┘è ┘ü┘è ╪ú┘é┘ä ┘à┘å 48 ╪│╪º╪╣╪⌐.',
+      governanceBadge: '┘à╪┤╪║┘ä ┘à╪▒╪«╪╡ // ┘ç┘è╪ª╪⌐ ╪º┘ä┘à┘ä╪º╪¡╪⌐ ╪º┘ä╪Ñ╪½┘è┘ê╪¿┘è╪⌐'
+    },
+    services: {
+      sectionTag: '╪º┘ä╪«╪»┘à╪º╪¬',
+      headline: '╪º┘ä╪«╪»┘à╪º╪¬ ╪º┘ä╪ú╪│╪º╪│┘è╪⌐.',
+      subheadline: '╪ú╪▒╪¿╪╣╪⌐ ┘é╪╖╪º╪╣╪º╪¬ ┘à╪¬╪«╪╡╪╡╪⌐ ┘à╪╡┘à┘à╪⌐ ┘ä┘ä╪│╪▒╪╣╪⌐ ┘ê╪º┘ä╪º┘à╪¬╪½╪º┘ä.',
+      items: [
+        { id: 'customs-clearance', code: '01', title: '╪º┘ä╪¬╪«┘ä┘è╪╡ ╪º┘ä╪¼┘à╪▒┘â┘è', subtitle: '╪Ñ┘é╪▒╪º╪▒╪º╪¬ ASYCUDA ╪º┘ä┘à╪╣╪¬┘à╪»╪⌐', description: '╪Ñ┘ü╪▒╪º╪¼ ╪¼┘à╪▒┘â┘è ╪Ñ┘ä┘â╪¬╪▒┘ê┘å┘è ╪│╪▒┘è╪╣ ╪╣╪¿╪▒ ┘à╪¡╪╖╪º╪¬ ╪º┘ä╪¡╪»┘ê╪».', specs: ['╪Ñ┘é╪▒╪º╪▒╪º╪¬ ASYCUDA World', '╪¬╪╡┘å┘è┘ü ╪º┘ä╪¬╪╣╪▒┘è┘ü╪⌐ ┘ê╪º┘ä╪¬┘é┘è┘è┘à', '╪│┘å╪»╪º╪¬ ╪╢┘à╪º┘å ╪º┘ä╪╣╪¿┘ê╪▒'], kpi: '┘à╪¬┘ê╪│╪╖ 24-36 ╪│╪º╪╣╪⌐' },
+        { id: 'freight-forwarding', code: '02', title: '╪º┘ä╪┤╪¡┘å ┘ê╪º┘ä╪¬╪«┘ä┘è╪╡', subtitle: '┘à┘à╪▒ ╪¼┘è╪¿┘ê╪¬┘è-╪ú╪»┘è╪│ ╪ú╪¿╪º╪¿╪º', description: '╪¬┘ê╪¼┘è┘ç ╪┤╪¡┘å ┘à╪¬╪▓╪º┘à┘å ╪¿╪¡╪▒╪º┘ï ┘ê╪│┘â╪⌐ ╪¡╪»┘è╪»╪º┘ï ┘ê╪╖╪▒┘è┘é╪º┘ï.', specs: ['╪¬┘à╪½┘è┘ä ┘ü┘è ╪»┘ê╪▒╪º┘ä┘è╪⌐ (DCT & DMP)', '╪¬┘â╪º┘à┘ä ╪│┘â╪⌐ ╪¡╪»┘è╪» ╪Ñ╪½┘è┘ê-╪¼┘è╪¿┘ê╪¬┘è', '╪¬╪¼┘à┘è╪╣ ╪¡╪º┘ê┘è╪º╪¬ FCL & LCL'], kpi: '99.4% ╪¬╪│┘ä┘è┘à ┘ü┘è ╪º┘ä┘ê┘é╪¬' },
+        { id: 'fleet-coordination', code: '03', title: '╪ú╪│╪╖┘ê┘ä ╪╣╪º╪¿╪▒ ┘ä┘ä╪¡╪»┘ê╪»', subtitle: '┘å┘é┘ä ╪¿╪╢╪º╪ª╪╣ ╪½┘é┘è┘ä╪⌐', description: '╪ú╪│╪╖┘ê┘ä ┘à╪▒╪º┘é╪¿ ╪¿╪º┘ä┘ÇGPS ┘à┘å ┘à┘å╪╡╪º╪¬ ┘ê┘å╪º┘é┘ä╪º╪¬ ╪½┘é┘è┘ä╪⌐.', specs: ['╪¬╪¬╪¿╪╣ ┘ü┘ê╪▒┘è 24/7', '┘å╪º┘é┘ä╪º╪¬ ╪¡╪¬┘ë 120 ╪╖┘å', '╪¿╪▒┘ê╪¬┘ê┘â┘ê┘ä ┘é╪º┘ü┘ä╪⌐ ╪º┘ä╪¡╪»┘ê╪»'], kpi: '100% ┘å┘é┘ä ┘à╪▒╪º┘é╪¿' },
+        { id: 'machinery-trading', code: '04', title: '╪º╪│╪¬┘è╪▒╪º╪» ╪º┘ä╪ó┘ä╪º╪¬', subtitle: '┘à╪╡╪»╪▒ ╪º┘ä┘à╪╣╪»╪º╪¬ ╪º┘ä╪¬╪¼╪º╪▒┘è╪⌐', description: '╪┤╪▒╪º╪í ┘à╪¬┘â╪º┘à┘ä ┘ê╪º╪│╪¬┘è╪▒╪º╪» ╪º┘ä╪ó┘ä╪º╪¬ ╪º┘ä╪╡┘å╪º╪╣┘è╪⌐ ┘ê╪º┘ä╪ú╪¼╪▓╪º╪í.', specs: ['┘à╪╡╪º╪»╪▒ ┘à╪¿╪º╪┤╪▒╪⌐ ┘à┘å ╪º┘ä┘à╪╡┘å╪╣', '╪¬┘å╪│┘è┘é ╪¬╪▒╪º╪«┘è╪╡ ╪º┘ä╪º╪│╪¬┘è╪▒╪º╪» ┘ê╪º┘ä╪╣┘à┘ä╪⌐', '╪¬╪│┘ä┘è┘à ╪¡╪¬┘ë ╪¿╪º╪¿ ╪º┘ä┘à╪╡┘å╪╣'], kpi: '╪¬╪│┘ä┘è┘à ┘à╪¬┘â╪º┘à┘ä' }
+      ]
+    },
+    corridor: {
+      sectionTag: '╪º┘ä┘à┘à╪▒ ╪º┘ä╪¬╪¼╪º╪▒┘è',
+      headline: '┘à╪¡┘ê╪▒ ╪¼┘è╪¿┘ê╪¬┘è - ╪ú╪»┘è╪│.',
+      subheadline: '╪º┘ä╪┤╪▒┘è╪º┘å ╪º┘ä┘ä┘ê╪¼╪│╪¬┘è ╪º┘ä┘à┘à╪¬╪» 900+ ┘â┘à ╪º┘ä╪░┘è ┘è╪▒╪¿╪╖ ╪º┘ä╪┤╪¡┘å ╪º┘ä╪¿╪¡╪▒┘è ┘ü┘è ╪º┘ä╪¿╪¡╪▒ ╪º┘ä╪ú╪¡┘à╪▒ ╪¿┘ê╪│╪╖ ╪Ñ╪½┘è┘ê╪¿┘è╪º.',
+      stops: [
+        { code: '01', name: '┘à┘è┘å╪º╪í ╪¼┘è╪¿┘ê╪¬┘è (╪»┘ê╪▒╪º┘ä┘è╪⌐)', type: '┘à╪¡╪╖╪⌐ ╪¿╪¡╪▒┘è╪⌐', transitTime: '╪º┘ä┘è┘ê┘à 00', desc: '╪¬┘ü╪▒┘è╪║ ╪º┘ä╪│┘ü┘å ┘ê┘à╪╣╪º┘ä╪¼╪⌐ ╪¿┘ê╪º┘ä╪╡ ╪º┘ä╪┤╪¡┘å.' },
+        { code: '02', name: '╪¡╪»┘ê╪» ╪║╪º┘ä╪º┘ü┘è / ╪»┘è┘ê┘è┘ä┘è', type: '╪¬┘ü╪¬┘è╪┤ ╪¼┘à╪▒┘â┘è', transitTime: '╪º┘ä┘è┘ê┘à 01', desc: '╪¬╪│┘ä┘è┘à ╪º┘ä╪¡╪▒╪º╪│╪⌐ ┘ê╪º┘ä╪¬╪¡┘é┘é ╪º┘ä╪Ñ┘ä┘â╪¬╪▒┘ê┘å┘è.' },
+        { code: '03', name: '┘à┘è┘å╪º╪í ┘à┘ê╪¼┘ê ╪º┘ä╪¼╪º┘ü', type: '┘à╪│╪¬┘ê╪»╪╣ ╪¬╪¿╪º╪»┘ä', transitTime: '╪º┘ä┘è┘ê┘à 02', desc: '╪¬┘â╪»┘è╪│ ╪º┘ä╪¡╪º┘ê┘è╪º╪¬ ┘ê╪º┘ä╪┤╪¡┘å ┘à┘å ╪│┘â╪⌐ ╪¡╪»┘è╪» ╪Ñ┘ä┘ë ╪┤╪º╪¡┘å╪º╪¬.' },
+        { code: '04', name: '╪ú╪»┘è╪│ ╪ú╪¿╪º╪¿╪º (┘é╪º┘ä┘è╪¬┘è)', type: '╪¬╪│┘ä┘è┘à ┘ä┘ä┘à╪│╪¬┘ä┘à', transitTime: '╪º┘ä┘è┘ê┘à 02-03', desc: '╪º┘ä╪Ñ┘ü╪▒╪º╪¼ ╪º┘ä╪¼┘à╪▒┘â┘è ╪º┘ä┘å┘ç╪º╪ª┘è ┘ê╪º┘ä╪¬╪│┘ä┘è┘à ┘ä┘ä┘à╪╡┘å╪╣.' }
+      ]
+    },
+    contact: {
+      sectionTag: '╪º╪¬╪╡┘ä ╪¿┘å╪º',
+      headline: '╪º╪│╪¬┘ü╪│╪º╪▒╪º╪¬ ╪º┘ä╪┤╪¡┘å.',
+      subheadline: '┘é┘å╪º╪⌐ ┘à╪¿╪º╪┤╪▒╪⌐ ┘ä┘ü╪▒┘è┘é┘å╪º ┘ü┘è ╪ú╪»┘è╪│ ╪ú╪¿╪º╪¿╪º. ╪▒╪»┘ê╪» ╪«┘ä╪º┘ä ╪│╪º╪╣╪¬┘è┘å.',
+      form: {
+        nameLabel: '╪º┘ä╪º╪│┘à ╪º┘ä┘â╪º┘à┘ä', namePlaceholder: '┘à╪½╪º┘ä: ╪ú╪¡┘à╪» ┘à╪¡┘à╪»',
+        companyLabel: '╪º╪│┘à ╪º┘ä╪┤╪▒┘â╪⌐', companyPlaceholder: '┘à╪½╪º┘ä: ┘à╪¼┘à┘ê╪╣╪⌐ ╪º┘ä╪¬╪╡┘å┘è╪╣ ╪º┘ä╪Ñ╪½┘è┘ê╪¿┘è╪⌐',
+        phoneLabel: '╪▒┘é┘à ╪º┘ä┘ç╪º╪¬┘ü', phonePlaceholder: '+251 93 299 9977',
+        emailLabel: '╪º┘ä╪¿╪▒┘è╪» ╪º┘ä╪Ñ┘ä┘â╪¬╪▒┘ê┘å┘è', emailPlaceholder: 'logistics@company.com',
+        cargoTypeLabel: '┘ü╪ª╪⌐ ╪º┘ä╪«╪»┘à╪⌐',
+        cargoTypes: ['┘å┘é┘ä ╪º┘ä╪¿╪╢╪º╪ª╪╣', '╪º┘ä╪¬╪«┘ä┘è╪╡ ╪º┘ä╪¼┘à╪▒┘â┘è', '╪º┘ä╪¬╪│┘ä┘è┘à ┘ä┘ä┘à┘å╪▓┘ä', '┘å┘é┘ä ╪º┘ä╪ó┘ä╪º╪¬ ╪º┘ä╪½┘é┘è┘ä╪⌐', '┘à┘å╪º┘ê┘ä╪⌐ ╪º┘ä╪¿╪╢╪º╪ª╪╣ ╪º┘ä╪«╪º╪╡╪⌐'],
+        volumeLabel: '╪º┘ä╪¡╪¼┘à / ╪º┘ä┘ê╪▓┘å ╪º┘ä┘à┘é╪»╪▒', volumePlaceholder: '┘à╪½╪º┘ä: ╪¡╪º┘ê┘è╪¬╪º┘å 40 ┘é╪»┘à',
+        originDestLabel: '╪º┘ä┘à╪╡╪»╪▒ ┘ê╪º┘ä┘ê╪¼┘ç╪⌐', originDestPlaceholder: '┘à╪½╪º┘ä: ╪┤┘å╪║┘ç╪º┘è Γ₧ö ╪¼┘è╪¿┘ê╪¬┘è Γ₧ö ╪ú╪»┘è╪│ ╪ú╪¿╪º╪¿╪º',
+        messageLabel: '┘à┘ä╪º╪¡╪╕╪º╪¬ ╪º┘ä╪┤╪¡┘å', messagePlaceholder: '┘à╪¬╪╖┘ä╪¿╪º╪¬ ╪«╪º╪╡╪⌐...',
+        submitBtn: '╪Ñ╪▒╪│╪º┘ä ╪º┘ä╪╖┘ä╪¿', submittingBtn: '╪¼╪º╪▒┘ì ╪º┘ä╪Ñ╪▒╪│╪º┘ä...', successMsg: '╪¬┘à ╪¬╪│╪¼┘è┘ä ╪╖┘ä╪¿┘â. ╪▒┘é┘à ╪º┘ä┘à╪▒╪¼╪╣: SAT-'
+      },
+      location: {
+        buildingTitle: '╪º┘ä┘à┘é╪▒ ╪º┘ä╪▒╪ª┘è╪│┘è', buildingName: '┘à╪¿┘å┘ë ┘ü┘è╪¬┘è┘ä┘è',
+        addressLine1: '┘à┘è╪»╪º┘å ╪║┘ê╪▒╪║┘ê╪▒┘è┘ê╪│╪î ╪º┘ä╪╖╪º╪¿┘é ╪º┘ä╪½╪º┘ä╪½', addressLine2: '╪ú╪»┘è╪│ ╪ú╪¿╪º╪¿╪º╪î ╪Ñ╪½┘è┘ê╪¿┘è╪º',
+        coordinates: '09┬░00ΓÇ▓05ΓÇ│N 38┬░46ΓÇ▓02ΓÇ│E',
+        hoursTitle: '╪│╪º╪╣╪º╪¬ ╪º┘ä╪╣┘à┘ä', hours: '╪º┘ä╪º╪½┘å┘è┘å ΓÇô ╪º┘ä╪│╪¿╪¬: 08:00 ΓÇô 18:30',
+        phoneTitle: '╪º┘ä┘ç╪º╪¬┘ü ╪º┘ä┘à╪¿╪º╪┤╪▒', phone: '+251 93 299 9977',
+        emailTitle: '╪º┘ä╪¿╪▒┘è╪» ╪º┘ä╪Ñ┘ä┘â╪¬╪▒┘ê┘å┘è', email: 'satlogistics0001@gmail.com',
+        mapNotice: '┘à╪¿┘å┘ë ┘ü┘è╪¬┘è┘ä┘è╪î ┘à┘è╪»╪º┘å ╪║┘ê╪▒╪║┘ê╪▒┘è┘ê╪│╪î ╪ú╪»┘è╪│ ╪ú╪¿╪º╪¿╪º'
+      }
+    },
+    footer: {
+      tagline: '╪┤╪¡┘å ┘à╪¬╪╣╪»╪» ╪º┘ä┘ê╪│╪º╪ª╪╖ ┘ê╪¬╪«┘ä┘è╪╡ ╪¼┘à╪▒┘â┘è ┘ê╪¬╪»╪º┘ê┘ä ┘à╪╣╪»╪º╪¬ ╪╡┘å╪º╪╣┘è╪⌐ ╪╣╪¿╪▒ ╪┤╪▒┘é ╪ú┘ü╪▒┘è┘é┘è╪º.',
+      registration: '╪┤╪▒┘â╪⌐ SAT ┘ä┘ä╪«╪»┘à╪º╪¬ ╪º┘ä┘ä┘ê╪¼╪│╪¬┘è╪⌐ ┘ê╪º┘ä╪¬╪¼╪º╪▒╪⌐ ΓÇö ╪▒┘é┘à ╪º┘ä╪¬╪│╪¼┘è┘ä: ETH-LOG-4482',
+      licensing: '┘à╪▒╪«╪╡╪⌐ ┘à┘å ┘ç┘è╪ª╪⌐ ╪º┘ä┘à┘ä╪º╪¡╪⌐ ╪º┘ä╪Ñ╪½┘è┘ê╪¿┘è╪⌐.',
+      copyright: '┬⌐ 2026 ╪┤╪▒┘â╪⌐ SAT ┘ä┘ä╪«╪»┘à╪º╪¬ ╪º┘ä┘ä┘ê╪¼╪│╪¬┘è╪⌐ ┘ê╪º┘ä╪¬╪¼╪º╪▒╪⌐.',
+      backToTop: '╪º┘ä╪╣┘ê╪»╪⌐ ┘ä┘ä╪ú╪╣┘ä┘ë'
+    }
+  },
+
+  zh: {
+    nav: {
+      home: 'µªéΦºê',
+      about: 'σà│Σ║ÄµêæΣ╗¼',
+      services: 'µ£ìσèí',
+      executive: 'Θóåσ»╝σ▒é',
+      corridor: 'Φ╡░σ╗è',
+      contact: 'Φüöτ│╗µêæΣ╗¼',
+      quoteBtn: 'ΦÄ╖σÅûµèÑΣ╗╖'
+    },
+    hero: {
+      badge: 'Θ¥₧µ┤▓Σ╣ïΦºÆσñÜσ╝ÅΦüöΦ┐Éτë⌐µ╡ü',
+      headlinePart1: 'SAT τë⌐µ╡ü',
+      headlinePart2: 'Φ┤╕µÿôµ£ëΘÖÉσà¼σÅ╕',
+      tagline: 'Φ┐₧µÄÑσÉëσ╕âµÅÉµ╕»Σ╕Äσƒâσí₧Σ┐äµ»öΣ║ÜΣ╕¡Θâ¿τÜäτ½»σê░τ½»Σ╛¢σ║öΘô╛Φºúσå│µû╣µíêπÇé',
+      ctaPrimary: 'τö│Φ»╖Φ░âσ║ª',
+      ctaSecondary: 'µƒÑτ£ïµ£ìσèí',
+      stat1Label: 'Φ┐ÉΦ╛ôµù╢Θù┤',
+      stat1Value: '36-48σ░Åµù╢',
+      stat2Label: 'µ╕àσà│µêÉσèƒτÄç',
+      stat2Value: '99.4%',
+      stat3Label: 'Φ╜ªΘÿƒΦºäµ¿í',
+      stat3Value: '120+',
+      stat4Label: 'Σ╕╗ΦªüΦ╡░σ╗è',
+      stat4Value: 'σÉëσ╕âµÅÉ Γ₧ö Σ║ÜτÜä',
+      corridorStatus: 'σÉëσ╕âµÅÉ-Σ║ÜτÜäµû»Φ╜┤τ║┐∩╝ÜΦ┐ÉΦÉÑΣ╕¡',
+      hubBadge: 'µÇ╗Θâ¿∩╝ÜΣ║ÜτÜäµû»Σ║ÜΦ┤¥σ╖┤ // µ│¿σåî: ETH-LOG-4482'
+    },
+    about: {
+      sectionTag: 'σà│Σ║ÄµêæΣ╗¼',
+      headline: 'µêæΣ╗¼µÿ»Φ░üπÇé',
+      overview: 'SATτë⌐µ╡üΦ┤╕µÿôµ£ëΘÖÉσà¼σÅ╕µÿ»σƒâσí₧Σ┐äµ»öΣ║ÜσÅèσæ¿Φ╛╣σ£░σî║τÜäΦ┐ÉΦ╛ôσÆîτë⌐µ╡üµ£ìσèíµÅÉΣ╛¢σòå∩╝îµÅÉΣ╛¢σ¢╜ΘÖàΦ┤ºΦ┐ÉΣ╗úτÉåπÇüµ╕àσà│σÆîΘí╣τ¢«Φ┤ºτë⌐Φ┐ÉΦ╛ôµ£ìσèíπÇé',
+      missionTag: 'µêæΣ╗¼τÜäΣ╜┐σæ╜',
+      missionHeadline: 'µá╕σ┐âΣ╜┐σæ╜Σ╕Äτ¢«µáçΦíîΣ╕ÜπÇé',
+      missionItems: [
+        'SATΣ╕║σê╢ΘÇáΣ╕ÜπÇüΦâ╜µ║ÉτöƒΣ║ºπÇüσ╖ÑΣ╕Üσ¢¡σî║πÇüσñ¬Θÿ│Φâ╜πÇüΘ¢╢σö«πÇüµ£ìΦúàΦíîΣ╕ÜσÆîτë╣µ«èΘçìσ₧ïΘí╣τ¢«Φ┤ºτë⌐µÅÉΣ╛¢σà¿Θ¥óΦºúσå│µû╣µíêπÇé',
+        'ΘÖñΦ┤ºΦ┐ÉΣ╗úτÉåσñû∩╝îµêæΣ╗¼Φ┐ÿµÅÉΣ╛¢τë⌐µ╡üσÆ¿Φ»óµ£ìσèí∩╝îΣ╗ÑΣ╝ÿσîûσ«óµê╖τÜäΣ╛¢σ║öΘô╛πÇé',
+        'µêæΣ╗¼τÜäτ¢«µáçµÿ»µ£ëµòêµö»µîüτºüΦÉÑΣ╝üΣ╕ÜπÇüσê╢ΘÇáσòåσÆîµö┐σ║£µ£║µ₧äµö╣σûäτë⌐µ╡üΦâ╜σè¢πÇüΘÖìΣ╜ÄΦ┐ÉΦ┤╣σ╣╢µÅÉΘ½ÿµ£ìσèíΦ┤¿ΘçÅπÇé'
+      ],
+      purposeTag: 'µêæΣ╗¼τÜäσ«ùµù¿',
+      purposeHeadline: 'σ«ùµù¿Σ╕ÄΦâ╜σè¢πÇé',
+      purposeFoundedNote: 'SATτë⌐µ╡üΦ┤╕µÿôµ£ëΘÖÉσà¼σÅ╕µêÉτ½ïΣ║Ä2023σ╣┤∩╝îΦç┤σè¢Σ║ÄµÅÉΣ╛¢Σ╕ôΣ╕ÜτÜäΦ┐ÉΦ╛ôσÆîµ╕àσà│µ£ìσèí∩╝îτí«Σ┐¥Φ┤ºτë⌐Σ╗ÄΦ╡╖τé╣σê░τ╗êτé╣τÜäµùáτ╝¥τº╗σè¿πÇé',
+      purposeMission: 'µêæΣ╗¼τÜäΣ╜┐σæ╜µÿ»µÅÉΣ╛¢σà¿Θ¥óτÜäτë⌐µ╡üΦºúσå│µû╣µíê∩╝îµ╗íΦ╢│σ«óµê╖σñÜµá╖σîûτÜäσ¢╜ΘÖàτë⌐µ╡üΘ£Çµ▒éπÇé',
+      principlesTag: 'Φ┐ÉΦÉÑσÄƒσêÖ',
+      principlesHeadline: 'µêæΣ╗¼τÜäσÄƒσêÖπÇé',
+      principles: [
+        { title: 'Σ╕Äσê⌐τ¢èτ¢╕σà│ΦÇàσÉêΣ╜£', desc: 'µêæΣ╗¼Σ╗ÑσÇ╝σ╛ùΣ┐íΦ╡ûτÜäτ¢ƒσÅïσ«ÜΣ╜ìΦç¬σ╖▒∩╝îΣ╝ÿσàêΦÇâΦÖæτ«ÇσìòµÇºπÇüσÅ»Θ¥áµÇºσÆîΣ╗Ñσ«óµê╖Σ╕║Σ╕¡σ┐âτÜäτÉåσ┐╡πÇé' },
+        { title: 'Φ╡ïΦâ╜µêæΣ╗¼τÜäσæÿσ╖Ñ', desc: 'µêÉσèƒσ╗║τ½ïσ£¿σ¢óτ╗ôΣ╣ïΣ╕è∩╝îµêæΣ╗¼Σ┐âΦ┐¢σ¢óΘÿƒσÉêΣ╜£σ╣╢µÅÉΣ╛¢σ╝║σñºτÜäσæÿσ╖Ñµö»µîüΣ╜ôτ│╗πÇé' },
+        { title: 'Σ╗ÑσìôΦ╢èΣ╕║Θ⌐▒σè¿', desc: 'µêæΣ╗¼τÜäΦ┐ÉΦÉÑΣ╗Ñσ¢╜σåàσñûµáçσçåΣ╕║σƒ║σçå∩╝îτí«Σ┐¥µëÇµ£ëµ£ìσèíτÜäµòêτÄçπÇüΣ╕ÇΦç┤µÇºσÆîΘÇƒσ║ªπÇé' },
+        { title: 'Θ¥óσÉæµ£¬µ¥Ñ', desc: 'τº»µ₧üΦ┐¢σÅûτÜäµÇüσ║ªσÆîΣ╗Ñσó₧Θò┐Σ╕║σ»╝σÉæτÜäµêÿτòÑΣ╜┐µêæΣ╗¼Σ╕ìµû¡Φ┐¢σîû∩╝îµ¢┤σÑ╜σ£░µ£ìσèíσ«óµê╖πÇé' },
+        { title: 'σ»╣σÅ»µîüτ╗¡µÇºτÜäµë┐Φ»║', desc: 'µêæΣ╗¼σ¥ÜµîüΘüôσ╛╖σ«₧Φ╖╡σÆîσÉêΦºä∩╝îσ░åσàêΦ┐¢τÜäτÄ»σóâΣ┐¥ΘÜ£µÄ¬µû╜Φ₧ìσàÑΦ┐ÉΦÉÑπÇé' }
+      ],
+      capabilityTag: 'σ¢óΘÿƒΦâ╜σè¢',
+      capabilityHeadline: 'µêæΣ╗¼σ¢óΘÿƒτÜäΦâ╜σè¢πÇé',
+      capabilities: [
+        { title: 'µ£¼σ£░Σ╕ôΣ╕ÜτƒÑΦ»å', desc: 'σ»╣σƒâσí₧Σ┐äµ»öΣ║ÜΦ┐ÉΦ╛ôµ│òΦºäπÇüµö┐τ¡ûσÆîσƒ║τíÇΦ«╛µû╜τÜäµ╖▒σê╗τÉåΦºúπÇé' },
+        { title: 'µùáτ╝¥σìÅΦ░â', desc: 'Σ╕░σ»îτÜäσëìµ£ƒΦ┐ÉΦ╛ôµ╡üτ¿ïτ╗ÅΘ¬î∩╝îτí«Σ┐¥Θ½ÿµòêτÜäµ╕àσà│σÆîµûçΣ╗╢σñäτÉåπÇé' },
+        { title: 'σ╝║σñºτÜäσÉêΣ╜£Σ╝ÖΣ╝┤σà│τ│╗', desc: 'Σ╕Äσƒâσí₧Σ┐äµ»öΣ║Üµ╡╖σà│σ╜ôσ▒ÇπÇüΦê¬Φ┐Éσà¼σÅ╕σÆîΦ┤ºΦ┐ÉΣ╗úτÉåτÜäσÉêΣ╜£πÇé' },
+        { title: 'Σ╗Ñσ«óµê╖Σ╕║Σ╕¡σ┐âτÜäµû╣σ╝Å', desc: 'ΘçÅΦ║½σ«Üσê╢τÜäΦºúσå│µû╣µíê∩╝îµ╗íΦ╢│µé¿τÜäτë⌐µ╡üΘ£Çµ▒éπÇé' }
+      ],
+      projectsTag: 'σ╖▓Σ║ñΣ╗ÿΘí╣τ¢«',
+      projectsHeadline: 'µêÉτåƒτÜäΣ╕Üτ╗⌐Φ«░σ╜òπÇé',
+      projectsDesc: 'µêæΣ╗¼σà¼σÅ╕σ£¿σƒâσí₧Σ┐äµ»öΣ║Üµ£ÇΘçìΦªüτÜäσƒ║τíÇΦ«╛µû╜Θí╣τ¢«Φ┤ºτë⌐Φ┐ÉΦ╛ôΣ╕¡σÅæµîÑΣ║åΘçìΦªüΣ╜£τö¿πÇé',
+      projectsList: [
+        'σƒâσí₧Σ┐äµ»öΣ║Üσñìσà┤σñºσ¥¥ (GERD)',
+        'σƒâσí₧Σ┐äµ»öΣ║ÜΦê¬τ⌐║ ΓÇö Φ┤ºΦ┐É',
+        'σÅæτö╡ ΓÇö σÉëσ░öσÉëσ░öσƒ║Φ┤¥τ╗╝σÉêΣ╜ô',
+        'σ╖ÑΣ╕Üσ¢¡σî║∩╝ÜσôêτôªΦÉ¿πÇüµ¥£Φé»πÇüΘÿ┐Φ╛╛τÄ¢',
+        'σƒâσí₧Σ┐äµ»öΣ║Üτö╡σè¢',
+        'Φ┤óµö┐Θâ¿ ΓÇö Φ╡äµ£¼Φ«╛σñçτë⌐µ╡ü'
+      ],
+      customersTag: 'µêæΣ╗¼τÜäσ«óµê╖',
+      customersHeadline: 'σ¢╜ΘÖàσÉêΣ╜£Σ╝ÖΣ╝┤πÇé',
+      customersSubheadline: 'µêæΣ╗¼Σ╕ÄΦâ╜µ║ÉπÇüσ╗║Φ«╛πÇüΘÆóΘôüσÆîσƒ║τíÇΦ«╛µû╜ΘóåσƒƒτÜäσà¿τÉâΘóåσàêΣ╝üΣ╕ÜσÉêΣ╜£πÇé'
+    },
+    executive: {
+      sectionTag: 'Θóåσ»╝σ▒é',
+      headline: 'µëºΦíîΘóåσ»╝σ▒éπÇé',
+      subheadline: 'µêÉτ½ïΣ║Ä2023σ╣┤∩╝îΦç┤σè¢Σ║ÄµÅÉΣ╛¢Σ╕ôΣ╕ÜτÜäΦ┐ÉΦ╛ôσÆîµ╕àσà│µ£ìσèíπÇé',
+      name: 'ΦÉ¿τ⌐åσƒâσ░ö┬╖Θÿ┐Σ║Üσêùσñ½',
+      title: 'µÇ╗τ╗ÅτÉå',
+      credentialBadge: 'Θóåσàêτë⌐µ╡üΣ╕ôΣ╕ÜΣ║║σú½',
+      quote: '"µêæΣ╗¼Φ«⌐µé¿τÜäΦ┤ºτë⌐Φ┐ÉΦ╛ôσÅÿσ╛ùτ«ÇσìòπÇé"',
+      bioParagraph1: 'µïÑµ£ëτë⌐µ╡üΣ╕ÄΣ╛¢σ║öΘô╛τ«íτÉåτíòσú½σ¡ªΣ╜ì∩╝îσà╖µ£ëσìüσ╣┤Σ╗ÑΣ╕èΘ½ÿτ║ºΦ┤ºΦ┐ÉσìÅΦ░âσÆîΦ╡░σ╗èτ«íτÉåτ╗ÅΘ¬îπÇé',
+      bioParagraph2: 'Σ╗ûΦ┤ƒΦ┤úSATτÜäτ╗╝σÉêµ╕àσà│σÆîσñÜσ╝ÅΦüöΦ┐ÉΣ╕Üσèí∩╝îΦ┐₧µÄÑσÉëσ╕âµÅÉµ╕»Σ╕ÄΦÄ½τ║ªσ╣▓µ╕»σÆîΣ║ÜτÜäµû»Σ║ÜΦ┤¥σ╖┤πÇé',
+      metricTitle1: 'Σ╛¢σ║öΘô╛µêÿτòÑ',
+      metricDesc1: 'Σ╕ôµ│¿Σ║Äσ╣▓µ╕»Σ╕ÇΣ╜ôσîûσÆîΦ╡░σ╗èΣ╝ÿσîûπÇé',
+      metricTitle2: 'Φ╡░σ╗èΣ║ñΣ╗ÿ',
+      metricDesc2: '48σ░Åµù╢σåàµ╕àσà│σìÅΦ««σÆîσ«₧µù╢Φ╜ªΘÿƒΦ╖ƒΦ╕¬πÇé',
+      governanceBadge: 'µîüτëîΦ┐ÉΦÉÑσòå // σƒâσí₧Σ┐äµ»öΣ║Üµ╡╖Σ║ïσ▒Ç'
+    },
+    services: {
+      sectionTag: 'µ£ìσèí',
+      headline: 'µá╕σ┐âµ£ìσèíπÇé',
+      subheadline: 'σ¢¢Σ╕¬Σ╕ôΣ╕Üσ₧éτ¢┤Θóåσƒƒ∩╝îΣ╕ôΣ╕║ΘÇƒσ║ªσÆîσÉêΦºäµÇºΦÇîΦ«╛Φ«íπÇé',
+      items: [
+        { id: 'customs-clearance', code: '01', title: 'µ╕àσà│µ£ìσèí', subtitle: 'AEOΦ«ñΦ»ü & ASYCUDAτö│µèÑ', description: 'σ┐½ΘÇƒτö╡σ¡Éµ╕àσà│∩╝îΦªåτ¢ûΣ║ÜτÜäµû»Σ║ÜΦ┤¥σ╖┤µ£║σ£║Φ┤ºΦ┐Éτ½ÖπÇüΦÄ½τ║ªσ╣▓µ╕»σÆîσÉëσ╕âµÅÉΦ╛╣σóâπÇé', specs: ['ASYCUDA Worldτö╡σ¡Éτö│µèÑ', 'σà│τ¿Äσêåτ▒╗Σ╕ÄΣ╝░Σ╗╖', 'Φ┐çσóâµïàΣ┐¥σÇ║σê╕Σ╕ÄΣ┐íτö¿Φ»üσÉêΦºä'], kpi: 'σ╣│σ¥ç24-36σ░Åµù╢µö╛Φíî' },
+        { id: 'freight-forwarding', code: '02', title: 'Φ┤ºΦ┐ÉΣ╗úτÉå', subtitle: 'σÉëσ╕âµÅÉΦç│Σ║ÜτÜäµû»Σ║ÜΦ┤¥σ╖┤Φ╡░σ╗è', description: 'Σ╗ÄσñÜσôêΦÄ▒Θ¢åΦúàτ«▒τáüσñ┤σê░Σ╕¡Θâ¿σ╣▓µ╕»τÜäµ╡╖ΘÖåΘôüσìÅσÉîΦ┤ºΦ┐ÉπÇé', specs: ['σñÜσôêΦÄ▒µ╕»σÅúΣ╗úτÉå(DCT & DMP)', 'σƒâσÉëΘôüΦ╖»(EDR)µò┤σÉê', 'FCL & LCLΘ¢åΦúàτ«▒µï╝τ«▒'], kpi: '99.4%σçåµù╢Σ║ñΦ┤ºτÄç' },
+        { id: 'fleet-coordination', code: '03', title: 'Φ╖¿σóâΦ╜ªΘÿƒ', subtitle: 'Θçìσ₧ïΦ┐ÉΦ╛ôΣ╕ÄΣ╜Äσ║èΦ┐ÉΦ╛ô', description: 'GPSτ¢æµÄºτÜäσ╣│µ¥┐Φ╜ªπÇüΣ╜Äσ║èΦ╜ª∩╝êµ£ÇΘ½ÿ120σÉ¿∩╝ëσÆîσå╖ΦùÅΦ╜ªΦ╜ªΘÿƒπÇé', specs: ['24/7σ«₧µù╢Φ┐£τ¿ïΣ┐íµü»σñäτÉå', 'Θçìσ₧ïµ£║µó░Σ╜Äσ║è(µ£ÇΘ½ÿ120σÉ¿)', 'Σ╕ôτö¿Φ╛╣σóâµèñΘÇüσìÅΦ««'], kpi: '100%σà¿τ¿ïτ¢æµÄº' },
+        { id: 'machinery-trading', code: '04', title: 'µ£║µó░Φ┐¢σÅúΦ┤╕µÿô', subtitle: 'σòåΣ╕ÜΦ«╛σñçΘççΦ┤¡', description: 'σ╖ÑΣ╕ÜΦ«╛σñçτÜäΣ╕Çτ½Öσ╝ÅσòåΣ╕ÜΘççΦ┤¡σÆîΦ┐¢σÅúΣ╛┐σê⌐σîûπÇé', specs: ['σ╖ÑσÄéτ¢┤µÄÑσà¿τÉâΘççΦ┤¡', 'Φ┐¢σÅúΦ«╕σÅ»Φ»üσÆîσñûµ▒çσìÅΦ░â', 'σ╖ÑσÄéΘù¿σê░Θù¿Σ║ñΦ┤º'], kpi: 'Σ╕Çτ½Öσ╝ÅΦ┐¢σÅúΣ║ñΦ┤º' }
+      ]
+    },
+    corridor: {
+      sectionTag: 'Φ┤╕µÿôΦ╡░σ╗è',
+      headline: 'σÉëσ╕âµÅÉ ΓÇô Σ║ÜτÜäµû»Φ╜┤τ║┐πÇé',
+      subheadline: 'Φ┐₧µÄÑτ║óµ╡╖µ╡╖Φ┐ÉΣ╕Äσƒâσí₧Σ┐äµ»öΣ║ÜΣ╕¡Θâ¿τÜä900+σà¼ΘçîσñÜσ╝ÅΦüöΦ┐Éτöƒσæ╜τ║┐πÇé',
+      stops: [
+        { code: '01', name: 'σÉëσ╕âµÅÉµ╕»∩╝êσñÜσôêΦÄ▒∩╝ë', type: 'µ╖▒µ░┤τáüσñ┤', transitTime: 'τ¼¼0σñ⌐', desc: 'Φê╣Φê╢σì╕Φ┤ºπÇüµÅÉσìòΘ¬îΦ»üσÆîΦ┐çσóâΦê▒σìòσñäτÉåπÇé' },
+        { code: '02', name: 'σèáµïëΦÅ▓/σ╛╖ΘƒªσïÆΦ╛╣σóâ', type: 'µ╡╖σà│µúÇµƒÑ', transitTime: 'τ¼¼1σñ⌐', desc: 'µèñΘÇüΣ║ñµÄÑπÇüτö╡σ¡Éσ░üτ¡╛Θ¬îΦ»üσÆîΦ┐çσóâµ╕àσà│πÇé' },
+        { code: '03', name: 'ΦÄ½τ║ªσ╣▓µ╕»µ₧óτ║╜', type: 'ΦüöΦ┐ÉΣ╗ôσ║ô', transitTime: 'τ¼¼2σñ⌐', desc: 'Θ¢åΦúàτ«▒σáåµö╛πÇüΘôüΦ╖»Φ╜¼σìíΦ╜ªσÆîΣ┐¥τ¿ÄΣ╗ôσé¿πÇé' },
+        { code: '04', name: 'Σ║ÜτÜäµû»Σ║ÜΦ┤¥σ╖┤∩╝êσìíσê⌐µÅÉ∩╝ë', type: 'µö╢Φ┤ºΣ║║Σ║ñΣ╗ÿ', transitTime: 'τ¼¼2-3σñ⌐', desc: 'µ£Çτ╗êµ╕àσà│πÇüτ╝┤τ¿ÄσÆîσ╖ÑσÄéτ¢┤ΘÇüπÇé' }
+      ]
+    },
+    contact: {
+      sectionTag: 'Φüöτ│╗µêæΣ╗¼',
+      headline: 'Φ┤ºτë⌐Φ░âσ║ªΣ╕ÄµƒÑΦ»óπÇé',
+      subheadline: 'τ¢┤µÄÑΦüöτ│╗µêæΣ╗¼σ£¿Σ║ÜτÜäµû»Σ║ÜΦ┤¥σ╖┤τÜäτë⌐µ╡üσ¢óΘÿƒπÇéµƒÑΦ»óσ░åσ£¿2σ░Åµù╢σåàτ¡öσñìπÇé',
+      form: {
+        nameLabel: 'σà¿σÉì', namePlaceholder: 'Σ╛ï∩╝Üσ╝áΣ╝ƒ',
+        companyLabel: 'σà¼σÅ╕σÉìτº░', companyPlaceholder: 'Σ╛ï∩╝Üσƒâσí₧Σ┐äµ»öΣ║Üσê╢ΘÇáΘ¢åσ¢ó',
+        phoneLabel: 'τö╡Φ»¥σÅ╖τáü', phonePlaceholder: '+251 93 299 9977',
+        emailLabel: 'τö╡σ¡ÉΘé«Σ╗╢', emailPlaceholder: 'logistics@company.com',
+        cargoTypeLabel: 'µ£ìσèíτ▒╗σê½',
+        cargoTypes: ['Φ┤ºΦ┐ÉΦ┐ÉΦ╛ô', 'µ╕àσà│µ£ìσèí', 'µ£ÇσÉÄΣ╕Çσà¼ΘçîΘàìΘÇü', 'Θçìσ₧ïµ£║µó░Φ┐ÉΦ╛ô', 'Θí╣τ¢«Φ┤ºτë⌐σñäτÉå'],
+        volumeLabel: 'ΘóäΦ«íΣ╜ôτº»/ΘçìΘçÅ', volumePlaceholder: 'Σ╛ï∩╝Ü2Σ╕¬40Φï▒σ░║Θ½ÿµƒ£µêû30σÉ¿',
+        originDestLabel: 'Φ╡╖Φ┐Éσ£░σÆîτ¢«τÜäσ£░', originDestPlaceholder: 'Σ╛ï∩╝ÜΣ╕èµ╡╖ Γ₧ö σÉëσ╕âµÅÉ Γ₧ö Σ║ÜτÜäµû»Σ║ÜΦ┤¥σ╖┤',
+        messageLabel: 'Φ┤ºτë⌐σñçµ│¿', messagePlaceholder: 'τë╣µ«èσñäτÉåΦªüµ▒éµêûµù╢Θù┤Φí¿...',
+        submitBtn: 'µÅÉΣ║ñΦ»╖µ▒é', submittingBtn: 'µÅÉΣ║ñΣ╕¡...', successMsg: 'Φ»╖µ▒éσ╖▓τÖ╗Φ«░πÇéσÅéΦÇâτ╝ûσÅ╖∩╝ÜSAT-'
+      },
+      location: {
+        buildingTitle: 'µÇ╗Θâ¿', buildingName: 'Φ┤╣τë╣ΦÄ▒σñºσÄª',
+        addressLine1: 'µêêσ░öµêêΘçîσÑÑµû»σ╣┐σ£║∩╝î3µÑ╝', addressLine2: 'Σ║ÜτÜäµû»Σ║ÜΦ┤¥σ╖┤∩╝îσƒâσí₧Σ┐äµ»öΣ║Ü',
+        coordinates: '09┬░00ΓÇ▓05ΓÇ│N 38┬░46ΓÇ▓02ΓÇ│E',
+        hoursTitle: 'ΦÉÑΣ╕Üµù╢Θù┤', hours: 'σæ¿Σ╕ÇΦç│σæ¿σà¡∩╝Ü08:00 ΓÇô 18:30 (EAT) // Φ┐ÉΦÉÑ∩╝Ü24/7',
+        phoneTitle: 'τ¢┤τ║┐τö╡Φ»¥', phone: '+251 93 299 9977',
+        emailTitle: 'τö╡σ¡ÉΘé«Σ╗╢', email: 'satlogistics0001@gmail.com',
+        mapNotice: 'Φ┤╣τë╣ΦÄ▒σñºσÄª∩╝îµêêσ░öµêêΘçîσÑÑµû»σ╣┐σ£║∩╝îΣ║ÜτÜäµû»Σ║ÜΦ┤¥σ╖┤'
+      }
+    },
+    footer: {
+      tagline: 'Φªåτ¢ûΣ╕£Θ¥₧τÜäσñÜσ╝ÅΦüöΦ┐ÉΦ┤ºΦ┐ÉΣ╗úτÉåπÇüµ╕àσà│σÆîσ╖ÑΣ╕ÜΦ«╛σñçΦ┤╕µÿôπÇé',
+      registration: 'SATτë⌐µ╡üΦ┤╕µÿôµ£ëΘÖÉσà¼σÅ╕ ΓÇö µ│¿σåîσÅ╖: ETH-LOG-4482',
+      licensing: 'τ╗Åσƒâσí₧Σ┐äµ»öΣ║Üµ╡╖Σ║ïσ▒ÇµÄêµ¥âπÇé',
+      copyright: '┬⌐ 2026 SATτë⌐µ╡üΦ┤╕µÿôµ£ëΘÖÉσà¼σÅ╕πÇé',
+      backToTop: 'Φ┐öσ¢₧Θí╢Θâ¿'
+    }
+  }
+};

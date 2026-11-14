@@ -33,7 +33,7 @@ export const ExecutiveSection: React.FC<ExecutiveSectionProps> = ({
         </div>
 
         {/* Executive Profile Main Block (Clean & Concise) */}
-        <div className="border border-neutral-200 p-8 sm:p-12 grid grid-cols-1 lg:grid-cols-12 gap-10 bg-neutral-50/40">
+        <div className="border border-neutral-200 p-8 sm:p-12 grid grid-cols-1 lg:grid-cols-12 gap-10 bg-white">
           {/* Left Column: Credentials */}
           <div className="lg:col-span-5 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-neutral-200 pb-8 lg:pb-0 lg:pr-10">
             <div>

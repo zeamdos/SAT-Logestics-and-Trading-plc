@@ -51,3 +51,44 @@
 .netlify-badge {
   display: none !important;
 }
+
+.font-light {
+  font-weight: 400;
+}
+
+.font-extralight {
+  font-weight: 300;
+}
+
+.text-xs {
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+}
+
+.text-sm {
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+}
+
+.text-base {
+  font-size: 1.0625rem;
+  line-height: 1.65rem;
+}
+
+[class~="text-[10px]"] {
+  font-size: 0.75rem;
+  line-height: 1.2rem;
+}
+
+[class~="text-[11px]"] {
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+}
+
+.text-neutral-400 {
+  color: #737373;
+}
+
+.text-neutral-500 {
+  color: #525252;
+}
