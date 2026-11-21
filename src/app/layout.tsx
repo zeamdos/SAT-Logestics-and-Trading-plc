@@ -16,6 +16,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://satlogisticstrading.com"),
   title: "SAT Logistics & Trading PLC — End-to-End Supply Chain Solutions",
   description:
     "End-to-End Supply Chain Solutions & Commercial Trading Excellence. Operating primary multimodal corridors from Port of Djibouti to Mojo Dry Port and Addis Ababa.",
@@ -29,8 +30,45 @@ export const metadata: Metadata = {
     "machinery import trading Ethiopia"
   ],
   icons: {
-    icon: "/images/sat-icon.png",
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icon.png", type: "image/png" },
+      { url: "/images/sat-icon.png", type: "image/png" }
+    ],
+    apple: [
+      { url: "/icon.png", type: "image/png" }
+    ]
   },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://satlogisticstrading.com/#website",
+      "name": "SAT Logistics & Trading PLC",
+      "alternateName": "SAT Logistics",
+      "url": "https://satlogisticstrading.com"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://satlogisticstrading.com/#organization",
+      "name": "SAT Logistics & Trading PLC",
+      "alternateName": "SAT Logistics",
+      "url": "https://satlogisticstrading.com",
+      "logo": "https://satlogisticstrading.com/images/sat-icon.png",
+      "image": "https://satlogisticstrading.com/images/sat-icon.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+251932999977",
+        "contactType": "customer service",
+        "email": "satlogistics0001@gmail.com",
+        "areaServed": ["ET", "DJ"],
+        "availableLanguage": ["English", "Amharic", "Arabic", "Chinese"]
+      }
+    }
+  ]
 };
 
 export default function RootLayout({
@@ -51,6 +89,10 @@ export default function RootLayout({
         <link
           href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;600;700&family=Noto+Sans+Ethiopic:wght@300;400;600;700&family=Noto+Sans+SC:wght@300;400;600;700&display=swap"
           rel="stylesheet"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
       <body className="min-h-full flex flex-col bg-white text-black font-sans">

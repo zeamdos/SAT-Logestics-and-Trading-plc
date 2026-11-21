@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Background with subtle brand depth -->
+  <rect width="512" height="512" rx="108" fill="#0A0A0A" />
+  
+  <g transform="translate(48, 64)">
+    <!-- 'S' Geometric Curves & Slanted Terminals in Crimson #EF4444 -->
+    <path d="M 220 50 C 220 50 145 42 90 76 C 35 110 32 165 72 204 C 112 243 216 230 220 286 C 224 342 164 366 112 356 C 60 346 36 312 36 312 L 18 356 C 18 356 65 404 136 408 C 207 412 272 372 268 290 C 264 208 160 216 122 182 C 84 148 106 104 146 94 C 186 84 220 102 220 102 Z" fill="#EF4444" />
+    
+    <!-- Bold 'T' Structure with dynamic angular crossbar -->
+    <!-- Crossbar -->
+    <polygon points="180,68 396,68 406,122 296,122 296,400 236,400 236,122 190,122" fill="#FFFFFF" opacity="0.96" />
+    
+    <!-- Red Accent Slant across the T -->
+    <polygon points="340,68 396,68 376,122 320,122" fill="#EF4444" />
+    <circle cx="388" cy="88" r="8" fill="#EF4444" />
+  </g>
+</svg>
