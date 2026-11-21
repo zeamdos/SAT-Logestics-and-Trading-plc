@@ -47,8 +47,11 @@
   background-color: #841618;
   color: #FFFFFF;
 }
-#netlify-badge, 
-.netlify-badge {
+#netlify-badge,
+.netlify-badge,
+[data-netlify-badge],
+netlify-badge,
+iframe[title*="netlify" i][title*="badge" i] {
   display: none !important;
 }
 
