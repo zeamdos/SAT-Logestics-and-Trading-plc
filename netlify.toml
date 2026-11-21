@@ -17,8 +17,4 @@
   to = "/.netlify/functions/dispatch"
   status = 200
 
-# Catch-all: serve index.html for all routes so Next.js static export routing works
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+
