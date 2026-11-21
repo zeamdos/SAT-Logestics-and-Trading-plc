@@ -15,20 +15,12 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState<NavItem>('home');
 
   const handleNavigate = (section: NavItem) => {
-    const viewLabels: Record<NavItem, string> = {
-      home:      'OVERVIEW',
-      about:     'ABOUT US',
-      services:  'SERVICES',
-      projects:  'PROJECTS',
-      contact:   'CONTACT',
-    };
-
-    triggerTransition(viewLabels[section] || 'SAT LOGISTICS', () => {
-      setActiveSection(section);
-      const targetId = section === 'home' ? 'top' : section;
-      const el = document.getElementById(targetId);
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
-    });
+    if (section === 'home') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setActiveSection('home');
+      return;
+    }
+    window.location.href = `/${section}/`;
   };
 
   return (

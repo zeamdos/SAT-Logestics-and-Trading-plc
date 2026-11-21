@@ -40,13 +40,13 @@ export const ServicesPreview: React.FC<ServicesPreviewProps> = ({ currentLang, o
               {t.services.headline}
             </h2>
           </div>
-          <button
-            onClick={() => onNavigate('services')}
+          <Link
+            href="/services/"
             className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#841618] font-semibold whitespace-nowrap hover:gap-3 transition-all"
           >
             <span>All Services</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
-          </button>
+          </Link>
         </div>
 
         {/* 4 cards — 2 columns */}
@@ -85,13 +85,13 @@ export const ServicesPreview: React.FC<ServicesPreviewProps> = ({ currentLang, o
                   <p className="text-xs text-neutral-500 leading-relaxed flex-1">
                     {service.description}
                   </p>
-                  <button
-                    onClick={() => onNavigate('contact')}
+                  <Link
+                    href="/contact/"
                     className="mt-4 inline-flex items-center gap-1 text-[10px] font-mono uppercase tracking-wider text-[#841618] font-semibold"
                   >
                     <span>Inquire</span>
                     <ArrowUpRight className="w-3 h-3" />
-                  </button>
+                  </Link>
                 </div>
               </motion.div>
             );

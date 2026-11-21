@@ -197,7 +197,9 @@ export const Navigation: React.FC<NavigationProps> = ({
               key={item.id}
               href={item.path}
               prefetch={true}
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={() => {
+                setTimeout(() => setMobileMenuOpen(false), 150);
+              }}
               className="w-full block text-left py-2.5 px-3 border border-neutral-200 text-sm font-medium uppercase hover:border-[#841618]"
             >
               <span suppressHydrationWarning>{item.label}</span>
@@ -206,7 +208,9 @@ export const Navigation: React.FC<NavigationProps> = ({
           <Link
             href="/contact/"
             prefetch={true}
-            onClick={() => setMobileMenuOpen(false)}
+            onClick={() => {
+              setTimeout(() => setMobileMenuOpen(false), 150);
+            }}
             className="w-full mt-3 py-3 bg-[#841618] hover:bg-[#6D1113] text-white text-xs font-mono uppercase tracking-widest text-center flex items-center justify-center gap-2"
           >
             <span suppressHydrationWarning>{t.nav.quoteBtn}</span>

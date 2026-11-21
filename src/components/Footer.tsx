@@ -47,29 +47,29 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onNavigate }) => {
             <span className="text-[11px] font-mono uppercase tracking-wider text-neutral-400 block mb-2">Menu</span>
             <ul className="space-y-1.5 text-xs text-neutral-600">
               <li>
-                <button onClick={() => onNavigate('home')} className="hover:text-[#841618] transition-colors">
+                <Link href="/" className="hover:text-[#841618] transition-colors block">
                   {t.nav.home}
-                </button>
+                </Link>
               </li>
               <li>
-                <button onClick={() => onNavigate('about')} className="hover:text-[#841618] transition-colors">
+                <Link href="/about/" className="hover:text-[#841618] transition-colors block">
                   {t.nav.about}
-                </button>
+                </Link>
               </li>
               <li>
-                <button onClick={() => onNavigate('services')} className="hover:text-[#841618] transition-colors">
+                <Link href="/services/" className="hover:text-[#841618] transition-colors block">
                   {t.nav.services}
-                </button>
+                </Link>
               </li>
               <li>
-                <button onClick={() => onNavigate('projects')} className="hover:text-[#841618] transition-colors">
+                <Link href="/projects/" className="hover:text-[#841618] transition-colors block">
                   {t.nav.projects}
-                </button>
+                </Link>
               </li>
               <li>
-                <button onClick={() => onNavigate('contact')} className="hover:text-[#841618] transition-colors">
+                <Link href="/contact/" className="hover:text-[#841618] transition-colors block">
                   {t.nav.contact}
-                </button>
+                </Link>
               </li>
             </ul>
           </div>
