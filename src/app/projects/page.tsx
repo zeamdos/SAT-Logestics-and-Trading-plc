@@ -69,14 +69,14 @@ export default function ProjectsPage() {
       <section className="relative w-full min-h-[48vh] lg:min-h-[55vh] -mt-[112px] pt-[120px] flex flex-col justify-end overflow-hidden bg-neutral-950">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/projects/gerd-dam.jpg"
+            src="/images/pexels-samuel-wolfl-628277-1427541 (1).jpg"
             alt="Delivered Capital Projects"
             fill
             priority
             sizes="100vw"
-            className="object-cover object-center opacity-100 brightness-110 contrast-105"
+            className="object-cover object-[center_35%] opacity-100 brightness-110 contrast-105"
           />
-          {/* Drastically reduced shadow gradient: GERD dam & reservoir waters vividly visible */}
+          {/* Drastically reduced shadow gradient */}
           <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/90 via-neutral-950/50 to-black/35" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 pb-14">

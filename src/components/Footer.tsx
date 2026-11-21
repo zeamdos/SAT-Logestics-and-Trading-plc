@@ -100,7 +100,12 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onNavigate }) => {
 
         {/* Bottom */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-400 font-mono">
-          <div>{t.footer.copyright}</div>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4 text-center sm:text-left">
+            <div>{t.footer.copyright}</div>
+            <div className="text-[11px] text-neutral-500 font-normal">
+              Powered by <span className="font-semibold text-neutral-700">Zeamdos Tech</span> · Contact us: <a href="tel:0942099162" className="text-[#841618] hover:underline font-mono">0942099162</a>
+            </div>
+          </div>
           <button
             onClick={scrollToTop}
             data-cursor-label="TOP"
