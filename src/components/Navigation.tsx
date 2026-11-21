@@ -197,6 +197,4 @@ export const Navigation: React.FC<NavigationProps> = ({
       )}
     </header>
   );
-    </header>
-  );
 };
