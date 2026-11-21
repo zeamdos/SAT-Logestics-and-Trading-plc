@@ -1,13 +1,13 @@
 export type Language = 'en' | 'am' | 'ar' | 'zh';
 
-export type NavItem = 'home' | 'about' | 'services' | 'executive' | 'contact';
+export type NavItem = 'home' | 'about' | 'services' | 'projects' | 'contact';
 
 export interface TranslationSchema {
   nav: {
     home: string;
     about: string;
     services: string;
-    executive: string;
+    projects: string;
     contact: string;
     quoteBtn: string;
   };
@@ -52,21 +52,30 @@ export interface TranslationSchema {
     customersHeadline: string;
     customersSubheadline: string;
   };
-  executive: {
+  projects: {
     sectionTag: string;
     headline: string;
     subheadline: string;
-    name: string;
-    title: string;
-    credentialBadge: string;
-    quote: string;
-    bioParagraph1: string;
-    bioParagraph2: string;
-    metricTitle1: string;
-    metricDesc1: string;
-    metricTitle2: string;
-    metricDesc2: string;
-    governanceBadge: string;
+    intro: string;
+    experienceTag: string;
+    experienceHeadline: string;
+    experiencePoints: string[];
+    coverageTag: string;
+    coverageHeadline: string;
+    coverageDesc: string;
+    locations: string[];
+    items: {
+      title: string;
+      sector: string;
+      scope: string;
+      cargo: string;
+      description: string;
+      highlights: string[];
+    }[];
+    partnersTag: string;
+    partnersHeadline: string;
+    partnersDesc: string;
+    partners: string[];
   };
   services: {
     sectionTag: string;
@@ -80,7 +89,15 @@ export interface TranslationSchema {
       description: string;
       specs: string[];
       kpi: string;
+      includesTitle?: string;
+      idealFor?: string[];
     }[];
+    processTag?: string;
+    processHeadline?: string;
+    processSteps?: { title: string; desc: string }[];
+    capabilitiesTag?: string;
+    capabilitiesHeadline?: string;
+    capabilityCards?: { title: string; desc: string; points: string[] }[];
   };
   contact: {
     sectionTag: string;

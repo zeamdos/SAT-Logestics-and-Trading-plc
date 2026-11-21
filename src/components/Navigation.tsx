@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter, usePathname } from 'next/navigation';
 import { Language, NavItem } from '@/types';
 import { translations } from '@/data/translations';
@@ -47,42 +48,44 @@ export const Navigation: React.FC<NavigationProps> = ({
 
   const navItems: { id: NavItem; label: string; path: string }[] = [
     { id: 'home',      label: t.nav.home,      path: '/' },
-    { id: 'about',     label: t.nav.about,     path: '/#about' },
-    { id: 'services',  label: t.nav.services,  path: '/#services' },
-    { id: 'executive', label: t.nav.executive, path: '/#executive' },
-    { id: 'contact',   label: t.nav.contact,   path: '/#contact' },
+    { id: 'about',     label: t.nav.about,     path: '/about/' },
+    { id: 'services',  label: t.nav.services,  path: '/services/' },
+    { id: 'projects',  label: t.nav.projects,  path: '/projects/' },
+    { id: 'contact',   label: t.nav.contact,   path: '/contact/' },
   ];
 
   const currentActive = propActiveSection || (
     pathname === '/' ? 'home' :
+    pathname.startsWith('/about') ? 'about' :
     pathname.startsWith('/services') ? 'services' :
-    pathname.startsWith('/executive') ? 'executive' :
+    pathname.startsWith('/projects') ? 'projects' :
     pathname.startsWith('/contact') ? 'contact' : 'home'
   );
 
+  // Routes that are full pages (not scroll anchors on homepage)
+  const PAGE_ROUTES = new Set([
+    '/about', '/about/',
+    '/services', '/services/',
+    '/projects', '/projects/',
+    '/contact', '/contact/'
+  ]);
+
   const handleNavClick = (item: typeof navItems[0]) => {
-    if (propOnNavigate) {
-      propOnNavigate(item.id);
+    if (item.id === 'home' && propOnNavigate) {
+      propOnNavigate('home');
       return;
     }
-
-    if (pathname === '/' || pathname === item.path) {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      return;
-    }
-
-    triggerTransition(item.label.toUpperCase(), () => {
-      router.push(item.path);
-    });
+    router.push(item.path);
   };
 
   return (
     <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-sm border-b border-white/70 shadow-sm">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 flex items-center justify-between h-28">
         {/* Logo */}
-        <div
-          onClick={() => handleNavClick(navItems[0])}
-          className="cursor-pointer group flex items-center py-2"
+        <Link
+          href="/"
+          prefetch={true}
+          className="group flex items-center py-2"
           data-cursor-label="HOME"
         >
           <div className="relative w-48 sm:w-56 h-16 flex items-center">
@@ -94,17 +97,17 @@ export const Navigation: React.FC<NavigationProps> = ({
               className="object-contain object-left"
             />
           </div>
-        </div>
+        </Link>
 
-        {/* Desktop Navigation */}
+        {/* Desktop Navigation — Instant Prefetched Links */}
         <nav className="hidden lg:flex items-center space-x-1 sm:space-x-2">
           {navItems.map((item) => {
             const isActive = currentActive === item.id;
             return (
-              <button
+              <Link
                 key={item.id}
-                onClick={() => handleNavClick(item)}
-                data-cursor-label={item.label}
+                href={item.path}
+                prefetch={true}
                 className={`relative px-4 py-2 text-sm transition-colors rounded-none flex items-center gap-1.5 ${
                   isActive
                     ? 'text-black font-semibold'
@@ -114,8 +117,8 @@ export const Navigation: React.FC<NavigationProps> = ({
                 {isActive && (
                   <span className="w-1.5 h-1.5 bg-[#841618] inline-block shrink-0" />
                 )}
-                <span>{item.label}</span>
-              </button>
+                <span suppressHydrationWarning>{item.label}</span>
+              </Link>
             );
           })}
         </nav>
@@ -131,7 +134,7 @@ export const Navigation: React.FC<NavigationProps> = ({
               aria-expanded={langDropdownOpen}
             >
               <Globe className="w-3.5 h-3.5 text-[#841618]" />
-              <span>{currentLangObj.native}</span>
+              <span suppressHydrationWarning>{currentLangObj.native}</span>
               <ChevronDown className={`w-3.5 h-3.5 text-neutral-500 transition-transform ${langDropdownOpen ? 'rotate-180' : ''}`} />
             </button>
 
@@ -166,14 +169,14 @@ export const Navigation: React.FC<NavigationProps> = ({
           </div>
 
           {/* CTA Button */}
-          <button
-            onClick={() => handleNavClick(navItems[4])}
-            data-cursor-label="DISPATCH"
+          <Link
+            href="/contact/"
+            prefetch={true}
             className="hidden sm:flex items-center gap-2 bg-[#841618] hover:bg-[#6D1113] text-white transition-colors px-4 py-2 text-xs font-mono uppercase tracking-wider shadow-sm"
           >
-            <span>{t.nav.quoteBtn}</span>
+            <span suppressHydrationWarning>{t.nav.quoteBtn}</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
-          </button>
+          </Link>
 
           {/* Mobile Menu Button */}
           <button
@@ -190,27 +193,25 @@ export const Navigation: React.FC<NavigationProps> = ({
       {mobileMenuOpen && (
         <div className="lg:hidden border-t border-neutral-200 bg-white px-6 py-5 space-y-3">
           {navItems.map((item) => (
-            <button
+            <Link
               key={item.id}
-              onClick={() => {
-                handleNavClick(item);
-                setMobileMenuOpen(false);
-              }}
-              className="w-full text-left py-2.5 px-3 border border-neutral-200 text-sm font-medium uppercase hover:border-[#841618]"
+              href={item.path}
+              prefetch={true}
+              onClick={() => setMobileMenuOpen(false)}
+              className="w-full block text-left py-2.5 px-3 border border-neutral-200 text-sm font-medium uppercase hover:border-[#841618]"
             >
-              {item.label}
-            </button>
+              <span suppressHydrationWarning>{item.label}</span>
+            </Link>
           ))}
-          <button
-            onClick={() => {
-              handleNavClick(navItems[4]);
-              setMobileMenuOpen(false);
-            }}
+          <Link
+            href="/contact/"
+            prefetch={true}
+            onClick={() => setMobileMenuOpen(false)}
             className="w-full mt-3 py-3 bg-[#841618] hover:bg-[#6D1113] text-white text-xs font-mono uppercase tracking-widest text-center flex items-center justify-center gap-2"
           >
-            <span>{t.nav.quoteBtn}</span>
+            <span suppressHydrationWarning>{t.nav.quoteBtn}</span>
             <ArrowUpRight className="w-4 h-4" />
-          </button>
+          </Link>
         </div>
       )}
     </header>

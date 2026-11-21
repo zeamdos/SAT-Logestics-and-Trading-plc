@@ -1,4 +1,14 @@
 [build]
-  # Static export (no server). Use 'out' as the publish directory.
+  # Static export publish directory
   publish = "out"
   command = "next build"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+# Clean redirect for the dispatch API endpoint
+[[redirects]]
+  from = "/api/dispatch"
+  to = "/.netlify/functions/dispatch"
+  status = 200

@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import { Language, NavItem } from '@/types';
 import { translations } from '@/data/translations';
@@ -61,8 +62,8 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onNavigate }) => {
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('executive')} className="hover:text-[#841618] transition-colors">
-                  {t.nav.executive}
+                <button onClick={() => onNavigate('projects')} className="hover:text-[#841618] transition-colors">
+                  {t.nav.projects}
                 </button>
               </li>
               <li>

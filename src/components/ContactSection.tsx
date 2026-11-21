@@ -10,7 +10,7 @@ import { MapPin, Phone, Mail, Clock, Send, CheckCircle2, ExternalLink, AlertCirc
 //    client's Gmail account (goes to: https://web3forms.com/).
 //    It looks like: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 // ─────────────────────────────────────────────────────────────────────────────
-const WEB3FORMS_ACCESS_KEY = 'YOUR_WEB3FORMS_ACCESS_KEY';
+const WEB3FORMS_ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || 'ef0e5a8d-4ab2-4180-aa6a-7aac4a26838a';
 
 interface ContactSectionProps {
   currentLang: Language;
@@ -23,32 +23,87 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ currentLang }) =
   const [error, setError] = useState('');
   const [dispatchRef, setDispatchRef] = useState('');
 
+  const openMailtoFallback = (p: Record<string, string>, ref: string) => {
+    const subject = encodeURIComponent(`[Dispatch Request ${ref}] ${p.fullName || ''} - ${p.companyName || ''}`);
+    const body = encodeURIComponent(
+      `Dispatch Reference ID: ${ref}\n\n` +
+      `Full Name: ${p.fullName || ''}\n` +
+      `Company: ${p.companyName || ''}\n` +
+      `Phone: ${p.phoneNumber || ''}\n` +
+      `Email: ${p.email || ''}\n` +
+      `Cargo / Service: ${p.serviceRequired || ''}\n` +
+      `Volume: ${p.cargoVolume || ''}\n` +
+      `Route: ${p.originDestination || ''}\n\n` +
+      `Details:\n${p.details || ''}\n`
+    );
+    window.location.href = `mailto:satlogistics0001@gmail.com?subject=${subject}&body=${body}`;
+    setDispatchRef(ref);
+    setSubmitted(true);
+  };
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitting(true);
     setError('');
 
     const form = e.currentTarget;
-    const data = new FormData(form);
+    const formDataObj = new FormData(form);
 
-    // Generate a local reference id
     const refId = `SAT-ET-${Math.floor(100000 + Math.random() * 900000)}`;
-    data.append('dispatch_ref', refId);
+    const payload = {
+      fullName: formDataObj.get('full_name') as string,
+      companyName: formDataObj.get('company_name') as string,
+      phoneNumber: formDataObj.get('phone_number') as string,
+      email: formDataObj.get('email') as string,
+      serviceRequired: formDataObj.get('cargo_type') as string,
+      cargoVolume: formDataObj.get('cargo_volume') as string,
+      originDestination: formDataObj.get('origin_destination') as string,
+      details: formDataObj.get('cargo_details') as string,
+      dispatchRef: refId,
+    };
 
     try {
-      const res = await fetch('https://api.web3forms.com/submit', {
+      // 1. Try Native Host PHP Backend first (works natively on Yegara / cPanel when uploaded)
+      const phpRes = await fetch('/api/dispatch.php', {
         method: 'POST',
-        body: data,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
       });
-      const json = await res.json();
+
+      if (phpRes.ok) {
+        setDispatchRef(refId);
+        setSubmitted(true);
+        return;
+      }
+
+      // 2. Try Serverless endpoint (/api/dispatch)
+      const res = await fetch('/api/dispatch', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+
+      if (res.ok) {
+        setDispatchRef(refId);
+        setSubmitted(true);
+        return;
+      }
+
+      // 3. High-reliability fallback directly via Web3Forms
+      formDataObj.append('dispatch_ref', refId);
+      const fallbackRes = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formDataObj,
+      });
+      const json = await fallbackRes.json();
       if (json.success) {
         setDispatchRef(refId);
         setSubmitted(true);
       } else {
-        setError('Submission failed. Please try again or email us directly.');
+        openMailtoFallback(payload, refId);
       }
     } catch {
-      setError('Network error. Please check your connection and try again.');
+      openMailtoFallback(payload, refId);
     } finally {
       setSubmitting(false);
     }
@@ -78,7 +133,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ currentLang }) =
           {/* Left: Form */}
           <div className="lg:col-span-6 p-6 sm:p-10 border-b lg:border-b-0 lg:border-r border-neutral-200">
             <h3 className="text-xl font-light text-black uppercase mb-1">Dispatch Request</h3>
-            <p className="text-xs text-neutral-400 mb-6">Inquiries reviewed within 2 operational hours.</p>
+            <p className="text-xs text-neutral-400 mb-6">Send your cargo details directly to our central operations.</p>
 
             {submitted ? (
               <div className="p-6 border border-neutral-200 bg-neutral-50 text-center space-y-3">

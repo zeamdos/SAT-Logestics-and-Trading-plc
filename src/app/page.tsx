@@ -19,7 +19,7 @@ export default function Home() {
       home:      'OVERVIEW',
       about:     'ABOUT US',
       services:  'SERVICES',
-      executive: 'LEADERSHIP',
+      projects:  'PROJECTS',
       contact:   'CONTACT',
     };
 

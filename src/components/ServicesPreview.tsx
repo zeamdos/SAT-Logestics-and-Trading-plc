@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Language, NavItem } from '@/types';
@@ -13,10 +14,10 @@ interface ServicesPreviewProps {
 }
 
 const SERVICE_IMAGES = [
-  { img: '/images/containers-stack.jpg', alt: 'Customs Clearance' },
-  { img: '/images/port-terminal.jpg',    alt: 'Freight Forwarding' },
-  { img: '/images/fleet-truck.jpg',      alt: 'Cross-Border Transport' },
-  { img: '/images/harbor-cranes.jpg',    alt: 'Industrial Machinery Import' },
+  { img: '/images/services/service-01-customs.jpg',       alt: 'Customs Clearance' },
+  { img: '/images/services/service-02-freight.jpg',       alt: 'Freight Forwarding' },
+  { img: '/images/services/service-03-fleet.jpg',         alt: 'Transportation and Fleet' },
+  { img: '/images/services/service-04-project-cargo.jpg', alt: 'Project and Industrial Cargo Support' },
 ];
 
 export const ServicesPreview: React.FC<ServicesPreviewProps> = ({ currentLang, onNavigate }) => {

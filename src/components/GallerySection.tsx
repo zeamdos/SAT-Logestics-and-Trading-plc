@@ -12,14 +12,41 @@ interface GalleryPhoto {
 }
 
 const PHOTOS: GalleryPhoto[] = [
-  { src: '/images/gallery/gallery_p12_0.jpeg',  caption: 'Transport Operations — Forklift & Container Loading', span: 'wide' },
-  { src: '/images/gallery/gallery_p13_0.jpeg',  caption: 'Fleet & Cargo Dispatch', span: 'wide' },
-  { src: '/images/gallery/gallery_p14_0.jpeg',  caption: 'Over-height & Special Cargo Transport', span: 'wide' },
-  { src: '/images/port-terminal.jpg',           caption: 'Djibouti Port Terminal', span: 'normal' },
-  { src: '/images/fleet-truck.jpg',             caption: 'SAT Truck Fleet', span: 'normal' },
-  { src: '/images/harbor-cranes.jpg',           caption: 'Harbor Crane Operations', span: 'normal' },
-  { src: '/images/containers-stack.jpg',        caption: 'Container Yard & Customs Depot', span: 'normal' },
-  { src: '/images/railway-corridor.jpg',        caption: 'Ethiopia–Djibouti Railway Corridor', span: 'normal' },
+  {
+    src: '/images/gallery/gallery-01-orange-howo-factory.jpg',
+    caption: 'Industrial Facility Delivery — Heavy Haulage Semi-Trailer',
+    span: 'tall',
+  },
+  {
+    src: '/images/gallery/gallery-02-iveco-insulated-cargo.jpg',
+    caption: 'Over-height & Out-of-Gauge Cargo Transport',
+    span: 'wide',
+  },
+  {
+    src: '/images/gallery/gallery-03-green-crushing-plant.jpg',
+    caption: 'Heavy Machinery & Mobile Screening Plant',
+    span: 'wide',
+  },
+  {
+    src: '/images/gallery/gallery-04-iveco-wheel-loader.jpg',
+    caption: 'Earthmoving Fleet Mobilization — Double Plant Lowbed',
+    span: 'normal',
+  },
+  {
+    src: '/images/gallery/gallery-05-yellow-crane-transport.jpg',
+    caption: 'Mobile Hydraulic Crane — Specialized Haulage',
+    span: 'wide',
+  },
+  {
+    src: '/images/gallery/gallery-06-convoy-mountain-route.jpg',
+    caption: 'Fleet Dispatch & Mountain Corridor Transit',
+    span: 'wide',
+  },
+  {
+    src: '/images/gallery/gallery-07-vessel-port-transit.jpg',
+    caption: 'Freight Forwarding — Port & Project Cargo Operations',
+    span: 'tall',
+  },
 ];
 
 export const GallerySection: React.FC = () => {
@@ -62,7 +89,7 @@ export const GallerySection: React.FC = () => {
               className="break-inside-avoid relative group overflow-hidden rounded-2xl cursor-pointer bg-neutral-900"
               onClick={() => setLightbox(photo)}
             >
-              <div className={`relative w-full overflow-hidden ${photo.span === 'wide' ? 'aspect-video' : 'aspect-[4/3]'}`}>
+              <div className={`relative w-full overflow-hidden ${photo.span === 'wide' ? 'aspect-video' : photo.span === 'tall' ? 'aspect-[3/4]' : 'aspect-[4/3]'}`}>
                 <Image
                   src={photo.src}
                   alt={photo.caption}
@@ -74,8 +101,8 @@ export const GallerySection: React.FC = () => {
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-colors duration-300 flex items-center justify-center">
                   <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
-                {/* Caption strip */}
-                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent px-4 py-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                {/* Caption strip (only visible on hover) */}
+                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/85 via-black/50 to-transparent px-4 py-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                   <p className="text-white text-xs font-mono leading-snug">{photo.caption}</p>
                 </div>
               </div>
@@ -111,7 +138,7 @@ export const GallerySection: React.FC = () => {
                   sizes="90vw"
                 />
               </div>
-              <div className="absolute bottom-0 inset-x-0 bg-black/70 px-6 py-4">
+              <div className="absolute bottom-0 inset-x-0 bg-black/75 backdrop-blur-sm px-6 py-4">
                 <p className="text-white text-sm font-mono">{lightbox.caption}</p>
               </div>
               <button

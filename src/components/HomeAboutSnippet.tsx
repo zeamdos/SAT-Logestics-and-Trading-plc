@@ -1,11 +1,13 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Language, NavItem } from '@/types';
 import { translations } from '@/data/translations';
 import { ArrowRight } from 'lucide-react';
 import { ClientsMarquee } from '@/components/ClientsMarquee';
+import { useRouter } from 'next/navigation';
 
 interface HomeAboutSnippetProps {
   currentLang: Language;
@@ -15,6 +17,7 @@ interface HomeAboutSnippetProps {
 export const HomeAboutSnippet: React.FC<HomeAboutSnippetProps> = ({ currentLang, onNavigate }) => {
   const t = translations[currentLang];
   const a = t.about;
+  const router = useRouter();
 
   return (
     <section id="about" className="bg-white border-b border-neutral-100">
@@ -42,13 +45,14 @@ export const HomeAboutSnippet: React.FC<HomeAboutSnippetProps> = ({ currentLang,
             <p className="text-neutral-600 text-base leading-relaxed mb-6">
               {a.overview}
             </p>
-            <button
-              onClick={() => onNavigate('about')}
+            <Link
+              href="/about/"
+              prefetch={true}
               className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#841618] font-semibold hover:gap-3 transition-all"
             >
               <span>Learn More About Us</span>
               <ArrowRight className="w-3.5 h-3.5" />
-            </button>
+            </Link>
           </motion.div>
 
           {/* Right: 3 mission bullets */}

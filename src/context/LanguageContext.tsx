@@ -20,7 +20,10 @@ const LanguageContext = createContext<LanguageContextType>({
 });
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  // Always start with 'en' on both server and client to avoid hydration mismatch.
+  // The useEffect below will sync from localStorage after mount.
   const [currentLang, setCurrentLangState] = useState<Language>('en');
+
   const [isTransitioning, setIsTransitioning] = useState<boolean>(false);
   const [transitionTarget, setTransitionTarget] = useState<string>('INIT');
 
@@ -28,38 +31,35 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     const saved = localStorage.getItem('sat_lang') as Language | null;
     if (saved && ['en', 'am', 'ar', 'zh'].includes(saved)) {
       setCurrentLangState(saved);
+      if (saved === 'ar') {
+        document.documentElement.dir = 'rtl';
+        document.documentElement.lang = 'ar';
+      } else {
+        document.documentElement.dir = 'ltr';
+        document.documentElement.lang = saved;
+      }
     }
   }, []);
 
-  useEffect(() => {
-    if (currentLang === 'ar') {
-      document.documentElement.dir = 'rtl';
-      document.documentElement.lang = 'ar';
-    } else {
-      document.documentElement.dir = 'ltr';
-      document.documentElement.lang = currentLang;
-    }
-    localStorage.setItem('sat_lang', currentLang);
-  }, [currentLang]);
-
   const setLanguage = (lang: Language) => {
-    setIsTransitioning(true);
-    setTransitionTarget(`LOCALE // ${lang.toUpperCase()}`);
-    setTimeout(() => {
-      setCurrentLangState(lang);
-      setIsTransitioning(false);
-    }, 450);
+    setCurrentLangState(lang);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('sat_lang', lang);
+      if (lang === 'ar') {
+        document.documentElement.dir = 'rtl';
+        document.documentElement.lang = 'ar';
+      } else {
+        document.documentElement.dir = 'ltr';
+        document.documentElement.lang = lang;
+      }
+    }
   };
 
   const triggerTransition = (viewName: string, callback?: () => void) => {
     setTransitionTarget(viewName);
-    setIsTransitioning(true);
-    setTimeout(() => {
-      if (callback) callback();
-    }, 300);
-    setTimeout(() => {
-      setIsTransitioning(false);
-    }, 800);
+    if (callback) {
+      callback();
+    }
   };
 
   return (

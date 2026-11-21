@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 import { motion, useInView } from 'framer-motion';
 import { Language, NavItem } from '@/types';
 import { translations } from '@/data/translations';
@@ -12,18 +13,18 @@ interface AboutSectionProps {
 }
 
 const CUSTOMERS = [
-  { name: 'TBEA Deyang Cable', short: 'TBEA', country: 'China', color: '#c41230' },
-  { name: 'CCRCC', short: 'CCRCC', country: 'China', color: '#1a4a8a' },
-  { name: 'Zhen Zhen Iron & Steel', short: 'ZZIS', country: 'China', color: '#2d5a27' },
-  { name: 'Sinoma Construction', short: 'SINOMA', country: 'China', color: '#8b4513' },
-  { name: 'VOITH HYDRO Shanghai', short: 'VOITH', country: 'Germany', color: '#004f9e' },
-  { name: 'Chongqing Taishan Cable', short: 'CTC', country: 'China', color: '#6a0dad' },
-  { name: 'SINOTRANS', short: 'SINO\nTRANS', country: 'China', color: '#c41230' },
-  { name: 'SINOSTEEL', short: 'SINO\nSTEEL', country: 'China', color: '#1a4a8a' },
-  { name: 'GCL Energy', short: 'GCL', country: 'China', color: '#ff6b00' },
-  { name: 'DTS — Djibouti', short: 'DTS', country: 'Djibouti', color: '#006b3c' },
-  { name: 'China Railway', short: 'CHINA\nRAILWAY', country: 'China', color: '#c41230' },
-  { name: 'RONG CHANG', short: 'RONG\nCHANG', country: 'China', color: '#2d5a27' },
+  { name: 'TBEA Deyang Cable', short: 'TBEA', country: 'China', color: '#003A8F', logo: '/images/logos/tbea.png' },
+  { name: 'CCECC', short: 'CCECC', country: 'China', color: '#005FA8', logo: '/images/logos/ccecc.png' },
+  { name: 'Zhen Zhen Iron & Steel', short: 'ZZIS', country: 'Ethiopia', color: '#2d5a27', logo: '/images/logos/zhen-zhen.png' },
+  { name: 'Sinoma Construction', short: 'SINOMA', country: 'China', color: '#E60012', logo: '/images/logos/sinoma.png' },
+  { name: 'VOITH HYDRO Shanghai', short: 'VOITH', country: 'Germany', color: '#004f9e', logo: '/images/logos/voith.png' },
+  { name: 'Chongqing Taishan Cable', short: 'CTC', country: 'China', color: '#C41230', logo: '/images/logos/ctc.png' },
+  { name: 'SINOTRANS', short: 'SINOTRANS', country: 'China', color: '#c41230', logo: '/images/logos/sinotrans.png' },
+  { name: 'SINOSTEEL', short: 'SINOSTEEL', country: 'China', color: '#1a4a8a', logo: '/images/logos/sinosteel.png' },
+  { name: 'GCL Energy', short: 'GCL', country: 'China', color: '#2878B5', logo: '/images/logos/gcl.png' },
+  { name: 'DTS — Djibouti', short: 'DTS', country: 'Djibouti', color: '#006b3c', logo: '/images/logos/dts.png' },
+  { name: 'China Railway', short: 'CHINA RAILWAY', country: 'China', color: '#005BA6', logo: '/images/logos/china-railway.png' },
+  { name: 'RONG CHANG', short: 'RONG CHANG', country: 'China', color: '#6A0DAD', logo: '/images/logos/rong-chang.png' },
 ];
 
 const PROCESS_STEPS = [
@@ -335,14 +336,28 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ currentLang, onNavig
               transition={{ duration: 0.4, delay: i * 0.08 }}
               className="border border-neutral-200 hover:border-[#841618] transition-all duration-300 rounded-2xl p-6 bg-white group flex flex-col items-center text-center"
             >
-              {/* Logo badge */}
-              <div
-                className="w-16 h-16 rounded-full flex items-center justify-center mb-4 text-white font-bold text-xs font-mono leading-tight text-center"
-                style={{ backgroundColor: customer.color }}
-              >
-                {customer.short.split('\n').map((line, li) => (
-                  <span key={li} className="block leading-tight">{line}</span>
-                ))}
+              {/* Logo Stage */}
+              <div className="w-full h-16 flex items-center justify-center mb-4">
+                {customer.logo ? (
+                  <div className="relative w-36 h-14 flex items-center justify-center">
+                    <Image
+                      src={customer.logo}
+                      alt={customer.name}
+                      fill
+                      sizes="144px"
+                      className="object-contain filter group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                ) : (
+                  <div
+                    className="w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-xs font-mono leading-tight text-center"
+                    style={{ backgroundColor: customer.color }}
+                  >
+                    {customer.short.split('\n').map((line, li) => (
+                      <span key={li} className="block leading-tight">{line}</span>
+                    ))}
+                  </div>
+                )}
               </div>
               <h4 className="text-sm font-semibold text-black uppercase group-hover:text-[#841618] transition-colors leading-snug mb-1">
                 {customer.name}
