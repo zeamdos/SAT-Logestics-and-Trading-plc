@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 import { Language, NavItem } from '@/types';
 import { translations } from '@/data/translations';
@@ -47,29 +46,29 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onNavigate }) => {
             <span className="text-[11px] font-mono uppercase tracking-wider text-neutral-400 block mb-2">Menu</span>
             <ul className="space-y-1.5 text-xs text-neutral-600">
               <li>
-                <Link href="/" className="hover:text-[#841618] transition-colors block">
+                <a href="/" className="hover:text-[#841618] transition-colors block">
                   {t.nav.home}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/about/" className="hover:text-[#841618] transition-colors block">
+                <a href="/about/" className="hover:text-[#841618] transition-colors block">
                   {t.nav.about}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/services/" className="hover:text-[#841618] transition-colors block">
+                <a href="/services/" className="hover:text-[#841618] transition-colors block">
                   {t.nav.services}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/projects/" className="hover:text-[#841618] transition-colors block">
+                <a href="/projects/" className="hover:text-[#841618] transition-colors block">
                   {t.nav.projects}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/contact/" className="hover:text-[#841618] transition-colors block">
+                <a href="/contact/" className="hover:text-[#841618] transition-colors block">
                   {t.nav.contact}
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

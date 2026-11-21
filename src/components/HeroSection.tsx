@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Language, NavItem } from '@/types';
 import { translations } from '@/data/translations';
@@ -71,25 +70,23 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-6 flex flex-wrap items-center gap-4"
           >
-            <Link
+            <a
               href="/contact/"
-              prefetch={true}
               data-cursor-label="CONTACT"
               className="px-7 py-3.5 bg-[#841618] hover:bg-[#6D1113] text-white transition-colors text-xs font-mono uppercase tracking-wider flex items-center gap-2.5 shadow-md rounded-full"
             >
               <span>{t.hero.ctaPrimary}</span>
               <ArrowRight className="w-4 h-4" />
-            </Link>
+            </a>
 
-            <Link
+            <a
               href="/services/"
-              prefetch={true}
               data-cursor-label="SERVICES"
               className="px-7 py-3.5 bg-white text-black hover:bg-white hover:border-[#841618] transition-colors text-xs font-mono uppercase tracking-wider flex items-center gap-2.5 border border-neutral-300 rounded-full"
             >
               <span>{t.hero.ctaSecondary}</span>
               <ArrowUpRight className="w-4 h-4 text-[#841618]" />
-            </Link>
+            </a>
           </motion.div>
         </div>
 

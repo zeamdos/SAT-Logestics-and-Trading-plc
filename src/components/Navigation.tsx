@@ -2,8 +2,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
-import { useRouter, usePathname } from 'next/navigation';
 import { Language, NavItem } from '@/types';
 import { translations } from '@/data/translations';
 import { useLanguage } from '@/context/LanguageContext';
@@ -18,8 +16,6 @@ export const Navigation: React.FC<NavigationProps> = ({
   activeSection: propActiveSection,
   onNavigate: propOnNavigate,
 }) => {
-  const router = useRouter();
-  const pathname = usePathname();
   const { currentLang, setLanguage, triggerTransition } = useLanguage();
   const t = translations[currentLang];
 
@@ -54,37 +50,22 @@ export const Navigation: React.FC<NavigationProps> = ({
     { id: 'contact',   label: t.nav.contact,   path: '/contact/' },
   ];
 
-  const currentActive = propActiveSection || (
-    pathname === '/' ? 'home' :
-    pathname.startsWith('/about') ? 'about' :
-    pathname.startsWith('/services') ? 'services' :
-    pathname.startsWith('/projects') ? 'projects' :
-    pathname.startsWith('/contact') ? 'contact' : 'home'
-  );
+  const currentActive = propActiveSection || 'home';
 
-  // Routes that are full pages (not scroll anchors on homepage)
-  const PAGE_ROUTES = new Set([
-    '/about', '/about/',
-    '/services', '/services/',
-    '/projects', '/projects/',
-    '/contact', '/contact/'
-  ]);
-
-  const handleNavClick = (item: typeof navItems[0]) => {
-    if (item.id === 'home' && propOnNavigate) {
-      propOnNavigate('home');
-      return;
+  const handleItemClick = (e: React.MouseEvent<HTMLAnchorElement>, id: NavItem) => {
+    if (id === 'home' && currentActive === 'home') {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-    router.push(item.path);
   };
 
   return (
     <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-sm border-b border-white/70 shadow-sm">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 flex items-center justify-between h-28">
         {/* Logo */}
-        <Link
+        <a
           href="/"
-          prefetch={true}
+          onClick={(e) => handleItemClick(e, 'home')}
           className="group flex items-center py-2"
           data-cursor-label="HOME"
         >
@@ -97,17 +78,17 @@ export const Navigation: React.FC<NavigationProps> = ({
               className="object-contain object-left"
             />
           </div>
-        </Link>
+        </a>
 
-        {/* Desktop Navigation — Instant Prefetched Links */}
+        {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center space-x-1 sm:space-x-2">
           {navItems.map((item) => {
             const isActive = currentActive === item.id;
             return (
-              <Link
+              <a
                 key={item.id}
                 href={item.path}
-                prefetch={true}
+                onClick={(e) => handleItemClick(e, item.id)}
                 className={`relative px-4 py-2 text-sm transition-colors rounded-none flex items-center gap-1.5 ${
                   isActive
                     ? 'text-black font-semibold'
@@ -118,7 +99,7 @@ export const Navigation: React.FC<NavigationProps> = ({
                   <span className="w-1.5 h-1.5 bg-[#841618] inline-block shrink-0" />
                 )}
                 <span suppressHydrationWarning>{item.label}</span>
-              </Link>
+              </a>
             );
           })}
         </nav>
@@ -169,14 +150,13 @@ export const Navigation: React.FC<NavigationProps> = ({
           </div>
 
           {/* CTA Button */}
-          <Link
+          <a
             href="/contact/"
-            prefetch={true}
             className="hidden sm:flex items-center gap-2 bg-[#841618] hover:bg-[#6D1113] text-white transition-colors px-4 py-2 text-xs font-mono uppercase tracking-wider shadow-sm"
           >
             <span suppressHydrationWarning>{t.nav.quoteBtn}</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
-          </Link>
+          </a>
 
           {/* Mobile Menu Button */}
           <button
@@ -193,31 +173,30 @@ export const Navigation: React.FC<NavigationProps> = ({
       {mobileMenuOpen && (
         <div className="lg:hidden border-t border-neutral-200 bg-white px-6 py-5 space-y-3">
           {navItems.map((item) => (
-            <Link
+            <a
               key={item.id}
               href={item.path}
-              prefetch={true}
-              onClick={() => {
-                setTimeout(() => setMobileMenuOpen(false), 150);
+              onClick={(e) => {
+                handleItemClick(e, item.id);
+                setMobileMenuOpen(false);
               }}
               className="w-full block text-left py-2.5 px-3 border border-neutral-200 text-sm font-medium uppercase hover:border-[#841618]"
             >
               <span suppressHydrationWarning>{item.label}</span>
-            </Link>
+            </a>
           ))}
-          <Link
+          <a
             href="/contact/"
-            prefetch={true}
-            onClick={() => {
-              setTimeout(() => setMobileMenuOpen(false), 150);
-            }}
+            onClick={() => setMobileMenuOpen(false)}
             className="w-full mt-3 py-3 bg-[#841618] hover:bg-[#6D1113] text-white text-xs font-mono uppercase tracking-widest text-center flex items-center justify-center gap-2"
           >
             <span suppressHydrationWarning>{t.nav.quoteBtn}</span>
             <ArrowUpRight className="w-4 h-4" />
-          </Link>
+          </a>
         </div>
       )}
+    </header>
+  );
     </header>
   );
 };

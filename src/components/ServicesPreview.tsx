@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Language, NavItem } from '@/types';
@@ -40,13 +39,13 @@ export const ServicesPreview: React.FC<ServicesPreviewProps> = ({ currentLang, o
               {t.services.headline}
             </h2>
           </div>
-          <Link
+          <a
             href="/services/"
             className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#841618] font-semibold whitespace-nowrap hover:gap-3 transition-all"
           >
             <span>All Services</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
-          </Link>
+          </a>
         </div>
 
         {/* 4 cards — 2 columns */}
@@ -85,13 +84,13 @@ export const ServicesPreview: React.FC<ServicesPreviewProps> = ({ currentLang, o
                   <p className="text-xs text-neutral-500 leading-relaxed flex-1">
                     {service.description}
                   </p>
-                  <Link
+                  <a
                     href="/contact/"
                     className="mt-4 inline-flex items-center gap-1 text-[10px] font-mono uppercase tracking-wider text-[#841618] font-semibold"
                   >
                     <span>Inquire</span>
                     <ArrowUpRight className="w-3 h-3" />
-                  </Link>
+                  </a>
                 </div>
               </motion.div>
             );
