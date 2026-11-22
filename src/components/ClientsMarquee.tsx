@@ -14,6 +14,7 @@ interface Client {
 
 interface ActivePartner {
   monogram: string;
+  logo: string;
   name: string;
   nameAm: string;
   sector: string;
@@ -23,6 +24,7 @@ interface ActivePartner {
 const ACTIVE_PARTNERS: ActivePartner[] = [
   {
     monogram: 'DBE',
+    logo: '/images/partners/development-bank-of-ethiopia.png',
     name: 'Development Bank of Ethiopia',
     nameAm: 'የኢትዮጵያ ልማት ባንክ',
     sector: 'Financial & Development Institution',
@@ -30,6 +32,7 @@ const ACTIVE_PARTNERS: ActivePartner[] = [
   },
   {
     monogram: 'SM',
+    logo: '/images/partners/segon-marill.png',
     name: 'Segon-Marill International Movers & Logistics',
     nameAm: 'ሴጎን-ማሪል ኢንተርናሽናል አንቀሳቃሽዎች እና ሎጂስቲክስ',
     sector: 'Global Freight & Forwarding Partner',
@@ -37,6 +40,7 @@ const ACTIVE_PARTNERS: ActivePartner[] = [
   },
   {
     monogram: 'AO',
+    logo: '/images/partners/ao-logistics.png',
     name: 'AO Logistics One Member PLC',
     nameAm: 'ኤኦ ሎጂስቲክስ ዋን ሜምበር PLC',
     sector: 'Logistics & Transport Operations',
@@ -44,6 +48,7 @@ const ACTIVE_PARTNERS: ActivePartner[] = [
   },
   {
     monogram: 'SGT',
+    logo: '/images/partners/sets-general-trading.png',
     name: 'Sets General Trading PLC',
     nameAm: 'ሴትስ ጀነራል ትሬዲንግ PLC',
     sector: 'Import, Export & Commercial Trading',
@@ -103,8 +108,14 @@ function ActivePartners({ currentLang, eyebrow }: { currentLang: Language; eyebr
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3">
         {ACTIVE_PARTNERS.map((partner) => (
           <article key={partner.monogram} className="min-h-[96px] bg-white border border-neutral-200 px-3 py-3 flex items-center gap-3 hover:border-[#EF4444] transition-colors">
-            <div className="w-11 h-11 shrink-0 border border-neutral-300 bg-neutral-950 text-white font-mono text-[10px] font-bold flex items-center justify-center">
-              {partner.monogram}
+            <div className="relative w-12 h-12 shrink-0 border border-neutral-200 bg-white flex items-center justify-center p-1.5">
+              <Image
+                src={partner.logo}
+                alt={isAmharic ? partner.nameAm : partner.name}
+                fill
+                sizes="48px"
+                className="object-contain p-1"
+              />
             </div>
             <div className="min-w-0">
               <h4 className="text-[11px] sm:text-xs font-bold leading-snug text-black">
