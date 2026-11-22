@@ -108,7 +108,7 @@ function ActivePartners({ currentLang, eyebrow }: { currentLang: Language; eyebr
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3">
         {ACTIVE_PARTNERS.map((partner) => (
           <article key={partner.monogram} className="min-h-[96px] bg-white border border-neutral-200 px-3 py-3 flex items-center gap-3 hover:border-[#EF4444] transition-colors">
-            <div className="relative w-12 h-12 shrink-0 border border-neutral-200 bg-white flex items-center justify-center p-1.5">
+            <div className="relative w-12 h-12 shrink-0 bg-white flex items-center justify-center p-1">
               <Image
                 src={partner.logo}
                 alt={isAmharic ? partner.nameAm : partner.name}
