@@ -96,9 +96,9 @@ export const translations: Record<Language, TranslationSchema> = {
         'Ethiopian Electric Power & Ethiopian Electric Utility',
         'Ministry of Finance — Capital Equipment Logistics'
       ],
-      customersTag: 'OUR CUSTOMERS',
-      customersHeadline: 'International Partners.',
-      customersSubheadline: 'We have worked with leading global companies across energy, construction, steel, and infrastructure.'
+      customersTag: 'ACTIVE PARTNERS & CLIENTS',
+      customersHeadline: 'Active Corporate Partners.',
+      customersSubheadline: 'We collaborate with trusted institutions across finance, freight forwarding, transport operations, and commercial trading.'
     },
     projects: {
       sectionTag: 'PROJECTS',
@@ -433,9 +433,9 @@ export const translations: Record<Language, TranslationSchema> = {
         'የኢትዮጵያ ኤሌክትሪክ ኃይልና አገልግሎት',
         'የፋይናንስ ሚኒስቴር — ካፒታል ዕቃዎች'
       ],
-      customersTag: 'ደንበኞቻችን',
-      customersHeadline: 'ዓለም አቀፍ አጋሮቻችን።',
-      customersSubheadline: 'በኃይል፣ ግንባታ፣ ብረት እና ኢንፍራስትራክቸር ዘርፍ ከሚሰሩ ታዋቂ ዓለም አቀፍ ኩባንያዎች ጋር ሰርተናል።'
+      customersTag: 'ንቁ አጋሮች እና ደንበኞች',
+      customersHeadline: 'የገበያ አጋሮች።',
+      customersSubheadline: 'በፋይናንስ፣ በጭነት ማስተላለፍ፣ በትራንስፖርት አሰራር እና በንግድ ዘርፎች ከታማኝ ተቋማት ጋር እንተባበራለን።'
     },
     projects: {
       sectionTag: 'ፕሮጀክቶች',

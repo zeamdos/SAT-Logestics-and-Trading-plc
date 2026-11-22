@@ -90,13 +90,12 @@ export const HomeAboutSnippet: React.FC<HomeAboutSnippetProps> = ({ currentLang,
               </h3>
             </div>
             <span className="text-xs font-mono text-neutral-400 uppercase tracking-widest">
-              12 International Partners
+              {currentLang === 'am' ? '4 ንቁ አጋሮች' : '4 Active Partners'}
             </span>
           </motion.div>
         </div>
 
-        {/* Scrolling ticker — no padding so cards bleed edge-to-edge */}
-        <ClientsMarquee />
+        <ClientsMarquee currentLang={currentLang} />
       </div>
 
     </section>

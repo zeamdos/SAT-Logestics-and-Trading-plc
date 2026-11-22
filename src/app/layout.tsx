@@ -30,14 +30,8 @@ export const metadata: Metadata = {
     "machinery import trading Ethiopia"
   ],
   icons: {
-    icon: [
-      { url: "/icon.svg", type: "image/svg+xml" },
-      { url: "/icon.png", type: "image/png" },
-      { url: "/images/sat-icon.png", type: "image/png" }
-    ],
-    apple: [
-      { url: "/icon.png", type: "image/png" }
-    ]
+    icon: "/icon.png",
+    apple: "/icon.png"
   },
 };
 
