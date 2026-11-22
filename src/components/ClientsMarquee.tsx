@@ -12,66 +12,6 @@ interface Client {
   logo: string;
 }
 
-interface ActivePartner {
-  monogram: string;
-  logo: string;
-  name: string;
-  nameAm: string;
-  sector: string;
-  sectorAm: string;
-}
-
-const ACTIVE_PARTNERS: ActivePartner[] = [
-  {
-    monogram: 'DBE',
-    logo: '/images/partners/development-bank-of-ethiopia.png',
-    name: 'Development Bank of Ethiopia',
-    nameAm: 'የኢትዮጵያ ልማት ባንክ',
-    sector: 'Financial & Development Institution',
-    sectorAm: 'የፋይናንስ እና የልማት ተቋም'
-  },
-  {
-    monogram: 'SM',
-    logo: '/images/partners/segon-marill.png',
-    name: 'Segon-Marill International Movers & Logistics',
-    nameAm: 'ሴጎን-ማሪል ኢንተርናሽናል አንቀሳቃሽዎች እና ሎጂስቲክስ',
-    sector: 'Global Freight & Forwarding Partner',
-    sectorAm: 'ዓለም አቀፍ ጭነት እና የመላኪያ አጋር'
-  },
-  {
-    monogram: 'AO',
-    logo: '/images/partners/ao-logistics.png',
-    name: 'AO Logistics One Member PLC',
-    nameAm: 'ኤኦ ሎጂስቲክስ ዋን ሜምበር PLC',
-    sector: 'Logistics & Transport Operations',
-    sectorAm: 'የሎጂስቲክስ እና የትራንስፖርት አሰራሮች'
-  },
-  {
-    monogram: 'SGT',
-    logo: '/images/partners/sets-general-trading.png',
-    name: 'Sets General Trading PLC',
-    nameAm: 'ሴትስ ጀነራል ትሬዲንግ PLC',
-    sector: 'Import, Export & Commercial Trading',
-    sectorAm: 'አስመጪ፣ ኤግስፖርት እና የንግድ ንግድ'
-  },
-  {
-    monogram: 'BC',
-    logo: '/images/partners/bershakon.png',
-    name: 'Bershakon Construction PLC',
-    nameAm: 'በርሻኮን ኮንስትራክሽን PLC',
-    sector: 'Building & Civil Engineering Contractor',
-    sectorAm: 'የህንፃ እና ሲቪል ምህንድስና ተቋራጭ'
-  },
-  {
-    monogram: 'JC',
-    logo: '/images/partners/jorro.png',
-    name: 'Jorro Construction Materials Manufacturer',
-    nameAm: 'ጆሮ ኮንስትራክሽን ማቴሪያልስ አምራች PLC',
-    sector: 'Industrial Construction Materials & Manufacturing',
-    sectorAm: 'የኢንዱስትሪ ኮንስትራክሽን ቁሳቁሶች እና ማምረቻ'
-  }
-];
-
 const CLIENTS: Client[] = [
   { name: 'DEV. BANK OF ETHIOPIA', fullName: 'Development Bank of Ethiopia', country: 'Ethiopia', color: '#1B5E20', logo: '/images/partners/development-bank-of-ethiopia.png' },
   { name: 'SEGON-MARILL', fullName: 'Segon-Marill International Movers & Logistics', country: 'Ethiopia', color: '#0D47A1', logo: '/images/partners/segon-marill.png' },
@@ -115,64 +55,25 @@ function LogoCard({ client }: { client: Client }) {
   );
 }
 
-function ActivePartners({ currentLang, eyebrow }: { currentLang: Language; eyebrow: string }) {
-  const isAmharic = currentLang === 'am';
-
+export const ClientsMarquee: React.FC<{ currentLang?: Language; activePartnersEyebrow?: string }> = () => {
   return (
-    <div className="max-w-7xl mx-auto px-6 sm:px-8 mb-8">
-      <div className="flex items-center gap-2 mb-3">
-        <span className="w-1.5 h-1.5 bg-[#EF4444] inline-block" />
-        <span className="text-[10px] font-mono uppercase tracking-widest text-neutral-500">{eyebrow}</span>
-      </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 sm:gap-3">
-        {ACTIVE_PARTNERS.map((partner) => (
-          <article key={partner.monogram} className="min-h-[96px] bg-white border border-neutral-200 px-3 py-3 flex items-center gap-3 hover:border-[#EF4444] transition-colors">
-            <div className="relative w-12 h-12 shrink-0 bg-white flex items-center justify-center p-1">
-              <Image
-                src={partner.logo}
-                alt={isAmharic ? partner.nameAm : partner.name}
-                fill
-                sizes="48px"
-                className="object-contain p-1"
-              />
-            </div>
-            <div className="min-w-0">
-              <h4 className="text-[11px] sm:text-xs font-bold leading-snug text-black">
-                {isAmharic ? partner.nameAm : partner.name}
-              </h4>
-              <p className="mt-1 text-[8px] sm:text-[9px] font-mono uppercase tracking-wide text-neutral-500 leading-tight">
-                {isAmharic ? partner.sectorAm : partner.sector}
-              </p>
-            </div>
-          </article>
+    <div className="w-full overflow-hidden py-3">
+      <style>{`
+        @keyframes marquee-scroll {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .marquee-track {
+          display: flex;
+          width: max-content;
+          animation: marquee-scroll 45s linear infinite;
+        }
+        .marquee-track:hover { animation-play-state: paused; }
+      `}</style>
+      <div className="marquee-track flex">
+        {TRACK.map((client, idx) => (
+          <LogoCard key={`${client.name}-${idx}`} client={client} />
         ))}
-      </div>
-    </div>
-  );
-}
-
-export const ClientsMarquee: React.FC<{ currentLang: Language; activePartnersEyebrow: string }> = ({ currentLang, activePartnersEyebrow }) => {
-  return (
-    <div className="w-full">
-      <ActivePartners currentLang={currentLang} eyebrow={activePartnersEyebrow} />
-      <div className="overflow-hidden py-3">
-        <style>{`
-          @keyframes marquee-scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-          }
-          .marquee-track {
-            display: flex;
-            width: max-content;
-            animation: marquee-scroll 42s linear infinite;
-          }
-          .marquee-track:hover { animation-play-state: paused; }
-        `}</style>
-        <div className="marquee-track flex">
-          {TRACK.map((client, idx) => (
-            <LogoCard key={`${client.name}-${idx}`} client={client} />
-          ))}
-        </div>
       </div>
     </div>
   );
