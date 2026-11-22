@@ -13,16 +13,18 @@ interface AboutSectionProps {
 }
 
 const CUSTOMERS = [
+  { name: 'Development Bank of Ethiopia', short: 'DBE', country: 'Ethiopia', color: '#1B5E20', logo: '/images/partners/development-bank-of-ethiopia.png' },
+  { name: 'Segon-Marill', short: 'SEGON-MARILL', country: 'Ethiopia', color: '#0D47A1', logo: '/images/partners/segon-marill.png' },
+  { name: 'AO Logistics', short: 'AO LOGISTICS', country: 'Ethiopia', color: '#D32F2F', logo: '/images/partners/ao-logistics.png' },
+  { name: 'Bershakon Construction', short: 'BERSHAKON', country: 'Ethiopia', color: '#0F2D59', logo: '/images/logos/bershakon.png' },
+  { name: 'Jorro Construction', short: 'JORRO', country: 'Ethiopia', color: '#C2410C', logo: '/images/logos/jorro.png' },
   { name: 'TBEA Deyang Cable', short: 'TBEA', country: 'China', color: '#003A8F', logo: '/images/logos/tbea.png' },
   { name: 'CCECC', short: 'CCECC', country: 'China', color: '#005FA8', logo: '/images/logos/ccecc.png' },
   { name: 'Zhen Zhen Iron & Steel', short: 'ZZIS', country: 'Ethiopia', color: '#2d5a27', logo: '/images/logos/zhen-zhen.png' },
-  { name: 'Sinoma Construction', short: 'SINOMA', country: 'China', color: '#E60012', logo: '/images/logos/sinoma.png' },
   { name: 'VOITH HYDRO Shanghai', short: 'VOITH', country: 'Germany', color: '#004f9e', logo: '/images/logos/voith.png' },
   { name: 'Chongqing Taishan Cable', short: 'CTC', country: 'China', color: '#C41230', logo: '/images/logos/ctc.png' },
   { name: 'SINOTRANS', short: 'SINOTRANS', country: 'China', color: '#c41230', logo: '/images/logos/sinotrans.png' },
-  { name: 'SINOSTEEL', short: 'SINOSTEEL', country: 'China', color: '#1a4a8a', logo: '/images/logos/sinosteel.png' },
   { name: 'GCL Energy', short: 'GCL', country: 'China', color: '#2878B5', logo: '/images/logos/gcl.png' },
-  { name: 'DTS — Djibouti', short: 'DTS', country: 'Djibouti', color: '#006b3c', logo: '/images/logos/dts.png' },
   { name: 'China Railway', short: 'CHINA RAILWAY', country: 'China', color: '#005BA6', logo: '/images/logos/china-railway.png' },
   { name: 'RONG CHANG', short: 'RONG CHANG', country: 'China', color: '#6A0DAD', logo: '/images/logos/rong-chang.png' },
 ];

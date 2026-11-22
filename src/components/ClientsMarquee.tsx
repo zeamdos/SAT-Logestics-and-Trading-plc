@@ -53,22 +53,41 @@ const ACTIVE_PARTNERS: ActivePartner[] = [
     nameAm: 'ሴትስ ጀነራል ትሬዲንግ PLC',
     sector: 'Import, Export & Commercial Trading',
     sectorAm: 'አስመጪ፣ ኤግስፖርት እና የንግድ ንግድ'
+  },
+  {
+    monogram: 'BC',
+    logo: '/images/partners/bershakon.png',
+    name: 'Bershakon Construction PLC',
+    nameAm: 'በርሻኮን ኮንስትራክሽን PLC',
+    sector: 'Building & Civil Engineering Contractor',
+    sectorAm: 'የህንፃ እና ሲቪል ምህንድስና ተቋራጭ'
+  },
+  {
+    monogram: 'JC',
+    logo: '/images/partners/jorro.png',
+    name: 'Jorro Construction Materials Manufacturer',
+    nameAm: 'ጆሮ ኮንስትራክሽን ማቴሪያልስ አምራች PLC',
+    sector: 'Industrial Construction Materials & Manufacturing',
+    sectorAm: 'የኢንዱስትሪ ኮንስትራክሽን ቁሳቁሶች እና ማምረቻ'
   }
 ];
 
 const CLIENTS: Client[] = [
+  { name: 'DEV. BANK OF ETHIOPIA', fullName: 'Development Bank of Ethiopia', country: 'Ethiopia', color: '#1B5E20', logo: '/images/partners/development-bank-of-ethiopia.png' },
+  { name: 'SEGON-MARILL', fullName: 'Segon-Marill International Movers & Logistics', country: 'Ethiopia', color: '#0D47A1', logo: '/images/partners/segon-marill.png' },
+  { name: 'AO LOGISTICS', fullName: 'AO Logistics One Member PLC', country: 'Ethiopia', color: '#D32F2F', logo: '/images/partners/ao-logistics.png' },
+  { name: 'SETS TRADING', fullName: 'Sets General Trading PLC', country: 'Ethiopia', color: '#E65100', logo: '/images/partners/sets-general-trading.png' },
+  { name: 'BERSHAKON', fullName: 'Bershakon Construction PLC', country: 'Ethiopia', color: '#0F2D59', logo: '/images/logos/bershakon.png' },
+  { name: 'JORRO', fullName: 'Jorro Construction Materials Manufacturer PLC', country: 'Ethiopia', color: '#C2410C', logo: '/images/logos/jorro.png' },
   { name: 'CCECC', fullName: 'China Civil Engineering Construction Corp.', country: 'China', color: '#005FA8', logo: '/images/logos/ccecc.png' },
-  { name: 'SINOMA', fullName: 'Sinoma Construction Co., Ltd.', country: 'China', color: '#E60012', logo: '/images/logos/sinoma.png' },
   { name: 'SINOTRANS', fullName: 'Sinotrans Ltd.', country: 'China', color: '#C41230', logo: '/images/logos/sinotrans.png' },
   { name: 'VOITH HYDRO', fullName: 'Voith Hydro Shanghai Ltd.', country: 'Germany', color: '#004F9E', logo: '/images/logos/voith.png' },
   { name: 'CHINA RAILWAY', fullName: 'China Railway Group (CREC)', country: 'China', color: '#005BA6', logo: '/images/logos/china-railway.png' },
   { name: 'TBEA', fullName: 'TBEA Deyang Cable Co., Ltd.', country: 'China', color: '#003A8F', logo: '/images/logos/tbea.png' },
-  { name: 'SINOSTEEL', fullName: 'Sinosteel Corporation', country: 'China', color: '#1A4A8A', logo: '/images/logos/sinosteel.png' },
   { name: 'GCL ENERGY', fullName: 'GCL System Integration / GCL Energy', country: 'China', color: '#2878B5', logo: '/images/logos/gcl.png' },
   { name: 'ETHIOPIAN AIRLINES', fullName: 'Ethiopian Airlines Group', country: 'Ethiopia', color: '#A02020', logo: '/images/logos/ethiopian-airlines.png' },
   { name: 'ETHIOPIAN ELECTRIC UTILITY', fullName: 'Ethiopian Electric Utility (EEU)', country: 'Ethiopia', color: '#1E7E34', logo: '/images/logos/eeu.png' },
   { name: 'ETHIOPIAN ELECTRIC POWER', fullName: 'Ethiopian Electric Power (EEP)', country: 'Ethiopia', color: '#1C6B38', logo: '/images/logos/eep.png' },
-  { name: 'DTS', fullName: 'Djibouti Transport Shipping SARL', country: 'Djibouti', color: '#006B3C', logo: '/images/logos/dts.png' },
   { name: 'CTC', fullName: 'Chongqing Taishan Cable Co., Ltd.', country: 'China', color: '#C41230', logo: '/images/logos/ctc.png' },
   { name: 'ZHEN ZHEN', fullName: 'Zhen Zhen Iron and Steel Mfg. PLC', country: 'Ethiopia', color: '#2D5A27', logo: '/images/logos/zhen-zhen.png' },
   { name: 'RONG CHANG', fullName: 'Rong Chang International', country: 'China', color: '#6A0DAD', logo: '/images/logos/rong-chang.png' }
@@ -105,7 +124,7 @@ function ActivePartners({ currentLang, eyebrow }: { currentLang: Language; eyebr
         <span className="w-1.5 h-1.5 bg-[#EF4444] inline-block" />
         <span className="text-[10px] font-mono uppercase tracking-widest text-neutral-500">{eyebrow}</span>
       </div>
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 sm:gap-3">
         {ACTIVE_PARTNERS.map((partner) => (
           <article key={partner.monogram} className="min-h-[96px] bg-white border border-neutral-200 px-3 py-3 flex items-center gap-3 hover:border-[#EF4444] transition-colors">
             <div className="relative w-12 h-12 shrink-0 bg-white flex items-center justify-center p-1">

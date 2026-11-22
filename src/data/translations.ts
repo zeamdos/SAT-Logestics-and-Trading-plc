@@ -176,12 +176,15 @@ export const translations: Record<Language, TranslationSchema> = {
       partnersHeadline: 'Companies & Partners Worked With.',
       partnersDesc: 'The company profile highlights collaboration experience with international and regional companies across transport, energy, steel, and infrastructure sectors.',
       partners: [
-        'Djibouti Transport Shipping SARL (DTS)',
+        'Development Bank of Ethiopia',
+        'Segon-Marill International Movers & Logistics',
+        'AO Logistics One Member PLC',
+        'Bershakon Construction PLC',
+        'Jorro Construction Materials Manufacturer',
         'VOITH HYDRO Shanghai Ltd.',
         'CHINA RAILWAY',
         'Zhen Zhen Iron and Steel Manufacturing PLC',
         'Chongqing Taishan Cable Co., Ltd.',
-        'SINOSTEEL',
         'RONG CHANG',
         'GCL ENERGY'
       ]
@@ -467,7 +470,7 @@ export const translations: Record<Language, TranslationSchema> = {
       partnersTag: 'ዓለም አቀፍ ልምድ',
       partnersHeadline: 'ከእነሱ ጋር የሰራናቸው ኩባንያዎች።',
       partnersDesc: 'በትራንስፖርት፣ በኃይል፣ በብረት እና በመሠረተ ልማት ዘርፎች ከዓለም አቀፍ ኩባንያዎች ጋር የመስራት ልምድ አለን።',
-      partners: ['Djibouti Transport Shipping SARL (DTS)','VOITH HYDRO Shanghai Ltd.','CHINA RAILWAY','Zhen Zhen Iron and Steel Manufacturing PLC','Chongqing Taishan Cable Co., Ltd.','SINOSTEEL','RONG CHANG','GCL ENERGY']
+      partners: ['Development Bank of Ethiopia','Segon-Marill International Movers & Logistics','AO Logistics One Member PLC','Bershakon Construction PLC','Jorro Construction Materials Manufacturer','VOITH HYDRO Shanghai Ltd.','CHINA RAILWAY','Zhen Zhen Iron and Steel Manufacturing PLC','Chongqing Taishan Cable Co., Ltd.','RONG CHANG','GCL ENERGY']
     },
     services: {
       sectionTag: 'አገልግሎቶች',
@@ -616,7 +619,7 @@ export const translations: Record<Language, TranslationSchema> = {
       partnersTag: 'الخبرة الدولية',
       partnersHeadline: 'الشركات والشركاء الذين عملنا معهم.',
       partnersDesc: 'يسلط ملف الشركة الضوء على خبرة التعاون مع شركات دولية وإقليمية في قطاعات النقل والطاقة والصلب والبنية التحتية.',
-      partners: ['Djibouti Transport Shipping SARL (DTS)','VOITH HYDRO Shanghai Ltd.','CHINA RAILWAY','Zhen Zhen Iron and Steel Manufacturing PLC','Chongqing Taishan Cable Co., Ltd.','SINOSTEEL','RONG CHANG','GCL ENERGY']
+      partners: ['Development Bank of Ethiopia','Segon-Marill International Movers & Logistics','AO Logistics One Member PLC','Bershakon Construction PLC','Jorro Construction Materials Manufacturer','VOITH HYDRO Shanghai Ltd.','CHINA RAILWAY','Zhen Zhen Iron and Steel Manufacturing PLC','Chongqing Taishan Cable Co., Ltd.','RONG CHANG','GCL ENERGY']
     },
     services: {
       sectionTag: 'الخدمات',
@@ -765,7 +768,7 @@ export const translations: Record<Language, TranslationSchema> = {
       partnersTag: '国际经验',
       partnersHeadline: '合作公司与伙伴。',
       partnersDesc: '公司资料显示，我们在运输、能源、钢铁和基础设施领域与国际及区域公司有合作经验。',
-      partners: ['Djibouti Transport Shipping SARL (DTS)','VOITH HYDRO Shanghai Ltd.','CHINA RAILWAY','Zhen Zhen Iron and Steel Manufacturing PLC','Chongqing Taishan Cable Co., Ltd.','SINOSTEEL','RONG CHANG','GCL ENERGY']
+      partners: ['Development Bank of Ethiopia','Segon-Marill International Movers & Logistics','AO Logistics One Member PLC','Bershakon Construction PLC','Jorro Construction Materials Manufacturer','VOITH HYDRO Shanghai Ltd.','CHINA RAILWAY','Zhen Zhen Iron and Steel Manufacturing PLC','Chongqing Taishan Cable Co., Ltd.','RONG CHANG','GCL ENERGY']
     },
     services: {
       sectionTag: '服务',
