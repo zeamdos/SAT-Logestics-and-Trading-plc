@@ -90,12 +90,15 @@ export const HomeAboutSnippet: React.FC<HomeAboutSnippetProps> = ({ currentLang,
               </h3>
             </div>
             <span className="text-xs font-mono text-neutral-400 uppercase tracking-widest">
-              {currentLang === 'am' ? '4 ንቁ አጋሮች' : '4 Active Partners'}
+              12 International Partners
             </span>
           </motion.div>
         </div>
 
-        <ClientsMarquee currentLang={currentLang} />
+        <ClientsMarquee
+          currentLang={currentLang}
+          activePartnersEyebrow={a.activePartnersTag}
+        />
       </div>
 
     </section>

@@ -96,9 +96,10 @@ export const translations: Record<Language, TranslationSchema> = {
         'Ethiopian Electric Power & Ethiopian Electric Utility',
         'Ministry of Finance — Capital Equipment Logistics'
       ],
-      customersTag: 'ACTIVE PARTNERS & CLIENTS',
-      customersHeadline: 'Active Corporate Partners.',
-      customersSubheadline: 'We collaborate with trusted institutions across finance, freight forwarding, transport operations, and commercial trading.'
+      activePartnersTag: 'ACTIVE PARTNERS',
+      customersTag: 'OUR CUSTOMERS',
+      customersHeadline: 'International Partners.',
+      customersSubheadline: 'We have worked with leading global companies across energy, construction, steel, and infrastructure.'
     },
     projects: {
       sectionTag: 'PROJECTS',
@@ -433,9 +434,10 @@ export const translations: Record<Language, TranslationSchema> = {
         'የኢትዮጵያ ኤሌክትሪክ ኃይልና አገልግሎት',
         'የፋይናንስ ሚኒስቴር — ካፒታል ዕቃዎች'
       ],
-      customersTag: 'ንቁ አጋሮች እና ደንበኞች',
-      customersHeadline: 'የገበያ አጋሮች።',
-      customersSubheadline: 'በፋይናንስ፣ በጭነት ማስተላለፍ፣ በትራንስፖርት አሰራር እና በንግድ ዘርፎች ከታማኝ ተቋማት ጋር እንተባበራለን።'
+      activePartnersTag: 'ንቁ አጋሮች',
+      customersTag: 'ደንበኞቻችን',
+      customersHeadline: 'ዓለም አቀፍ አጋሮቻችን።',
+      customersSubheadline: 'በኃይል፣ ግንባታ፣ ብረት እና ኢንፍራስትራክቸር ዘርፍ ከሚሰሩ ታዋቂ ዓለም አቀፍ ኩባንያዎች ጋር ሰርተናል።'
     },
     projects: {
       sectionTag: 'ፕሮጀክቶች',
@@ -581,6 +583,7 @@ export const translations: Record<Language, TranslationSchema> = {
         'الطاقة الكهربائية الإثيوبية',
         'وزارة المالية — لوجستيات المعدات الرأسمالية'
       ],
+      activePartnersTag: 'الشركاء النشطون',
       customersTag: 'عملاؤنا',
       customersHeadline: 'الشركاء الدوليون.',
       customersSubheadline: 'عملنا مع كبرى الشركات العالمية في قطاعات الطاقة والبناء والصلب والبنية التحتية.'
@@ -729,6 +732,7 @@ export const translations: Record<Language, TranslationSchema> = {
         '埃塞俄比亚电力',
         '财政部 — 资本设备物流'
       ],
+      activePartnersTag: '活跃合作伙伴',
       customersTag: '我们的客户',
       customersHeadline: '国际合作伙伴。',
       customersSubheadline: '我们与能源、建设、钢铁和基础设施领域的全球领先企业合作。'

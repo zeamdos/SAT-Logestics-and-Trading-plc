@@ -48,6 +48,7 @@ export interface TranslationSchema {
     projectsHeadline: string;
     projectsDesc: string;
     projectsList: string[];
+    activePartnersTag: string;
     customersTag: string;
     customersHeadline: string;
     customersSubheadline: string;
